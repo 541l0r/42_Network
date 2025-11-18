@@ -102,6 +102,24 @@ refresh_token() {
   [[ -n "$ACCESS_TOKEN" ]] && save_state || exit 1
 }
 
+exchange_code() {
+  load_config
+  local code=${1:? "Usage: $0 exchange <authorization_code>"}
+  local response
+  response=$(curl -sS -X POST "$API_ROOT/oauth/token" \
+    -u "$CLIENT_ID:$CLIENT_SECRET" \
+    -d "grant_type=authorization_code" \
+    -d "code=$code" \
+    -d "redirect_uri=$REDIRECT_URI")
+  echo "$response" | jq .
+  ACCESS_TOKEN=$(jq -r '.access_token // empty' <<<"$response")
+  REFRESH_TOKEN=$(jq -r '.refresh_token // empty' <<<"$response")
+  local expires_in
+  expires_in=$(jq -r '.expires_in // 0' <<<"$response")
+  EXPIRES_AT=$(( $(date +%s) + expires_in ))
+  [[ -n "$ACCESS_TOKEN" ]] && save_state || exit 1
+}
+
 call_api() {
   ensure_valid_access_token
   local endpoint=${1:? "Usage: $0 call /v2/me"}
@@ -109,8 +127,20 @@ call_api() {
 }
 
 token_info() {
-  ensure_valid_access_token
-  curl -sS -H "Authorization: Bearer $ACCESS_TOKEN" "$API_ROOT/oauth/token/info"
+  load_config
+  load_state
+  : "${ACCESS_TOKEN:?No access token saved. Run exchange or refresh.}"
+  echo "Stored tokens:"
+  echo "  ACCESS_TOKEN=$ACCESS_TOKEN"
+  echo "  REFRESH_TOKEN=${REFRESH_TOKEN:-<none>}"
+  if [[ -n "${EXPIRES_AT:-}" ]]; then
+    local now remaining
+    now=$(date +%s)
+    remaining=$(( EXPIRES_AT - now ))
+    echo "  EXPIRES_AT=$EXPIRES_AT (in ${remaining}s)"
+  fi
+  echo "Token info from API:"
+  curl -sS -H "Authorization: Bearer $ACCESS_TOKEN" "$API_ROOT/oauth/token/info" | jq .
 }
 
 usage() {
@@ -118,6 +148,7 @@ usage() {
 Usage: $0 <command> [args]
 
 Commands:
+  exchange <code>       Exchange an authorization code for tokens and save them.
   refresh               Refresh the access token using the saved refresh token.
   call <endpoint>       Call an API endpoint using the saved access token (e.g., /v2/me).
   token-info            Inspect the current access token metadata.
@@ -130,6 +161,7 @@ EOF
 
 cmd=${1:-}
 case "$cmd" in
+  exchange) shift; exchange_code "$@" ;;
   refresh) refresh_token ;;
   call) shift; call_api "$@" ;;
   token-info) token_info ;;
