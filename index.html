@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>42 API Data Visualization Hub</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="branding">
+        <img src="https://profile.intra.42.fr/assets/42_logo-63655d45bd70c116a040578ebba79413fcf5ccb0c02d5aac2716ce65b88b1779.png" alt="42 logo" />
+        <div>
+          <h1>API 42 Data Viz</h1>
+          <p>Pipe live campus data into your Godot WebGL build.</p>
+        </div>
+      </div>
+      <p class="status-text" id="status-text">Awaiting configuration…</p>
+    </header>
+
+    <main>
+      <section class="controls">
+        <h2>API Access</h2>
+        <form id="settings-form">
+          <label>
+            Personal access token
+            <input
+              type="password"
+              id="token-input"
+              placeholder="Paste a short-lived token"
+              autocomplete="off"
+              required
+            />
+          </label>
+          <label>
+            Endpoint
+            <select id="endpoint-select">
+              <option value="/v2/me">/v2/me (profile)</option>
+              <option value="/v2/projects_users?per_page=5&sort=-marked_at">
+                /v2/projects_users?per_page=5 (recent projects)
+              </option>
+              <option value="/v2/locations?per_page=10&sort=-created_at">
+                /v2/locations?per_page=10 (latest logins)
+              </option>
+            </select>
+          </label>
+          <div class="form-row">
+            <label>
+              Campus ID
+              <input type="number" id="campus-input" min="0" step="1" placeholder="optional" />
+            </label>
+            <label>
+              Cursus ID
+              <input type="number" id="cursus-input" min="0" step="1" placeholder="optional" />
+            </label>
+          </div>
+          <label class="inline">
+            <input type="checkbox" id="remember-token" />
+            Remember token in this browser (stored locally)
+          </label>
+          <div class="form-row">
+            <button type="submit">Fetch data</button>
+            <button type="button" id="ping-godot">Ping Godot client</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="layout">
+        <div class="panel godot-panel">
+          <div class="panel-header">
+            <h2>Godot WebGL Client</h2>
+            <span id="godot-status" class="badge badge-warning">No build detected</span>
+          </div>
+          <div class="godot-wrapper">
+            <iframe id="godot-frame" title="Godot Web Client" sandbox="allow-scripts allow-same-origin"></iframe>
+            <p class="hint">
+              Export your Godot project for the Web and place the generated files inside <code>godot/</code>.
+              Ensure the main HTML file is <code>godot/index.html</code>.
+            </p>
+          </div>
+        </div>
+
+        <div class="panel data-panel">
+          <div class="panel-header">
+            <h2>Latest API Payload</h2>
+            <button id="clear-log" class="ghost">Clear</button>
+          </div>
+          <pre id="data-output" aria-live="polite">{}</pre>
+          <div class="panel-header">
+            <h2>Event log</h2>
+          </div>
+          <ul id="event-log"></ul>
+        </div>
+      </section>
+    </main>
+
+    <template id="log-entry">
+      <li>
+        <span class="timestamp"></span>
+        <span class="message"></span>
+      </li>
+    </template>
+
+    <footer>
+      <p>
+        Static site scaffold. Hook up your WebGL build and customize the data payloads for your visualization.
+      </p>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
