@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-CONFIG_FILE="${CONFIG_FILE:-.oauth_config}"
-STATE_FILE="${STATE_FILE:-.oauth_state}"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+CONFIG_FILE="${CONFIG_FILE:-$ROOT_DIR/.oauth_config}"
+STATE_FILE="${STATE_FILE:-$ROOT_DIR/.oauth_state}"
 API_ROOT="https://api.intra.42.fr"
 
 require_file() {
@@ -14,13 +16,30 @@ require_file() {
 }
 
 load_config() {
-  require_file "$CONFIG_FILE"
+  local cfg="$CONFIG_FILE"
+  if [[ "${cfg:0:1}" != "/" ]]; then
+    if [[ -f "$cfg" ]]; then
+      cfg="$cfg"
+    elif [[ -f "$ROOT_DIR/$cfg" ]]; then
+      cfg="$ROOT_DIR/$cfg"
+    elif [[ -f "$ROOT_DIR/env/.oauth_config" ]]; then
+      cfg="$ROOT_DIR/env/.oauth_config"
+    fi
+  else
+    # absolute path provided but missing; fall back to env/.oauth_config if available
+    if [[ ! -f "$cfg" && -f "$ROOT_DIR/env/.oauth_config" ]]; then
+      cfg="$ROOT_DIR/env/.oauth_config"
+    fi
+  fi
+  CONFIG_FILE="$cfg"
+  require_file "$cfg"
   # shellcheck disable=SC1090
   source "$CONFIG_FILE"
   : "${CLIENT_ID:?Set CLIENT_ID in $CONFIG_FILE}"
   : "${CLIENT_SECRET:?Set CLIENT_SECRET in $CONFIG_FILE}"
   : "${REDIRECT_URI:?Set REDIRECT_URI in $CONFIG_FILE}"
   : "${SCOPE:?Set SCOPE in $CONFIG_FILE}"
+  export API_ROOT CLIENT_ID CLIENT_SECRET REDIRECT_URI SCOPE
 }
 
 load_state() {
@@ -62,116 +81,6 @@ PY
   echo "$API_ROOT/oauth/authorize?client_id=${CLIENT_ID}&redirect_uri=${encoded_redirect}&response_type=code&scope=${SCOPE}"
 }
 
-listen_callback() {
-  load_config
-  local port
-  port=$(python3 - <<PY
-import urllib.parse, os
-url = urllib.parse.urlparse(os.environ["REDIRECT_URI"])
-print(url.port or 80)
-PY
-)
-  echo "Listening for callback on $REDIRECT_URI ..."
-  python3 - <<'PY'
-import http.server, urllib.parse, os
-
-redirect = urllib.parse.urlparse(os.environ["REDIRECT_URI"])
-host = redirect.hostname or "127.0.0.1"
-port = redirect.port or (443 if redirect.scheme == "https" else 80)
-
-class Handler(http.server.BaseHTTPRequestHandler):
-    def do_GET(self):
-        query = urllib.parse.urlparse(self.path).query
-        params = urllib.parse.parse_qs(query)
-        code = params.get("code", [""])[0]
-        print(f"\nAuthorization code: {code}")
-        self.send_response(200)
-        self.end_headers()
-        self.wfile.write(b"You can close this tab.")
-        raise SystemExit
-
-    def log_message(self, fmt, *args):
-        pass
-
-server = http.server.HTTPServer((host, port), Handler)
-print(f"Callback server running on {host}:{port}")
-server.serve_forever()
-PY
-}
-
-login_once() {
-  load_config
-  local code
-  code=$(python3 - <<'PY'
-import http.server, urllib.parse, os, threading, sys, webbrowser
-
-API_ROOT = os.environ.get("API_ROOT")
-CLIENT_ID = os.environ.get("CLIENT_ID")
-SCOPE = os.environ.get("SCOPE")
-REDIRECT_URI = os.environ.get("REDIRECT_URI")
-
-redirect = urllib.parse.urlparse(REDIRECT_URI)
-host = redirect.hostname or "127.0.0.1"
-port = redirect.port or (443 if redirect.scheme == "https" else 80)
-auth_url = f"{API_ROOT}/oauth/authorize?client_id={CLIENT_ID}&redirect_uri={urllib.parse.quote(REDIRECT_URI, safe='')}&response_type=code&scope={SCOPE}"
-
-code_holder = {"code": ""}
-
-class Handler(http.server.BaseHTTPRequestHandler):
-    def do_GET(self):
-        query = urllib.parse.urlparse(self.path).query
-        params = urllib.parse.parse_qs(query)
-        code_holder["code"] = params.get("code", [""])[0]
-        self.send_response(200)
-        self.end_headers()
-        self.wfile.write(b"You can close this tab.")
-        threading.Thread(target=self.server.shutdown, daemon=True).start()
-
-    def log_message(self, fmt, *args):
-        pass
-
-server = http.server.HTTPServer((host, port), Handler)
-threading.Thread(target=server.serve_forever, daemon=True).start()
-
-print("Opening browser for authorization...")
-webbrowser.open(auth_url)
-print(f"If the browser did not open, visit:\n{auth_url}")
-
-try:
-    server.serve_forever()
-except KeyboardInterrupt:
-    pass
-
-server.server_close()
-sys.stdout.write(code_holder["code"])
-PY
-)
-  if [[ -z "$code" ]]; then
-    echo "No authorization code captured." >&2
-    exit 1
-  fi
-  echo "Captured authorization code, exchanging..."
-  exchange_code "$code"
-}
-
-exchange_code() {
-  load_config
-  local code=${1:? "Usage: $0 exchange <authorization_code>"}
-  local response
-  response=$(curl -sS -X POST "$API_ROOT/oauth/token" \
-    -u "$CLIENT_ID:$CLIENT_SECRET" \
-    -d "grant_type=authorization_code" \
-    -d "code=$code" \
-    -d "redirect_uri=$REDIRECT_URI")
-  echo "$response" | jq .
-  ACCESS_TOKEN=$(jq -r '.access_token // empty' <<<"$response")
-  REFRESH_TOKEN=$(jq -r '.refresh_token // empty' <<<"$response")
-  local expires_in
-  expires_in=$(jq -r '.expires_in // 0' <<<"$response")
-  EXPIRES_AT=$(( $(date +%s) + expires_in ))
-  [[ -n "$ACCESS_TOKEN" ]] && save_state || exit 1
-}
-
 refresh_token() {
   load_config
   load_state
@@ -199,17 +108,19 @@ call_api() {
   curl -sS -H "Authorization: Bearer $ACCESS_TOKEN" "$API_ROOT$endpoint"
 }
 
+token_info() {
+  ensure_valid_access_token
+  curl -sS -H "Authorization: Bearer $ACCESS_TOKEN" "$API_ROOT/oauth/token/info"
+}
+
 usage() {
   cat <<EOF
 Usage: $0 <command> [args]
 
 Commands:
-  auth-url              Print the OAuth authorize URL with current config.
-  listen                Run a temporary callback server to capture ?code= in the terminal.
-  login                 Open browser, capture code once, exchange, and save tokens.
-  exchange <code>       Exchange an authorization code for tokens and save them.
   refresh               Refresh the access token using the saved refresh token.
   call <endpoint>       Call an API endpoint using the saved access token (e.g., /v2/me).
+  token-info            Inspect the current access token metadata.
 
 Environment files:
   $CONFIG_FILE    # must define CLIENT_ID, CLIENT_SECRET, REDIRECT_URI, SCOPE
@@ -219,11 +130,8 @@ EOF
 
 cmd=${1:-}
 case "$cmd" in
-  auth-url) auth_url ;;
-  listen) listen_callback ;;
-  login) login_once ;;
-  exchange) shift; exchange_code "$@" ;;
   refresh) refresh_token ;;
   call) shift; call_api "$@" ;;
+  token-info) token_info ;;
   *) usage ;;
 esac

@@ -192,3 +192,25 @@ The helper writes `.oauth_state` (ignored by git) containing the latest access/r
 - Build charts or procedural visuals based on the data you receive.
 - Add automated fetching intervals (e.g., poll every minute) or websocket bridges if your use case benefits from live updates.
 # 42_Network
+
+## Docker stack (nginx + API proxy + MariaDB)
+
+This repo now includes a small Docker setup to serve the static UI, proxy 42 API calls through a backend, and store fetched payloads in MariaDB.
+
+1. Copy `api/.env.example` to `api/.env` and fill in `CLIENT_ID`, `CLIENT_SECRET`, `REFRESH_TOKEN`, and (optionally) `ACCESS_TOKEN`. Redirect must match your 42 app (e.g., `http://localhost:8000/callback`) and be allowed in the 42 dashboard.
+2. Start the stack:
+   ```sh
+   docker compose up --build
+   ```
+3. Visit `http://localhost:8000` for the static UI. The backend proxy is available at `/api`:
+   - `POST /api/fetch` with JSON `{ "endpoint": "/v2/me" }` fetches from 42 and stores the response.
+   - `GET /api/history` returns the last 100 stored rows.
+
+Services:
+- `web` (nginx) serves the static site and proxies `/api` to the backend.
+- `api` (Node/Express) refreshes tokens via `REFRESH_TOKEN`, calls `https://api.intra.42.fr`, and writes payloads to MariaDB.
+- `db` (MariaDB) persists responses in `responses` (id, endpoint, payload JSON, created_at). Data lives in the `db_data` volume.
+
+Important:
+- Keep `CLIENT_SECRET` and `REFRESH_TOKEN` server-side only (never ship to the browser).
+- 42 may rotate refresh tokens on refresh; update your secrets store if that happens.

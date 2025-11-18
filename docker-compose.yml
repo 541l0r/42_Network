@@ -1,0 +1,43 @@
+version: "3.9"
+
+services:
+  db:
+    image: mariadb:11
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: api42
+      MARIADB_USER: api42
+      MARIADB_PASSWORD: api42
+    volumes:
+      - db_data:/var/lib/mysql
+
+  api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    restart: unless-stopped
+    env_file:
+      - api/.env
+    environment:
+      DB_HOST: db
+      DB_USER: api42
+      DB_PASSWORD: api42
+      DB_NAME: api42
+      DB_PORT: 3306
+    depends_on:
+      - db
+
+  web:
+    image: nginx:alpine
+    restart: unless-stopped
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./:/usr/share/nginx/html:ro
+    ports:
+      - "8000:80"
+    depends_on:
+      - api
+
+volumes:
+  db_data:
