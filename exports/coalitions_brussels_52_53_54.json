@@ -1,0 +1,3402 @@
+[
+  {
+    "user_id": 236253,
+    "login": "rnacer",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 19,
+    "rank": 94,
+    "updated_at": "2025-11-17T16:17:51.197Z"
+  },
+  {
+    "user_id": 236379,
+    "login": "almdacic",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 647,
+    "rank": 51,
+    "updated_at": "2025-12-08T04:27:45.634Z"
+  },
+  {
+    "user_id": 235984,
+    "login": "mhummels",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 2270,
+    "rank": 27,
+    "updated_at": "2025-12-08T15:02:30.405Z"
+  },
+  {
+    "user_id": 236391,
+    "login": "thde-moo",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 219,
+    "rank": 73,
+    "updated_at": "2025-11-17T16:17:59.512Z"
+  },
+  {
+    "user_id": 236272,
+    "login": "ade-bie",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 1120,
+    "rank": 44,
+    "updated_at": "2025-12-04T18:42:53.547Z"
+  },
+  {
+    "user_id": 236295,
+    "login": "cdouny",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 751,
+    "rank": 49,
+    "updated_at": "2025-12-05T07:00:24.275Z"
+  },
+  {
+    "user_id": 236330,
+    "login": "fbugri",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 984,
+    "rank": 45,
+    "updated_at": "2025-12-08T12:23:22.391Z"
+  },
+  {
+    "user_id": 236387,
+    "login": "bwassink",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 219,
+    "rank": 73,
+    "updated_at": "2025-12-03T15:59:52.239Z"
+  },
+  {
+    "user_id": 236017,
+    "login": "tdarscot",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 1251,
+    "rank": 42,
+    "updated_at": "2025-12-08T12:56:13.613Z"
+  },
+  {
+    "user_id": 236023,
+    "login": "cgazen",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 943,
+    "rank": 47,
+    "updated_at": "2025-12-08T12:28:24.127Z"
+  },
+  {
+    "user_id": 235977,
+    "login": "syalcin",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 2242,
+    "rank": 30,
+    "updated_at": "2025-12-08T07:51:11.422Z"
+  },
+  {
+    "user_id": 236290,
+    "login": "jamoons",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 590,
+    "rank": 52,
+    "updated_at": "2025-11-27T19:40:51.854Z"
+  },
+  {
+    "user_id": 236254,
+    "login": "ldzuba",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 1530,
+    "rank": 35,
+    "updated_at": "2025-12-08T15:27:13.410Z"
+  },
+  {
+    "user_id": 236285,
+    "login": "dloic",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 588,
+    "rank": 53,
+    "updated_at": "2025-12-05T11:12:42.153Z"
+  },
+  {
+    "user_id": 236269,
+    "login": "mderouic",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 308,
+    "rank": 67,
+    "updated_at": "2025-12-05T20:35:42.135Z"
+  },
+  {
+    "user_id": 231114,
+    "login": "mde-bruy",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 548,
+    "rank": 56,
+    "updated_at": "2025-12-03T16:02:35.806Z"
+  },
+  {
+    "user_id": 230824,
+    "login": "ovivant",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 245,
+    "rank": 71,
+    "updated_at": "2025-12-08T15:33:54.401Z"
+  },
+  {
+    "user_id": 230797,
+    "login": "atran-ng",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 175,
+    "rank": 81,
+    "updated_at": "2025-12-01T16:35:25.148Z"
+  },
+  {
+    "user_id": 231121,
+    "login": "rmathlou",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 257,
+    "rank": 70,
+    "updated_at": "2025-12-06T03:04:24.689Z"
+  },
+  {
+    "user_id": 231723,
+    "login": "akmensso",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 194,
+    "rank": 77,
+    "updated_at": "2025-12-03T19:36:46.450Z"
+  },
+  {
+    "user_id": 214912,
+    "login": "sparente",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 289,
+    "rank": 68,
+    "updated_at": "2025-12-07T20:04:11.740Z"
+  },
+  {
+    "user_id": 231905,
+    "login": "hpieterh",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 208,
+    "rank": 76,
+    "updated_at": "2025-12-03T15:23:49.119Z"
+  },
+  {
+    "user_id": 214573,
+    "login": "vgoudese",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 240,
+    "rank": 72,
+    "updated_at": "2025-12-06T03:04:05.987Z"
+  },
+  {
+    "user_id": 230767,
+    "login": "nkhotbi",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 1259,
+    "rank": 41,
+    "updated_at": "2025-12-06T19:19:10.559Z"
+  },
+  {
+    "user_id": 231174,
+    "login": "nthys",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 2315,
+    "rank": 26,
+    "updated_at": "2025-12-07T21:44:49.435Z"
+  },
+  {
+    "user_id": 231168,
+    "login": "mduhoux",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 194,
+    "rank": 77,
+    "updated_at": "2025-12-07T15:39:10.094Z"
+  },
+  {
+    "user_id": 218637,
+    "login": "nemerson",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 114,
+    "rank": 86,
+    "updated_at": "2025-12-08T14:19:43.362Z"
+  },
+  {
+    "user_id": 230733,
+    "login": "nmertens",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 961,
+    "rank": 46,
+    "updated_at": "2025-12-08T15:15:41.293Z"
+  },
+  {
+    "user_id": 231110,
+    "login": "jpendevi",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 175,
+    "rank": 81,
+    "updated_at": "2025-12-08T10:08:11.797Z"
+  },
+  {
+    "user_id": 231284,
+    "login": "wakanze",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 194,
+    "rank": 77,
+    "updated_at": "2025-12-02T20:19:14.759Z"
+  },
+  {
+    "user_id": 215079,
+    "login": "bel-rass",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 175,
+    "rank": 81,
+    "updated_at": "2025-12-03T18:43:07.315Z"
+  },
+  {
+    "user_id": 231173,
+    "login": "pfauveau",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 2259,
+    "rank": 28,
+    "updated_at": "2025-12-07T21:45:47.408Z"
+  },
+  {
+    "user_id": 231606,
+    "login": "theoppon",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 217,
+    "rank": 75,
+    "updated_at": "2025-12-07T23:37:13.786Z"
+  },
+  {
+    "user_id": 231107,
+    "login": "bel-azzo",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 468,
+    "rank": 58,
+    "updated_at": "2025-12-08T13:56:45.592Z"
+  },
+  {
+    "user_id": 214899,
+    "login": "mmeurer",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 841,
+    "rank": 48,
+    "updated_at": "2025-12-08T14:11:13.537Z"
+  },
+  {
+    "user_id": 230766,
+    "login": "opolynov",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 1975,
+    "rank": 31,
+    "updated_at": "2025-12-08T14:06:15.332Z"
+  },
+  {
+    "user_id": 218598,
+    "login": "nvan-lae",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 8141,
+    "rank": 7,
+    "updated_at": "2025-12-08T14:15:13.067Z"
+  },
+  {
+    "user_id": 214968,
+    "login": "claffut",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 1498,
+    "rank": 36,
+    "updated_at": "2025-12-08T15:36:12.314Z"
+  },
+  {
+    "user_id": 218606,
+    "login": "jolauwer",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 699,
+    "rank": 50,
+    "updated_at": "2025-12-04T15:39:48.983Z"
+  },
+  {
+    "user_id": 218623,
+    "login": "side-boe",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 7446,
+    "rank": 8,
+    "updated_at": "2025-12-08T14:37:06.022Z"
+  },
+  {
+    "user_id": 214603,
+    "login": "csimonne",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 2245,
+    "rank": 29,
+    "updated_at": "2025-12-07T21:07:10.791Z"
+  },
+  {
+    "user_id": 218600,
+    "login": "igur",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 1333,
+    "rank": 39,
+    "updated_at": "2025-12-01T14:53:46.397Z"
+  },
+  {
+    "user_id": 214869,
+    "login": "ouamarko",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 1597,
+    "rank": 34,
+    "updated_at": "2025-12-06T03:04:16.576Z"
+  },
+  {
+    "user_id": 214864,
+    "login": "mmichele",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 4019,
+    "rank": 15,
+    "updated_at": "2025-12-08T10:49:46.714Z"
+  },
+  {
+    "user_id": 214866,
+    "login": "lbolens",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 3069,
+    "rank": 18,
+    "updated_at": "2025-12-08T12:36:47.331Z"
+  },
+  {
+    "user_id": 214658,
+    "login": "abdel-bo",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 380,
+    "rank": 63,
+    "updated_at": "2025-12-06T20:12:19.631Z"
+  },
+  {
+    "user_id": 214954,
+    "login": "britela-",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 1325,
+    "rank": 40,
+    "updated_at": "2025-12-06T03:04:12.496Z"
+  },
+  {
+    "user_id": 214924,
+    "login": "kanufrii",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 2827,
+    "rank": 21,
+    "updated_at": "2025-12-07T23:04:41.969Z"
+  },
+  {
+    "user_id": 214868,
+    "login": "hlongin",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 449,
+    "rank": 59,
+    "updated_at": "2025-12-03T17:28:09.920Z"
+  },
+  {
+    "user_id": 215080,
+    "login": "ankozako",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 1975,
+    "rank": 31,
+    "updated_at": "2025-12-08T08:18:17.098Z"
+  },
+  {
+    "user_id": 214863,
+    "login": "sariee",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 380,
+    "rank": 63,
+    "updated_at": "2025-12-05T19:45:12.555Z"
+  },
+  {
+    "user_id": 215064,
+    "login": "mchrispe",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 57,
+    "rank": 89,
+    "updated_at": "2025-12-08T14:29:16.849Z"
+  },
+  {
+    "user_id": 201776,
+    "login": "sstepani",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 397,
+    "rank": 61,
+    "updated_at": "2025-12-08T14:11:33.897Z"
+  },
+  {
+    "user_id": 218599,
+    "login": "gwindey",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 1172,
+    "rank": 43,
+    "updated_at": "2025-12-08T11:45:48.545Z"
+  },
+  {
+    "user_id": 192254,
+    "login": "lowatell",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 4404,
+    "rank": 12,
+    "updated_at": "2025-11-19T19:27:45.761Z"
+  },
+  {
+    "user_id": 191539,
+    "login": "acaes",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 3069,
+    "rank": 18,
+    "updated_at": "2025-12-08T14:25:43.623Z"
+  },
+  {
+    "user_id": 192091,
+    "login": "ydraouil",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 1338,
+    "rank": 38,
+    "updated_at": "2025-12-06T03:04:15.232Z"
+  },
+  {
+    "user_id": 191544,
+    "login": "qmorinea",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 437,
+    "rank": 60,
+    "updated_at": "2025-12-05T21:56:10.056Z"
+  },
+  {
+    "user_id": 201946,
+    "login": "sbrugman",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 2574,
+    "rank": 24,
+    "updated_at": "2025-12-06T16:42:14.959Z"
+  },
+  {
+    "user_id": 201724,
+    "login": "saouragh",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 385,
+    "rank": 62,
+    "updated_at": "2025-11-18T10:44:53.238Z"
+  },
+  {
+    "user_id": 201757,
+    "login": "pbuyse",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 2565,
+    "rank": 25,
+    "updated_at": "2025-12-08T15:02:55.028Z"
+  },
+  {
+    "user_id": 201853,
+    "login": "huburton",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 114,
+    "rank": 86,
+    "updated_at": "2025-12-05T08:36:13.361Z"
+  },
+  {
+    "user_id": 191559,
+    "login": "praucq",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 513,
+    "rank": 57,
+    "updated_at": "2025-12-05T15:01:16.651Z"
+  },
+  {
+    "user_id": 192074,
+    "login": "chassani",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 19,
+    "rank": 94,
+    "updated_at": "2025-12-05T16:15:29.389Z"
+  },
+  {
+    "user_id": 191543,
+    "login": "yel-ouah",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 575,
+    "rank": 54,
+    "updated_at": "2025-12-07T18:01:11.298Z"
+  },
+  {
+    "user_id": 192022,
+    "login": "ajami",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 1960,
+    "rank": 33,
+    "updated_at": "2025-12-07T18:42:17.108Z"
+  },
+  {
+    "user_id": 201722,
+    "login": "malafont",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 19,
+    "rank": 94,
+    "updated_at": "2025-12-02T12:27:33.152Z"
+  },
+  {
+    "user_id": 201702,
+    "login": "mikellen",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 4193,
+    "rank": 14,
+    "updated_at": "2025-12-01T14:53:51.382Z"
+  },
+  {
+    "user_id": 201708,
+    "login": "fkrakow",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 3012,
+    "rank": 20,
+    "updated_at": "2025-12-06T21:42:13.633Z"
+  },
+  {
+    "user_id": 201677,
+    "login": "magoosse",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 380,
+    "rank": 63,
+    "updated_at": "2025-11-18T09:58:26.317Z"
+  },
+  {
+    "user_id": 201736,
+    "login": "ade-woel",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 154,
+    "rank": 85,
+    "updated_at": "2025-12-08T15:01:17.686Z"
+  },
+  {
+    "user_id": 192300,
+    "login": "mflorens",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 2747,
+    "rank": 22,
+    "updated_at": "2025-12-08T15:39:39.537Z"
+  },
+  {
+    "user_id": 201179,
+    "login": "cproust",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 95,
+    "rank": 88,
+    "updated_at": "2025-12-08T15:03:45.835Z"
+  },
+  {
+    "user_id": 201312,
+    "login": "tilogie",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 1371,
+    "rank": 37,
+    "updated_at": "2025-12-08T11:43:42.437Z"
+  },
+  {
+    "user_id": 201268,
+    "login": "juhanse",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 176,
+    "rank": 80,
+    "updated_at": "2025-12-05T15:03:04.628Z"
+  },
+  {
+    "user_id": 201786,
+    "login": "cstevens",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 3872,
+    "rank": 16,
+    "updated_at": "2025-12-05T17:55:48.184Z"
+  },
+  {
+    "user_id": 201647,
+    "login": "stempels",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 4802,
+    "rank": 9,
+    "updated_at": "2025-12-08T13:42:01.233Z"
+  },
+  {
+    "user_id": 35403,
+    "login": "gdrion",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 19,
+    "rank": 94,
+    "updated_at": "2025-11-18T10:19:12.282Z"
+  },
+  {
+    "user_id": 35369,
+    "login": "wdaher-a",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 19,
+    "rank": 94,
+    "updated_at": "2025-11-18T10:18:21.955Z"
+  },
+  {
+    "user_id": 178399,
+    "login": "nicolive",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 4404,
+    "rank": 12,
+    "updated_at": "2025-12-05T17:04:43.287Z"
+  },
+  {
+    "user_id": 178318,
+    "login": "gdandele",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 3529,
+    "rank": 17,
+    "updated_at": "2025-11-16T03:03:24.547Z"
+  },
+  {
+    "user_id": 178179,
+    "login": "matcoppo",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 57,
+    "rank": 89,
+    "updated_at": "2025-12-08T15:31:13.031Z"
+  },
+  {
+    "user_id": 178077,
+    "login": "agoldber",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 4443,
+    "rank": 11,
+    "updated_at": "2025-11-15T17:08:15.124Z"
+  },
+  {
+    "user_id": 178084,
+    "login": "sklaps",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 8770,
+    "rank": 5,
+    "updated_at": "2025-12-02T13:28:48.002Z"
+  },
+  {
+    "user_id": 178189,
+    "login": "nicleena",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 19,
+    "rank": 94,
+    "updated_at": "2025-12-03T18:15:10.978Z"
+  },
+  {
+    "user_id": 178324,
+    "login": "mvandeve",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 171,
+    "rank": 84,
+    "updated_at": "2025-12-05T16:31:15.629Z"
+  },
+  {
+    "user_id": 178083,
+    "login": "fdaems",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 38,
+    "rank": 92,
+    "updated_at": "2025-11-21T15:23:36.974Z"
+  },
+  {
+    "user_id": 168918,
+    "login": "mcygan",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 8219,
+    "rank": 6,
+    "updated_at": "2025-11-26T13:28:45.344Z"
+  },
+  {
+    "user_id": 159814,
+    "login": "jurousse",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 16267,
+    "rank": 1,
+    "updated_at": "2025-12-08T13:00:52.110Z"
+  },
+  {
+    "user_id": 159747,
+    "login": "marykman",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 4668,
+    "rank": 10,
+    "updated_at": "2025-12-06T23:00:42.325Z"
+  },
+  {
+    "user_id": 159836,
+    "login": "vpramann",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 2668,
+    "rank": 23,
+    "updated_at": "2025-12-07T18:43:42.846Z"
+  },
+  {
+    "user_id": 159663,
+    "login": "thomvan-",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 9649,
+    "rank": 4,
+    "updated_at": "2025-12-07T18:13:40.297Z"
+  },
+  {
+    "user_id": 159846,
+    "login": "plachard",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 570,
+    "rank": 55,
+    "updated_at": "2025-12-04T21:17:44.278Z"
+  },
+  {
+    "user_id": 146051,
+    "login": "rsainas",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 10275,
+    "rank": 3,
+    "updated_at": "2025-11-05T15:57:15.923Z"
+  },
+  {
+    "user_id": 145208,
+    "login": "llapage",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 283,
+    "rank": 69,
+    "updated_at": "2025-12-08T15:03:21.709Z"
+  },
+  {
+    "user_id": 144584,
+    "login": "yohanafi",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 20,
+    "rank": 93,
+    "updated_at": "2025-12-04T17:56:20.076Z"
+  },
+  {
+    "user_id": 132728,
+    "login": "gmarchal",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 367,
+    "rank": 66,
+    "updated_at": "2025-11-29T20:28:12.149Z"
+  },
+  {
+    "user_id": 132834,
+    "login": "aburnott",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 19,
+    "rank": 94,
+    "updated_at": "2025-12-01T17:44:20.269Z"
+  },
+  {
+    "user_id": 128760,
+    "login": "mdor",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 15352,
+    "rank": 2,
+    "updated_at": "2025-11-12T16:16:12.282Z"
+  },
+  {
+    "user_id": 38382,
+    "login": "pvanderl",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 19,
+    "rank": 94,
+    "updated_at": "2025-12-07T18:15:18.943Z"
+  },
+  {
+    "user_id": 79495,
+    "login": "hmesnard",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 19,
+    "rank": 94,
+    "updated_at": "2025-12-06T05:59:45.595Z"
+  },
+  {
+    "user_id": 38492,
+    "login": "tcastron",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 42,
+    "rank": 91,
+    "updated_at": "2025-12-02T19:33:46.535Z"
+  },
+  {
+    "user_id": 62123,
+    "login": "artainmo",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 52,
+    "score": 19,
+    "rank": 94,
+    "updated_at": "2025-11-18T10:19:02.476Z"
+  },
+  {
+    "user_id": 230880,
+    "login": "waibelfo",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 295,
+    "rank": 83,
+    "updated_at": "2025-12-08T14:11:45.900Z"
+  },
+  {
+    "user_id": 196880,
+    "login": "mtice",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 2295,
+    "rank": 31,
+    "updated_at": "2025-12-08T14:54:18.759Z"
+  },
+  {
+    "user_id": 166880,
+    "login": "nledent",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 18156,
+    "rank": 2,
+    "updated_at": "2025-11-14T09:36:17.461Z"
+  },
+  {
+    "user_id": 230782,
+    "login": "mgreban",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1032,
+    "rank": 56,
+    "updated_at": "2025-12-08T12:44:43.069Z"
+  },
+  {
+    "user_id": 132504,
+    "login": "npavelic",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 114,
+    "rank": 92,
+    "updated_at": "2025-11-28T10:56:44.480Z"
+  },
+  {
+    "user_id": 236356,
+    "login": "gpeixoto",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 9422,
+    "rank": 14,
+    "updated_at": "2025-12-06T14:54:12.510Z"
+  },
+  {
+    "user_id": 236249,
+    "login": "jverstra",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1282,
+    "rank": 49,
+    "updated_at": "2025-12-08T15:35:05.507Z"
+  },
+  {
+    "user_id": 236259,
+    "login": "vgoemaer",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1995,
+    "rank": 35,
+    "updated_at": "2025-12-08T15:05:13.204Z"
+  },
+  {
+    "user_id": 235978,
+    "login": "jhwilmet",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 14955,
+    "rank": 4,
+    "updated_at": "2025-12-08T15:09:00.403Z"
+  },
+  {
+    "user_id": 236348,
+    "login": "tdhenain",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 2173,
+    "rank": 33,
+    "updated_at": "2025-12-05T15:50:22.982Z"
+  },
+  {
+    "user_id": 236409,
+    "login": "omrakrak",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 126,
+    "rank": 91,
+    "updated_at": "2025-12-08T14:55:55.137Z"
+  },
+  {
+    "user_id": 235998,
+    "login": "gdupret",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1274,
+    "rank": 50,
+    "updated_at": "2025-12-08T14:41:40.920Z"
+  },
+  {
+    "user_id": 236410,
+    "login": "asylla",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 917,
+    "rank": 60,
+    "updated_at": "2025-12-08T14:08:47.750Z"
+  },
+  {
+    "user_id": 230744,
+    "login": "elcorra",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1058,
+    "rank": 55,
+    "updated_at": "2025-12-08T14:13:13.028Z"
+  },
+  {
+    "user_id": 236380,
+    "login": "dde-paul",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 605,
+    "rank": 64,
+    "updated_at": "2025-11-30T22:16:51.772Z"
+  },
+  {
+    "user_id": 218618,
+    "login": "frde-cli",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 19,
+    "rank": 106,
+    "updated_at": "2025-11-22T03:04:23.102Z"
+  },
+  {
+    "user_id": 230798,
+    "login": "akhalidi",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 175,
+    "rank": 87,
+    "updated_at": "2025-12-02T18:43:06.319Z"
+  },
+  {
+    "user_id": 231111,
+    "login": "lding",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1013,
+    "rank": 58,
+    "updated_at": "2025-12-08T12:04:46.261Z"
+  },
+  {
+    "user_id": 231202,
+    "login": "nirandje",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1324,
+    "rank": 48,
+    "updated_at": "2025-12-07T20:07:11.625Z"
+  },
+  {
+    "user_id": 236283,
+    "login": "acobbaer",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1026,
+    "rank": 57,
+    "updated_at": "2025-12-07T18:32:47.667Z"
+  },
+  {
+    "user_id": 230721,
+    "login": "ialmani",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1639,
+    "rank": 42,
+    "updated_at": "2025-12-08T14:24:57.174Z"
+  },
+  {
+    "user_id": 231166,
+    "login": "sawijnbe",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 2017,
+    "rank": 34,
+    "updated_at": "2025-12-08T14:44:43.484Z"
+  },
+  {
+    "user_id": 231762,
+    "login": "mahanqui",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 529,
+    "rank": 69,
+    "updated_at": "2025-12-08T14:02:27.057Z"
+  },
+  {
+    "user_id": 230729,
+    "login": "jschoder",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1070,
+    "rank": 54,
+    "updated_at": "2025-12-07T20:59:15.386Z"
+  },
+  {
+    "user_id": 231101,
+    "login": "alsereme",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1335,
+    "rank": 47,
+    "updated_at": "2025-12-08T15:16:12.204Z"
+  },
+  {
+    "user_id": 230791,
+    "login": "mghitta",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 611,
+    "rank": 62,
+    "updated_at": "2025-12-05T18:18:50.652Z"
+  },
+  {
+    "user_id": 230838,
+    "login": "hassnous",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 251,
+    "rank": 85,
+    "updated_at": "2025-12-07T19:26:15.467Z"
+  },
+  {
+    "user_id": 218619,
+    "login": "iprovo",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 175,
+    "rank": 87,
+    "updated_at": "2025-12-06T03:03:15.709Z"
+  },
+  {
+    "user_id": 230784,
+    "login": "intramir",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1557,
+    "rank": 43,
+    "updated_at": "2025-12-08T14:33:21.118Z"
+  },
+  {
+    "user_id": 230799,
+    "login": "jpik",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1082,
+    "rank": 53,
+    "updated_at": "2025-12-08T12:17:31.134Z"
+  },
+  {
+    "user_id": 231102,
+    "login": "ovon-hir",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 959,
+    "rank": 59,
+    "updated_at": "2025-12-06T18:38:44.938Z"
+  },
+  {
+    "user_id": 231113,
+    "login": "eread",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 605,
+    "rank": 64,
+    "updated_at": "2025-12-08T13:46:33.823Z"
+  },
+  {
+    "user_id": 231718,
+    "login": "akhalfou",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 175,
+    "rank": 87,
+    "updated_at": "2025-12-01T18:43:05.513Z"
+  },
+  {
+    "user_id": 230801,
+    "login": "lluiggi",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 232,
+    "rank": 86,
+    "updated_at": "2025-12-08T12:49:31.901Z"
+  },
+  {
+    "user_id": 214641,
+    "login": "niguilbe",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 509,
+    "rank": 71,
+    "updated_at": "2025-12-08T13:45:29.671Z"
+  },
+  {
+    "user_id": 214871,
+    "login": "ticharli",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 551,
+    "rank": 66,
+    "updated_at": "2025-12-05T20:37:11.041Z"
+  },
+  {
+    "user_id": 214571,
+    "login": "lde-sutt",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 419,
+    "rank": 79,
+    "updated_at": "2025-12-08T12:21:14.470Z"
+  },
+  {
+    "user_id": 214895,
+    "login": "tbussele",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1456,
+    "rank": 44,
+    "updated_at": "2025-12-04T18:42:52.283Z"
+  },
+  {
+    "user_id": 214915,
+    "login": "erandjel",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 57,
+    "rank": 99,
+    "updated_at": "2025-12-05T19:03:42.668Z"
+  },
+  {
+    "user_id": 214994,
+    "login": "radib",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1718,
+    "rank": 41,
+    "updated_at": "2025-12-05T14:37:41.854Z"
+  },
+  {
+    "user_id": 215009,
+    "login": "ibettenc",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1280,
+    "rank": 49,
+    "updated_at": "2025-12-05T21:02:16.017Z"
+  },
+  {
+    "user_id": 214598,
+    "login": "bvan-duy",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 2459,
+    "rank": 30,
+    "updated_at": "2025-12-04T17:30:19.294Z"
+  },
+  {
+    "user_id": 214665,
+    "login": "jael-m-r",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 57,
+    "rank": 99,
+    "updated_at": "2025-12-08T13:13:29.566Z"
+  },
+  {
+    "user_id": 214639,
+    "login": "elara-va",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 513,
+    "rank": 70,
+    "updated_at": "2025-12-07T19:36:10.394Z"
+  },
+  {
+    "user_id": 214612,
+    "login": "nel-yama",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1832,
+    "rank": 38,
+    "updated_at": "2025-12-07T17:50:44.709Z"
+  },
+  {
+    "user_id": 214889,
+    "login": "gcauchy",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 5099,
+    "rank": 25,
+    "updated_at": "2025-12-06T03:04:46.864Z"
+  },
+  {
+    "user_id": 214584,
+    "login": "drobert",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 7072,
+    "rank": 21,
+    "updated_at": "2025-12-08T11:32:17.913Z"
+  },
+  {
+    "user_id": 214637,
+    "login": "stkabang",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1352,
+    "rank": 45,
+    "updated_at": "2025-12-08T14:11:53.722Z"
+  },
+  {
+    "user_id": 214570,
+    "login": "dcasiell",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1751,
+    "rank": 40,
+    "updated_at": "2025-12-01T13:58:17.797Z"
+  },
+  {
+    "user_id": 214661,
+    "login": "alephoen",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1797,
+    "rank": 39,
+    "updated_at": "2025-12-08T14:19:14.529Z"
+  },
+  {
+    "user_id": 214983,
+    "login": "mameerbe",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 38,
+    "rank": 104,
+    "updated_at": "2025-12-06T18:17:10.396Z"
+  },
+  {
+    "user_id": 214577,
+    "login": "lucorrei",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 171,
+    "rank": 90,
+    "updated_at": "2025-12-08T13:38:47.162Z"
+  },
+  {
+    "user_id": 191591,
+    "login": "pdaskalo",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 6273,
+    "rank": 22,
+    "updated_at": "2025-12-08T13:19:27.789Z"
+  },
+  {
+    "user_id": 191594,
+    "login": "nmarchan",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 76,
+    "rank": 98,
+    "updated_at": "2025-12-05T20:15:13.210Z"
+  },
+  {
+    "user_id": 201207,
+    "login": "matsauva",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 3966,
+    "rank": 27,
+    "updated_at": "2025-12-08T12:04:45.618Z"
+  },
+  {
+    "user_id": 201651,
+    "login": "vthiry",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1113,
+    "rank": 52,
+    "updated_at": "2025-12-08T12:42:38.490Z"
+  },
+  {
+    "user_id": 178113,
+    "login": "jade-vla",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 7157,
+    "rank": 20,
+    "updated_at": "2025-12-06T03:03:27.051Z"
+  },
+  {
+    "user_id": 201293,
+    "login": "mael-faq",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 19,
+    "rank": 106,
+    "updated_at": "2025-11-29T19:46:44.666Z"
+  },
+  {
+    "user_id": 178039,
+    "login": "jpaulis",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 456,
+    "rank": 74,
+    "updated_at": "2025-11-18T12:27:43.475Z"
+  },
+  {
+    "user_id": 191537,
+    "login": "atamer",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 437,
+    "rank": 76,
+    "updated_at": "2025-12-08T11:04:12.021Z"
+  },
+  {
+    "user_id": 201731,
+    "login": "isall",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 13700,
+    "rank": 5,
+    "updated_at": "2025-11-30T16:12:01.274Z"
+  },
+  {
+    "user_id": 192113,
+    "login": "brcoppie",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 475,
+    "rank": 73,
+    "updated_at": "2025-12-08T15:27:13.961Z"
+  },
+  {
+    "user_id": 201305,
+    "login": "jfranco",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1,
+    "rank": 112,
+    "updated_at": "2025-11-25T10:33:59.491Z"
+  },
+  {
+    "user_id": 192218,
+    "login": "stdevis",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1920,
+    "rank": 36,
+    "updated_at": "2025-12-08T14:46:12.517Z"
+  },
+  {
+    "user_id": 201205,
+    "login": "msochor",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1336,
+    "rank": 46,
+    "updated_at": "2025-12-02T11:39:46.494Z"
+  },
+  {
+    "user_id": 201211,
+    "login": "jdellopo",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 2880,
+    "rank": 29,
+    "updated_at": "2025-12-06T03:03:33.686Z"
+  },
+  {
+    "user_id": 201241,
+    "login": "phiascha",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 5848,
+    "rank": 23,
+    "updated_at": "2025-12-08T15:11:21.893Z"
+  },
+  {
+    "user_id": 201864,
+    "login": "ombatkam",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 114,
+    "rank": 92,
+    "updated_at": "2025-11-29T13:47:41.803Z"
+  },
+  {
+    "user_id": 191548,
+    "login": "lderidde",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 7399,
+    "rank": 19,
+    "updated_at": "2025-12-08T15:28:42.226Z"
+  },
+  {
+    "user_id": 201799,
+    "login": "llebugle",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 380,
+    "rank": 81,
+    "updated_at": "2025-11-20T18:17:41.208Z"
+  },
+  {
+    "user_id": 192033,
+    "login": "lspiteri",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 418,
+    "rank": 80,
+    "updated_at": "2025-12-08T15:15:43.110Z"
+  },
+  {
+    "user_id": 201788,
+    "login": "kvanden-",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 10807,
+    "rank": 11,
+    "updated_at": "2025-11-17T15:15:26.315Z"
+  },
+  {
+    "user_id": 192002,
+    "login": "norban",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 57,
+    "rank": 99,
+    "updated_at": "2025-12-05T11:44:11.331Z"
+  },
+  {
+    "user_id": 192024,
+    "login": "jilin",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 609,
+    "rank": 63,
+    "updated_at": "2025-11-19T15:38:59.220Z"
+  },
+  {
+    "user_id": 192031,
+    "login": "jowoundi",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 3000,
+    "rank": 28,
+    "updated_at": "2025-12-04T17:20:12.733Z"
+  },
+  {
+    "user_id": 35390,
+    "login": "wdeltenr",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 1883,
+    "rank": 37,
+    "updated_at": "2025-11-18T10:19:23.545Z"
+  },
+  {
+    "user_id": 178012,
+    "login": "sredjeb",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 12027,
+    "rank": 8,
+    "updated_at": "2025-11-16T03:04:29.515Z"
+  },
+  {
+    "user_id": 178099,
+    "login": "jbourgoi",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 456,
+    "rank": 74,
+    "updated_at": "2025-12-08T15:31:02.449Z"
+  },
+  {
+    "user_id": 178025,
+    "login": "mel-bout",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 285,
+    "rank": 84,
+    "updated_at": "2025-12-05T21:24:43.421Z"
+  },
+  {
+    "user_id": 178116,
+    "login": "akostian",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 19,
+    "rank": 106,
+    "updated_at": "2025-11-09T03:03:38.614Z"
+  },
+  {
+    "user_id": 178402,
+    "login": "qalpesse",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 498,
+    "rank": 72,
+    "updated_at": "2025-12-05T13:57:41.150Z"
+  },
+  {
+    "user_id": 178150,
+    "login": "mavissar",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 57,
+    "rank": 99,
+    "updated_at": "2025-11-09T03:03:15.621Z"
+  },
+  {
+    "user_id": 178389,
+    "login": "rtektas",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 817,
+    "rank": 61,
+    "updated_at": "2025-12-07T03:16:48.488Z"
+  },
+  {
+    "user_id": 178098,
+    "login": "gnyssens",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 95,
+    "rank": 96,
+    "updated_at": "2025-12-03T17:20:45.923Z"
+  },
+  {
+    "user_id": 178604,
+    "login": "najeuneh",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 428,
+    "rank": 78,
+    "updated_at": "2025-11-26T15:11:45.943Z"
+  },
+  {
+    "user_id": 178074,
+    "login": "rdelangh",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 437,
+    "rank": 76,
+    "updated_at": "2025-12-01T09:58:17.871Z"
+  },
+  {
+    "user_id": 178021,
+    "login": "pitroin",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 11569,
+    "rank": 10,
+    "updated_at": "2025-12-02T12:08:40.880Z"
+  },
+  {
+    "user_id": 178581,
+    "login": "bclaeys",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 10462,
+    "rank": 12,
+    "updated_at": "2025-12-06T23:00:41.980Z"
+  },
+  {
+    "user_id": 165296,
+    "login": "asaliba",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 11590,
+    "rank": 9,
+    "updated_at": "2025-12-08T10:13:42.550Z"
+  },
+  {
+    "user_id": 168907,
+    "login": "rperez-t",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 2185,
+    "rank": 32,
+    "updated_at": "2025-12-08T09:56:25.576Z"
+  },
+  {
+    "user_id": 168900,
+    "login": "efret",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 10275,
+    "rank": 13,
+    "updated_at": "2025-11-29T16:33:51.982Z"
+  },
+  {
+    "user_id": 168962,
+    "login": "alexafer",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 15530,
+    "rank": 3,
+    "updated_at": "2025-12-08T15:14:20.454Z"
+  },
+  {
+    "user_id": 159816,
+    "login": "akloster",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 7627,
+    "rank": 18,
+    "updated_at": "2025-12-06T19:02:09.755Z"
+  },
+  {
+    "user_id": 165170,
+    "login": "hle-roi",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 4062,
+    "rank": 26,
+    "updated_at": "2025-12-04T15:04:45.087Z"
+  },
+  {
+    "user_id": 165230,
+    "login": "jgoudema",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 315,
+    "rank": 82,
+    "updated_at": "2025-12-04T16:06:01.025Z"
+  },
+  {
+    "user_id": 165095,
+    "login": "vcaratti",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 536,
+    "rank": 67,
+    "updated_at": "2025-12-08T12:10:40.725Z"
+  },
+  {
+    "user_id": 165315,
+    "login": "alion",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 114,
+    "rank": 92,
+    "updated_at": "2025-12-08T15:00:03.003Z"
+  },
+  {
+    "user_id": 165207,
+    "login": "ngharian",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 532,
+    "rank": 68,
+    "updated_at": "2025-11-24T13:33:15.421Z"
+  },
+  {
+    "user_id": 165644,
+    "login": "kmailleu",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 19794,
+    "rank": 1,
+    "updated_at": "2025-12-04T13:48:41.290Z"
+  },
+  {
+    "user_id": 144585,
+    "login": "raneuman",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 8599,
+    "rank": 15,
+    "updated_at": "2025-11-23T23:21:14.833Z"
+  },
+  {
+    "user_id": 145230,
+    "login": "tafocked",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 8276,
+    "rank": 17,
+    "updated_at": "2025-12-04T17:24:40.034Z"
+  },
+  {
+    "user_id": 145430,
+    "login": "jonlagas",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 5347,
+    "rank": 24,
+    "updated_at": "2025-12-05T22:13:47.148Z"
+  },
+  {
+    "user_id": 145213,
+    "login": "iwaslet",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 114,
+    "rank": 92,
+    "updated_at": "2025-12-08T12:31:43.450Z"
+  },
+  {
+    "user_id": 144711,
+    "login": "mgigot",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 38,
+    "rank": 104,
+    "updated_at": "2025-11-04T12:56:12.371Z"
+  },
+  {
+    "user_id": 145793,
+    "login": "vdenisse",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 57,
+    "rank": 99,
+    "updated_at": "2025-11-17T17:24:15.960Z"
+  },
+  {
+    "user_id": 146050,
+    "login": "vsarana",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 19,
+    "rank": 106,
+    "updated_at": "2025-11-25T21:14:14.110Z"
+  },
+  {
+    "user_id": 144527,
+    "login": "inasar",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 19,
+    "rank": 106,
+    "updated_at": "2025-11-25T21:54:49.563Z"
+  },
+  {
+    "user_id": 144606,
+    "login": "bbouaiss",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 12551,
+    "rank": 6,
+    "updated_at": "2025-12-07T21:45:49.807Z"
+  },
+  {
+    "user_id": 132920,
+    "login": "mgomes-d",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 12088,
+    "rank": 7,
+    "updated_at": "2025-12-02T17:35:47.693Z"
+  },
+  {
+    "user_id": 128801,
+    "login": "sgodin",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 95,
+    "rank": 96,
+    "updated_at": "2025-11-04T11:02:12.826Z"
+  },
+  {
+    "user_id": 133036,
+    "login": "yaretel-",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 19,
+    "rank": 106,
+    "updated_at": "2025-12-08T09:14:10.323Z"
+  },
+  {
+    "user_id": 95527,
+    "login": "jdecorte",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 53,
+    "score": 8531,
+    "rank": 16,
+    "updated_at": "2025-12-02T17:35:47.701Z"
+  },
+  {
+    "user_id": 236013,
+    "login": "aurrakot",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 554,
+    "rank": 74,
+    "updated_at": "2025-11-17T16:17:50.872Z"
+  },
+  {
+    "user_id": 236282,
+    "login": "acharrat",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 308,
+    "rank": 90,
+    "updated_at": "2025-12-07T14:39:39.727Z"
+  },
+  {
+    "user_id": 236306,
+    "login": "cel-hajj",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 810,
+    "rank": 64,
+    "updated_at": "2025-12-02T16:08:40.110Z"
+  },
+  {
+    "user_id": 235980,
+    "login": "jadli",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 175,
+    "rank": 105,
+    "updated_at": "2025-11-24T15:26:09.808Z"
+  },
+  {
+    "user_id": 236279,
+    "login": "sael-mal",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 494,
+    "rank": 80,
+    "updated_at": "2025-12-08T00:32:57.951Z"
+  },
+  {
+    "user_id": 236002,
+    "login": "opiccare",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 819,
+    "rank": 63,
+    "updated_at": "2025-12-01T14:33:42.532Z"
+  },
+  {
+    "user_id": 236296,
+    "login": "mcarrara",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 656,
+    "rank": 67,
+    "updated_at": "2025-12-06T14:34:55.690Z"
+  },
+  {
+    "user_id": 236265,
+    "login": "svan-den",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 3040,
+    "rank": 31,
+    "updated_at": "2025-12-08T15:39:20.099Z"
+  },
+  {
+    "user_id": 236294,
+    "login": "kghesqui",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 219,
+    "rank": 100,
+    "updated_at": "2025-11-14T16:36:45.504Z"
+  },
+  {
+    "user_id": 236314,
+    "login": "amaazouz",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 1213,
+    "rank": 52,
+    "updated_at": "2025-12-08T14:57:44.523Z"
+  },
+  {
+    "user_id": 236291,
+    "login": "rvaz-da-",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 867,
+    "rank": 62,
+    "updated_at": "2025-12-07T15:47:12.444Z"
+  },
+  {
+    "user_id": 236389,
+    "login": "kdewez",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 1127,
+    "rank": 54,
+    "updated_at": "2025-12-08T15:22:43.361Z"
+  },
+  {
+    "user_id": 235986,
+    "login": "abahbah",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 1069,
+    "rank": 55,
+    "updated_at": "2025-12-08T08:45:17.074Z"
+  },
+  {
+    "user_id": 236277,
+    "login": "tlogtenb",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 684,
+    "rank": 66,
+    "updated_at": "2025-11-27T12:36:54.142Z"
+  },
+  {
+    "user_id": 236344,
+    "login": "nfinck",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 219,
+    "rank": 100,
+    "updated_at": "2025-11-17T16:17:59.979Z"
+  },
+  {
+    "user_id": 236262,
+    "login": "gimoeren",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 194,
+    "rank": 103,
+    "updated_at": "2025-12-01T11:46:03.952Z"
+  },
+  {
+    "user_id": 236303,
+    "login": "fikarolc",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 1990,
+    "rank": 40,
+    "updated_at": "2025-12-08T14:59:40.973Z"
+  },
+  {
+    "user_id": 236284,
+    "login": "ibmarten",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 238,
+    "rank": 98,
+    "updated_at": "2025-11-28T19:46:47.484Z"
+  },
+  {
+    "user_id": 236292,
+    "login": "badekeul",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 267,
+    "rank": 95,
+    "updated_at": "2025-12-07T10:52:14.893Z"
+  },
+  {
+    "user_id": 236271,
+    "login": "fdeville",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 240,
+    "rank": 97,
+    "updated_at": "2025-12-06T18:42:55.314Z"
+  },
+  {
+    "user_id": 236054,
+    "login": "gabudak",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 1398,
+    "rank": 45,
+    "updated_at": "2025-12-08T02:45:14.674Z"
+  },
+  {
+    "user_id": 231093,
+    "login": "tfosseux",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 271,
+    "rank": 94,
+    "updated_at": "2025-11-28T23:00:39.455Z"
+  },
+  {
+    "user_id": 236382,
+    "login": "nchouaf",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 959,
+    "rank": 61,
+    "updated_at": "2025-12-08T02:07:39.577Z"
+  },
+  {
+    "user_id": 236354,
+    "login": "nklaarmo",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 289,
+    "rank": 91,
+    "updated_at": "2025-12-06T03:02:36.979Z"
+  },
+  {
+    "user_id": 236386,
+    "login": "anzongan",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 981,
+    "rank": 59,
+    "updated_at": "2025-12-07T15:46:12.802Z"
+  },
+  {
+    "user_id": 236256,
+    "login": "gvan-gom",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 2115,
+    "rank": 38,
+    "updated_at": "2025-12-08T12:36:47.791Z"
+  },
+  {
+    "user_id": 236399,
+    "login": "mben-mer",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 232,
+    "rank": 99,
+    "updated_at": "2025-11-30T23:13:41.910Z"
+  },
+  {
+    "user_id": 231109,
+    "login": "mgad",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 1349,
+    "rank": 49,
+    "updated_at": "2025-12-08T15:12:44.842Z"
+  },
+  {
+    "user_id": 236385,
+    "login": "ripelckm",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 196,
+    "rank": 102,
+    "updated_at": "2025-11-20T12:30:39.170Z"
+  },
+  {
+    "user_id": 236416,
+    "login": "eprocure",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 403,
+    "rank": 84,
+    "updated_at": "2025-11-25T13:56:14.025Z"
+  },
+  {
+    "user_id": 236384,
+    "login": "aouassar",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 586,
+    "rank": 72,
+    "updated_at": "2025-12-03T18:52:43.002Z"
+  },
+  {
+    "user_id": 235989,
+    "login": "gwfranco",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 2455,
+    "rank": 34,
+    "updated_at": "2025-12-08T15:00:56.413Z"
+  },
+  {
+    "user_id": 236302,
+    "login": "kprist",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 2042,
+    "rank": 39,
+    "updated_at": "2025-12-08T07:49:11.898Z"
+  },
+  {
+    "user_id": 235994,
+    "login": "jhenriqu",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 1214,
+    "rank": 51,
+    "updated_at": "2025-12-08T13:02:18.611Z"
+  },
+  {
+    "user_id": 236349,
+    "login": "sabogart",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 194,
+    "rank": 103,
+    "updated_at": "2025-12-04T14:29:06.745Z"
+  },
+  {
+    "user_id": 230710,
+    "login": "sla-gran",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 2301,
+    "rank": 36,
+    "updated_at": "2025-12-08T14:47:13.646Z"
+  },
+  {
+    "user_id": 230755,
+    "login": "shaegels",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 1061,
+    "rank": 56,
+    "updated_at": "2025-12-08T14:24:11.417Z"
+  },
+  {
+    "user_id": 231124,
+    "login": "baderwae",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 1528,
+    "rank": 43,
+    "updated_at": "2025-12-08T14:06:42.293Z"
+  },
+  {
+    "user_id": 230807,
+    "login": "koulad-s",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 175,
+    "rank": 105,
+    "updated_at": "2025-12-04T18:42:53.123Z"
+  },
+  {
+    "user_id": 214614,
+    "login": "alel-che",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 38,
+    "rank": 120,
+    "updated_at": "2025-12-06T23:00:41.009Z"
+  },
+  {
+    "user_id": 230775,
+    "login": "lmoreau",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 567,
+    "rank": 73,
+    "updated_at": "2025-12-05T13:19:45.046Z"
+  },
+  {
+    "user_id": 214565,
+    "login": "ebabun",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 1193,
+    "rank": 53,
+    "updated_at": "2025-12-08T08:21:46.598Z"
+  },
+  {
+    "user_id": 230871,
+    "login": "louzegdo",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 175,
+    "rank": 105,
+    "updated_at": "2025-12-08T12:02:25.451Z"
+  },
+  {
+    "user_id": 214865,
+    "login": "mfontain",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 624,
+    "rank": 69,
+    "updated_at": "2025-12-08T12:27:27.197Z"
+  },
+  {
+    "user_id": 231103,
+    "login": "ardashya",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 276,
+    "rank": 92,
+    "updated_at": "2025-11-24T16:44:25.372Z"
+  },
+  {
+    "user_id": 214985,
+    "login": "gmolina-",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 609,
+    "rank": 71,
+    "updated_at": "2025-12-08T15:12:42.746Z"
+  },
+  {
+    "user_id": 214883,
+    "login": "fhanuise",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 95,
+    "rank": 113,
+    "updated_at": "2025-12-08T11:55:20.257Z"
+  },
+  {
+    "user_id": 214610,
+    "login": "noaddino",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 380,
+    "rank": 86,
+    "updated_at": "2025-12-08T12:55:45.380Z"
+  },
+  {
+    "user_id": 218617,
+    "login": "jvan-der",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 19,
+    "rank": 121,
+    "updated_at": "2025-12-08T15:39:20.120Z"
+  },
+  {
+    "user_id": 218611,
+    "login": "mdhooghe",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 7481,
+    "rank": 18,
+    "updated_at": "2025-12-08T14:12:07.452Z"
+  },
+  {
+    "user_id": 218592,
+    "login": "dzotti",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 1519,
+    "rank": 44,
+    "updated_at": "2025-12-02T18:43:05.833Z"
+  },
+  {
+    "user_id": 214594,
+    "login": "sburggra",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 1808,
+    "rank": 42,
+    "updated_at": "2025-12-08T13:20:11.377Z"
+  },
+  {
+    "user_id": 214595,
+    "login": "sdemey",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 4163,
+    "rank": 20,
+    "updated_at": "2025-12-08T14:52:00.961Z"
+  },
+  {
+    "user_id": 214605,
+    "login": "cowillem",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 2451,
+    "rank": 35,
+    "updated_at": "2025-12-08T14:34:15.458Z"
+  },
+  {
+    "user_id": 214602,
+    "login": "ochkaoul",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 3338,
+    "rank": 29,
+    "updated_at": "2025-12-06T03:04:03.088Z"
+  },
+  {
+    "user_id": 214900,
+    "login": "sclaeys",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 644,
+    "rank": 68,
+    "updated_at": "2025-12-04T18:42:52.737Z"
+  },
+  {
+    "user_id": 214876,
+    "login": "raantoin",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 984,
+    "rank": 57,
+    "updated_at": "2025-12-08T11:01:41.548Z"
+  },
+  {
+    "user_id": 214579,
+    "login": "elibrahi",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 513,
+    "rank": 77,
+    "updated_at": "2025-12-07T18:43:45.250Z"
+  },
+  {
+    "user_id": 214599,
+    "login": "arcornil",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 380,
+    "rank": 86,
+    "updated_at": "2025-12-08T13:43:03.755Z"
+  },
+  {
+    "user_id": 214574,
+    "login": "marheste",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 1390,
+    "rank": 46,
+    "updated_at": "2025-12-08T15:37:10.024Z"
+  },
+  {
+    "user_id": 214611,
+    "login": "ebouali",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 1390,
+    "rank": 46,
+    "updated_at": "2025-12-08T15:24:56.407Z"
+  },
+  {
+    "user_id": 214613,
+    "login": "rceliows",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 419,
+    "rank": 83,
+    "updated_at": "2025-12-08T12:49:38.362Z"
+  },
+  {
+    "user_id": 214601,
+    "login": "bertrmar",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 3785,
+    "rank": 25,
+    "updated_at": "2025-12-08T14:34:16.304Z"
+  },
+  {
+    "user_id": 178016,
+    "login": "jdebilde",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 2213,
+    "rank": 37,
+    "updated_at": "2025-12-08T15:37:16.650Z"
+  },
+  {
+    "user_id": 201734,
+    "login": "sinawara",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 13795,
+    "rank": 4,
+    "updated_at": "2025-12-06T18:27:59.964Z"
+  },
+  {
+    "user_id": 201890,
+    "login": "maxleroy",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 133,
+    "rank": 109,
+    "updated_at": "2025-12-05T17:20:12.426Z"
+  },
+  {
+    "user_id": 92043,
+    "login": "ajossera",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 498,
+    "rank": 79,
+    "updated_at": "2025-12-08T13:05:02.165Z"
+  },
+  {
+    "user_id": 201660,
+    "login": "aahadji",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 1314,
+    "rank": 50,
+    "updated_at": "2025-11-19T18:48:11.320Z"
+  },
+  {
+    "user_id": 201725,
+    "login": "apierret",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 133,
+    "rank": 109,
+    "updated_at": "2025-12-05T13:53:57.079Z"
+  },
+  {
+    "user_id": 201838,
+    "login": "maxweert",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 76,
+    "rank": 114,
+    "updated_at": "2025-11-20T18:05:07.399Z"
+  },
+  {
+    "user_id": 201648,
+    "login": "emarlier",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 380,
+    "rank": 86,
+    "updated_at": "2025-11-06T13:06:50.116Z"
+  },
+  {
+    "user_id": 201646,
+    "login": "nsaillez",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 3972,
+    "rank": 22,
+    "updated_at": "2025-12-08T09:15:36.708Z"
+  },
+  {
+    "user_id": 201214,
+    "login": "vpoelman",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 2852,
+    "rank": 32,
+    "updated_at": "2025-12-06T03:04:04.487Z"
+  },
+  {
+    "user_id": 201220,
+    "login": "jvenkata",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 975,
+    "rank": 60,
+    "updated_at": "2025-12-05T17:40:41.359Z"
+  },
+  {
+    "user_id": 192015,
+    "login": "jdebrull",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 3670,
+    "rank": 26,
+    "updated_at": "2025-11-16T03:02:47.261Z"
+  },
+  {
+    "user_id": 201920,
+    "login": "pvandebe",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 57,
+    "rank": 119,
+    "updated_at": "2025-12-02T17:54:47.660Z"
+  },
+  {
+    "user_id": 201332,
+    "login": "agaland",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 60,
+    "rank": 118,
+    "updated_at": "2025-12-06T16:59:42.171Z"
+  },
+  {
+    "user_id": 201662,
+    "login": "trouilla",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 11200,
+    "rank": 11,
+    "updated_at": "2025-11-13T17:39:59.133Z"
+  },
+  {
+    "user_id": 201952,
+    "login": "lbrahim",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 1884,
+    "rank": 41,
+    "updated_at": "2025-12-08T13:08:12.573Z"
+  },
+  {
+    "user_id": 201752,
+    "login": "asaracut",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 1354,
+    "rank": 48,
+    "updated_at": "2025-12-08T02:46:11.161Z"
+  },
+  {
+    "user_id": 201690,
+    "login": "mwattier",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 3967,
+    "rank": 23,
+    "updated_at": "2025-12-06T17:42:09.926Z"
+  },
+  {
+    "user_id": 192034,
+    "login": "rodebacq",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 399,
+    "rank": 85,
+    "updated_at": "2025-12-06T15:39:41.223Z"
+  },
+  {
+    "user_id": 192041,
+    "login": "rodantec",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 114,
+    "rank": 111,
+    "updated_at": "2025-11-21T13:38:06.615Z"
+  },
+  {
+    "user_id": 178312,
+    "login": "isadbaib",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 73,
+    "rank": 116,
+    "updated_at": "2025-12-05T16:38:14.521Z"
+  },
+  {
+    "user_id": 201682,
+    "login": "pyarova",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 63,
+    "rank": 117,
+    "updated_at": "2025-12-08T11:56:40.978Z"
+  },
+  {
+    "user_id": 201643,
+    "login": "cdedessu",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 3107,
+    "rank": 30,
+    "updated_at": "2025-12-08T15:24:30.916Z"
+  },
+  {
+    "user_id": 201696,
+    "login": "jmaizel",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 10360,
+    "rank": 12,
+    "updated_at": "2025-12-03T09:48:43.118Z"
+  },
+  {
+    "user_id": 201658,
+    "login": "evan-dro",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 3452,
+    "rank": 27,
+    "updated_at": "2025-12-08T14:01:51.128Z"
+  },
+  {
+    "user_id": 178125,
+    "login": "slangero",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 19,
+    "rank": 121,
+    "updated_at": "2025-11-21T20:05:15.866Z"
+  },
+  {
+    "user_id": 165412,
+    "login": "ahamza",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 76,
+    "rank": 114,
+    "updated_at": "2025-12-08T13:13:51.947Z"
+  },
+  {
+    "user_id": 178349,
+    "login": "alama",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 4526,
+    "rank": 19,
+    "updated_at": "2025-12-07T21:46:42.815Z"
+  },
+  {
+    "user_id": 178135,
+    "login": "fimazouz",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 380,
+    "rank": 86,
+    "updated_at": "2025-11-06T14:04:12.289Z"
+  },
+  {
+    "user_id": 178048,
+    "login": "afocant",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 456,
+    "rank": 81,
+    "updated_at": "2025-12-08T12:01:59.536Z"
+  },
+  {
+    "user_id": 178089,
+    "login": "eschmitz",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 11778,
+    "rank": 8,
+    "updated_at": "2025-12-05T15:48:11.595Z"
+  },
+  {
+    "user_id": 178030,
+    "login": "vpelc",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 114,
+    "rank": 111,
+    "updated_at": "2025-11-27T11:26:50.356Z"
+  },
+  {
+    "user_id": 178210,
+    "login": "meskrabe",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 19,
+    "rank": 121,
+    "updated_at": "2025-12-03T15:32:24.721Z"
+  },
+  {
+    "user_id": 168965,
+    "login": "dzapata",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 9041,
+    "rank": 15,
+    "updated_at": "2025-11-23T23:21:17.739Z"
+  },
+  {
+    "user_id": 178047,
+    "login": "marlonco",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 612,
+    "rank": 70,
+    "updated_at": "2025-12-08T15:22:46.785Z"
+  },
+  {
+    "user_id": 159819,
+    "login": "lboumahd",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 4062,
+    "rank": 21,
+    "updated_at": "2025-12-08T14:45:25.703Z"
+  },
+  {
+    "user_id": 159698,
+    "login": "aderison",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 9155,
+    "rank": 14,
+    "updated_at": "2025-12-08T14:42:11.238Z"
+  },
+  {
+    "user_id": 159662,
+    "login": "abolor-e",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 3815,
+    "rank": 24,
+    "updated_at": "2025-12-08T14:17:19.535Z"
+  },
+  {
+    "user_id": 159726,
+    "login": "lvodak",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 769,
+    "rank": 65,
+    "updated_at": "2025-12-07T17:16:39.566Z"
+  },
+  {
+    "user_id": 159830,
+    "login": "gfinet",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 13027,
+    "rank": 5,
+    "updated_at": "2025-12-06T18:42:53.501Z"
+  },
+  {
+    "user_id": 159625,
+    "login": "jrichir",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 8219,
+    "rank": 17,
+    "updated_at": "2025-12-08T13:55:01.444Z"
+  },
+  {
+    "user_id": 159681,
+    "login": "ekina",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 8732,
+    "rank": 16,
+    "updated_at": "2025-12-05T14:55:13.217Z"
+  },
+  {
+    "user_id": 159890,
+    "login": "sabansac",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 3343,
+    "rank": 28,
+    "updated_at": "2025-12-08T08:52:44.698Z"
+  },
+  {
+    "user_id": 165384,
+    "login": "gdelvign",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 19,
+    "rank": 121,
+    "updated_at": "2025-12-02T19:39:33.999Z"
+  },
+  {
+    "user_id": 165221,
+    "login": "gdero",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 9273,
+    "rank": 13,
+    "updated_at": "2025-12-08T15:07:50.082Z"
+  },
+  {
+    "user_id": 165223,
+    "login": "ade-beco",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 2632,
+    "rank": 33,
+    "updated_at": "2025-12-05T18:27:41.759Z"
+  },
+  {
+    "user_id": 165325,
+    "login": "npremont",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 11704,
+    "rank": 9,
+    "updated_at": "2025-12-04T13:36:44.511Z"
+  },
+  {
+    "user_id": 165401,
+    "login": "jveirman",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 11989,
+    "rank": 7,
+    "updated_at": "2025-12-04T13:51:10.989Z"
+  },
+  {
+    "user_id": 165391,
+    "login": "gcools",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 11609,
+    "rank": 10,
+    "updated_at": "2025-12-04T13:18:40.463Z"
+  },
+  {
+    "user_id": 165390,
+    "login": "kederhet",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 19870,
+    "rank": 3,
+    "updated_at": "2025-12-04T12:50:40.359Z"
+  },
+  {
+    "user_id": 144554,
+    "login": "gde-win",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 551,
+    "rank": 75,
+    "updated_at": "2025-12-05T15:20:41.966Z"
+  },
+  {
+    "user_id": 145310,
+    "login": "brminner",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 245,
+    "rank": 96,
+    "updated_at": "2025-12-05T23:30:12.059Z"
+  },
+  {
+    "user_id": 144502,
+    "login": "jgasparo",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 171,
+    "rank": 108,
+    "updated_at": "2025-12-06T03:03:38.374Z"
+  },
+  {
+    "user_id": 145263,
+    "login": "grorban",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 551,
+    "rank": 75,
+    "updated_at": "2025-12-05T18:44:46.353Z"
+  },
+  {
+    "user_id": 144506,
+    "login": "wkhattab",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 273,
+    "rank": 93,
+    "updated_at": "2025-12-05T18:40:45.006Z"
+  },
+  {
+    "user_id": 145229,
+    "login": "hubrygo",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 984,
+    "rank": 57,
+    "updated_at": "2025-12-08T12:50:15.734Z"
+  },
+  {
+    "user_id": 144550,
+    "login": "kdegryse",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 1,
+    "rank": 125,
+    "updated_at": "2025-11-06T15:03:59.656Z"
+  },
+  {
+    "user_id": 145801,
+    "login": "dhoppenb",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 424,
+    "rank": 82,
+    "updated_at": "2025-12-08T15:37:48.353Z"
+  },
+  {
+    "user_id": 109132,
+    "login": "cycollar",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 513,
+    "rank": 77,
+    "updated_at": "2025-12-04T12:51:11.774Z"
+  },
+  {
+    "user_id": 97369,
+    "login": "gscarama",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 12088,
+    "rank": 6,
+    "updated_at": "2025-12-02T17:35:47.716Z"
+  },
+  {
+    "user_id": 101771,
+    "login": "dduraku",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 20397,
+    "rank": 1,
+    "updated_at": "2025-12-08T10:46:12.177Z"
+  },
+  {
+    "user_id": 101863,
+    "login": "romvan-d",
+    "campus_id": 12,
+    "campus_name": "Belgium",
+    "coalition_id": 54,
+    "score": 19950,
+    "rank": 2,
+    "updated_at": "2025-10-28T13:59:19.392Z"
+  }
+]

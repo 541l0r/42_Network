@@ -1,0 +1,3462 @@
+[
+  {
+    "id": 575,
+    "name": "Slytherin",
+    "slug": "slytherin",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/575/slytherin.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/575/slytherin.png",
+    "color": "#00cc00",
+    "score": 1618,
+    "user_id": 175934
+  },
+  {
+    "id": 574,
+    "name": "Ravenclaw",
+    "slug": "ravenclaw",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/574/ravenclaw.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/574/ravenclaw.png",
+    "color": "#0080cc",
+    "score": 1658,
+    "user_id": 197907
+  },
+  {
+    "id": 573,
+    "name": "Hufflepuff",
+    "slug": "hufflepuff",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/573/hufflepuff.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/573/hufflepuff.png",
+    "color": "#ffaa00",
+    "score": 1488,
+    "user_id": 191820
+  },
+  {
+    "id": 572,
+    "name": "Gryffindor",
+    "slug": "gryffindor",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/572/gryffindor.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/572/gryffindor.png",
+    "color": "#ff0000",
+    "score": 1758,
+    "user_id": 175539
+  },
+  {
+    "id": 571,
+    "name": "Wolf",
+    "slug": "c-piscine-al-ain-wolf",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/571/wolf.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/571/Wolf_Bg.jpg",
+    "color": "#6419F5",
+    "score": 0,
+    "user_id": 149842
+  },
+  {
+    "id": 570,
+    "name": "Oryx",
+    "slug": "c-piscine-al-ain-oryx",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/570/Oryx.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/570/Oryx_Bg.jpg",
+    "color": "#323232",
+    "score": 0,
+    "user_id": 177451
+  },
+  {
+    "id": 569,
+    "name": "Leopard",
+    "slug": "c-piscine-al-ain-leopard",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/569/Leopard.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/569/Leapard_Bg.jpg",
+    "color": "#00ebff",
+    "score": 0,
+    "user_id": 185441
+  },
+  {
+    "id": 568,
+    "name": "Falcon",
+    "slug": "c-piscine-al-ain-falcon",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/568/Falcon.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/568/Falcon_Bg.jpg",
+    "color": "#FF463C",
+    "score": 0,
+    "user_id": 128315
+  },
+  {
+    "id": 567,
+    "name": "Programs",
+    "slug": "programs",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/567/programs.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/567/-hLAxJLD8EgRq_pmk1H-H4EyEpq3omMtut-n8ojSoVw_Large.jpeg",
+    "color": "#51f5ff",
+    "score": 0,
+    "user_id": 203151
+  },
+  {
+    "id": 566,
+    "name": "Skynet",
+    "slug": "skynet",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/566/skynet.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/566/terminator-dark-fate-alex-ichim-3_Large.jpeg",
+    "color": "#d20027",
+    "score": 0,
+    "user_id": 153388
+  },
+  {
+    "id": 563,
+    "name": "Wolf",
+    "slug": "c-piscine-abu-dhabi-wolf",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/563/wolf.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/563/Wolf_Bg.jpg",
+    "color": "#6419F5",
+    "score": 0,
+    "user_id": 75341
+  },
+  {
+    "id": 562,
+    "name": "Oryx",
+    "slug": "c-piscine-abu-dhabi-oryx",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/562/Oryx.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/562/Oryx_Bg.jpg",
+    "color": "#323232",
+    "score": 0,
+    "user_id": 82525
+  },
+  {
+    "id": 561,
+    "name": "Leopard",
+    "slug": "c-piscine-abu-dhabi-leopard",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/561/Leopard.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/561/Leapard_Bg.jpg",
+    "color": "#00ebff",
+    "score": 0,
+    "user_id": 103489
+  },
+  {
+    "id": 560,
+    "name": "Falcon",
+    "slug": "c-piscine-abu-dhabi-falcon",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/560/Falcon.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/560/Falcon_Bg.jpg",
+    "color": "#FF463C",
+    "score": 0,
+    "user_id": 88149
+  },
+  {
+    "id": 558,
+    "name": "Royaume de la Terre",
+    "slug": "earth-kingdom",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/558/3__3_.svg",
+    "cover_url": null,
+    "color": "#1A936F",
+    "score": 10959,
+    "user_id": 95895
+  },
+  {
+    "id": 557,
+    "name": "Tatooine",
+    "slug": "three",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/557/chocobo.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/557/image.jpg",
+    "color": "#8f00ff",
+    "score": 0,
+    "user_id": 193590
+  },
+  {
+    "id": 556,
+    "name": "Volans",
+    "slug": "volans",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/556/Volans.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/556/Fondo_Corvus__2_.jpg",
+    "color": "#e65123",
+    "score": 93625,
+    "user_id": 218646
+  },
+  {
+    "id": 555,
+    "name": "Corvus",
+    "slug": "corvus",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/555/Corvus__2_.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/555/Fondo_Corvus__3_.jpg",
+    "color": "#d087ab",
+    "score": 82908,
+    "user_id": 208034
+  },
+  {
+    "id": 553,
+    "name": "Cassiopeia",
+    "slug": "cassiopeia",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/553/Cassiopeia__2_.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/553/Fondo_cassiopeia__1_.jpg",
+    "color": "#4993EA",
+    "score": 114664,
+    "user_id": 228814
+  },
+  {
+    "id": 552,
+    "name": "Westeros",
+    "slug": "two",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/552/federation.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/552/A_digital_vector_graphic_background_features_a_low_compressed.jpg",
+    "color": "#C06C00",
+    "score": 2820,
+    "user_id": 172834
+  },
+  {
+    "id": 551,
+    "name": "Metropolis",
+    "slug": "one",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/551/assembly.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/551/A_digital_vector_graphic_showcases_an_abstract_low_compressed.jpg",
+    "color": "#382FC0",
+    "score": 4819,
+    "user_id": 100242
+  },
+  {
+    "id": 550,
+    "name": "Máni",
+    "slug": "mani",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/550/mani.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/550/bannière_mani_Plan_de_travail_1-01.png",
+    "color": "#ACACAE",
+    "score": 52746,
+    "user_id": 149190
+  },
+  {
+    "id": 549,
+    "name": "Sól",
+    "slug": "sol",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/549/sol2.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/549/bannière_sol_Plan_de_travail_1-01__1_.png",
+    "color": "#E07101",
+    "score": 51541,
+    "user_id": 137442
+  },
+  {
+    "id": 548,
+    "name": "Seals",
+    "slug": "seals",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/548/Seal__1_.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/548/gold_background.jpg",
+    "color": "#fcd451",
+    "score": 3008,
+    "user_id": 171774
+  },
+  {
+    "id": 546,
+    "name": "Sharks",
+    "slug": "discovery-piscine-core-python-programming-adelaide-sharks",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/546/Shark__2_.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/546/purple_background.jpg",
+    "color": "#bf19d7",
+    "score": 2198,
+    "user_id": 171774
+  },
+  {
+    "id": 544,
+    "name": "Penguins",
+    "slug": "discovery-piscine-core-python-programming-adelaide-penguins",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/544/Penguin__1_.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/544/orange_background.jpg",
+    "color": "#e47e51",
+    "score": 486,
+    "user_id": 183969
+  },
+  {
+    "id": 543,
+    "name": "Dolphins",
+    "slug": "discovery-piscine-core-python-programming-adelaide-dolphins",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/543/Dolphin__1_.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/543/cosmos_background.jpg",
+    "color": "#00babc",
+    "score": 2530,
+    "user_id": 183969
+  },
+  {
+    "id": 520,
+    "name": "Logic League",
+    "slug": "42cursus-lisboa-logic-league",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/520/Logic_League.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/520/logic_league__1_.png",
+    "color": "#a7a22d",
+    "score": 261488,
+    "user_id": 198136
+  },
+  {
+    "id": 519,
+    "name": "Logic League",
+    "slug": "logic-league",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/519/Logic_League.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/519/logic_league__1_.png",
+    "color": "#a7a22d",
+    "score": 240488,
+    "user_id": 184525
+  },
+  {
+    "id": 518,
+    "name": "Hacktivists",
+    "slug": "42cursus-lisboa-hacktivists",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/518/Hacktivists-.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/518/Hacktivists__1_.png",
+    "color": "#7a746c",
+    "score": 172539,
+    "user_id": 204629
+  },
+  {
+    "id": 517,
+    "name": "Hacktivists",
+    "slug": "hacktivists",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/517/Hacktivists-.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/517/Hacktivists__1_.png",
+    "color": "#7a746c",
+    "score": 227821,
+    "user_id": 113352
+  },
+  {
+    "id": 516,
+    "name": "Code Alliance",
+    "slug": "42cursus-porto-code-alliance",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/516/Code_Alliance.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/516/code_alliance__1_.png",
+    "color": "#148c70",
+    "score": 239964,
+    "user_id": 227039
+  },
+  {
+    "id": 515,
+    "name": "Code Alliance",
+    "slug": "code-alliance",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/515/Code_Alliance.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/515/code_alliance__1_.png",
+    "color": "#148c70",
+    "score": 188659,
+    "user_id": 175662
+  },
+  {
+    "id": 514,
+    "name": "Bug Busters",
+    "slug": "42cursus-porto-bug-busters",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/514/Bug_Busters.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/514/Novo_Projeto__1_.png",
+    "color": "#a9181c",
+    "score": 163816,
+    "user_id": 173278
+  },
+  {
+    "id": 513,
+    "name": "Bug Busters",
+    "slug": "42cursus-lisboa-bug-busters",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/513/Bug_Busters.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/513/Novo_Projeto__1_.png",
+    "color": "#a9181c",
+    "score": 121729,
+    "user_id": 209790
+  },
+  {
+    "id": 511,
+    "name": "The Alliance",
+    "slug": "42senior-paris-the-alliance",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/511/alliance.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/511/alliance_background.jpg",
+    "color": "#33C47F",
+    "score": 179384,
+    "user_id": 89556
+  },
+  {
+    "id": 510,
+    "name": "The Order",
+    "slug": "42senior-paris-the-order",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/510/order.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/510/order_background.jpg",
+    "color": "#FF6950",
+    "score": 1522,
+    "user_id": 171480
+  },
+  {
+    "id": 509,
+    "name": "The Assembly",
+    "slug": "42senior-paris-the-assembly",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/509/assembly.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/509/assembly_background.jpg",
+    "color": "#A061D1",
+    "score": 2372,
+    "user_id": 99888
+  },
+  {
+    "id": 508,
+    "name": "The Federation",
+    "slug": "42senior-paris-the-federation",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/508/federation.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/508/federation_background.jpg",
+    "color": "#4180DB",
+    "score": 178713,
+    "user_id": 155558
+  },
+  {
+    "id": 507,
+    "name": "Pandora",
+    "slug": "42cursus-rabat-pandora",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/507/Pandora.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/507/Pandora.png",
+    "color": "#b61282",
+    "score": 62680,
+    "user_id": 233927
+  },
+  {
+    "id": 506,
+    "name": "Freax",
+    "slug": "42cursus-rabat-freax",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/506/Frame.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/506/Freax.png",
+    "color": "#f5bc39",
+    "score": 81775,
+    "user_id": 192558
+  },
+  {
+    "id": 505,
+    "name": "Commodor",
+    "slug": "commodor",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/505/Commodor.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/505/Commodor.png",
+    "color": "#006B00",
+    "score": 78327,
+    "user_id": 195561
+  },
+  {
+    "id": 504,
+    "name": "BIOS",
+    "slug": "42cursus-rabat-bios",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/504/LBIOS.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/504/Frame_5.png",
+    "color": "#45B8AC",
+    "score": 55129,
+    "user_id": 195504
+  },
+  {
+    "id": 499,
+    "name": "Nation du Feu",
+    "slug": "fire-nation",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/499/1__3_.svg",
+    "cover_url": null,
+    "color": "#931A3E",
+    "score": 9979,
+    "user_id": 229880
+  },
+  {
+    "id": 498,
+    "name": "Tribus de l'Eau",
+    "slug": "water-tribes",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/498/2__3_.svg",
+    "cover_url": null,
+    "color": "#1A3E93",
+    "score": 12305,
+    "user_id": 208584
+  },
+  {
+    "id": 482,
+    "name": "Fénix Dourada",
+    "slug": "fenix-dourada",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/482/LOGO_FENIX_Aƒ.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/482/Fénix_Dou.jpg",
+    "color": "\t#ff7400",
+    "score": 130466,
+    "user_id": 186822
+  },
+  {
+    "id": 481,
+    "name": "AEGIS",
+    "slug": "aegis",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/481/LOGO_AEGIS_Aƒ.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/481/BG_AEGIS.jpg",
+    "color": "\t#00c2c7",
+    "score": 137216,
+    "user_id": 154076
+  },
+  {
+    "id": 480,
+    "name": "Solaris",
+    "slug": "solaris",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/480/LOGO_SOLARIS_Aƒ.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/480/1.jpg",
+    "color": "#ffc425",
+    "score": 130063,
+    "user_id": 154078
+  },
+  {
+    "id": 479,
+    "name": "R2-D2",
+    "slug": "r2-d2",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/479/R2D2.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/479/R2D2_BACKGROUND_1.png",
+    "color": "#ff0a47",
+    "score": 75433,
+    "user_id": 177177
+  },
+  {
+    "id": 478,
+    "name": "TARS",
+    "slug": "42cursus-beirut-tars",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/478/TARS.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/478/TARS_BACKGROUND.png",
+    "color": "#12ff83",
+    "score": 79893,
+    "user_id": 177177
+  },
+  {
+    "id": 476,
+    "name": "C-3PO",
+    "slug": "42cursus-beirut-test",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/476/C3PO.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/476/c3po_test_1.png",
+    "color": "#7073ff",
+    "score": 50431,
+    "user_id": 177177
+  },
+  {
+    "id": 471,
+    "name": "Atreides",
+    "slug": "atrreides",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/471/atrreides.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/471/Atrreides.jpg",
+    "color": " #1ba211",
+    "score": 44835,
+    "user_id": 170425
+  },
+  {
+    "id": 470,
+    "name": "Akatsuki",
+    "slug": "akatsuki",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/470/Akatsuki-Logo.svg",
+    "cover_url": null,
+    "color": "#aa130f",
+    "score": 0,
+    "user_id": 137442
+  },
+  {
+    "id": 469,
+    "name": "Shinobi",
+    "slug": "shinobi",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/469/Allied_Shinobi_Forces_Symbol.svg",
+    "cover_url": null,
+    "color": "#787b7d",
+    "score": 0,
+    "user_id": 137442
+  },
+  {
+    "id": 468,
+    "name": "Corrino",
+    "slug": "corrino",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/468/corrino.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/468/Corrino.jpg",
+    "color": "#ffae13",
+    "score": 35003,
+    "user_id": 111359
+  },
+  {
+    "id": 467,
+    "name": "Harkonnen",
+    "slug": "42cursus-luxembourg-harkonnen",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/467/harkonnen.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/467/Harkonnen.jpg",
+    "color": "#6f50fb",
+    "score": 47816,
+    "user_id": 114942
+  },
+  {
+    "id": 465,
+    "name": "AMPANJAKA",
+    "slug": "e",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/465/infinite-spinner.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/465/dark_background.jpg",
+    "color": "#000000",
+    "score": 63420,
+    "user_id": 167548
+  },
+  {
+    "id": 464,
+    "name": "PILY",
+    "slug": "d",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/464/Pily_1.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/464/dark_background.jpg",
+    "color": "#ce4458",
+    "score": 104467,
+    "user_id": 173700
+  },
+  {
+    "id": 463,
+    "name": "DARAFIFY",
+    "slug": "c",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/463/Darafify_1.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/463/dark_background.jpg",
+    "color": "#efbf4d",
+    "score": 123502,
+    "user_id": 168301
+  },
+  {
+    "id": 462,
+    "name": "SONGOMBY",
+    "slug": "b",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/462/Songomby_1.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/462/dark_background.jpg",
+    "color": "#4157a2",
+    "score": 128809,
+    "user_id": 193891
+  },
+  {
+    "id": 461,
+    "name": "BOBEL",
+    "slug": "42cursus-antananarivo-a",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/461/Bobel_1.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/461/dark_background.jpg",
+    "color": "#74bb83",
+    "score": 90632,
+    "user_id": 157396
+  },
+  {
+    "id": 460,
+    "name": "Uniterrax",
+    "slug": "uniterrax",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/460/Logo_UNITERRAX.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/460/uniterrax_right_size3.jpg",
+    "color": "#FFCD5A",
+    "score": 56748,
+    "user_id": 172593
+  },
+  {
+    "id": 459,
+    "name": "Lunaria",
+    "slug": "lunaria",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/459/Logo_LUNARIA.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/459/lunaria_right_size.jpg",
+    "color": "#52BDFF",
+    "score": 52126,
+    "user_id": 195564
+  },
+  {
+    "id": 458,
+    "name": "Orionis",
+    "slug": "orionis",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/458/Logo_ORIONIS.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/458/orionis_right_size.jpg",
+    "color": "#BE2AD1",
+    "score": 60728,
+    "user_id": 170715
+  },
+  {
+    "id": 457,
+    "name": "Gyeoul",
+    "slug": "gyeoul",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/457/gyeoul_snowflake.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/457/gyeoul_background.jpg",
+    "color": "#d7dcfc",
+    "score": 4458,
+    "user_id": 171427
+  },
+  {
+    "id": 456,
+    "name": "Gaeul",
+    "slug": "gaeul",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/456/gaeul_maple.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/456/gaeul_background.jpg",
+    "color": "#fe8d20",
+    "score": 2221,
+    "user_id": 171430
+  },
+  {
+    "id": 455,
+    "name": "Yeoreum",
+    "slug": "yeo-reum",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/455/yeoreum_sun.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/455/yeoreum_background.jpg",
+    "color": "#006d89",
+    "score": 4920,
+    "user_id": 166796
+  },
+  {
+    "id": 454,
+    "name": "Bom",
+    "slug": "bom",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/454/bom_clover.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/454/bom_background_.jpg",
+    "color": "#add082",
+    "score": 2148,
+    "user_id": 171431
+  },
+  {
+    "id": 452,
+    "name": "Ubuntu Mavericks",
+    "slug": "tars",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/452/UBUNTU.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/452/Ubuntu_1_SMALL.png",
+    "color": "#ffa367",
+    "score": 0,
+    "user_id": 177177
+  },
+  {
+    "id": 450,
+    "name": "Wolf",
+    "slug": "wolf",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/450/42AD_Houses_WOLF_Logo_w_slogan_Transparent.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/450/Artboard_28-100_Large.jpg",
+    "color": "#6419F5",
+    "score": 382771,
+    "user_id": 103490
+  },
+  {
+    "id": 449,
+    "name": "Leopard",
+    "slug": "leopard",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/449/Asset_1.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/449/Artboard_27-100_Large.jpg",
+    "color": "#00ebff",
+    "score": 403811,
+    "user_id": 82525
+  },
+  {
+    "id": 448,
+    "name": "Oryx",
+    "slug": "oryx",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/448/42AD_Houses_ORYX_Logo_w_slogan_Transparent.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/448/Interanet-ppt-bg-01s__1_.jpg",
+    "color": "#323232",
+    "score": 402813,
+    "user_id": 131004
+  },
+  {
+    "id": 447,
+    "name": "Falcon",
+    "slug": "falcon",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/447/42AD_Houses_FALCON_Logo_w_slogan_Transparent.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/447/Interanet-ppt-bg-03s.jpg",
+    "color": "#FF463C",
+    "score": 496169,
+    "user_id": 135817
+  },
+  {
+    "id": 446,
+    "name": "Arch Reapers",
+    "slug": "testcoalition",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/446/ARCHLINUX.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/446/Archlinux_1_SMALL.png",
+    "color": "#1cb3ff",
+    "score": 42,
+    "user_id": 206409
+  },
+  {
+    "id": 431,
+    "name": "hunter",
+    "slug": "hunter",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/431/hunter.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/431/hunter_background.png",
+    "color": "#006747",
+    "score": 0,
+    "user_id": 80355
+  },
+  {
+    "id": 430,
+    "name": "sorcerer",
+    "slug": "sorcerer",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/430/socerer.svg",
+    "cover_url": null,
+    "color": "#4ABFE3",
+    "score": 0,
+    "user_id": 80355
+  },
+  {
+    "id": 424,
+    "name": "Stack",
+    "slug": "c-piscine-antananarivo-stack",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/424/federation.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/424/order_background.jpg",
+    "color": "#FF6950",
+    "score": 95106,
+    "user_id": 168301
+  },
+  {
+    "id": 423,
+    "name": "Heap",
+    "slug": "c-piscine-antananarivo-heap",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/423/order.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/423/federation_background.jpg",
+    "color": "#4280DB",
+    "score": 95577,
+    "user_id": 167548
+  },
+  {
+    "id": 422,
+    "name": "Tinkerers",
+    "slug": "42cursus-london-tinkerers",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/422/gear.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/422/steampunk_cover.jpg",
+    "color": "#FFBF58",
+    "score": 72785,
+    "user_id": 167390
+  },
+  {
+    "id": 421,
+    "name": "Netrunners",
+    "slug": "42cursus-london-netrunners",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/421/chip.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/421/cyberpunk_cover.jpeg",
+    "color": "#EB6AB5",
+    "score": 54329,
+    "user_id": 167322
+  },
+  {
+    "id": 420,
+    "name": "Raytracers",
+    "slug": "42cursus-london-raytracers",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/420/raytracers.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/420/raytracers_cover.jpg",
+    "color": "#49E777",
+    "score": 87153,
+    "user_id": 146228
+  },
+  {
+    "id": 405,
+    "name": "Asgard",
+    "slug": "asgard",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/405/ASGARD_Coalition_Logo_42Singapore.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/405/asgard.jpg",
+    "color": "#f2c032",
+    "score": 102664,
+    "user_id": 203151
+  },
+  {
+    "id": 404,
+    "name": "Coruscant",
+    "slug": "coruscant",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/404/CORUSCANT_Coalition_Logo_42Singapore.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/404/coruscant.jpg",
+    "color": "#1346A5",
+    "score": 23905,
+    "user_id": 153388
+  },
+  {
+    "id": 403,
+    "name": "Arrakis",
+    "slug": "arrakis",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/403/ARRAKIS_Coalition_Logo_42Singapore__1_.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/403/arrakis.jpg",
+    "color": "#f12c19",
+    "score": 14859,
+    "user_id": 210065
+  },
+  {
+    "id": 401,
+    "name": "Zefiria",
+    "slug": "zefiria",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/401/42madrid_coaliciones_logos-08.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/401/01.jpg",
+    "color": "#E39F0B",
+    "score": 677830,
+    "user_id": 154300
+  },
+  {
+    "id": 400,
+    "name": "Marventis",
+    "slug": "marventis",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/400/42madrid_coaliciones_marventis.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/400/03.jpg",
+    "color": "#1B5971",
+    "score": 667500,
+    "user_id": 108700
+  },
+  {
+    "id": 399,
+    "name": "Tiamant",
+    "slug": "tiamant",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/399/42madrid_coaliciones_logos-07.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/399/02.jpg",
+    "color": "#9FC131",
+    "score": 698364,
+    "user_id": 228814
+  },
+  {
+    "id": 398,
+    "name": "Ignisaria",
+    "slug": "ignisaria",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/398/42madrid_coaliciones_ignisaria.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/398/04.jpg",
+    "color": "#C2301D",
+    "score": 566193,
+    "user_id": 99575
+  },
+  {
+    "id": 397,
+    "name": "Les Poissons blob",
+    "slug": "les-poissons-blob",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/397/blobfishes.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/397/blobfishes-background.jpeg",
+    "color": "#82cce0",
+    "score": 3359,
+    "user_id": 113569
+  },
+  {
+    "id": 396,
+    "name": "Les Mouffettes",
+    "slug": "les-mouffettes",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/396/skunks.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/396/skunk_background.jpeg",
+    "color": "#6c8946",
+    "score": 4257,
+    "user_id": 55127
+  },
+  {
+    "id": 387,
+    "name": "Nostromo",
+    "slug": "42-zip-urduliz-nostromo",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/387/nostromo_final.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/387/nostromo_wallpaper.jpeg",
+    "color": "#9E28E2",
+    "score": 10090,
+    "user_id": 147859
+  },
+  {
+    "id": 386,
+    "name": "Magrathea",
+    "slug": "42-zip-urduliz-magrathea",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/386/magrathea_final.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/386/magrathea_wallpaper.jpg",
+    "color": "#E3AA40",
+    "score": 30310,
+    "user_id": 88012
+  },
+  {
+    "id": 385,
+    "name": "Nautilus",
+    "slug": "42-zip-urduliz-nautilus",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/385/nautilus_final.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/385/nautilus_wallpaper.jpg",
+    "color": "#41CACC",
+    "score": 11169,
+    "user_id": 87098
+  },
+  {
+    "id": 384,
+    "name": "Arctos",
+    "slug": "arctos",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/384/arctos__6_.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/384/Banner-arctos-2.jpg",
+    "color": "#4F9DB2",
+    "score": 268993,
+    "user_id": 113940
+  },
+  {
+    "id": 383,
+    "name": "Melursus",
+    "slug": "melursus",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/383/Melursus-icon1-01.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/383/Banner-Melursos-dark-4.jpg",
+    "color": "#F49490",
+    "score": 260181,
+    "user_id": 176923
+  },
+  {
+    "id": 382,
+    "name": "Fulgens",
+    "slug": "fulgens",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/382/flugens-icon1.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/382/Banner_Fulgens__1_.png",
+    "color": "#67B855",
+    "score": 173243,
+    "user_id": 183936
+  },
+  {
+    "id": 381,
+    "name": "Moomins",
+    "slug": "moomins",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/381/moomin.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/381/Screenshot_2023-07-29_at_01.38.46.png",
+    "color": "#C3E9E0",
+    "score": 14237,
+    "user_id": 221196
+  },
+  {
+    "id": 380,
+    "name": "Shadoks",
+    "slug": "the-shadoks",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/380/shadok.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/380/Screenshot_2023-07-29_at_01.42.26.png",
+    "color": "#EB943C",
+    "score": 10707,
+    "user_id": 221195
+  },
+  {
+    "id": 378,
+    "name": "Snorks",
+    "slug": "snorks",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/378/snorky.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/378/Screenshot_2023-07-29_at_01.47.07.png",
+    "color": "#975183",
+    "score": 14391,
+    "user_id": 218411
+  },
+  {
+    "id": 377,
+    "name": "La Stack",
+    "slug": "c-piscine-perpignan-la-stack",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/377/stack.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/377/stack_background_2.jpg",
+    "color": "#ffeb5f",
+    "score": 190512,
+    "user_id": 133320
+  },
+  {
+    "id": 376,
+    "name": "La Heap",
+    "slug": "c-piscine-perpignan-la-heap",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/376/Heap.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/376/Heap_background_3_low.jpg",
+    "color": "#ffc5a2",
+    "score": 182322,
+    "user_id": 133320
+  },
+  {
+    "id": 375,
+    "name": "Tintin",
+    "slug": "tintin",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/375/TINTIN_LOGO.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/375/cover_tintin.jpg",
+    "color": "#C3A0FC",
+    "score": 0,
+    "user_id": 96506
+  },
+  {
+    "id": 374,
+    "name": "Astérix",
+    "slug": "asterix",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/374/ASTERIX_LOGO.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/374/cover_asterix.jpg",
+    "color": "#C68D1C",
+    "score": 0,
+    "user_id": 96506
+  },
+  {
+    "id": 366,
+    "name": "Hufflepuff",
+    "slug": "42cursus-istanbul-hufflepuff",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/366/hufflepuff.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/366/Hufflepuff.png",
+    "color": "#ffaa00",
+    "score": 539,
+    "user_id": 191882
+  },
+  {
+    "id": 365,
+    "name": "Slytherin",
+    "slug": "42cursus-istanbul-slytherin",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/365/slytherin.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/365/Slytherin.png",
+    "color": "#00cc00",
+    "score": 805,
+    "user_id": 136451
+  },
+  {
+    "id": 364,
+    "name": "Ravenclaw",
+    "slug": "42cursus-istanbul-ravenclaw",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/364/ravenclaw.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/364/Ravenclaw.png",
+    "color": "#0080cc",
+    "score": 1335,
+    "user_id": 191424
+  },
+  {
+    "id": 363,
+    "name": "Gryffindor",
+    "slug": "42cursus-istanbul-gryffindor",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/363/gryffindor.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/363/Gryffindor.png",
+    "color": "#ff0000",
+    "score": 982,
+    "user_id": 175861
+  },
+  {
+    "id": 362,
+    "name": "Aerys",
+    "slug": "aerys",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/362/Aerys.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/362/aerys.jpg",
+    "color": "#aaaaaa",
+    "score": 1364,
+    "user_id": 198586
+  },
+  {
+    "id": 361,
+    "name": "Terranos",
+    "slug": "terranos",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/361/Terranos.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/361/terranos_HD__5_.jpeg",
+    "color": "#00cc00",
+    "score": 1259,
+    "user_id": 221024
+  },
+  {
+    "id": 360,
+    "name": "Ignatus",
+    "slug": "ignatus",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/360/Ignatus.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/360/ignatus.jpg",
+    "color": "#ff0000",
+    "score": 503,
+    "user_id": 163674
+  },
+  {
+    "id": 359,
+    "name": "Aqualis",
+    "slug": "aqualis",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/359/aqualis.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/359/Aqualis.png",
+    "color": "#00eeee",
+    "score": 679,
+    "user_id": 175432
+  },
+  {
+    "id": 355,
+    "name": "Slow Loris",
+    "slug": "slow-loris",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/355/GeoThick-SlowLoris.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/355/SL_Banner_dark.png",
+    "color": "#af8dff",
+    "score": 23132,
+    "user_id": 170426
+  },
+  {
+    "id": 354,
+    "name": "Fennec Fox",
+    "slug": "fennec-fox",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/354/GeoThick-FennecFox.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/354/FF_Banner_light_darker-14.png",
+    "color": "#ff8b02",
+    "score": 35746,
+    "user_id": 141108
+  },
+  {
+    "id": 353,
+    "name": "Quokka",
+    "slug": "quokka",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/353/GeoThick-Quokka.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/353/Q_Banner_dark.png",
+    "color": "#00CEB1",
+    "score": 31324,
+    "user_id": 110997
+  },
+  {
+    "id": 345,
+    "name": "Curupira",
+    "slug": "curupira",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/345/Coalitions_-_Curupira.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/345/Cover-Curupira.png",
+    "color": "#f4c92f",
+    "score": 0,
+    "user_id": 103318
+  },
+  {
+    "id": 344,
+    "name": "Mula",
+    "slug": "mula",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/344/Coalitions_-_Mula.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/344/Cover-Mula.png",
+    "color": "#15afa7",
+    "score": 0,
+    "user_id": 103318
+  },
+  {
+    "id": 343,
+    "name": "Cuca",
+    "slug": "cuca",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/343/Coalitions_-_Cuca.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/343/Cover-Cuca.png",
+    "color": "#161616",
+    "score": 0,
+    "user_id": 103318
+  },
+  {
+    "id": 342,
+    "name": "Saci",
+    "slug": "saci",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/342/Coalitions_-_Saci.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/342/Cover-Saci.png",
+    "color": "#dbdbdb",
+    "score": 0,
+    "user_id": 103318
+  },
+  {
+    "id": 335,
+    "name": "Analysts",
+    "slug": "analysts",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/335/analysts.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/335/background_login-a4e0666f73c02f025f590b474b394fd86e1cae20e95261a6e4862c2d0faa1b04.jpg",
+    "color": "#20A39E",
+    "score": 574171,
+    "user_id": 95895
+  },
+  {
+    "id": 334,
+    "name": "Technicians",
+    "slug": "technicians",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/334/technicians.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/334/background_login-a4e0666f73c02f025f590b474b394fd86e1cae20e95261a6e4862c2d0faa1b04.jpg",
+    "color": "#FFA91F",
+    "score": 468459,
+    "user_id": 208584
+  },
+  {
+    "id": 333,
+    "name": "Artisans",
+    "slug": "artisans",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/333/artisans.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/333/background_login-a4e0666f73c02f025f590b474b394fd86e1cae20e95261a6e4862c2d0faa1b04.jpg",
+    "color": "#EF5B5B",
+    "score": 895245,
+    "user_id": 89553
+  },
+  {
+    "id": 332,
+    "name": "Odin",
+    "slug": "odin",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/332/Fichier_6odin.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/332/bannière_odin_Plan_de_travail_1-03.png",
+    "color": "#B5163F",
+    "score": 136165,
+    "user_id": 138096
+  },
+  {
+    "id": 331,
+    "name": "Thor",
+    "slug": "thor",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/331/Fichier_5thor.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/331/bannière_thor_Plan_de_travail_1-01.png",
+    "color": "#3A6187",
+    "score": 139985,
+    "user_id": 137661
+  },
+  {
+    "id": 330,
+    "name": "Loki",
+    "slug": "loki",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/330/Fichier_8loki.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/330/Bannière_loki_Plan_de_travail_1-04.png",
+    "color": "#054F4D",
+    "score": 139364,
+    "user_id": 137442
+  },
+  {
+    "id": 329,
+    "name": "Freya",
+    "slug": "freya",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/329/Fichier_7freya.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/329/bannière_freya_Plan_de_travail_1-02.png",
+    "color": "#FFD84B",
+    "score": 153956,
+    "user_id": 149190
+  },
+  {
+    "id": 324,
+    "name": "Sharks",
+    "slug": "sharks",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/324/Shark.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/324/purple_background.jpg",
+    "color": "#bf19d7",
+    "score": 62,
+    "user_id": 93623
+  },
+  {
+    "id": 323,
+    "name": "Dolphins",
+    "slug": "dolphins",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/323/Dolphin_grey.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/323/cosmos_background.jpg",
+    "color": "#00babc",
+    "score": 200,
+    "user_id": 102056
+  },
+  {
+    "id": 322,
+    "name": "Penguins",
+    "slug": "penguins",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/322/Penguin.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/322/orange_background.jpg",
+    "color": "#e47e51",
+    "score": 0,
+    "user_id": 171774
+  },
+  {
+    "id": 319,
+    "name": "Le royaume de la terre",
+    "slug": "le-royaume-de-la-terre",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/319/terre_svg.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/319/Screenshot_2023-02-06_at_16.04.53-min.png",
+    "color": "#49e355",
+    "score": 49111,
+    "user_id": 115920
+  },
+  {
+    "id": 318,
+    "name": "la tribu de l'eau",
+    "slug": "la-tribu-de-l-eau",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/318/eau_svg.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/318/Screenshot_2023-02-06_at_16.04.39-min.png",
+    "color": "#00c3ff",
+    "score": 60688,
+    "user_id": 178737
+  },
+  {
+    "id": 317,
+    "name": "Les nomades de l'air",
+    "slug": "les-nomades-de-l-air",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/317/vent_svg.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/317/Screenshot_2023-02-06_at_16.04.22-min.png",
+    "color": "#b60af0",
+    "score": 55975,
+    "user_id": 111564
+  },
+  {
+    "id": 316,
+    "name": "La légion du feu",
+    "slug": "la-legion-du-feu",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/316/fire_svg.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/316/Screenshot_2023-02-06_at_16.05.09-min.png",
+    "color": "#f00020",
+    "score": 32327,
+    "user_id": 133320
+  },
+  {
+    "id": 314,
+    "name": "Tatooine",
+    "slug": "tatooine",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/314/Icons_for_coalitions_2.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/314/Bg_Tatooine2.jpg",
+    "color": "#e08f4c",
+    "score": 170304,
+    "user_id": 167897
+  },
+  {
+    "id": 313,
+    "name": "Mandalore",
+    "slug": "mandalore",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/313/Icons_for_coalitions_1__1_-svg__1_.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/313/Bg_Mandalore.jpeg",
+    "color": "#9c0505",
+    "score": 80642,
+    "user_id": 131005
+  },
+  {
+    "id": 310,
+    "name": "Wind Blue",
+    "slug": "wind-blue",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/310/icon_wind.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/310/bg_blue_wind.jpg",
+    "color": "#2ca8de",
+    "score": 121054,
+    "user_id": 146829
+  },
+  {
+    "id": 309,
+    "name": "Forest Green",
+    "slug": "forest-green",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/309/icon_forest.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/309/bg_forest_green.jpg",
+    "color": "#34b34a",
+    "score": 109978,
+    "user_id": 68139
+  },
+  {
+    "id": 308,
+    "name": "Fire red",
+    "slug": "fire-red",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/308/icon_fire.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/308/bg_fire_red.jpg",
+    "color": "#d56a36",
+    "score": 95191,
+    "user_id": 59728
+  },
+  {
+    "id": 307,
+    "name": "Mountain Yellow",
+    "slug": "mountain-yellow",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/307/icon_mountain.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/307/bg_mountain_yellow.jpg",
+    "color": "#e3ad03",
+    "score": 127322,
+    "user_id": 77850
+  },
+  {
+    "id": 305,
+    "name": "Water",
+    "slug": "42cursus-lyon-water",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/305/EAU_v3.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/305/téléchargement__2_.png",
+    "color": "#326C9C",
+    "score": 33861,
+    "user_id": 155507
+  },
+  {
+    "id": 304,
+    "name": "Fire",
+    "slug": "42cursus-lyon-fire",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/304/FEU_v3.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/304/image.jpg",
+    "color": "#FFA142",
+    "score": 25074,
+    "user_id": 85364
+  },
+  {
+    "id": 303,
+    "name": "Earth",
+    "slug": "earth",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/303/TERRE_v3.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/303/earth__1_.jpg",
+    "color": "#07CD00",
+    "score": 41589,
+    "user_id": 198997
+  },
+  {
+    "id": 302,
+    "name": "Air",
+    "slug": "air",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/302/AIR_v3.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/302/air__1_.jpg",
+    "color": "#93979B",
+    "score": 30820,
+    "user_id": 215869
+  },
+  {
+    "id": 287,
+    "name": "Alderaan",
+    "slug": "alderaan",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/287/Alderaan_logo.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/287/Alderaan_Bg.jpg",
+    "color": "#ad8f65",
+    "score": 0,
+    "user_id": 131005
+  },
+  {
+    "id": 286,
+    "name": "Naboo",
+    "slug": "naboo",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/286/naboo.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/286/naboo.jpg",
+    "color": "#678DA4",
+    "score": 0,
+    "user_id": 167897
+  },
+  {
+    "id": 285,
+    "name": "Django uncompiled",
+    "slug": "gnocchi",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/285/5.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/285/federation_background.jpg",
+    "color": "#527F65",
+    "score": 19666,
+    "user_id": 111444
+  },
+  {
+    "id": 284,
+    "name": " SIGKILL Bill",
+    "slug": "spaghetti",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/284/4.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/284/federation_background.jpg",
+    "color": "#CE2828",
+    "score": 28464,
+    "user_id": 177846
+  },
+  {
+    "id": 283,
+    "name": "Die Hardware",
+    "slug": "rigatoni",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/283/6.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/283/federation_background.jpg",
+    "color": "#f9b233",
+    "score": 21717,
+    "user_id": 108233
+  },
+  {
+    "id": 282,
+    "name": "Freax",
+    "slug": "freax",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/282/Freax_Artboard_4.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/282/Freax_BG.jpg",
+    "color": "#f5bc39",
+    "score": 240802,
+    "user_id": 104237
+  },
+  {
+    "id": 281,
+    "name": "Commodore",
+    "slug": "band-of-the-falcon",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/281/Commodore_Artboard_3-svg__4_.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/281/Commodore_BG.jpg",
+    "color": "#006B00",
+    "score": 157289,
+    "user_id": 187840
+  },
+  {
+    "id": 279,
+    "name": "Pandora",
+    "slug": "pandora",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/279/Pandora-01.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/279/Pandora_BG.jpg",
+    "color": "#b61282",
+    "score": 219259,
+    "user_id": 113480
+  },
+  {
+    "id": 277,
+    "name": "Bios",
+    "slug": "bios",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/277/Bios-02-svg__2_.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/277/BiosBG.jpg",
+    "color": "#02cdd1",
+    "score": 307975,
+    "user_id": 134647
+  },
+  {
+    "id": 276,
+    "name": "Olympus",
+    "slug": "Olympus",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/276/Icono_Olympus_2__2_.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/276/Olympus__2_.jpg",
+    "color": "#04CBEC",
+    "score": 4923422,
+    "user_id": 212150
+  },
+  {
+    "id": 275,
+    "name": "Void",
+    "slug": "Void",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/275/Icono_Void_2__3_.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/275/VOID__1_.jpg",
+    "color": "#A610FF",
+    "score": 4954125,
+    "user_id": 207120
+  },
+  {
+    "id": 274,
+    "name": "Hades",
+    "slug": "Hades",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/274/Icono_Hades_2__3_.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/274/Hades__2_.jpg",
+    "color": "#FF0021",
+    "score": 4243009,
+    "user_id": 188363
+  },
+  {
+    "id": 273,
+    "name": "The Guards",
+    "slug": "42cursus-helsinki-the-guards",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/273/guards.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/273/lowpoly_white_lila.png",
+    "color": "#C574A8",
+    "score": 90771,
+    "user_id": 167246
+  },
+  {
+    "id": 272,
+    "name": "The Foragers",
+    "slug": "42cursus-helsinki-the-foragers",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/272/foragers.svg",
+    "cover_url": null,
+    "color": "#7FBE80",
+    "score": 77400,
+    "user_id": 215096
+  },
+  {
+    "id": 271,
+    "name": "The Builders",
+    "slug": "42cursus-helsinki-the-builders",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/271/builders.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/271/lowpoly_white_orange.png",
+    "color": "#EE7800",
+    "score": 63946,
+    "user_id": 111464
+  },
+  {
+    "id": 270,
+    "name": "Axolotls",
+    "slug": "axolotls",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/270/axolotl.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/270/axolotl.png",
+    "color": "#f17a86",
+    "score": 5730,
+    "user_id": 229790
+  },
+  {
+    "id": 269,
+    "name": "Otters",
+    "slug": "otters",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/269/otter.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/269/otter__1_.png",
+    "color": "#a48c77",
+    "score": 6048,
+    "user_id": 212170
+  },
+  {
+    "id": 255,
+    "name": "Totoro",
+    "slug": "totoro",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/255/totoro2.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/255/totoro_background.jpg",
+    "color": "#00A881",
+    "score": 182225,
+    "user_id": 132037
+  },
+  {
+    "id": 253,
+    "name": "Dodoco",
+    "slug": "42cursus-vienna-dodoco",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/253/dodoco.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/253/dodoco_banner_11zon.jpg",
+    "color": "#ed123a",
+    "score": 176891,
+    "user_id": 149128
+  },
+  {
+    "id": 252,
+    "name": "Chocobo",
+    "slug": "42cursus-vienna-chocobo",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/252/chocobo.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/252/chocobo_banner.jpg",
+    "color": "#FCA505",
+    "score": 236004,
+    "user_id": 202406
+  },
+  {
+    "id": 251,
+    "name": "Dodoco",
+    "slug": "dodoco",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/251/dodoco.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/251/dodoco_banner_11zon.jpg",
+    "color": "#ed123a",
+    "score": 0,
+    "user_id": 149128
+  },
+  {
+    "id": 250,
+    "name": "Chocobo",
+    "slug": "chocobo",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/250/chocobo.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/250/C_chocobo_banner.jpeg",
+    "color": "#FCA505",
+    "score": 0,
+    "user_id": 187476
+  },
+  {
+    "id": 249,
+    "name": "L'Armada",
+    "slug": "Armada",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/249/42Q_035_22_Logo_Armada.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/249/42Q_035_22_BG_Coalitions_Armada_3000x2000.jpg",
+    "color": "#0B7807",
+    "score": 16617,
+    "user_id": 55127
+  },
+  {
+    "id": 248,
+    "name": "Slytherin",
+    "slug": "c-piscine-kocaeli-slytherin",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/248/slytherin.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/248/triangles-download__1_.png",
+    "color": "#00cc00",
+    "score": 1552,
+    "user_id": 197881
+  },
+  {
+    "id": 247,
+    "name": "Ravenclaw",
+    "slug": "c-piscine-kocaeli-ravenclaw",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/247/ravenclaw.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/247/Ravenclaw.png",
+    "color": "#0080cc",
+    "score": 1305,
+    "user_id": 198586
+  },
+  {
+    "id": 246,
+    "name": "Hufflepuff",
+    "slug": "c-piscine-kocaeli-hufflepuff",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/246/hufflepuff.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/246/triangles-download__4_.png",
+    "color": "#ffaa00",
+    "score": 1967,
+    "user_id": 197846
+  },
+  {
+    "id": 245,
+    "name": "Gryffindor",
+    "slug": "c-piscine-kocaeli-gryffindor",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/245/gryffindor.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/245/Gryffindor.png",
+    "color": "#ff0000",
+    "score": 1611,
+    "user_id": 198603
+  },
+  {
+    "id": 244,
+    "name": "Ravenclaw",
+    "slug": "c-piscine-istanbul-ravenclaw",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/244/ravenclaw.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/244/Ravenclaw.png",
+    "color": "#0080cc",
+    "score": 2880,
+    "user_id": 168564
+  },
+  {
+    "id": 243,
+    "name": "La Légion",
+    "slug": "La_Légion",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/243/42Q_035_22_Logo_Legion.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/243/42Q_035_22_BG_Coalitions_Legion_3000x2000.jpg",
+    "color": "#cc0000",
+    "score": 16786,
+    "user_id": 55127
+  },
+  {
+    "id": 242,
+    "name": "Torrent",
+    "slug": "Torrent",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/242/42Q_035_22_Logo_Torrent.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/242/42Q_035_22_BG_Coalitions_Torrent_3000x2000.jpg",
+    "color": "#1768DE",
+    "score": 15021,
+    "user_id": 55127
+  },
+  {
+    "id": 241,
+    "name": "Les Paresseux",
+    "slug": "dracofeu",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/241/sloths.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/241/sloths_background.jpeg",
+    "color": "#ffa9c6",
+    "score": 3977,
+    "user_id": 157895
+  },
+  {
+    "id": 239,
+    "name": "The Order",
+    "slug": "c-piscine-porto-the-order",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/239/order_logo.svg",
+    "cover_url": null,
+    "color": "#FF6950",
+    "score": 0,
+    "user_id": 227039
+  },
+  {
+    "id": 238,
+    "name": "The Assembly",
+    "slug": "c-piscine-porto-the-assembly",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/238/assembly.svg",
+    "cover_url": null,
+    "color": "#8453B0",
+    "score": 0,
+    "user_id": 229882
+  },
+  {
+    "id": 237,
+    "name": "The Alliance",
+    "slug": "c-piscine-porto-the-alliance",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/237/alliance_logo.svg",
+    "cover_url": null,
+    "color": "#33C47F",
+    "score": 0,
+    "user_id": 232381
+  },
+  {
+    "id": 236,
+    "name": "The Federation",
+    "slug": "c-piscine-porto-the-federation",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/236/federation_logo.svg",
+    "cover_url": null,
+    "color": "#4180DB",
+    "score": 0,
+    "user_id": 232379
+  },
+  {
+    "id": 235,
+    "name": "La heap",
+    "slug": "heap",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/235/heap-logo.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/235/heap-bg-option5.jpg",
+    "color": "#00B333",
+    "score": 9670,
+    "user_id": 89553
+  },
+  {
+    "id": 221,
+    "name": "La stack",
+    "slug": "stack",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/221/stack-logo.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/221/stack-bg-option4.jpg",
+    "color": "#FF1919",
+    "score": 12129,
+    "user_id": 95895
+  },
+  {
+    "id": 220,
+    "name": "Analysts",
+    "slug": "analysts",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/220/The_Analysts_logo_big.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/220/login-screen_15_.jpg",
+    "color": "#4ca3ff",
+    "score": 19404,
+    "user_id": 98669
+  },
+  {
+    "id": 219,
+    "name": "Seekers",
+    "slug": "seekers",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/219/The_Seekers_logo_big.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/219/login-screen.jpg",
+    "color": "#FF6950",
+    "score": 14882,
+    "user_id": 100237
+  },
+  {
+    "id": 218,
+    "name": "Architects",
+    "slug": "architects",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/218/The_Architects_logo_big.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/218/login-screen_14_.jpg",
+    "color": "#33C47F",
+    "score": 9490,
+    "user_id": 96506
+  },
+  {
+    "id": 217,
+    "name": "Seals",
+    "slug": "polaris",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/217/Seal.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/217/gold_background.jpg",
+    "color": "#fcd451",
+    "score": 62,
+    "user_id": 93623
+  },
+  {
+    "id": 216,
+    "name": "Squirtle",
+    "slug": "sonic",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/216/LOGO-SQUIRTLE.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/216/Banners_intra_coaliciones_Squirtle_light.png",
+    "color": "#A9DBEB",
+    "score": 9648,
+    "user_id": 220237
+  },
+  {
+    "id": 215,
+    "name": "Charmander",
+    "slug": "mario",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/215/LOGO-CHARMANDER.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/215/Banners_intra_coaliciones_charmander_light.png",
+    "color": "#FF7214",
+    "score": 13326,
+    "user_id": 176364
+  },
+  {
+    "id": 214,
+    "name": "Segmentation Scorpions",
+    "slug": "segmentation-scorpions",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/214/scorpion-svgrepo-com.svg",
+    "cover_url": null,
+    "color": "#DCAC79",
+    "score": 0,
+    "user_id": 186100
+  },
+  {
+    "id": 213,
+    "name": "Encryption Elephants",
+    "slug": "encryption-elephants",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/213/elephant-frontal-head-outline-svgrepo-com.svg",
+    "cover_url": null,
+    "color": "#B0B7BA",
+    "score": 0,
+    "user_id": 173642
+  },
+  {
+    "id": 212,
+    "name": "Overflow Octopus",
+    "slug": "overflow-octopus",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/212/octopus-svgrepo-com.svg",
+    "cover_url": null,
+    "color": "#923A8F",
+    "score": 0,
+    "user_id": 141294
+  },
+  {
+    "id": 210,
+    "name": "Network Narwhals",
+    "slug": "network-narwhals",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/210/Narwhale_white_final.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/210/retrowaveNarwals-min.png",
+    "color": "#4479E1",
+    "score": 8089,
+    "user_id": 104256
+  },
+  {
+    "id": 209,
+    "name": "Daemon Dragonflies",
+    "slug": "daemon-dragonflies",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/209/Dragonfly_white_final.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/209/retroDragonflies-min.png",
+    "color": "#DB0003",
+    "score": 4935,
+    "user_id": 185591
+  },
+  {
+    "id": 208,
+    "name": "Compile Crocodiles",
+    "slug": "compile-crocodiles",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/208/Crocodile_white_final.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/208/retrowaveCrocodiles-min.png",
+    "color": "#7ABD21",
+    "score": 13091,
+    "user_id": 111695
+  },
+  {
+    "id": 206,
+    "name": "Invaders",
+    "slug": "invaders",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/206/invader_white.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/206/test-2.jpg",
+    "color": "#6fc848",
+    "score": 544680,
+    "user_id": 98734
+  },
+  {
+    "id": 205,
+    "name": "Tetris",
+    "slug": "tetris",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/205/tetris_white.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/205/tetris_banner.jpg",
+    "color": "#6A6AFE",
+    "score": 543562,
+    "user_id": 183781
+  },
+  {
+    "id": 204,
+    "name": "Pac-Man",
+    "slug": "pac-man",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/204/pacman_white.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/204/test.jpg",
+    "color": "#FFB344",
+    "score": 667681,
+    "user_id": 182324
+  },
+  {
+    "id": 202,
+    "name": "The Order",
+    "slug": "42-zip-paris-the-order",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/202/order.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/202/order_background.jpg",
+    "color": "#FF6950",
+    "score": 0,
+    "user_id": 99889
+  },
+  {
+    "id": 201,
+    "name": "The Alliance",
+    "slug": "42-zip-paris-the-alliance",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/201/alliance.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/201/alliance_background.jpg",
+    "color": "#33C47F",
+    "score": 0,
+    "user_id": 101516
+  },
+  {
+    "id": 200,
+    "name": "The Assembly",
+    "slug": "42-zip-paris-the-assembly",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/200/assembly.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/200/assembly_background.jpg",
+    "color": "#A061D1",
+    "score": 0,
+    "user_id": 86363
+  },
+  {
+    "id": 199,
+    "name": "The Federation",
+    "slug": "42-zip-paris-the-federation",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/199/federation.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/199/federation_background.jpg",
+    "color": "#4180DB",
+    "score": 0,
+    "user_id": 34476
+  },
+  {
+    "id": 198,
+    "name": "Slytherin",
+    "slug": "syltherin",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/198/slytherin.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/198/triangles-download__1_.png",
+    "color": "#00cc00",
+    "score": 2409,
+    "user_id": 220941
+  },
+  {
+    "id": 197,
+    "name": "Hufflepuff",
+    "slug": "hufflepuff-5dd95595-0486-41b9-85b4-26ac0cea6913",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/197/hufflepuff.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/197/Hufflepuff.png",
+    "color": "#ffaa00",
+    "score": 3807,
+    "user_id": 175589
+  },
+  {
+    "id": 196,
+    "name": "Gryffindor",
+    "slug": "c-piscine-istanbul-gryffindor",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/196/gryffindor.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/196/Gryffindor.png",
+    "color": "#ff0000",
+    "score": 2417,
+    "user_id": 175451
+  },
+  {
+    "id": 195,
+    "name": "HufflePuff",
+    "slug": "c-piscine-istanbul-hufflepuff",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/195/Katman_0.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/195/abstract-background-284.jpg",
+    "color": "#0110FF",
+    "score": 0,
+    "user_id": 93256
+  },
+  {
+    "id": 193,
+    "name": "House of Processes",
+    "slug": "42cursus-lausanne-house-of-processes",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/193/final-processes-black-12.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/193/celine-back.jpg",
+    "color": "#70AF85",
+    "score": 2468958,
+    "user_id": 177332
+  },
+  {
+    "id": 192,
+    "name": "House of Threads",
+    "slug": "42cursus-lausanne-house-of-threads",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/192/final-threads-black.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/192/jpeg-back5.jpg",
+    "color": "#599ac2",
+    "score": 2612704,
+    "user_id": 177333
+  },
+  {
+    "id": 191,
+    "name": "House of Cores",
+    "slug": "42cursus-lausanne-house-of-cores",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/191/final-cores-black3.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/191/back-intra-cores.jpg",
+    "color": "#B23256",
+    "score": 2483541,
+    "user_id": 180272
+  },
+  {
+    "id": 190,
+    "name": "House of Processes",
+    "slug": "house-of-processes",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/190/final-processes-black-12.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/190/celine-back.jpg",
+    "color": "#70AF85",
+    "score": 0,
+    "user_id": 44922
+  },
+  {
+    "id": 189,
+    "name": "House of Threads",
+    "slug": "house-of-threads",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/189/final-threads-black.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/189/jpeg-back5.jpg",
+    "color": "#528AAE",
+    "score": 0,
+    "user_id": 31461
+  },
+  {
+    "id": 188,
+    "name": "House of Cores",
+    "slug": "house-of-cores",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/188/final-cores-black3.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/188/test-kenza-back.jpg",
+    "color": "#B23256",
+    "score": 0,
+    "user_id": 84268
+  },
+  {
+    "id": 183,
+    "name": "Kernel Kamikazes",
+    "slug": "kernel-kamikazes",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/183/KERNEL_KAMIKAZE.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/183/pngtree-watercolor-gray-abstract-background-image_319377.jpg",
+    "color": "#810FD3",
+    "score": 20103,
+    "user_id": 87383
+  },
+  {
+    "id": 182,
+    "name": "Segmentation Slayers",
+    "slug": "segmentation-slayers",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/182/SEGMENTATION_SLAYER.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/182/pngtree-watercolor-gray-abstract-background-image_319377.jpg",
+    "color": "#720201",
+    "score": 11217,
+    "user_id": 87383
+  },
+  {
+    "id": 181,
+    "name": "Unix Unicorns",
+    "slug": "unix-unicorns",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/181/UNIX_UNICORN.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/181/pngtree-watercolor-gray-abstract-background-image_319377.jpg",
+    "color": "#FE7F9C",
+    "score": 13766,
+    "user_id": 87383
+  },
+  {
+    "id": 180,
+    "name": "Bug Busters",
+    "slug": "bug-busters",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/180/BUG_BUSTER.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/180/pngtree-watercolor-gray-abstract-background-image_319377.jpg",
+    "color": "#121940",
+    "score": 13912,
+    "user_id": 87383
+  },
+  {
+    "id": 179,
+    "name": "Sol",
+    "slug": "galactus",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/179/sol_logo.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/179/sol_banner_new.jpg",
+    "color": "#EE3F36",
+    "score": 171436,
+    "user_id": 93623
+  },
+  {
+    "id": 178,
+    "name": "Luna",
+    "slug": "cosmos",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/178/luna_logo.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/178/luna_banner_new.jpg",
+    "color": "#79A8DA",
+    "score": 203991,
+    "user_id": 93623
+  },
+  {
+    "id": 177,
+    "name": "Astra",
+    "slug": "black-eye",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/177/astra_logo__1_.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/177/astra_banner_new.jpg",
+    "color": "#FFDE16",
+    "score": 304470,
+    "user_id": 93623
+  },
+  {
+    "id": 176,
+    "name": "Terra",
+    "slug": "orion",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/176/terra_logo.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/176/terra_banner_new.jpg",
+    "color": "#0B9444",
+    "score": 210244,
+    "user_id": 93623
+  },
+  {
+    "id": 175,
+    "name": "Nautilus",
+    "slug": "nautilus",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/175/nautilus_final.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/175/nautilus_wallpaper.jpg",
+    "color": "#41CACC",
+    "score": 174780,
+    "user_id": 87098
+  },
+  {
+    "id": 174,
+    "name": "Nostromo",
+    "slug": "nostromo",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/174/nostromo_final.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/174/nostromo_wallpaper.jpeg",
+    "color": "#9E28E2",
+    "score": 149838,
+    "user_id": 147859
+  },
+  {
+    "id": 173,
+    "name": "Magrathea",
+    "slug": "magrathea",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/173/magrathea_final.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/173/magrathea_wallpaper.jpg",
+    "color": "#E3AA40",
+    "score": 229724,
+    "user_id": 88012
+  },
+  {
+    "id": 172,
+    "name": "Droids",
+    "slug": "midi-chlorian",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/172/DROIDS.SVG",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/172/cyan_2.jpg",
+    "color": "#00ffff",
+    "score": 0,
+    "user_id": 133970
+  },
+  {
+    "id": 171,
+    "name": "Saibaimen",
+    "slug": "saibaimen",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/171/drawing_fixed.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/171/saibamen_2__1_.jpg",
+    "color": "#00ff00",
+    "score": 0,
+    "user_id": 133970
+  },
+  {
+    "id": 170,
+    "name": "Giorgios",
+    "slug": "voidling",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/170/GIORGIO.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/170/viola_1.jpg",
+    "color": "#FF15FF",
+    "score": 0,
+    "user_id": 153483
+  },
+  {
+    "id": 168,
+    "name": "The Sharks",
+    "slug": "c-piscine-lausanne-the-sloths",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/168/7.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/168/marmots.jpeg",
+    "color": "#82CCE0",
+    "score": 8183,
+    "user_id": 188454
+  },
+  {
+    "id": 167,
+    "name": "The Frogs",
+    "slug": "c-piscine-lausanne-the-skunks",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/167/5.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/167/skunk_background.jpeg",
+    "color": "#6c8946",
+    "score": 8733,
+    "user_id": 199292
+  },
+  {
+    "id": 166,
+    "name": "The Penguins",
+    "slug": "c-piscine-lausanne-the-blobfishes",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/166/8.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/166/foxes-back.jpeg",
+    "color": "#EAB77F",
+    "score": 20970,
+    "user_id": 188578
+  },
+  {
+    "id": 165,
+    "name": "Seal",
+    "slug": "seal",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/165/Seal.svg",
+    "cover_url": null,
+    "color": "#fcd451",
+    "score": 0,
+    "user_id": 93623
+  },
+  {
+    "id": 164,
+    "name": "Shark",
+    "slug": "shark",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/164/Shark.svg",
+    "cover_url": null,
+    "color": "#d103bd",
+    "score": 420,
+    "user_id": 183969
+  },
+  {
+    "id": 163,
+    "name": "Penguin",
+    "slug": "penguin",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/163/Penguin.svg",
+    "cover_url": null,
+    "color": "#e47e51",
+    "score": 0,
+    "user_id": 137659
+  },
+  {
+    "id": 162,
+    "name": "Dolphin",
+    "slug": "dolphin",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/162/Dolphin_grey.svg",
+    "cover_url": null,
+    "color": "#00babc",
+    "score": 420,
+    "user_id": 214097
+  },
+  {
+    "id": 160,
+    "name": "F.R.O.G. 42",
+    "slug": "coalition-c",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/160/Frog_white_flat_1.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/160/42HN-Coalition-Banner-Frogs.jpeg",
+    "color": "#c62828",
+    "score": 52421,
+    "user_id": 172660
+  },
+  {
+    "id": 159,
+    "name": "Fox Force",
+    "slug": "coalition-b",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/159/Fox_white_flat.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/159/42HN-Coalition-Banner-Foxes.jpeg",
+    "color": "#5e00a6",
+    "score": 47735,
+    "user_id": 239149
+  },
+  {
+    "id": 158,
+    "name": "Hackhogs",
+    "slug": "coalition-a",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/158/Hedgehog_white_flat.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/158/42HN-Coalition-Banner-Hedgehogs.jpeg",
+    "color": "#2e7d32",
+    "score": 49942,
+    "user_id": 196106
+  },
+  {
+    "id": 157,
+    "name": "test coalition 2",
+    "slug": "test-coalition-2",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/157/logo.svg",
+    "cover_url": null,
+    "color": "FFFFFF",
+    "score": 0,
+    "user_id": 79243
+  },
+  {
+    "id": 156,
+    "name": "test coalition",
+    "slug": "test-coalition",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/156/logo.svg",
+    "cover_url": null,
+    "color": "FFFFFF",
+    "score": 0,
+    "user_id": 79243
+  },
+  {
+    "id": 148,
+    "name": "Blue Team",
+    "slug": "tzer",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/148/federation.svg",
+    "cover_url": null,
+    "color": " #232dab",
+    "score": 0,
+    "user_id": 87383
+  },
+  {
+    "id": 147,
+    "name": "Red Team",
+    "slug": "thila",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/147/federation.svg",
+    "cover_url": null,
+    "color": "#FF0000",
+    "score": 10,
+    "user_id": 74827
+  },
+  {
+    "id": 126,
+    "name": "Acqua",
+    "slug": "void",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/126/acqua.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/126/acqua.jpeg",
+    "color": "#1E7AB0",
+    "score": 503148,
+    "user_id": 212210
+  },
+  {
+    "id": 125,
+    "name": "Fuoco",
+    "slug": "saiyajin",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/125/svgexport-2.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/125/fuoco.jpeg",
+    "color": "#B11E23",
+    "score": 560172,
+    "user_id": 133970
+  },
+  {
+    "id": 124,
+    "name": "Erba",
+    "slug": "sith",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/124/Terra.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/124/erba5.jpeg",
+    "color": "#318D2B",
+    "score": 561788,
+    "user_id": 201998
+  },
+  {
+    "id": 122,
+    "name": "Corrino",
+    "slug": "42cursus-nice-corrino",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/122/dune_logo_cor_2.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/122/bg_classic_corrino.jpg",
+    "color": "#A061D1",
+    "score": 64385,
+    "user_id": 220393
+  },
+  {
+    "id": 120,
+    "name": "Water Warriors",
+    "slug": "the-simpsons",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/120/3.svg",
+    "cover_url": null,
+    "color": " #0388fc",
+    "score": 0,
+    "user_id": 74409
+  },
+  {
+    "id": 119,
+    "name": "Fire Fawns",
+    "slug": "the-jetsons",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/119/2.svg",
+    "cover_url": null,
+    "color": "#c22b2b",
+    "score": 0,
+    "user_id": 90380
+  },
+  {
+    "id": 117,
+    "name": "Harkonnen",
+    "slug": "harkonnen",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/117/dune_logo_har_2.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/117/bg_classic_harkonnen.jpg",
+    "color": "#4180DB",
+    "score": 29564,
+    "user_id": 78574
+  },
+  {
+    "id": 116,
+    "name": "Atreides",
+    "slug": "atreides",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/116/dune_logo_atr_2.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/116/bg_classic_atreides.jpg",
+    "color": "#00954d",
+    "score": 28931,
+    "user_id": 79125
+  },
+  {
+    "id": 112,
+    "name": "The Alliance",
+    "slug": "c-piscine-lisbon-alliance",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/112/alliance.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/112/alliance_background.jpg",
+    "color": "#33C47F",
+    "score": 188066,
+    "user_id": 229883
+  },
+  {
+    "id": 111,
+    "name": "The Federation",
+    "slug": "federation",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/111/federation.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/111/federation_background.jpg",
+    "color": "#4180DB",
+    "score": 199440,
+    "user_id": 142177
+  },
+  {
+    "id": 110,
+    "name": "The Order",
+    "slug": "order",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/110/order.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/110/order_background.jpg",
+    "color": "#FF6950",
+    "score": 217340,
+    "user_id": 234737
+  },
+  {
+    "id": 109,
+    "name": "The Assembly",
+    "slug": "assembly",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/109/assembly.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/109/assembly_background.jpg",
+    "color": "#8453B0",
+    "score": 187242,
+    "user_id": 234738
+  },
+  {
+    "id": 108,
+    "name": "La Stack",
+    "slug": "la-stack",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/108/stack-logo.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/108/stack-bg-option4.jpg",
+    "color": "#FF1919",
+    "score": 0,
+    "user_id": 212128
+  },
+  {
+    "id": 107,
+    "name": "La Heap",
+    "slug": "la-heap",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/107/heap-logo.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/107/heap-bg-option5.jpg",
+    "color": "#00B333",
+    "score": 0,
+    "user_id": 212129
+  },
+  {
+    "id": 106,
+    "name": "Horde",
+    "slug": "horde",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/106/horde_logo_2.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/106/horde_background_2.jpg",
+    "color": "#bf1b1b",
+    "score": 6191,
+    "user_id": 79125
+  },
+  {
+    "id": 105,
+    "name": "Alliance",
+    "slug": "alliance",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/105/alliance_logo_2.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/105/alliance_background_2.jpg",
+    "color": "#3759bf",
+    "score": 7326,
+    "user_id": 78574
+  },
+  {
+    "id": 104,
+    "name": "Terra",
+    "slug": "42cursus-kazan-83b7ab34-6005-4b3e-be4b-9bd5096e92f4",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/104/terra.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/104/Terra_.jpg",
+    "color": "#35D2AB",
+    "score": 0,
+    "user_id": 109853
+  },
+  {
+    "id": 103,
+    "name": "Aer",
+    "slug": "42cursus-kazan-20874c58-b1f1-4688-b373-b9c40da4cdcf",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/103/aer__1_.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/103/Aer1.jpg",
+    "color": "#98B4D4",
+    "score": 0,
+    "user_id": 101265
+  },
+  {
+    "id": 102,
+    "name": "Ignis",
+    "slug": "42cursus-kazan-b30edef5-4b5f-47fa-86c5-e8d76b10963f",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/102/ignis.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/102/Ignis_.jpg",
+    "color": "#ff461d",
+    "score": 0,
+    "user_id": 95329
+  },
+  {
+    "id": 101,
+    "name": "Aqua",
+    "slug": "42cursus-kazan",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/101/aqua.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/101/Aqua1.jpg",
+    "color": "#84cde0",
+    "score": 0,
+    "user_id": 101888
+  },
+  {
+    "id": 100,
+    "name": "Удильщики",
+    "slug": "c-piscine-kazan-5cb63bb1-e34f-41ff-bc0e-4260cd1c706b",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/100/Удильщик_bw.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/100/Удильщик3.jpeg",
+    "color": "#6E2828",
+    "score": 0,
+    "user_id": 79094
+  },
+  {
+    "id": 99,
+    "name": "Скорпены",
+    "slug": "c-piscine-kazan-f67b8c2f-a887-4962-85cf-2555288d7e9e",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/99/Скорпена_bw.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/99/Скорпены.jpeg",
+    "color": "#B44619",
+    "score": 0,
+    "user_id": 71628
+  },
+  {
+    "id": 98,
+    "name": "Мурены",
+    "slug": "c-piscine-kazan-ced693eb-db08-4000-93ea-e9608bbacee8",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/98/Мурена_bw.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/98/Мурены2.jpeg",
+    "color": "#006EAA",
+    "score": 0,
+    "user_id": 89555
+  },
+  {
+    "id": 97,
+    "name": "Триониксы",
+    "slug": "c-piscine-kazan",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/97/Трионикс_bw.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/97/триониксы4.jpeg",
+    "color": "#009146",
+    "score": 0,
+    "user_id": 66136
+  },
+  {
+    "id": 96,
+    "name": "Аксолотли",
+    "slug": "c-piscine-moscow-49099a42-c2f4-4895-9813-39a03ede0ea7",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/96/axololt_black.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/96/a-05.jpg",
+    "color": "#9b2460",
+    "score": 0,
+    "user_id": 86410
+  },
+  {
+    "id": 95,
+    "name": "Утконосы",
+    "slug": "c-piscine-moscow-0d81e8a9-e5dc-4d35-81c5-737615754bd7",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/95/platypus_black.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/95/p-02.jpg",
+    "color": "#512d15",
+    "score": 0,
+    "user_id": 87108
+  },
+  {
+    "id": 94,
+    "name": "Слизни",
+    "slug": "c-piscine-moscow-f1127625-f9c7-440d-a93e-3f1f3c17a8fb",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/94/slug_black.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/94/s-03.jpg",
+    "color": "#1f6e4e",
+    "score": 0,
+    "user_id": 87385
+  },
+  {
+    "id": 93,
+    "name": "Тихоходки",
+    "slug": "c-piscine-moscow",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/93/waterbear_black.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/93/w-06.jpg",
+    "color": "#2294ae",
+    "score": 0,
+    "user_id": 53024
+  },
+  {
+    "id": 92,
+    "name": "Медоеды",
+    "slug": "42cursus-moscow-29a77b7c-670d-486c-a835-9c6c0f779d74",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/92/medoed_mirrored.svg",
+    "cover_url": null,
+    "color": "#52A4C3",
+    "score": 4242,
+    "user_id": 108511
+  },
+  {
+    "id": 91,
+    "name": "Саламандры",
+    "slug": "42cursus-moscow-ebd989f1-0ca0-4986-bfb9-7b6ac43a74da",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/91/salamandra_new-01.svg",
+    "cover_url": null,
+    "color": "#AA52C3",
+    "score": 4242,
+    "user_id": 103615
+  },
+  {
+    "id": 90,
+    "name": "Капибары",
+    "slug": "42cursus-moscow-b1c48485-28a5-4a68-87f7-ea76c82daa97",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/90/capy-black.svg",
+    "cover_url": null,
+    "color": "#b71c1c",
+    "score": 0,
+    "user_id": 48005
+  },
+  {
+    "id": 89,
+    "name": "Альпаки",
+    "slug": "42cursus-moscow",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/89/alpa-black.svg",
+    "cover_url": null,
+    "color": "#6BC352",
+    "score": 4242,
+    "user_id": 132811
+  },
+  {
+    "id": 88,
+    "name": "Lee",
+    "slug": "lee",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/88/lee-svg-svg_1_.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/88/lee_cover.jpg",
+    "color": "#bb4140",
+    "score": 0,
+    "user_id": 131526
+  },
+  {
+    "id": 87,
+    "name": "Gam",
+    "slug": "gam",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/87/gam-svg-svg__3_.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/87/gam_cover.jpg",
+    "color": "#4c83a4",
+    "score": 0,
+    "user_id": 110811
+  },
+  {
+    "id": 86,
+    "name": "Gon",
+    "slug": "gon",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/86/gon-svg-svg.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/86/gon_cover.jpg",
+    "color": "#559f7a",
+    "score": 0,
+    "user_id": 112245
+  },
+  {
+    "id": 85,
+    "name": "Gun",
+    "slug": "gun",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/85/gun-svg-svg.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/85/gun_cover.jpg",
+    "color": "#ffc221",
+    "score": 0,
+    "user_id": 141373
+  },
+  {
+    "id": 84,
+    "name": "Скорпены",
+    "slug": "piscine-c-kazan-db15c260-93a5-4e26-ba16-b41367621190",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/84/Скорпена_bw.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/84/Скорпены.jpeg",
+    "color": "#B44619",
+    "score": 0,
+    "user_id": 71628
+  },
+  {
+    "id": 83,
+    "name": "Удильщики",
+    "slug": "piscine-c-kazan-b5987298-d0c4-4c31-8bef-b28f99381a8c",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/83/Удильщик_bw.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/83/Удильщик3.jpeg",
+    "color": "#6E2828",
+    "score": 0,
+    "user_id": 66116
+  },
+  {
+    "id": 82,
+    "name": "Мурены",
+    "slug": "piscine-c-kazan-48927b2f-b0c1-4e8a-9932-ff2ccff8f95b",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/82/Мурена_bw.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/82/Мурены2.jpeg",
+    "color": "#006EAA",
+    "score": 0,
+    "user_id": 55336
+  },
+  {
+    "id": 81,
+    "name": "Триониксы",
+    "slug": "piscine-c-kazan",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/81/Трионикс_bw.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/81/триониксы4.jpeg",
+    "color": "#009146",
+    "score": 0,
+    "user_id": 66136
+  },
+  {
+    "id": 80,
+    "name": "Commodore",
+    "slug": "42cursus-benguerir-idealists",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/80/Commodore_Artboard_3.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/80/Commodore_BG.jpg",
+    "color": "#235a16",
+    "score": 142377,
+    "user_id": 74206
+  },
+  {
+    "id": 79,
+    "name": "Bios",
+    "slug": "philanthropists",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/79/Bios-02.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/79/BiosBG.jpg",
+    "color": "#02cdd1",
+    "score": 134129,
+    "user_id": 74113
+  },
+  {
+    "id": 78,
+    "name": "Freax",
+    "slug": "42cursus-benguerir-insomniacs",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/78/Freax_Artboard_4.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/78/Freax_BG.jpg",
+    "color": "#f5bc39",
+    "score": 101373,
+    "user_id": 170419
+  },
+  {
+    "id": 77,
+    "name": "Pandora",
+    "slug": "42cursus-benguerir-observers",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/77/Pandora-01.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/77/Pandora_BG.jpg",
+    "color": "#b61282",
+    "score": 132831,
+    "user_id": 74112
+  },
+  {
+    "id": 76,
+    "name": "Commodore",
+    "slug": "42cursus-khouribga-idealists",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/76/Commodore_Artboard_3.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/76/Commodore_BG.jpg",
+    "color": "#235a16",
+    "score": 444888,
+    "user_id": 74205
+  },
+  {
+    "id": 75,
+    "name": "Freax",
+    "slug": "42cursus-khouribga-philantropists",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/75/Freax_Artboard_4.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/75/Freax_BG.jpg",
+    "color": "#f5bc39",
+    "score": 482203,
+    "user_id": 145509
+  },
+  {
+    "id": 74,
+    "name": "Pandora",
+    "slug": "42cursus-khouribga-insomniacs",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/74/Pandora-01.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/74/Pandora_BG.jpg",
+    "color": "#b61282",
+    "score": 429121,
+    "user_id": 105051
+  },
+  {
+    "id": 73,
+    "name": "Bios",
+    "slug": "42cursus-khouribga-observers",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/73/Bios-02.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/73/BiosBG.jpg",
+    "color": "#02cdd1",
+    "score": 544847,
+    "user_id": 157636
+  },
+  {
+    "id": 72,
+    "name": "Observers",
+    "slug": "observers",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/72/observers.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/72/low-poly-texture-18_copy.png",
+    "color": "#fadb2a",
+    "score": 34918,
+    "user_id": 38772
+  },
+  {
+    "id": 71,
+    "name": "Philantropists",
+    "slug": "philantropists",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/71/philantropists.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/71/order_background.jpg",
+    "color": "#FF6950",
+    "score": 27845,
+    "user_id": 38763
+  },
+  {
+    "id": 70,
+    "name": "Idealists",
+    "slug": "idealists",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/70/idealists.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/70/low-poly-texture-12_copy.png",
+    "color": "#A061D1",
+    "score": 19295,
+    "user_id": 38765
+  },
+  {
+    "id": 69,
+    "name": "Insomniacs",
+    "slug": "insomniacs",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/69/insomniacs.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/69/federation_background.jpg",
+    "color": "#4180DB",
+    "score": 22645,
+    "user_id": 59732
+  },
+  {
+    "id": 63,
+    "name": "faisan",
+    "slug": "faisan",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/63/icon_01pheasant.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/63/federation_bg3.jpg",
+    "color": "#529251",
+    "score": 576964,
+    "user_id": 224872
+  },
+  {
+    "id": 62,
+    "name": "singe",
+    "slug": "singe",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/62/icon_03monkey.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/62/federation_bg2.jpg",
+    "color": "#9666cb",
+    "score": 822224,
+    "user_id": 224871
+  },
+  {
+    "id": 61,
+    "name": "chien",
+    "slug": "chien",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/61/icon_02dog.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/61/federation_bg1.jpg",
+    "color": "#d2b85f",
+    "score": 690944,
+    "user_id": 224873
+  },
+  {
+    "id": 60,
+    "name": "Vela",
+    "slug": "42cursus-amsterdam-vela",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/60/Vela.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/60/velatry.jpg",
+    "color": "#E52A2D",
+    "score": 5087,
+    "user_id": 137419
+  },
+  {
+    "id": 59,
+    "name": "Cetus",
+    "slug": "42cursus-amsterdam-cetus",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/59/Cetus.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/59/Cetus_small.jpg",
+    "color": "#3AA2DB",
+    "score": 4540,
+    "user_id": 137419
+  },
+  {
+    "id": 58,
+    "name": "Pyxis",
+    "slug": "42cursus-amsterdam-pyxis",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/58/Pyxis.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/58/Pyxis_small-min__1_.png",
+    "color": "#B73188",
+    "score": 3061,
+    "user_id": 137419
+  },
+  {
+    "id": 57,
+    "name": "The Foragers",
+    "slug": "the-foragers",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/57/foragers_logo.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/57/lowpoly_white_green.png",
+    "color": "#7FBE80",
+    "score": 0,
+    "user_id": 68782
+  },
+  {
+    "id": 56,
+    "name": "The Builders",
+    "slug": "the-builders",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/56/beever.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/56/lowpoly_white_orange.png",
+    "color": "#EE7800",
+    "score": 0,
+    "user_id": 59606
+  },
+  {
+    "id": 55,
+    "name": "The Guards",
+    "slug": "the-guards",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/55/guards_logo.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/55/lowpoly_white_lila.png",
+    "color": "#C574A8",
+    "score": 0,
+    "user_id": 61928
+  },
+  {
+    "id": 54,
+    "name": "The Trojans",
+    "slug": "42cursus-brussels-the-trojans",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/54/horse.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/54/trojans_background.jpg",
+    "color": "#0E23B2",
+    "score": 331235,
+    "user_id": 195558
+  },
+  {
+    "id": 53,
+    "name": "The Athenians",
+    "slug": "the-athenians",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/53/owl.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/53/athenians_background.jpg",
+    "color": "#005200",
+    "score": 301672,
+    "user_id": 34587
+  },
+  {
+    "id": 52,
+    "name": "The Spartans",
+    "slug": "42cursus-brussels-the-spartans",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/52/image2vector.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/52/spartans_background.jpg",
+    "color": "#BA0000",
+    "score": 171120,
+    "user_id": 83399
+  },
+  {
+    "id": 48,
+    "name": "The Assembly",
+    "slug": "42cursus-paris-the-assembly",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/48/assembly.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/48/assembly_background.jpg",
+    "color": "#A061D1",
+    "score": 543854,
+    "user_id": 99888
+  },
+  {
+    "id": 47,
+    "name": "The Order",
+    "slug": "42cursus-paris-the-order",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/47/order.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/47/order_background.jpg",
+    "color": "#FF6950",
+    "score": 489608,
+    "user_id": 209139
+  },
+  {
+    "id": 46,
+    "name": "The Alliance",
+    "slug": "42cursus-paris-the-alliance",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/46/alliance.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/46/alliance_background.jpg",
+    "color": "#33C47F",
+    "score": 483932,
+    "user_id": 89556
+  },
+  {
+    "id": 45,
+    "name": "The Federation",
+    "slug": "42cursus-paris-the-federation",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/45/federation.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/45/federation_background.jpg",
+    "color": "#4180DB",
+    "score": 594644,
+    "user_id": 155558
+  },
+  {
+    "id": 44,
+    "name": "Water",
+    "slug": "water",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/44/170px-Alchemy_water_symbol.svg",
+    "cover_url": null,
+    "color": "#87CEEB",
+    "score": 360,
+    "user_id": 49867
+  },
+  {
+    "id": 42,
+    "name": "A Federação",
+    "slug": "a-federacao",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/42/federação.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/42/federação_background.jpg",
+    "color": "#4080DB",
+    "score": 0,
+    "user_id": 62857
+  },
+  {
+    "id": 41,
+    "name": "A Aliança",
+    "slug": "a-alianca",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/41/aliança.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/41/aliança_background.jpg",
+    "color": "#33C47F",
+    "score": 0,
+    "user_id": 62492
+  },
+  {
+    "id": 40,
+    "name": "A Ordem",
+    "slug": "fire",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/40/ordem.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/40/ordem_background.jpg",
+    "color": "#FF6950",
+    "score": 0,
+    "user_id": 63969
+  },
+  {
+    "id": 39,
+    "name": "Капибары",
+    "slug": "42-moscow-ae6ce225-5f7a-48f7-b7e5-5c8e321d21b0",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/39/capy-black.svg",
+    "cover_url": null,
+    "color": "#b71c1c",
+    "score": 0,
+    "user_id": 48005
+  },
+  {
+    "id": 38,
+    "name": "Саламандры",
+    "slug": "42-moscow-ba2e6394-4ae9-432b-81de-dc07e2b18576",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/38/salamandra_new-01.svg",
+    "cover_url": null,
+    "color": "#AA52C3",
+    "score": 0,
+    "user_id": 87108
+  },
+  {
+    "id": 37,
+    "name": "Альпаки",
+    "slug": "42-moscow-33733fcf-dd58-4c42-8d29-839a3e3d2bd9",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/37/alpa-black.svg",
+    "cover_url": null,
+    "color": "#6BC352",
+    "score": 0,
+    "user_id": 103274
+  },
+  {
+    "id": 36,
+    "name": "Медоеды",
+    "slug": "42-moscow",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/36/medoed_mirrored.svg",
+    "cover_url": null,
+    "color": "#52A4C3",
+    "score": 0,
+    "user_id": 86410
+  },
+  {
+    "id": 35,
+    "name": "Cetus",
+    "slug": "cetus",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/35/Cetus.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/35/Cetus_small.jpg",
+    "color": "#3AA2DB",
+    "score": 349694,
+    "user_id": 81191
+  },
+  {
+    "id": 34,
+    "name": "Pyxis",
+    "slug": "pyxis",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/34/Pyxis.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/34/Pyxis_small-min__1_.png",
+    "color": "#B73188",
+    "score": 354630,
+    "user_id": 46321
+  },
+  {
+    "id": 33,
+    "name": "Vela",
+    "slug": "vela",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/33/Vela.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/33/velatry.jpg",
+    "color": "#E52A2D",
+    "score": 336575,
+    "user_id": 79121
+  },
+  {
+    "id": 32,
+    "name": "The Trojans",
+    "slug": "the-trojans",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/32/black-head-horse-side-view-with-horsehair.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/32/trojans_background_2_copy.jpg",
+    "color": "0e23b2",
+    "score": 0,
+    "user_id": 43048
+  },
+  {
+    "id": 31,
+    "name": "The Spartans",
+    "slug": "the-spartans",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/31/helmet__1_.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/31/spartans_background_2.jpg",
+    "color": "ba0000",
+    "score": 0,
+    "user_id": 56960
+  },
+  {
+    "id": 30,
+    "name": "The Athenians",
+    "slug": "the-atheniens",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/30/big-owl.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/30/athenians_background_.jpg",
+    "color": "005200",
+    "score": 0,
+    "user_id": 34587
+  },
+  {
+    "id": 29,
+    "name": "Explorer",
+    "slug": "explorer",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/29/Explorer.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/29/explorer_background.jpg",
+    "color": "#DB924A",
+    "score": 0,
+    "user_id": 26608
+  },
+  {
+    "id": 28,
+    "name": "Ranger",
+    "slug": "ranger",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/28/Ranger.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/28/ranger_background.jpg",
+    "color": "#B74D5A",
+    "score": 0,
+    "user_id": 49132
+  },
+  {
+    "id": 27,
+    "name": "Pioneer",
+    "slug": "pioneer",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/27/pioneer.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/27/pioneer_background.jpg",
+    "color": "#3999FF",
+    "score": 0,
+    "user_id": 36696
+  },
+  {
+    "id": 26,
+    "name": "Аксолотли",
+    "slug": "the-axolotls",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/26/axololt_black.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/26/a-05.jpg",
+    "color": "#9b2460",
+    "score": 0,
+    "user_id": 59926
+  },
+  {
+    "id": 25,
+    "name": "Утконосы",
+    "slug": "the-platypuses",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/25/platypus_black.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/25/p-02.jpg",
+    "color": "#512d15",
+    "score": 0,
+    "user_id": 80956
+  },
+  {
+    "id": 24,
+    "name": "Слизни",
+    "slug": "the-slugs",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/24/slug_black.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/24/s-03.jpg",
+    "color": "#1f6e4e",
+    "score": 0,
+    "user_id": 72506
+  },
+  {
+    "id": 23,
+    "name": "Тихоходки",
+    "slug": "the-water-bears",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/23/waterbear_black.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/23/w-06.jpg",
+    "color": "#2294ae",
+    "score": 0,
+    "user_id": 53024
+  },
+  {
+    "id": 21,
+    "name": "Wüfpacke",
+    "slug": "woofpacke",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/21/Woofpack.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/21/low-poly-texture-9_copy.png",
+    "color": "78CAEA",
+    "score": 1115,
+    "user_id": 35051
+  },
+  {
+    "id": 20,
+    "name": "Galacticat",
+    "slug": "piscine-c-fremont-galacticat",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/20/Galacticat.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/20/low-poly-texture-21_copy.png",
+    "color": "C49BF8",
+    "score": 852,
+    "user_id": 43902
+  },
+  {
+    "id": 19,
+    "name": "Hunnybadger",
+    "slug": "hunnybadger",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/19/Hunnybadger.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/19/low-poly-texture-8.png",
+    "color": "E7E77A",
+    "score": 1615,
+    "user_id": 36532
+  },
+  {
+    "id": 18,
+    "name": "Snek",
+    "slug": "snek",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/18/Snek.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/18/low-poly-texture-27.png",
+    "color": "A6DC97",
+    "score": 1213,
+    "user_id": 33515
+  },
+  {
+    "id": 17,
+    "name": "The Worms",
+    "slug": "piscine-c-lyon-the-worms",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/17/worms.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/17/worms_background.jpg",
+    "color": "#eab77f",
+    "score": 23043,
+    "user_id": 108244
+  },
+  {
+    "id": 16,
+    "name": "The Skunks",
+    "slug": "piscine-c-lyon-the-skunks",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/16/skunks.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/16/skunk_background.jpg",
+    "color": "#6c8946",
+    "score": 24263,
+    "user_id": 215869
+  },
+  {
+    "id": 15,
+    "name": "The Blobfishes",
+    "slug": "piscine-c-lyon-the-blobfishes",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/15/blobfishes.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/15/sloths_background.jpg",
+    "color": "#82cce0",
+    "score": 18386,
+    "user_id": 141778
+  },
+  {
+    "id": 14,
+    "name": "Catsup",
+    "slug": "catsup",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/14/two-horror-snakes-tattoo.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/14/low-poly-texture-18_copy.png",
+    "color": "800000",
+    "score": 0,
+    "user_id": 23424
+  },
+  {
+    "id": 13,
+    "name": "Galacticat",
+    "slug": "galacticat",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/13/Biohazard_symbol.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/13/low-poly-texture-12_copy.png",
+    "color": "A64881",
+    "score": 0,
+    "user_id": 28052
+  },
+  {
+    "id": 12,
+    "name": "The Blobfishes",
+    "slug": "the-blobfishes",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/12/blobfishes.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/12/sloths_background.jpg",
+    "color": "#82cce0",
+    "score": 0,
+    "user_id": 66982
+  },
+  {
+    "id": 11,
+    "name": "The Skunks",
+    "slug": "the-skunks",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/11/skunks.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/11/skunk_background.jpg",
+    "color": "#6c8946",
+    "score": 0,
+    "user_id": 66349
+  },
+  {
+    "id": 10,
+    "name": "The Sloths",
+    "slug": "the-sloths",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/10/sloths.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/10/blobfishes-background.jpg",
+    "color": "#ffa9c6",
+    "score": 0,
+    "user_id": 48214
+  },
+  {
+    "id": 9,
+    "name": "The Worms",
+    "slug": "the-worms",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/9/worms.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/9/worms_background.jpg",
+    "color": "#eab77f",
+    "score": 0,
+    "user_id": 77
+  },
+  {
+    "id": 8,
+    "name": "The Hive",
+    "slug": "42-kyiv-the-hive",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/8/Hive_vec.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/8/hive_background.jpg",
+    "color": "#00bcd4",
+    "score": 0,
+    "user_id": 47645
+  },
+  {
+    "id": 7,
+    "name": "The Empire",
+    "slug": "42-kyiv-the-empire",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/7/Empire_vec.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/7/empire_background.jpg",
+    "color": "#f44336",
+    "score": 0,
+    "user_id": 32603
+  },
+  {
+    "id": 6,
+    "name": "The Union",
+    "slug": "42-kyiv-the-union",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/6/Union_vec.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/6/union_background.jpg",
+    "color": "#673ab7",
+    "score": 0,
+    "user_id": 37573
+  },
+  {
+    "id": 5,
+    "name": "The Alliance",
+    "slug": "42-kyiv-the-alliance",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/5/Alliance_vec.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/5/alliance_background.jpg",
+    "color": "#4caf50",
+    "score": 0,
+    "user_id": 32599
+  },
+  {
+    "id": 4,
+    "name": "The Order",
+    "slug": "the-order",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/4/order.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/4/order_background.jpg",
+    "color": "#FF6950",
+    "score": 0,
+    "user_id": 66982
+  },
+  {
+    "id": 3,
+    "name": "The Assembly",
+    "slug": "the-assembly",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/3/assembly.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/3/assembly_background.jpg",
+    "color": "#A061D1",
+    "score": 0,
+    "user_id": 66982
+  },
+  {
+    "id": 2,
+    "name": "The Alliance",
+    "slug": "the-alliance",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/2/alliance.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/2/alliance_background.jpg",
+    "color": "#33C47F",
+    "score": 0,
+    "user_id": 66982
+  },
+  {
+    "id": 1,
+    "name": "The Federation",
+    "slug": "the-federation",
+    "image_url": "https://cdn.intra.42.fr/coalition/image/1/federation.svg",
+    "cover_url": "https://cdn.intra.42.fr/coalition/cover/1/federation_background.jpg",
+    "color": "#4180DB",
+    "score": 0,
+    "user_id": 66982
+  }
+]

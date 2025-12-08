@@ -382,10 +382,120 @@ const handleActiveCoalitionScores = async (req, res) => {
   }
 };
 
+const handleCoalitionIdScores = async (req, res) => {
+  const coalitionId = req.body?.coalition_id;
+  if (!coalitionId) {
+    return res.status(400).json({ error: "coalition_id is required" });
+  }
+
+  const perPage = 100;
+  const maxPages = Number(req.body?.max_pages) || null;
+  let page = 1;
+  let totalPages = Number.POSITIVE_INFINITY;
+  let headerTotalPages = null;
+  const allRows = [];
+  let conn;
+
+  try {
+    const token = req.body?.access_token || (await ensureAccessToken());
+
+    while (page <= totalPages) {
+      if (maxPages && page > maxPages) break;
+
+      const search = new URLSearchParams();
+      search.append("filter[coalition_id]", coalitionId);
+      search.append("page", String(page));
+      search.append("per_page", String(perPage));
+      const endpoint = `/v2/coalitions_users?${search.toString()}`;
+      const apiResp = await axios.get(`${API_ROOT}${endpoint}`, {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+
+      const data = Array.isArray(apiResp.data) ? apiResp.data : [];
+      allRows.push(...data);
+
+      const headerPages = Number(apiResp.headers["x-total-pages"]);
+      const headerTotal = Number(apiResp.headers["x-total"]);
+      if (Number.isFinite(headerPages) && headerPages > 0) {
+        totalPages = headerPages;
+        headerTotalPages = headerPages;
+      } else if (Number.isFinite(headerTotal) && headerTotal > 0) {
+        totalPages = Math.ceil(headerTotal / perPage);
+        headerTotalPages = totalPages;
+      } else if (data.length < perPage) {
+        totalPages = page;
+      }
+
+      if (data.length === 0) break;
+      page += 1;
+    }
+
+    conn = await connectDb();
+    await conn.beginTransaction();
+    const insertSql = `
+      INSERT INTO coalition_scores (api_id, coalition_id, user_id, score, rank, created_at, updated_at)
+      VALUES (?, ?, ?, ?, ?, ?, ?)
+      ON DUPLICATE KEY UPDATE
+        coalition_id=VALUES(coalition_id),
+        user_id=VALUES(user_id),
+        score=VALUES(score),
+        rank=VALUES(rank),
+        created_at=VALUES(created_at),
+        updated_at=VALUES(updated_at),
+        fetched_at=CURRENT_TIMESTAMP
+    `;
+
+    for (const row of allRows) {
+      await conn.execute(insertSql, [
+        row.id,
+        row.coalition_id,
+        row.user_id,
+        row.score,
+        row.rank,
+        new Date(row.created_at),
+        new Date(row.updated_at),
+      ]);
+    }
+
+    await conn.commit();
+
+    res.json({
+      coalition_id: coalitionId,
+      stored: allRows.length,
+      pages_fetched: Math.max(page - 1, 1),
+      reported_total_pages: headerTotalPages,
+      max_pages_respected: maxPages || undefined,
+    });
+  } catch (err) {
+    console.error(err.response?.data || err.message);
+    if (conn) {
+      try {
+        await conn.rollback();
+      } catch {
+        // ignore rollback failure
+      }
+    }
+    res.status(err.response?.status || 500).json({
+      error: "coalition_id_fetch_failed",
+      details: err.response?.data || err.message,
+    });
+  } finally {
+    if (conn) {
+      try {
+        await conn.end();
+      } catch {
+        // ignore close failure
+      }
+    }
+  }
+};
+
 app.post("/api/coalition-scores", handleCoalitionScores);
 app.post("/coalition-scores", handleCoalitionScores);
 app.post("/api/coalition-scores/active", handleActiveCoalitionScores);
 app.post("/coalition-scores/active", handleActiveCoalitionScores);
+app.post("/api/coalition-scores/coalition", handleCoalitionIdScores);
+app.post("/coalition-scores/coalition", handleCoalitionIdScores);
 
 app.listen(PORT, () => {
   console.log(`API proxy listening on :${PORT}`);
