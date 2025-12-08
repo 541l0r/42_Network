@@ -214,3 +214,6 @@ Services:
 Important:
 - Keep `CLIENT_SECRET` and `REFRESH_TOKEN` server-side only (never ship to the browser).
 - 42 may rotate refresh tokens on refresh; update your secrets store if that happens.
+
+
+https://api.intra.42.fr/oauth/authorize?client_id=u-s4t2ud-4078c640940b116c44605ee9c4dfd55ae6bac6ec4da0bc7ea5368342e93da469&redirect_uri=http://localhost:8000/callback&response_type=code&scope=public

@@ -1,0 +1,21 @@
+{
+  "access_token": "0bd95ca09125f92df3608e22e34b7bae4d8fcadaadb5d8c9dcf3a5297dfe6754",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "bb23b441d2c749110928df737a22de6cde0c0b1a586cb9ae7dd40b13d0d04cb2",
+  "scope": "public",
+  "created_at": 1763485202,
+  "secret_valid_until": 1763715611
+}
+State saved to /home/matsauva/projects/API_42/.oauth_state
+zsh: command not found: 0
+{
+  "access_token": "2fc0b890c7f66927d08921e9960329684336a405c6df09c7d1a72fed5e1b736c",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "3038407e5a8dd5745becc064b46ff04e34fcbf1d284d4297f93a69561f54b503",
+  "scope": "public",
+  "created_at": 1764680402,
+  "secret_valid_until": 1766134831
+}
+State saved to /home/matsauva/projects/API_42/.oauth_state
