@@ -1,15 +1,28 @@
 
 services:
   db:
-    image: mariadb:11
+    image: postgres:16
     restart: unless-stopped
     environment:
-      MARIADB_ROOT_PASSWORD: root
-      MARIADB_DATABASE: api42
-      MARIADB_USER: api42
-      MARIADB_PASSWORD: api42
+      POSTGRES_USER: ${DB_USER:-api42}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-api42}
+      POSTGRES_DB: ${DB_NAME:-api42}
     volumes:
-      - db_data:/var/lib/mysql
+      - ./data/postgres:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  psql:
+    image: postgres:16
+    depends_on:
+      - db
+    entrypoint: ["tail", "-f", "/dev/null"]  # placeholder to keep container alive
+    environment:
+      PGPASSWORD: ${DB_PASSWORD:-api42}
+    command: ["sleep", "infinity"]
+    # Optional: set a working dir where scripts live
+    volumes:
+      - ./:/workspace
 
   api:
     build:
@@ -17,13 +30,13 @@ services:
       dockerfile: api/Dockerfile
     restart: unless-stopped
     env_file:
-      - api/.env
+      - ../.env
     environment:
       DB_HOST: db
-      DB_USER: api42
-      DB_PASSWORD: api42
-      DB_NAME: api42
-      DB_PORT: 3306
+      DB_USER: ${DB_USER:-api42}
+      DB_PASSWORD: ${DB_PASSWORD:-api42}
+      DB_NAME: ${DB_NAME:-api42}
+      DB_PORT: ${DB_PORT:-5432}
     depends_on:
       - db
 

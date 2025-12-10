@@ -1,0 +1,5390 @@
+[
+  {
+    "id": 4589875,
+    "occurrence": 4,
+    "final_mark": 100,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 7112731,
+    "project": {
+      "id": 1323,
+      "name": "Exam Rank 05",
+      "slug": "exam-rank-05",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-12-02T10:57:24.740Z",
+    "marked": true,
+    "retriable_at": "2025-12-02T10:57:24.780Z",
+    "created_at": "2025-10-02T07:10:45.121Z",
+    "updated_at": "2025-12-02T10:57:36.036Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6986859,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6986859",
+        "final_mark": 0,
+        "project_id": 1323,
+        "created_at": "2025-10-02T07:10:45.200Z",
+        "updated_at": "2025-10-23T12:46:13.967Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4589875
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": null,
+        "repo_uuid": "intra-uuid-0c758fa7-8f65-4f78-9979-efcf2e932d18-6986859-matsauva",
+        "locked_at": "2025-10-02T07:10:45.237Z",
+        "closed_at": "2025-10-23T12:46:13.554Z",
+        "project_session_id": 3309,
+        "project_gitlab_path": null
+      },
+      {
+        "id": 7035552,
+        "name": "matsauva's group-1",
+        "url": "https://api.intra.42.fr/v2/teams/7035552",
+        "final_mark": 0,
+        "project_id": 1323,
+        "created_at": "2025-10-23T14:57:58.733Z",
+        "updated_at": "2025-10-30T15:02:09.874Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 1,
+            "validated": true,
+            "projects_user_id": 4589875
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": null,
+        "repo_uuid": "intra-uuid-3adf435d-c4e9-4a3d-b372-7e79e9c1b242-7035552-matsauva",
+        "locked_at": "2025-10-23T14:57:58.787Z",
+        "closed_at": "2025-10-30T15:02:06.367Z",
+        "project_session_id": 3309,
+        "project_gitlab_path": null
+      },
+      {
+        "id": 7055701,
+        "name": "matsauva's group-2",
+        "url": "https://api.intra.42.fr/v2/teams/7055701",
+        "final_mark": 50,
+        "project_id": 1323,
+        "created_at": "2025-11-04T09:00:19.674Z",
+        "updated_at": "2025-11-04T12:02:16.419Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 2,
+            "validated": true,
+            "projects_user_id": 4589875
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": null,
+        "repo_uuid": "intra-uuid-499186e0-99ba-4daa-8a2f-b30d0a17b884-7055701-matsauva",
+        "locked_at": "2025-11-04T09:00:19.721Z",
+        "closed_at": "2025-11-04T12:02:16.074Z",
+        "project_session_id": 3309,
+        "project_gitlab_path": null
+      },
+      {
+        "id": 7056111,
+        "name": "matsauva's group-3",
+        "url": "https://api.intra.42.fr/v2/teams/7056111",
+        "final_mark": 0,
+        "project_id": 1323,
+        "created_at": "2025-11-04T11:13:22.771Z",
+        "updated_at": "2025-11-27T15:00:49.341Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 3,
+            "validated": true,
+            "projects_user_id": 4589875
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": null,
+        "repo_uuid": "intra-uuid-f3c57193-ed75-4a1a-b3de-f5b962ed386c-7056111-matsauva",
+        "locked_at": "2025-11-04T11:13:22.810Z",
+        "closed_at": "2025-11-27T15:00:46.484Z",
+        "project_session_id": 3309,
+        "project_gitlab_path": null
+      },
+      {
+        "id": 7112731,
+        "name": "matsauva's group-4",
+        "url": "https://api.intra.42.fr/v2/teams/7112731",
+        "final_mark": 100,
+        "project_id": 1323,
+        "created_at": "2025-12-02T09:00:24.172Z",
+        "updated_at": "2025-12-02T10:57:35.682Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 4,
+            "validated": true,
+            "projects_user_id": 4589875
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": null,
+        "repo_uuid": "intra-uuid-d9124b12-7e53-4ebd-a462-69b5439f2db7-7112731-matsauva",
+        "locked_at": "2025-12-02T09:00:24.219Z",
+        "closed_at": "2025-12-02T10:57:35.456Z",
+        "project_session_id": 3309,
+        "project_gitlab_path": null
+      }
+    ]
+  },
+  {
+    "id": 4080382,
+    "occurrence": 2,
+    "final_mark": 125,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 7079046,
+    "project": {
+      "id": 2005,
+      "name": "minitalk",
+      "slug": "minitalk",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-11-14T15:59:27.447Z",
+    "marked": true,
+    "retriable_at": "2025-11-15T15:59:28.252Z",
+    "created_at": "2025-01-10T12:51:03.783Z",
+    "updated_at": "2025-11-14T15:59:28.273Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6266272,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6266272",
+        "final_mark": -42,
+        "project_id": 2005,
+        "created_at": "2025-01-10T12:51:03.811Z",
+        "updated_at": "2025-10-22T13:38:51.368Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4080382
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-da8138e7-4f6b-4b68-9c9c-3ea27f1287a3-6266272-matsauva",
+        "repo_uuid": "intra-uuid-da8138e7-4f6b-4b68-9c9c-3ea27f1287a3-6266272-matsauva",
+        "locked_at": "2025-01-10T12:51:03.855Z",
+        "closed_at": "2025-01-16T11:30:57.277Z",
+        "project_session_id": 7049,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/minitalk"
+      },
+      {
+        "id": 7035540,
+        "name": "matsauva's group-1",
+        "url": "https://api.intra.42.fr/v2/teams/7035540",
+        "final_mark": 0,
+        "project_id": 2005,
+        "created_at": "2025-10-23T14:54:57.689Z",
+        "updated_at": "2025-11-12T12:59:31.511Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 1,
+            "validated": true,
+            "projects_user_id": 4080382
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.42belgium.be:vogsphere/intra-uuid-6040bade-8a36-4c71-a3a4-6c029c082952-7035540-matsauva",
+        "repo_uuid": "intra-uuid-6040bade-8a36-4c71-a3a4-6c029c082952-7035540-matsauva",
+        "locked_at": "2025-10-23T14:54:57.741Z",
+        "closed_at": "2025-11-12T12:46:26.755Z",
+        "project_session_id": 7049,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/minitalk"
+      },
+      {
+        "id": 7079046,
+        "name": "matsauva's group-2",
+        "url": "https://api.intra.42.fr/v2/teams/7079046",
+        "final_mark": 125,
+        "project_id": 2005,
+        "created_at": "2025-11-14T12:35:12.753Z",
+        "updated_at": "2025-11-14T15:59:28.321Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 2,
+            "validated": true,
+            "projects_user_id": 4080382
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.42belgium.be:vogsphere/intra-uuid-c7387fa5-b10f-4a88-8262-d2dd1bfcb131-7079046-matsauva",
+        "repo_uuid": "intra-uuid-c7387fa5-b10f-4a88-8262-d2dd1bfcb131-7079046-matsauva",
+        "locked_at": "2025-11-14T12:35:12.813Z",
+        "closed_at": "2025-11-14T13:18:48.522Z",
+        "project_session_id": 7049,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/minitalk"
+      }
+    ]
+  },
+  {
+    "id": 4600267,
+    "occurrence": 0,
+    "final_mark": 90,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 7002001,
+    "project": {
+      "id": 2309,
+      "name": "CPP Module 09",
+      "slug": "cpp-module-09",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-11-07T15:33:57.543Z",
+    "marked": true,
+    "retriable_at": "2025-11-08T15:33:58.099Z",
+    "created_at": "2025-10-10T14:29:21.252Z",
+    "updated_at": "2025-11-07T15:33:58.124Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 7002001,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/7002001",
+        "final_mark": 90,
+        "project_id": 2309,
+        "created_at": "2025-10-10T14:29:21.282Z",
+        "updated_at": "2025-11-07T15:33:58.190Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4600267
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.42belgium.be:vogsphere/intra-uuid-4759ccc8-608d-43be-9c72-aa99636a9283-7002001-matsauva",
+        "repo_uuid": "intra-uuid-4759ccc8-608d-43be-9c72-aa99636a9283-7002001-matsauva",
+        "locked_at": "2025-10-10T14:29:21.325Z",
+        "closed_at": "2025-11-07T11:17:41.758Z",
+        "project_session_id": 9246,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cpp-module-09"
+      }
+    ]
+  },
+  {
+    "id": 4498296,
+    "occurrence": 0,
+    "final_mark": null,
+    "status": "in_progress",
+    "validated?": null,
+    "current_team_id": 7027918,
+    "project": {
+      "id": 1336,
+      "name": "ft_irc",
+      "slug": "ft_irc",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": null,
+    "marked": false,
+    "retriable_at": null,
+    "created_at": "2025-08-25T17:50:03.307Z",
+    "updated_at": "2025-10-21T12:49:48.790Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 7027918,
+        "name": "matsauva's team",
+        "url": "https://api.intra.42.fr/v2/teams/7027918",
+        "final_mark": null,
+        "project_id": 1336,
+        "created_at": "2025-10-21T10:39:02.180Z",
+        "updated_at": "2025-10-21T12:49:48.765Z",
+        "status": "in_progress",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 178039,
+            "login": "jpaulis",
+            "url": "https://api.intra.42.fr/v2/users/jpaulis",
+            "leader": false,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4619247
+          },
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4498296
+          },
+          {
+            "id": 201722,
+            "login": "malafont",
+            "url": "https://api.intra.42.fr/v2/users/malafont",
+            "leader": false,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4505442
+          }
+        ],
+        "locked?": true,
+        "validated?": null,
+        "closed?": false,
+        "repo_url": "git@vogsphere-v2.42belgium.be:vogsphere/intra-uuid-ede50a39-8e97-4c9f-a668-7d514ff18d7a-7027918-matsauva",
+        "repo_uuid": "intra-uuid-ede50a39-8e97-4c9f-a668-7d514ff18d7a-7027918-matsauva",
+        "locked_at": "2025-10-21T12:47:59.964Z",
+        "closed_at": null,
+        "project_session_id": 4428,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/ft_irc"
+      }
+    ]
+  },
+  {
+    "id": 4597388,
+    "occurrence": 0,
+    "final_mark": 100,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6997619,
+    "project": {
+      "id": 1346,
+      "name": "CPP Module 08",
+      "slug": "cpp-module-08",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-10-10T14:29:08.749Z",
+    "marked": true,
+    "retriable_at": "2025-10-11T14:29:08.794Z",
+    "created_at": "2025-10-08T14:04:32.721Z",
+    "updated_at": "2025-10-10T14:29:08.807Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6997619,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6997619",
+        "final_mark": 100,
+        "project_id": 1346,
+        "created_at": "2025-10-08T14:04:32.752Z",
+        "updated_at": "2025-10-10T14:29:08.860Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4597388
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-ef3413fb-67ff-4d43-8f34-5168d712648c-6997619-matsauva",
+        "repo_uuid": "intra-uuid-ef3413fb-67ff-4d43-8f34-5168d712648c-6997619-matsauva",
+        "locked_at": "2025-10-08T14:04:32.811Z",
+        "closed_at": "2025-10-10T10:04:08.045Z",
+        "project_session_id": 3332,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cpp-08"
+      }
+    ]
+  },
+  {
+    "id": 4596837,
+    "occurrence": 0,
+    "final_mark": 100,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6996874,
+    "project": {
+      "id": 1345,
+      "name": "CPP Module 07",
+      "slug": "cpp-module-07",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-10-08T14:04:07.319Z",
+    "marked": true,
+    "retriable_at": "2025-10-09T14:04:07.387Z",
+    "created_at": "2025-10-08T11:11:49.137Z",
+    "updated_at": "2025-10-08T14:04:07.402Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6996874,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6996874",
+        "final_mark": 100,
+        "project_id": 1345,
+        "created_at": "2025-10-08T11:11:49.165Z",
+        "updated_at": "2025-10-08T14:04:07.437Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4596837
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-25b359af-ce41-42b9-8b2d-fe67e944ab4a-6996874-matsauva",
+        "repo_uuid": "intra-uuid-25b359af-ce41-42b9-8b2d-fe67e944ab4a-6996874-matsauva",
+        "locked_at": "2025-10-08T11:11:49.237Z",
+        "closed_at": "2025-10-08T12:03:14.019Z",
+        "project_session_id": 3331,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cpp-07"
+      }
+    ]
+  },
+  {
+    "id": 4528582,
+    "occurrence": 1,
+    "final_mark": 100,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6996339,
+    "project": {
+      "id": 1344,
+      "name": "CPP Module 06",
+      "slug": "cpp-module-06",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-10-08T11:11:06.247Z",
+    "marked": true,
+    "retriable_at": "2025-10-09T11:11:06.288Z",
+    "created_at": "2025-09-08T13:37:28.853Z",
+    "updated_at": "2025-10-08T11:11:06.303Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6901633,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6901633",
+        "final_mark": 0,
+        "project_id": 1344,
+        "created_at": "2025-09-08T13:37:28.888Z",
+        "updated_at": "2025-10-06T13:21:04.963Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4528582
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-ddcdeb6f-cbea-4bdd-9ba1-60c1d20cb32e-6901633-matsauva",
+        "repo_uuid": "intra-uuid-ddcdeb6f-cbea-4bdd-9ba1-60c1d20cb32e-6901633-matsauva",
+        "locked_at": "2025-09-08T13:37:28.960Z",
+        "closed_at": "2025-10-06T12:20:47.305Z",
+        "project_session_id": 3330,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cpp-06"
+      },
+      {
+        "id": 6996339,
+        "name": "matsauva's group-1",
+        "url": "https://api.intra.42.fr/v2/teams/6996339",
+        "final_mark": 100,
+        "project_id": 1344,
+        "created_at": "2025-10-08T08:17:56.520Z",
+        "updated_at": "2025-10-08T11:11:06.344Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 1,
+            "validated": true,
+            "projects_user_id": 4528582
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-097268a5-ec14-448a-bf9a-4d23e8031852-6996339-matsauva",
+        "repo_uuid": "intra-uuid-097268a5-ec14-448a-bf9a-4d23e8031852-6996339-matsauva",
+        "locked_at": "2025-10-08T08:17:56.559Z",
+        "closed_at": "2025-10-08T08:48:37.415Z",
+        "project_session_id": 3330,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cpp-06"
+      }
+    ]
+  },
+  {
+    "id": 4497971,
+    "occurrence": 1,
+    "final_mark": 100,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6978779,
+    "project": {
+      "id": 1983,
+      "name": "Inception",
+      "slug": "inception",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-10-01T10:16:58.659Z",
+    "marked": true,
+    "retriable_at": "2025-10-04T10:16:58.994Z",
+    "created_at": "2025-08-25T15:22:50.324Z",
+    "updated_at": "2025-10-01T10:16:59.016Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6854753,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6854753",
+        "final_mark": 0,
+        "project_id": 1983,
+        "created_at": "2025-08-25T15:22:50.355Z",
+        "updated_at": "2025-09-25T16:38:39.429Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4497971
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-622d731f-cf11-4152-a00c-cfb7b65c07c5-6854753-matsauva",
+        "repo_uuid": "intra-uuid-622d731f-cf11-4152-a00c-cfb7b65c07c5-6854753-matsauva",
+        "locked_at": "2025-08-25T15:22:50.438Z",
+        "closed_at": "2025-09-25T14:37:45.136Z",
+        "project_session_id": 5815,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/inception"
+      },
+      {
+        "id": 6978779,
+        "name": "matsauva's group-1",
+        "url": "https://api.intra.42.fr/v2/teams/6978779",
+        "final_mark": 100,
+        "project_id": 1983,
+        "created_at": "2025-09-29T09:53:34.261Z",
+        "updated_at": "2025-10-01T10:16:59.063Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 1,
+            "validated": true,
+            "projects_user_id": 4497971
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-b92b7309-ccda-4252-8975-f9ffcc3b4617-6978779-matsauva",
+        "repo_uuid": "intra-uuid-b92b7309-ccda-4252-8975-f9ffcc3b4617-6978779-matsauva",
+        "locked_at": "2025-09-29T09:53:34.301Z",
+        "closed_at": "2025-09-30T12:36:06.300Z",
+        "project_session_id": 5815,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/inception"
+      }
+    ]
+  },
+  {
+    "id": 4497968,
+    "occurrence": 1,
+    "final_mark": 100,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6892107,
+    "project": {
+      "id": 1343,
+      "name": "CPP Module 05",
+      "slug": "cpp-module-05",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-09-08T13:24:40.735Z",
+    "marked": true,
+    "retriable_at": "2025-09-09T13:24:40.807Z",
+    "created_at": "2025-08-25T15:21:57.673Z",
+    "updated_at": "2025-09-08T13:24:40.836Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6854748,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6854748",
+        "final_mark": 0,
+        "project_id": 1343,
+        "created_at": "2025-08-25T15:21:57.738Z",
+        "updated_at": "2025-09-03T10:09:54.118Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4497968
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-8fdd879d-1399-41be-bfbb-585a003797df-6854748-matsauva",
+        "repo_uuid": "intra-uuid-8fdd879d-1399-41be-bfbb-585a003797df-6854748-matsauva",
+        "locked_at": "2025-08-25T15:21:57.837Z",
+        "closed_at": "2025-09-03T08:18:40.867Z",
+        "project_session_id": 3329,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cpp-05"
+      },
+      {
+        "id": 6892107,
+        "name": "matsauva's group-1",
+        "url": "https://api.intra.42.fr/v2/teams/6892107",
+        "final_mark": 100,
+        "project_id": 1343,
+        "created_at": "2025-09-04T14:32:33.516Z",
+        "updated_at": "2025-09-08T13:24:40.908Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 1,
+            "validated": true,
+            "projects_user_id": 4497968
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-31240791-d213-456a-a712-46e39ee699a2-6892107-matsauva",
+        "repo_uuid": "intra-uuid-31240791-d213-456a-a712-46e39ee699a2-6892107-matsauva",
+        "locked_at": "2025-09-04T14:32:33.587Z",
+        "closed_at": "2025-09-08T06:42:47.064Z",
+        "project_session_id": 3329,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cpp-05"
+      }
+    ]
+  },
+  {
+    "id": 4497961,
+    "occurrence": 0,
+    "final_mark": null,
+    "status": "searching_a_group",
+    "validated?": null,
+    "current_team_id": null,
+    "project": {
+      "id": 1332,
+      "name": "webserv",
+      "slug": "webserv",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": null,
+    "marked": false,
+    "retriable_at": null,
+    "created_at": "2025-08-25T15:20:43.467Z",
+    "updated_at": "2025-08-25T15:20:43.467Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": []
+  },
+  {
+    "id": 4497053,
+    "occurrence": 0,
+    "final_mark": 80,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6853317,
+    "project": {
+      "id": 1342,
+      "name": "CPP Module 04",
+      "slug": "cpp-module-04",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-08-25T15:09:04.899Z",
+    "marked": true,
+    "retriable_at": "2025-08-26T15:09:05.231Z",
+    "created_at": "2025-08-25T10:57:59.222Z",
+    "updated_at": "2025-08-25T15:09:05.251Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6853317,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6853317",
+        "final_mark": 80,
+        "project_id": 1342,
+        "created_at": "2025-08-25T10:57:59.267Z",
+        "updated_at": "2025-08-25T15:09:05.287Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4497053
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-a15ae824-dd6a-45f8-8d57-5525b8389cbc-6853317-matsauva",
+        "repo_uuid": "intra-uuid-a15ae824-dd6a-45f8-8d57-5525b8389cbc-6853317-matsauva",
+        "locked_at": "2025-08-25T10:57:59.313Z",
+        "closed_at": "2025-08-25T12:41:44.930Z",
+        "project_session_id": 3328,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cpp-04"
+      }
+    ]
+  },
+  {
+    "id": 4495818,
+    "occurrence": 0,
+    "final_mark": 90,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6851299,
+    "project": {
+      "id": 1341,
+      "name": "CPP Module 03",
+      "slug": "cpp-module-03",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-08-25T10:57:45.318Z",
+    "marked": true,
+    "retriable_at": "2025-08-26T10:57:45.376Z",
+    "created_at": "2025-08-24T15:39:08.119Z",
+    "updated_at": "2025-08-25T10:57:45.393Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6851299,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6851299",
+        "final_mark": 90,
+        "project_id": 1341,
+        "created_at": "2025-08-24T15:39:08.152Z",
+        "updated_at": "2025-08-25T10:57:45.445Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4495818
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-3e51c396-2e85-4e08-8060-52438e597076-6851299-matsauva",
+        "repo_uuid": "intra-uuid-3e51c396-2e85-4e08-8060-52438e597076-6851299-matsauva",
+        "locked_at": "2025-08-24T15:39:08.192Z",
+        "closed_at": "2025-08-25T08:25:00.870Z",
+        "project_session_id": 10558,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cpp-03"
+      }
+    ]
+  },
+  {
+    "id": 4493743,
+    "occurrence": 0,
+    "final_mark": 100,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6847614,
+    "project": {
+      "id": 1340,
+      "name": "CPP Module 02",
+      "slug": "cpp-module-02",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-08-24T15:38:49.150Z",
+    "marked": true,
+    "retriable_at": "2025-08-25T15:38:49.182Z",
+    "created_at": "2025-08-22T16:55:10.608Z",
+    "updated_at": "2025-08-24T15:38:49.194Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6847614,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6847614",
+        "final_mark": 100,
+        "project_id": 1340,
+        "created_at": "2025-08-22T16:55:10.637Z",
+        "updated_at": "2025-08-24T15:38:49.223Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4493743
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-179134b3-1c28-4ad7-b8cf-31e5e0c3bc24-6847614-matsauva",
+        "repo_uuid": "intra-uuid-179134b3-1c28-4ad7-b8cf-31e5e0c3bc24-6847614-matsauva",
+        "locked_at": "2025-08-22T16:55:10.698Z",
+        "closed_at": "2025-08-23T17:27:14.525Z",
+        "project_session_id": 10596,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cpp-02"
+      }
+    ]
+  },
+  {
+    "id": 4486684,
+    "occurrence": 0,
+    "final_mark": 100,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6837424,
+    "project": {
+      "id": 1339,
+      "name": "CPP Module 01",
+      "slug": "cpp-module-01",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-08-22T16:54:40.410Z",
+    "marked": true,
+    "retriable_at": "2025-08-23T16:54:40.448Z",
+    "created_at": "2025-08-20T08:01:52.718Z",
+    "updated_at": "2025-08-22T16:54:40.467Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6837424,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6837424",
+        "final_mark": 100,
+        "project_id": 1339,
+        "created_at": "2025-08-20T08:01:52.740Z",
+        "updated_at": "2025-08-22T16:54:40.503Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4486684
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-4c06e504-4131-4653-9c8c-152f42ee80b5-6837424-matsauva",
+        "repo_uuid": "intra-uuid-4c06e504-4131-4653-9c8c-152f42ee80b5-6837424-matsauva",
+        "locked_at": "2025-08-20T08:01:52.807Z",
+        "closed_at": "2025-08-22T13:53:25.380Z",
+        "project_session_id": 4554,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cpp-01"
+      }
+    ]
+  },
+  {
+    "id": 4371039,
+    "occurrence": 0,
+    "final_mark": 100,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6660737,
+    "project": {
+      "id": 1338,
+      "name": "CPP Module 00",
+      "slug": "cpp-module-00",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-08-20T08:01:22.520Z",
+    "marked": true,
+    "retriable_at": "2025-08-21T08:01:22.573Z",
+    "created_at": "2025-07-01T14:20:46.899Z",
+    "updated_at": "2025-08-20T08:01:22.592Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6660737,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6660737",
+        "final_mark": 100,
+        "project_id": 1338,
+        "created_at": "2025-07-01T14:20:46.936Z",
+        "updated_at": "2025-08-20T08:01:22.639Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4371039
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-89c84b3c-7bf4-4ef9-a003-eee993c93e3b-6660737-matsauva",
+        "repo_uuid": "intra-uuid-89c84b3c-7bf4-4ef9-a003-eee993c93e3b-6660737-matsauva",
+        "locked_at": "2025-07-01T14:20:46.998Z",
+        "closed_at": "2025-07-05T10:19:28.739Z",
+        "project_session_id": 4425,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cpp-00"
+      }
+    ]
+  },
+  {
+    "id": 4265230,
+    "occurrence": 1,
+    "final_mark": 100,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6665384,
+    "project": {
+      "id": 2007,
+      "name": "NetPractice",
+      "slug": "netpractice",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-07-03T15:06:40.523Z",
+    "marked": true,
+    "retriable_at": "2025-07-04T15:06:40.838Z",
+    "created_at": "2025-04-24T09:44:56.392Z",
+    "updated_at": "2025-07-03T15:06:40.852Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6525186,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6525186",
+        "final_mark": 0,
+        "project_id": 2007,
+        "created_at": "2025-04-24T09:44:56.437Z",
+        "updated_at": "2025-07-02T07:50:06.801Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4265230
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-ff4cd0c4-af4d-4292-a606-3028bcf8e320-6525186-matsauva",
+        "repo_uuid": "intra-uuid-ff4cd0c4-af4d-4292-a606-3028bcf8e320-6525186-matsauva",
+        "locked_at": "2025-04-24T09:44:56.487Z",
+        "closed_at": "2025-07-02T07:09:09.187Z",
+        "project_session_id": 7048,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/net_practice"
+      },
+      {
+        "id": 6665384,
+        "name": "matsauva's group-1",
+        "url": "https://api.intra.42.fr/v2/teams/6665384",
+        "final_mark": 100,
+        "project_id": 2007,
+        "created_at": "2025-07-03T08:10:39.782Z",
+        "updated_at": "2025-07-03T15:06:40.884Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 1,
+            "validated": true,
+            "projects_user_id": 4265230
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-a857222b-2db4-4e6b-8d1f-7fabf005e769-6665384-matsauva",
+        "repo_uuid": "intra-uuid-a857222b-2db4-4e6b-8d1f-7fabf005e769-6665384-matsauva",
+        "locked_at": "2025-07-03T08:10:39.854Z",
+        "closed_at": "2025-07-03T09:35:30.971Z",
+        "project_session_id": 7048,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/net_practice"
+      }
+    ]
+  },
+  {
+    "id": 4324230,
+    "occurrence": 1,
+    "final_mark": 116,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6659530,
+    "project": {
+      "id": 1326,
+      "name": "cub3d",
+      "slug": "cub3d",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-07-01T14:09:41.967Z",
+    "marked": true,
+    "retriable_at": "2025-07-04T14:09:42.269Z",
+    "created_at": "2025-06-05T12:11:40.477Z",
+    "updated_at": "2025-07-01T14:09:42.313Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6598621,
+        "name": "acaes's team",
+        "url": "https://api.intra.42.fr/v2/teams/6598621",
+        "final_mark": 0,
+        "project_id": 1326,
+        "created_at": "2025-06-03T15:45:03.623Z",
+        "updated_at": "2025-06-27T15:10:57.210Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 191539,
+            "login": "acaes",
+            "url": "https://api.intra.42.fr/v2/users/acaes",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4317630
+          },
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": false,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4324230
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-a9001eea-8d7a-4aa2-a01b-a2c7f36584d5-6598621-acaes",
+        "repo_uuid": "intra-uuid-a9001eea-8d7a-4aa2-a01b-a2c7f36584d5-6598621-acaes",
+        "locked_at": "2025-06-20T06:44:54.958Z",
+        "closed_at": "2025-06-27T09:48:50.495Z",
+        "project_session_id": 5567,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cub3d"
+      },
+      {
+        "id": 6659530,
+        "name": "banger",
+        "url": "https://api.intra.42.fr/v2/teams/6659530",
+        "final_mark": 116,
+        "project_id": 1326,
+        "created_at": "2025-07-01T09:32:42.210Z",
+        "updated_at": "2025-07-01T14:09:42.367Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 191539,
+            "login": "acaes",
+            "url": "https://api.intra.42.fr/v2/users/acaes",
+            "leader": true,
+            "occurrence": 1,
+            "validated": true,
+            "projects_user_id": 4317630
+          },
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": false,
+            "occurrence": 1,
+            "validated": true,
+            "projects_user_id": 4324230
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-a1eab181-1fd9-4375-9428-9d4813e3a08c-6659530-acaes",
+        "repo_uuid": "intra-uuid-a1eab181-1fd9-4375-9428-9d4813e3a08c-6659530-acaes",
+        "locked_at": "2025-07-01T09:35:51.478Z",
+        "closed_at": "2025-07-01T09:58:34.327Z",
+        "project_session_id": 5567,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/cub3d"
+      }
+    ]
+  },
+  {
+    "id": 4265185,
+    "occurrence": 0,
+    "final_mark": 100,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6525142,
+    "project": {
+      "id": 1322,
+      "name": "Exam Rank 04",
+      "slug": "exam-rank-04",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-06-19T11:57:35.868Z",
+    "marked": true,
+    "retriable_at": "2025-06-19T11:57:35.912Z",
+    "created_at": "2025-04-24T09:36:00.358Z",
+    "updated_at": "2025-06-19T11:57:39.957Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6525142,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6525142",
+        "final_mark": 100,
+        "project_id": 1322,
+        "created_at": "2025-04-24T09:36:00.391Z",
+        "updated_at": "2025-06-19T11:57:39.568Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4265185
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": null,
+        "repo_uuid": "intra-uuid-aa07da6f-dffa-40f6-b869-9766123f73b3-6525142-matsauva",
+        "locked_at": "2025-04-24T09:36:00.431Z",
+        "closed_at": "2025-06-19T11:57:39.334Z",
+        "project_session_id": 3308,
+        "project_gitlab_path": null
+      }
+    ]
+  },
+  {
+    "id": 4187102,
+    "occurrence": 0,
+    "final_mark": 97,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6419596,
+    "project": {
+      "id": 1331,
+      "name": "minishell",
+      "slug": "42cursus-minishell",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-04-24T09:13:37.544Z",
+    "marked": true,
+    "retriable_at": "2025-04-27T09:13:37.864Z",
+    "created_at": "2025-03-05T13:05:56.468Z",
+    "updated_at": "2025-04-24T09:13:38.161Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6419596,
+        "name": "matsauva's team",
+        "url": "https://api.intra.42.fr/v2/teams/6419596",
+        "final_mark": 97,
+        "project_id": 1331,
+        "created_at": "2025-03-06T11:19:54.240Z",
+        "updated_at": "2025-04-24T09:13:38.226Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4187102
+          },
+          {
+            "id": 201646,
+            "login": "nsaillez",
+            "url": "https://api.intra.42.fr/v2/users/nsaillez",
+            "leader": false,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4190976
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-8acd19eb-28c5-4928-8790-335d3c4544d9-6419596-matsauva",
+        "repo_uuid": "intra-uuid-8acd19eb-28c5-4928-8790-335d3c4544d9-6419596-matsauva",
+        "locked_at": "2025-03-07T08:12:50.326Z",
+        "closed_at": "2025-04-23T12:42:09.590Z",
+        "project_session_id": 4423,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/minishell"
+      }
+    ]
+  },
+  {
+    "id": 4147613,
+    "occurrence": 1,
+    "final_mark": 100,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6484766,
+    "project": {
+      "id": 1321,
+      "name": "Exam Rank 03",
+      "slug": "exam-rank-03",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-04-08T13:42:55.687Z",
+    "marked": true,
+    "retriable_at": "2025-04-08T13:42:55.722Z",
+    "created_at": "2025-02-14T16:57:14.374Z",
+    "updated_at": "2025-04-08T13:42:59.491Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6359290,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6359290",
+        "final_mark": 0,
+        "project_id": 1321,
+        "created_at": "2025-02-14T16:57:14.411Z",
+        "updated_at": "2025-04-03T14:00:28.475Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4147613
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": null,
+        "repo_uuid": "intra-uuid-8f356ed5-e593-4baa-88f5-7c8f66be2f0e-6359290-matsauva",
+        "locked_at": "2025-02-14T16:57:14.463Z",
+        "closed_at": "2025-04-03T14:00:28.204Z",
+        "project_session_id": 3307,
+        "project_gitlab_path": null
+      },
+      {
+        "id": 6484766,
+        "name": "matsauva's group-1",
+        "url": "https://api.intra.42.fr/v2/teams/6484766",
+        "final_mark": 100,
+        "project_id": 1321,
+        "created_at": "2025-04-03T16:36:40.261Z",
+        "updated_at": "2025-04-08T13:42:59.147Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 1,
+            "validated": true,
+            "projects_user_id": 4147613
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": null,
+        "repo_uuid": "intra-uuid-59fd3b3e-979c-4edf-acb2-6a0c6a88a4ae-6484766-matsauva",
+        "locked_at": "2025-04-03T16:36:40.305Z",
+        "closed_at": "2025-04-08T13:42:58.887Z",
+        "project_session_id": 3307,
+        "project_gitlab_path": null
+      }
+    ]
+  },
+  {
+    "id": 4147612,
+    "occurrence": 2,
+    "final_mark": 100,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6484308,
+    "project": {
+      "id": 1334,
+      "name": "Philosophers",
+      "slug": "42cursus-philosophers",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-04-04T14:14:05.702Z",
+    "marked": true,
+    "retriable_at": "2025-04-07T14:14:05.948Z",
+    "created_at": "2025-02-14T16:57:01.381Z",
+    "updated_at": "2025-04-04T14:14:05.967Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6359289,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6359289",
+        "final_mark": 0,
+        "project_id": 1334,
+        "created_at": "2025-02-14T16:57:01.411Z",
+        "updated_at": "2025-03-05T14:21:44.662Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4147612
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-02884150-1b95-4295-b7f5-4d80dd72b09b-6359289-matsauva",
+        "repo_uuid": "intra-uuid-02884150-1b95-4295-b7f5-4d80dd72b09b-6359289-matsauva",
+        "locked_at": "2025-02-14T16:57:01.464Z",
+        "closed_at": "2025-03-05T12:24:48.540Z",
+        "project_session_id": 4424,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/philosophers"
+      },
+      {
+        "id": 6477652,
+        "name": "matsauva's group-1",
+        "url": "https://api.intra.42.fr/v2/teams/6477652",
+        "final_mark": 0,
+        "project_id": 1334,
+        "created_at": "2025-03-31T06:22:22.563Z",
+        "updated_at": "2025-03-31T12:17:33.726Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 1,
+            "validated": true,
+            "projects_user_id": 4147612
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-490465d2-f9e0-44c3-8309-2daee7510a48-6477652-matsauva",
+        "repo_uuid": "intra-uuid-490465d2-f9e0-44c3-8309-2daee7510a48-6477652-matsauva",
+        "locked_at": "2025-03-31T06:22:22.625Z",
+        "closed_at": "2025-03-31T10:01:04.284Z",
+        "project_session_id": 4424,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/philosophers"
+      },
+      {
+        "id": 6484308,
+        "name": "matsauva's group-2",
+        "url": "https://api.intra.42.fr/v2/teams/6484308",
+        "final_mark": 100,
+        "project_id": 1334,
+        "created_at": "2025-04-03T14:07:00.958Z",
+        "updated_at": "2025-04-04T14:14:05.997Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 2,
+            "validated": true,
+            "projects_user_id": 4147612
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-f3cfe622-0405-430f-b89b-1aea44346781-6484308-matsauva",
+        "repo_uuid": "intra-uuid-f3cfe622-0405-430f-b89b-1aea44346781-6484308-matsauva",
+        "locked_at": "2025-04-03T14:07:01.026Z",
+        "closed_at": "2025-04-03T14:12:26.609Z",
+        "project_session_id": 4424,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/philosophers"
+      }
+    ]
+  },
+  {
+    "id": 4087615,
+    "occurrence": 1,
+    "final_mark": 100,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6301248,
+    "project": {
+      "id": 1320,
+      "name": "Exam Rank 02",
+      "slug": "exam-rank-02",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-02-14T15:13:53.230Z",
+    "marked": true,
+    "retriable_at": "2025-02-14T15:13:53.272Z",
+    "created_at": "2025-01-15T10:25:54.826Z",
+    "updated_at": "2025-02-14T15:14:06.404Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6275563,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6275563",
+        "final_mark": 50,
+        "project_id": 1320,
+        "created_at": "2025-01-15T10:25:54.899Z",
+        "updated_at": "2025-01-23T15:00:49.303Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4087615
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": null,
+        "repo_uuid": "intra-uuid-6a5ee851-b5d6-4264-9caf-aa6bf8ec3826-6275563-matsauva",
+        "locked_at": "2025-01-15T10:25:54.936Z",
+        "closed_at": "2025-01-23T15:00:47.566Z",
+        "project_session_id": 3306,
+        "project_gitlab_path": null
+      },
+      {
+        "id": 6301248,
+        "name": "matsauva's group-1",
+        "url": "https://api.intra.42.fr/v2/teams/6301248",
+        "final_mark": 100,
+        "project_id": 1320,
+        "created_at": "2025-01-25T19:48:07.168Z",
+        "updated_at": "2025-02-14T15:14:06.041Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 1,
+            "validated": true,
+            "projects_user_id": 4087615
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": null,
+        "repo_uuid": "intra-uuid-40c10a86-8542-4c57-9b98-2998cf2f2360-6301248-matsauva",
+        "locked_at": "2025-01-25T19:48:07.202Z",
+        "closed_at": "2025-02-14T15:14:05.791Z",
+        "project_session_id": 3306,
+        "project_gitlab_path": null
+      }
+    ]
+  },
+  {
+    "id": 4090214,
+    "occurrence": 1,
+    "final_mark": 96,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6321736,
+    "project": {
+      "id": 2009,
+      "name": "so_long",
+      "slug": "so_long",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-02-06T15:16:36.412Z",
+    "marked": true,
+    "retriable_at": "2025-02-07T15:16:36.776Z",
+    "created_at": "2025-01-16T12:04:53.274Z",
+    "updated_at": "2025-02-06T15:16:36.853Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6279062,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6279062",
+        "final_mark": 0,
+        "project_id": 2009,
+        "created_at": "2025-01-16T12:04:53.309Z",
+        "updated_at": "2025-01-31T17:04:51.173Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4090214
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-85a948ba-d2df-4027-b6b8-d1fb036f7376-6279062-matsauva",
+        "repo_uuid": "intra-uuid-85a948ba-d2df-4027-b6b8-d1fb036f7376-6279062-matsauva",
+        "locked_at": "2025-01-16T12:04:53.355Z",
+        "closed_at": "2025-01-31T14:23:48.534Z",
+        "project_session_id": 7051,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/so_long"
+      },
+      {
+        "id": 6321736,
+        "name": "matsauva's group-1",
+        "url": "https://api.intra.42.fr/v2/teams/6321736",
+        "final_mark": 96,
+        "project_id": 2009,
+        "created_at": "2025-02-03T10:20:37.343Z",
+        "updated_at": "2025-02-06T15:16:37.033Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 1,
+            "validated": true,
+            "projects_user_id": 4090214
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-41001fec-726f-4030-9448-48cf6ad3f97f-6321736-matsauva",
+        "repo_uuid": "intra-uuid-41001fec-726f-4030-9448-48cf6ad3f97f-6321736-matsauva",
+        "locked_at": "2025-02-03T10:20:37.394Z",
+        "closed_at": "2025-02-03T15:13:20.903Z",
+        "project_session_id": 7051,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/so_long"
+      }
+    ]
+  },
+  {
+    "id": 4041317,
+    "occurrence": 0,
+    "final_mark": 125,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6213994,
+    "project": {
+      "id": 1471,
+      "name": "push_swap",
+      "slug": "42cursus-push_swap",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2025-01-10T17:14:06.993Z",
+    "marked": true,
+    "retriable_at": "2025-01-13T17:14:07.378Z",
+    "created_at": "2024-11-26T18:30:40.774Z",
+    "updated_at": "2025-01-10T17:14:07.406Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6213994,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6213994",
+        "final_mark": 125,
+        "project_id": 1471,
+        "created_at": "2024-11-26T18:30:40.812Z",
+        "updated_at": "2025-01-10T17:14:07.459Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4041317
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-836dee4c-901b-470e-849d-2f5275fbd56c-6213994-matsauva",
+        "repo_uuid": "intra-uuid-836dee4c-901b-470e-849d-2f5275fbd56c-6213994-matsauva",
+        "locked_at": "2024-11-26T18:30:40.865Z",
+        "closed_at": "2025-01-10T12:14:10.763Z",
+        "project_session_id": 5651,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/push_swap"
+      }
+    ]
+  },
+  {
+    "id": 4022113,
+    "occurrence": 0,
+    "final_mark": 83,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6188488,
+    "project": {
+      "id": 1994,
+      "name": "Born2beroot",
+      "slug": "born2beroot",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2024-11-26T17:47:08.032Z",
+    "marked": true,
+    "retriable_at": "2024-11-27T17:47:08.356Z",
+    "created_at": "2024-11-14T12:27:48.501Z",
+    "updated_at": "2024-11-26T17:47:08.379Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6188488,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6188488",
+        "final_mark": 83,
+        "project_id": 1994,
+        "created_at": "2024-11-14T12:27:48.545Z",
+        "updated_at": "2024-11-26T17:47:08.415Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4022113
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-527aa640-cb63-4363-b47c-7623ed0a8034-6188488-matsauva",
+        "repo_uuid": "intra-uuid-527aa640-cb63-4363-b47c-7623ed0a8034-6188488-matsauva",
+        "locked_at": "2024-11-14T12:27:48.611Z",
+        "closed_at": "2024-11-26T12:46:34.142Z",
+        "project_session_id": 5895,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/born2beroot"
+      }
+    ]
+  },
+  {
+    "id": 4000781,
+    "occurrence": 0,
+    "final_mark": 100,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6157234,
+    "project": {
+      "id": 1327,
+      "name": "get_next_line",
+      "slug": "42cursus-get_next_line",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2024-11-18T16:24:45.440Z",
+    "marked": true,
+    "retriable_at": "2024-11-19T16:24:45.582Z",
+    "created_at": "2024-10-29T19:02:49.734Z",
+    "updated_at": "2024-11-18T16:24:45.597Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6157234,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6157234",
+        "final_mark": 100,
+        "project_id": 1327,
+        "created_at": "2024-10-29T19:02:49.759Z",
+        "updated_at": "2024-11-18T16:24:45.096Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 4000781
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-5ccf9598-3390-49d0-b344-da0e6b688bde-6157234-matsauva",
+        "repo_uuid": "intra-uuid-5ccf9598-3390-49d0-b344-da0e6b688bde-6157234-matsauva",
+        "locked_at": "2024-10-29T19:02:49.809Z",
+        "closed_at": "2024-11-14T12:25:22.293Z",
+        "project_session_id": 5566,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/get_next_line"
+      }
+    ]
+  },
+  {
+    "id": 3982413,
+    "occurrence": 0,
+    "final_mark": 100,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6132629,
+    "project": {
+      "id": 1316,
+      "name": "ft_printf",
+      "slug": "42cursus-ft_printf",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2024-10-29T16:50:26.201Z",
+    "marked": true,
+    "retriable_at": "2024-10-30T16:50:26.352Z",
+    "created_at": "2024-10-18T11:25:38.832Z",
+    "updated_at": "2024-10-29T16:50:26.366Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6132629,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6132629",
+        "final_mark": 100,
+        "project_id": 1316,
+        "created_at": "2024-10-18T11:25:38.854Z",
+        "updated_at": "2024-10-29T16:50:25.834Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3982413
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-03062de8-0bb9-4154-8fa9-39fcea3bb6eb-6132629-matsauva",
+        "repo_uuid": "intra-uuid-03062de8-0bb9-4154-8fa9-39fcea3bb6eb-6132629-matsauva",
+        "locked_at": "2024-10-18T11:25:38.900Z",
+        "closed_at": "2024-10-29T12:53:54.890Z",
+        "project_session_id": 5569,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/ft_printf"
+      }
+    ]
+  },
+  {
+    "id": 3972405,
+    "occurrence": 1,
+    "final_mark": 120,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6129166,
+    "project": {
+      "id": 1314,
+      "name": "Libft",
+      "slug": "42cursus-libft",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      21
+    ],
+    "marked_at": "2024-10-18T10:32:05.179Z",
+    "marked": true,
+    "retriable_at": "2024-10-19T10:32:05.363Z",
+    "created_at": "2024-10-14T08:03:22.056Z",
+    "updated_at": "2024-10-18T10:32:05.376Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6120030,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6120030",
+        "final_mark": 0,
+        "project_id": 1314,
+        "created_at": "2024-10-14T08:03:22.075Z",
+        "updated_at": "2024-10-15T13:39:51.704Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3972405
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-1f797418-abe0-4f35-b2aa-598f22b0185e-6120030-matsauva",
+        "repo_uuid": "intra-uuid-1f797418-abe0-4f35-b2aa-598f22b0185e-6120030-matsauva",
+        "locked_at": "2024-10-14T08:03:22.106Z",
+        "closed_at": "2024-10-15T10:53:54.376Z",
+        "project_session_id": 3802,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/libft"
+      },
+      {
+        "id": 6129166,
+        "name": "matsauva's group-1",
+        "url": "https://api.intra.42.fr/v2/teams/6129166",
+        "final_mark": 120,
+        "project_id": 1314,
+        "created_at": "2024-10-17T06:39:14.395Z",
+        "updated_at": "2024-10-18T10:32:04.906Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 1,
+            "validated": true,
+            "projects_user_id": 3972405
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-7f5432c2-c166-49d1-8ade-8f85b3198f3b-6129166-matsauva",
+        "repo_uuid": "intra-uuid-7f5432c2-c166-49d1-8ade-8f85b3198f3b-6129166-matsauva",
+        "locked_at": "2024-10-17T06:39:14.428Z",
+        "closed_at": "2024-10-17T14:31:04.500Z",
+        "project_session_id": 3802,
+        "project_gitlab_path": "pedago_world/42-cursus/inner-circle/libft"
+      }
+    ]
+  },
+  {
+    "id": 3963487,
+    "occurrence": 4,
+    "final_mark": 100,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6114428,
+    "project": {
+      "id": 2315,
+      "name": "C-piscine-reloaded",
+      "slug": "c-piscine-reloaded",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      66
+    ],
+    "marked_at": "2024-10-09T21:47:38.741Z",
+    "marked": true,
+    "retriable_at": "2024-10-10T01:47:38.773Z",
+    "created_at": "2024-10-07T09:46:31.274Z",
+    "updated_at": "2024-10-09T21:48:01.535Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6107101,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6107101",
+        "final_mark": 0,
+        "project_id": 2315,
+        "created_at": "2024-10-07T09:46:31.284Z",
+        "updated_at": "2024-10-08T14:21:38.159Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3963487
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-27bff3f3-f5c2-4bf0-aa63-fc47088be4a0-6107101-matsauva",
+        "repo_uuid": "intra-uuid-27bff3f3-f5c2-4bf0-aa63-fc47088be4a0-6107101-matsauva",
+        "locked_at": "2024-10-07T09:46:31.331Z",
+        "closed_at": "2024-10-08T14:21:17.933Z",
+        "project_session_id": 10559,
+        "project_gitlab_path": "pedago_world/external/reloaded/base_project"
+      },
+      {
+        "id": 6112463,
+        "name": "matsauva's group-1",
+        "url": "https://api.intra.42.fr/v2/teams/6112463",
+        "final_mark": -42,
+        "project_id": 2315,
+        "created_at": "2024-10-09T07:50:24.468Z",
+        "updated_at": "2024-10-09T09:18:08.216Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 1,
+            "validated": true,
+            "projects_user_id": 3963487
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-92c681f0-008f-4a2b-9d5b-bc85345be272-6112463-matsauva",
+        "repo_uuid": "intra-uuid-92c681f0-008f-4a2b-9d5b-bc85345be272-6112463-matsauva",
+        "locked_at": "2024-10-09T07:50:24.497Z",
+        "closed_at": "2024-10-09T09:17:56.069Z",
+        "project_session_id": 10559,
+        "project_gitlab_path": "pedago_world/external/reloaded/base_project"
+      },
+      {
+        "id": 6112943,
+        "name": "matsauva's group-2",
+        "url": "https://api.intra.42.fr/v2/teams/6112943",
+        "final_mark": 66,
+        "project_id": 2315,
+        "created_at": "2024-10-09T10:14:53.201Z",
+        "updated_at": "2024-10-09T11:12:19.225Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 2,
+            "validated": true,
+            "projects_user_id": 3963487
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-dd316ecf-c3af-4a90-98a0-886cf0c21521-6112943-matsauva",
+        "repo_uuid": "intra-uuid-dd316ecf-c3af-4a90-98a0-886cf0c21521-6112943-matsauva",
+        "locked_at": "2024-10-09T10:14:53.239Z",
+        "closed_at": "2024-10-09T11:12:06.019Z",
+        "project_session_id": 10559,
+        "project_gitlab_path": "pedago_world/external/reloaded/base_project"
+      },
+      {
+        "id": 6113385,
+        "name": "matsauva's group-3",
+        "url": "https://api.intra.42.fr/v2/teams/6113385",
+        "final_mark": 66,
+        "project_id": 2315,
+        "created_at": "2024-10-09T12:23:30.392Z",
+        "updated_at": "2024-10-09T15:57:50.671Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 3,
+            "validated": true,
+            "projects_user_id": 3963487
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-a47d102d-4686-4be9-89df-c91793beb5e1-6113385-matsauva",
+        "repo_uuid": "intra-uuid-a47d102d-4686-4be9-89df-c91793beb5e1-6113385-matsauva",
+        "locked_at": "2024-10-09T12:23:30.433Z",
+        "closed_at": "2024-10-09T15:57:34.812Z",
+        "project_session_id": 10559,
+        "project_gitlab_path": "pedago_world/external/reloaded/base_project"
+      },
+      {
+        "id": 6114428,
+        "name": "matsauva's group-4",
+        "url": "https://api.intra.42.fr/v2/teams/6114428",
+        "final_mark": 100,
+        "project_id": 2315,
+        "created_at": "2024-10-09T20:01:18.677Z",
+        "updated_at": "2024-10-09T21:47:38.382Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 4,
+            "validated": true,
+            "projects_user_id": 3963487
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-4557fa63-57bb-47a9-992d-78b1d5bd6cfd-6114428-matsauva",
+        "repo_uuid": "intra-uuid-4557fa63-57bb-47a9-992d-78b1d5bd6cfd-6114428-matsauva",
+        "locked_at": "2024-10-09T20:01:18.736Z",
+        "closed_at": "2024-10-09T21:46:41.991Z",
+        "project_session_id": 10559,
+        "project_gitlab_path": "pedago_world/external/reloaded/base_project"
+      }
+    ]
+  },
+  {
+    "id": 3934521,
+    "occurrence": 0,
+    "final_mark": 0,
+    "status": "finished",
+    "validated?": false,
+    "current_team_id": 6062190,
+    "project": {
+      "id": 1256,
+      "name": "C Piscine Shell 01",
+      "slug": "c-piscine-shell-01",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      64
+    ],
+    "marked_at": "2024-09-27T16:02:38.368Z",
+    "marked": true,
+    "retriable_at": "2024-09-27T16:22:39.313Z",
+    "created_at": "2024-09-18T15:26:37.878Z",
+    "updated_at": "2024-09-28T16:03:05.913Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6062190,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6062190",
+        "final_mark": 0,
+        "project_id": 1256,
+        "created_at": "2024-09-18T15:26:37.904Z",
+        "updated_at": "2024-09-28T16:03:05.407Z",
+        "status": "finished",
+        "terminating_at": "2024-09-28T16:02:34.043Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3934521
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-a818379b-bfdc-421e-8fe5-e6d69c5dce1f-6062190-matsauva",
+        "repo_uuid": "intra-uuid-a818379b-bfdc-421e-8fe5-e6d69c5dce1f-6062190-matsauva",
+        "locked_at": "2024-09-18T15:26:37.950Z",
+        "closed_at": "2024-09-27T16:02:34.043Z",
+        "project_session_id": 9330,
+        "project_gitlab_path": "pedago_world/c-piscine/shell-01"
+      }
+    ]
+  },
+  {
+    "id": 3938338,
+    "occurrence": 0,
+    "final_mark": 0,
+    "status": "finished",
+    "validated?": false,
+    "current_team_id": 6070176,
+    "project": {
+      "id": 1309,
+      "name": "C Piscine Rush 02",
+      "slug": "c-piscine-rush-02",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      64
+    ],
+    "marked_at": "2024-09-23T11:13:30.245Z",
+    "marked": true,
+    "retriable_at": null,
+    "created_at": "2024-09-19T19:24:24.446Z",
+    "updated_at": "2024-09-27T21:19:17.451Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6070176,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6070176",
+        "final_mark": 0,
+        "project_id": 1309,
+        "created_at": "2024-09-20T18:00:37.486Z",
+        "updated_at": "2024-09-23T11:13:30.530Z",
+        "status": "finished",
+        "terminating_at": "2024-09-27T21:19:08.138Z",
+        "users": [
+          {
+            "id": 201157,
+            "login": "fcrefcoe",
+            "url": "https://api.intra.42.fr/v2/users/fcrefcoe",
+            "leader": false,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3935888
+          },
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3938338
+          },
+          {
+            "id": 201220,
+            "login": "jvenkata",
+            "url": "https://api.intra.42.fr/v2/users/jvenkata",
+            "leader": false,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3936119
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-2ca88f06-9adc-49dc-a289-21920e3e9483-6070176-matsauva",
+        "repo_uuid": "intra-uuid-2ca88f06-9adc-49dc-a289-21920e3e9483-6070176-matsauva",
+        "locked_at": "2024-09-20T18:00:38.221Z",
+        "closed_at": "2024-09-22T21:19:08.138Z",
+        "project_session_id": 9374,
+        "project_gitlab_path": "pedago_world/c-piscine/rush-02"
+      }
+    ]
+  },
+  {
+    "id": 3946728,
+    "occurrence": 0,
+    "final_mark": 54,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6081431,
+    "project": {
+      "id": 1304,
+      "name": "C Piscine Final Exam",
+      "slug": "c-piscine-final-exam",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      64
+    ],
+    "marked_at": "2024-09-27T14:10:41.754Z",
+    "marked": true,
+    "retriable_at": null,
+    "created_at": "2024-09-25T09:01:38.489Z",
+    "updated_at": "2024-09-27T16:00:09.337Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6081431,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6081431",
+        "final_mark": 54,
+        "project_id": 1304,
+        "created_at": "2024-09-25T09:01:38.520Z",
+        "updated_at": "2024-09-27T16:00:08.928Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3946728
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": null,
+        "repo_uuid": "intra-uuid-bf8a8b94-6dbf-4025-afbd-c82570a245db-6081431-matsauva",
+        "locked_at": "2024-09-25T09:01:38.556Z",
+        "closed_at": "2024-09-27T16:00:08.684Z",
+        "project_session_id": 9368,
+        "project_gitlab_path": null
+      }
+    ]
+  },
+  {
+    "id": 3920557,
+    "occurrence": 1,
+    "final_mark": 40,
+    "status": "finished",
+    "validated?": false,
+    "current_team_id": 6085706,
+    "project": {
+      "id": 1264,
+      "name": "C Piscine C 08",
+      "slug": "c-piscine-c-08",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      64
+    ],
+    "marked_at": "2024-09-18T15:25:53.205Z",
+    "marked": true,
+    "retriable_at": "2024-09-26T14:18:13.538Z",
+    "created_at": "2024-09-12T15:48:21.857Z",
+    "updated_at": "2024-09-27T10:03:36.142Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6041071,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6041071",
+        "final_mark": 40,
+        "project_id": 1264,
+        "created_at": "2024-09-12T15:48:21.891Z",
+        "updated_at": "2024-09-18T15:25:52.939Z",
+        "status": "finished",
+        "terminating_at": "2024-09-19T13:16:15.970Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3920557
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-a0b5e194-9141-4a3e-832f-50c4f9c799ff-6041071-matsauva",
+        "repo_uuid": "intra-uuid-a0b5e194-9141-4a3e-832f-50c4f9c799ff-6041071-matsauva",
+        "locked_at": "2024-09-12T15:48:21.943Z",
+        "closed_at": "2024-09-18T13:16:15.970Z",
+        "project_session_id": 9348,
+        "project_gitlab_path": "pedago_world/c-piscine/c-08"
+      },
+      {
+        "id": 6085706,
+        "name": "matsauva's group-1",
+        "url": "https://api.intra.42.fr/v2/teams/6085706",
+        "final_mark": 40,
+        "project_id": 1264,
+        "created_at": "2024-09-26T08:35:33.322Z",
+        "updated_at": "2024-09-26T13:38:13.282Z",
+        "status": "finished",
+        "terminating_at": "2024-09-27T10:03:05.761Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 1,
+            "validated": true,
+            "projects_user_id": 3920557
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-41db8e25-7054-4295-b2d2-8c47ab84139b-6085706-matsauva",
+        "repo_uuid": "intra-uuid-41db8e25-7054-4295-b2d2-8c47ab84139b-6085706-matsauva",
+        "locked_at": "2024-09-26T08:35:33.368Z",
+        "closed_at": "2024-09-26T10:03:05.761Z",
+        "project_session_id": 9348,
+        "project_gitlab_path": "pedago_world/c-piscine/c-08"
+      }
+    ]
+  },
+  {
+    "id": 3939340,
+    "occurrence": 0,
+    "final_mark": 50,
+    "status": "finished",
+    "validated?": false,
+    "current_team_id": 6072227,
+    "project": {
+      "id": 1305,
+      "name": "C Piscine BSQ",
+      "slug": "c-piscine-bsq",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      64
+    ],
+    "marked_at": "2024-09-26T12:19:32.961Z",
+    "marked": true,
+    "retriable_at": null,
+    "created_at": "2024-09-20T10:52:37.615Z",
+    "updated_at": "2024-09-26T12:19:33.116Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6072227,
+        "name": "matsauva's team",
+        "url": "https://api.intra.42.fr/v2/teams/6072227",
+        "final_mark": 50,
+        "project_id": 1305,
+        "created_at": "2024-09-22T08:48:58.046Z",
+        "updated_at": "2024-09-26T12:19:32.605Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3939340
+          },
+          {
+            "id": 201799,
+            "login": "llebugle",
+            "url": "https://api.intra.42.fr/v2/users/llebugle",
+            "leader": false,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3939339
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-13cb3c73-e504-43a0-852d-f49785170dcf-6072227-matsauva",
+        "repo_uuid": "intra-uuid-13cb3c73-e504-43a0-852d-f49785170dcf-6072227-matsauva",
+        "locked_at": "2024-09-23T07:46:08.498Z",
+        "closed_at": "2024-09-25T21:19:17.937Z",
+        "project_session_id": 9376,
+        "project_gitlab_path": "pedago_world/c-piscine/bsq"
+      }
+    ]
+  },
+  {
+    "id": 3922306,
+    "occurrence": 0,
+    "final_mark": 115,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6044355,
+    "project": {
+      "id": 1310,
+      "name": "C Piscine Rush 01",
+      "slug": "c-piscine-rush-01",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      64
+    ],
+    "marked_at": "2024-09-16T11:59:45.919Z",
+    "marked": true,
+    "retriable_at": null,
+    "created_at": "2024-09-13T10:31:41.762Z",
+    "updated_at": "2024-09-20T21:19:38.045Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6044355,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6044355",
+        "final_mark": 115,
+        "project_id": 1310,
+        "created_at": "2024-09-13T18:00:15.384Z",
+        "updated_at": "2024-09-16T11:59:46.597Z",
+        "status": "finished",
+        "terminating_at": "2024-09-20T21:19:24.542Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3922306
+          },
+          {
+            "id": 201646,
+            "login": "nsaillez",
+            "url": "https://api.intra.42.fr/v2/users/nsaillez",
+            "leader": false,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3921997
+          },
+          {
+            "id": 201724,
+            "login": "saouragh",
+            "url": "https://api.intra.42.fr/v2/users/saouragh",
+            "leader": false,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3922847
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-e26aae87-85ca-493b-b0e7-b68a0bf68259-6044355-matsauva",
+        "repo_uuid": "intra-uuid-e26aae87-85ca-493b-b0e7-b68a0bf68259-6044355-matsauva",
+        "locked_at": "2024-09-13T18:00:16.084Z",
+        "closed_at": "2024-09-15T21:19:24.542Z",
+        "project_session_id": 9372,
+        "project_gitlab_path": "pedago_world/c-piscine/rush-01"
+      }
+    ]
+  },
+  {
+    "id": 3932787,
+    "occurrence": 0,
+    "final_mark": 84,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6059789,
+    "project": {
+      "id": 1303,
+      "name": "C Piscine Exam 02",
+      "slug": "c-piscine-exam-02",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      64
+    ],
+    "marked_at": "2024-09-20T15:47:08.511Z",
+    "marked": true,
+    "retriable_at": null,
+    "created_at": "2024-09-18T10:14:44.386Z",
+    "updated_at": "2024-09-20T15:55:39.876Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6059789,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6059789",
+        "final_mark": 84,
+        "project_id": 1303,
+        "created_at": "2024-09-18T10:14:44.425Z",
+        "updated_at": "2024-09-20T15:55:39.568Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3932787
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": null,
+        "repo_uuid": "intra-uuid-606c5ddd-92e0-47d1-b776-555556ef9e75-6059789-matsauva",
+        "locked_at": "2024-09-18T10:14:44.457Z",
+        "closed_at": "2024-09-20T15:55:39.342Z",
+        "project_session_id": 9366,
+        "project_gitlab_path": null
+      }
+    ]
+  },
+  {
+    "id": 3917701,
+    "occurrence": 2,
+    "final_mark": 60,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6058417,
+    "project": {
+      "id": 1270,
+      "name": "C Piscine C 07",
+      "slug": "c-piscine-c-07",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      64
+    ],
+    "marked_at": "2024-09-18T13:11:21.875Z",
+    "marked": true,
+    "retriable_at": "2024-09-18T14:11:21.998Z",
+    "created_at": "2024-09-11T19:11:07.416Z",
+    "updated_at": "2024-09-19T09:52:37.594Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6037135,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6037135",
+        "final_mark": -42,
+        "project_id": 1270,
+        "created_at": "2024-09-11T19:11:07.459Z",
+        "updated_at": "2024-09-13T09:23:44.927Z",
+        "status": "finished",
+        "terminating_at": "2024-09-13T15:48:33.038Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3917701
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-2701ce3b-4601-46f3-a84f-eada4f10287c-6037135-matsauva",
+        "repo_uuid": "intra-uuid-2701ce3b-4601-46f3-a84f-eada4f10287c-6037135-matsauva",
+        "locked_at": "2024-09-11T19:11:07.505Z",
+        "closed_at": "2024-09-12T15:48:33.038Z",
+        "project_session_id": 9346,
+        "project_gitlab_path": "pedago_world/c-piscine/c-07"
+      },
+      {
+        "id": 6043340,
+        "name": "matsauva's group-1",
+        "url": "https://api.intra.42.fr/v2/teams/6043340",
+        "final_mark": 45,
+        "project_id": 1270,
+        "created_at": "2024-09-13T10:37:38.037Z",
+        "updated_at": "2024-09-17T16:49:08.544Z",
+        "status": "finished",
+        "terminating_at": "2024-09-18T14:44:27.601Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 1,
+            "validated": true,
+            "projects_user_id": 3917701
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-bdd3b39e-545a-4dcd-bfb4-fa11c3d55d73-6043340-matsauva",
+        "repo_uuid": "intra-uuid-bdd3b39e-545a-4dcd-bfb4-fa11c3d55d73-6043340-matsauva",
+        "locked_at": "2024-09-13T10:37:38.079Z",
+        "closed_at": "2024-09-17T14:44:27.601Z",
+        "project_session_id": 9346,
+        "project_gitlab_path": "pedago_world/c-piscine/c-07"
+      },
+      {
+        "id": 6058417,
+        "name": "matsauva's group-2",
+        "url": "https://api.intra.42.fr/v2/teams/6058417",
+        "final_mark": 60,
+        "project_id": 1270,
+        "created_at": "2024-09-18T06:25:06.084Z",
+        "updated_at": "2024-09-18T13:11:21.674Z",
+        "status": "finished",
+        "terminating_at": "2024-09-19T09:52:37.259Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 2,
+            "validated": true,
+            "projects_user_id": 3917701
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-47b9b6ff-ff56-4ce4-93f2-14f31b793c00-6058417-matsauva",
+        "repo_uuid": "intra-uuid-47b9b6ff-ff56-4ce4-93f2-14f31b793c00-6058417-matsauva",
+        "locked_at": "2024-09-18T06:25:06.122Z",
+        "closed_at": "2024-09-18T09:52:37.259Z",
+        "project_session_id": 9346,
+        "project_gitlab_path": "pedago_world/c-piscine/c-07"
+      }
+    ]
+  },
+  {
+    "id": 3901998,
+    "occurrence": 0,
+    "final_mark": 0,
+    "status": "finished",
+    "validated?": false,
+    "current_team_id": 6018020,
+    "project": {
+      "id": 1308,
+      "name": "C Piscine Rush 00",
+      "slug": "c-piscine-rush-00",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      64
+    ],
+    "marked_at": "2024-09-09T13:21:22.932Z",
+    "marked": true,
+    "retriable_at": null,
+    "created_at": "2024-09-05T14:02:30.000Z",
+    "updated_at": "2024-09-13T21:19:59.149Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6018020,
+        "name": "aramcilo's group",
+        "url": "https://api.intra.42.fr/v2/teams/6018020",
+        "final_mark": 0,
+        "project_id": 1308,
+        "created_at": "2024-09-06T18:00:57.569Z",
+        "updated_at": "2024-09-09T13:21:23.210Z",
+        "status": "finished",
+        "terminating_at": "2024-09-13T21:19:43.544Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": false,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3901998
+          },
+          {
+            "id": 201308,
+            "login": "aramcilo",
+            "url": "https://api.intra.42.fr/v2/users/aramcilo",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3902203
+          },
+          {
+            "id": 201759,
+            "login": "ineel-om",
+            "url": "https://api.intra.42.fr/v2/users/ineel-om",
+            "leader": false,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3899324
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-5155b948-1067-4003-a960-158c076a6b95-6018020-aramcilo",
+        "repo_uuid": "intra-uuid-5155b948-1067-4003-a960-158c076a6b95-6018020-aramcilo",
+        "locked_at": "2024-09-06T18:00:58.064Z",
+        "closed_at": "2024-09-08T21:19:43.544Z",
+        "project_session_id": 9370,
+        "project_gitlab_path": "pedago_world/c-piscine/rush-00"
+      }
+    ]
+  },
+  {
+    "id": 3916949,
+    "occurrence": 0,
+    "final_mark": 64,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6036113,
+    "project": {
+      "id": 1302,
+      "name": "C Piscine Exam 01",
+      "slug": "c-piscine-exam-01",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      64
+    ],
+    "marked_at": "2024-09-13T15:07:19.482Z",
+    "marked": true,
+    "retriable_at": null,
+    "created_at": "2024-09-11T15:36:25.831Z",
+    "updated_at": "2024-09-13T16:00:30.864Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6036113,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6036113",
+        "final_mark": 64,
+        "project_id": 1302,
+        "created_at": "2024-09-11T15:36:25.877Z",
+        "updated_at": "2024-09-13T16:00:30.534Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3916949
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": null,
+        "repo_uuid": "intra-uuid-137ad4f6-7cdc-4e7e-90e7-abdc17ad06b8-6036113-matsauva",
+        "locked_at": "2024-09-11T15:36:25.918Z",
+        "closed_at": "2024-09-13T16:00:30.290Z",
+        "project_session_id": 9364,
+        "project_gitlab_path": null
+      }
+    ]
+  },
+  {
+    "id": 3914573,
+    "occurrence": 0,
+    "final_mark": 100,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6033001,
+    "project": {
+      "id": 1263,
+      "name": "C Piscine C 06",
+      "slug": "c-piscine-c-06",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      64
+    ],
+    "marked_at": "2024-09-11T18:54:22.140Z",
+    "marked": true,
+    "retriable_at": "2024-09-11T19:14:22.250Z",
+    "created_at": "2024-09-11T09:05:37.963Z",
+    "updated_at": "2024-09-12T17:31:01.630Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6033001,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6033001",
+        "final_mark": 100,
+        "project_id": 1263,
+        "created_at": "2024-09-11T09:05:37.993Z",
+        "updated_at": "2024-09-11T18:54:21.916Z",
+        "status": "finished",
+        "terminating_at": "2024-09-12T17:30:57.492Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3914573
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-f096f3d3-7128-4eb8-9145-ebd18a0affd3-6033001-matsauva",
+        "repo_uuid": "intra-uuid-f096f3d3-7128-4eb8-9145-ebd18a0affd3-6033001-matsauva",
+        "locked_at": "2024-09-11T09:05:38.043Z",
+        "closed_at": "2024-09-11T17:30:57.492Z",
+        "project_session_id": 9344,
+        "project_gitlab_path": "pedago_world/c-piscine/c-06"
+      }
+    ]
+  },
+  {
+    "id": 3911905,
+    "occurrence": 1,
+    "final_mark": 100,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6034778,
+    "project": {
+      "id": 1262,
+      "name": "C Piscine C 05",
+      "slug": "c-piscine-c-05",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      64
+    ],
+    "marked_at": "2024-09-11T15:36:02.522Z",
+    "marked": true,
+    "retriable_at": "2024-09-11T16:16:02.656Z",
+    "created_at": "2024-09-10T14:15:08.516Z",
+    "updated_at": "2024-09-12T13:22:00.870Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6029465,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6029465",
+        "final_mark": 10,
+        "project_id": 1262,
+        "created_at": "2024-09-10T14:15:08.540Z",
+        "updated_at": "2024-09-11T11:51:27.881Z",
+        "status": "finished",
+        "terminating_at": "2024-09-12T08:50:32.813Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3911905
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-6e1d7f84-83e9-4221-aade-896308b85863-6029465-matsauva",
+        "repo_uuid": "intra-uuid-6e1d7f84-83e9-4221-aade-896308b85863-6029465-matsauva",
+        "locked_at": "2024-09-10T14:15:08.575Z",
+        "closed_at": "2024-09-11T08:50:32.813Z",
+        "project_session_id": 9342,
+        "project_gitlab_path": "pedago_world/c-piscine/c-05"
+      },
+      {
+        "id": 6034778,
+        "name": "matsauva's group-1",
+        "url": "https://api.intra.42.fr/v2/teams/6034778",
+        "final_mark": 100,
+        "project_id": 1262,
+        "created_at": "2024-09-11T12:45:00.623Z",
+        "updated_at": "2024-09-11T15:36:02.254Z",
+        "status": "finished",
+        "terminating_at": "2024-09-12T13:21:57.838Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 1,
+            "validated": true,
+            "projects_user_id": 3911905
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-fe1a0a07-dc98-4845-8621-8dc259eb60d8-6034778-matsauva",
+        "repo_uuid": "intra-uuid-fe1a0a07-dc98-4845-8621-8dc259eb60d8-6034778-matsauva",
+        "locked_at": "2024-09-11T12:45:00.685Z",
+        "closed_at": "2024-09-11T13:21:57.838Z",
+        "project_session_id": 9342,
+        "project_gitlab_path": "pedago_world/c-piscine/c-05"
+      }
+    ]
+  },
+  {
+    "id": 3909395,
+    "occurrence": 0,
+    "final_mark": 85,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6025775,
+    "project": {
+      "id": 1261,
+      "name": "C Piscine C 04",
+      "slug": "c-piscine-c-04",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      64
+    ],
+    "marked_at": "2024-09-10T14:07:49.652Z",
+    "marked": true,
+    "retriable_at": "2024-09-10T14:27:49.790Z",
+    "created_at": "2024-09-09T18:39:52.325Z",
+    "updated_at": "2024-09-11T12:02:32.476Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6025775,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6025775",
+        "final_mark": 85,
+        "project_id": 1261,
+        "created_at": "2024-09-09T18:39:52.436Z",
+        "updated_at": "2024-09-10T14:07:49.385Z",
+        "status": "finished",
+        "terminating_at": "2024-09-11T12:02:16.508Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3909395
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-467328ac-2e5c-4543-b67f-01869bf20c5b-6025775-matsauva",
+        "repo_uuid": "intra-uuid-467328ac-2e5c-4543-b67f-01869bf20c5b-6025775-matsauva",
+        "locked_at": "2024-09-09T18:39:52.470Z",
+        "closed_at": "2024-09-10T12:02:16.508Z",
+        "project_session_id": 9340,
+        "project_gitlab_path": "pedago_world/c-piscine/c-04"
+      }
+    ]
+  },
+  {
+    "id": 3909237,
+    "occurrence": 0,
+    "final_mark": 100,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6025495,
+    "project": {
+      "id": 1260,
+      "name": "C Piscine C 03",
+      "slug": "c-piscine-c-03",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      64
+    ],
+    "marked_at": "2024-09-09T18:38:30.336Z",
+    "marked": true,
+    "retriable_at": "2024-09-09T18:58:30.465Z",
+    "created_at": "2024-09-09T17:08:34.972Z",
+    "updated_at": "2024-09-10T17:20:04.348Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6025495,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6025495",
+        "final_mark": 100,
+        "project_id": 1260,
+        "created_at": "2024-09-09T17:08:34.995Z",
+        "updated_at": "2024-09-09T18:38:30.133Z",
+        "status": "finished",
+        "terminating_at": "2024-09-10T17:19:54.095Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3909237
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-ff6c235d-493a-4703-b9e2-13d4986fad7c-6025495-matsauva",
+        "repo_uuid": "intra-uuid-ff6c235d-493a-4703-b9e2-13d4986fad7c-6025495-matsauva",
+        "locked_at": "2024-09-09T17:08:35.030Z",
+        "closed_at": "2024-09-09T17:19:54.095Z",
+        "project_session_id": 9338,
+        "project_gitlab_path": "pedago_world/c-piscine/c-03"
+      }
+    ]
+  },
+  {
+    "id": 3901900,
+    "occurrence": 3,
+    "final_mark": 75,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6025192,
+    "project": {
+      "id": 1259,
+      "name": "C Piscine C 02",
+      "slug": "c-piscine-c-02",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      64
+    ],
+    "marked_at": "2024-09-09T17:07:17.644Z",
+    "marked": true,
+    "retriable_at": "2024-09-09T19:07:17.763Z",
+    "created_at": "2024-09-05T13:32:52.616Z",
+    "updated_at": "2024-09-10T16:11:23.635Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6014305,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6014305",
+        "final_mark": 0,
+        "project_id": 1259,
+        "created_at": "2024-09-05T13:32:52.657Z",
+        "updated_at": "2024-09-09T07:27:04.007Z",
+        "status": "finished",
+        "terminating_at": "2024-09-09T13:52:59.615Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3901900
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-f560fc49-57f8-4ef3-a3f2-d477cb3dee8d-6014305-matsauva",
+        "repo_uuid": "intra-uuid-f560fc49-57f8-4ef3-a3f2-d477cb3dee8d-6014305-matsauva",
+        "locked_at": "2024-09-05T13:32:52.722Z",
+        "closed_at": "2024-09-08T13:52:59.615Z",
+        "project_session_id": 9336,
+        "project_gitlab_path": "pedago_world/c-piscine/c-02"
+      },
+      {
+        "id": 6022627,
+        "name": "matsauva's group-1",
+        "url": "https://api.intra.42.fr/v2/teams/6022627",
+        "final_mark": 5,
+        "project_id": 1259,
+        "created_at": "2024-09-09T08:18:27.207Z",
+        "updated_at": "2024-09-09T11:43:03.805Z",
+        "status": "finished",
+        "terminating_at": "2024-09-10T09:05:50.580Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 1,
+            "validated": true,
+            "projects_user_id": 3901900
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-4eff6ccd-8edb-46b1-84e1-075a675c8a00-6022627-matsauva",
+        "repo_uuid": "intra-uuid-4eff6ccd-8edb-46b1-84e1-075a675c8a00-6022627-matsauva",
+        "locked_at": "2024-09-09T08:18:27.249Z",
+        "closed_at": "2024-09-09T09:05:50.580Z",
+        "project_session_id": 9336,
+        "project_gitlab_path": "pedago_world/c-piscine/c-02"
+      },
+      {
+        "id": 6024007,
+        "name": "matsauva's group-2",
+        "url": "https://api.intra.42.fr/v2/teams/6024007",
+        "final_mark": 5,
+        "project_id": 1259,
+        "created_at": "2024-09-09T12:23:52.076Z",
+        "updated_at": "2024-09-09T14:57:54.085Z",
+        "status": "finished",
+        "terminating_at": "2024-09-10T12:36:29.117Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 2,
+            "validated": true,
+            "projects_user_id": 3901900
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-1812ed64-1206-4831-a771-652262c22273-6024007-matsauva",
+        "repo_uuid": "intra-uuid-1812ed64-1206-4831-a771-652262c22273-6024007-matsauva",
+        "locked_at": "2024-09-09T12:23:52.116Z",
+        "closed_at": "2024-09-09T12:36:29.117Z",
+        "project_session_id": 9336,
+        "project_gitlab_path": "pedago_world/c-piscine/c-02"
+      },
+      {
+        "id": 6025192,
+        "name": "matsauva's group-3",
+        "url": "https://api.intra.42.fr/v2/teams/6025192",
+        "final_mark": 75,
+        "project_id": 1259,
+        "created_at": "2024-09-09T16:03:59.852Z",
+        "updated_at": "2024-09-09T17:07:17.418Z",
+        "status": "finished",
+        "terminating_at": "2024-09-10T16:11:21.675Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 3,
+            "validated": true,
+            "projects_user_id": 3901900
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-9f89520c-6c7c-4fa7-a34a-fa7e3795e38a-6025192-matsauva",
+        "repo_uuid": "intra-uuid-9f89520c-6c7c-4fa7-a34a-fa7e3795e38a-6025192-matsauva",
+        "locked_at": "2024-09-09T16:03:59.897Z",
+        "closed_at": "2024-09-09T16:11:21.675Z",
+        "project_session_id": 9336,
+        "project_gitlab_path": "pedago_world/c-piscine/c-02"
+      }
+    ]
+  },
+  {
+    "id": 3896617,
+    "occurrence": 0,
+    "final_mark": 80,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6007008,
+    "project": {
+      "id": 1301,
+      "name": "C Piscine Exam 00",
+      "slug": "c-piscine-exam-00",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      64
+    ],
+    "marked_at": "2024-09-06T15:26:12.890Z",
+    "marked": true,
+    "retriable_at": null,
+    "created_at": "2024-09-04T09:39:22.587Z",
+    "updated_at": "2024-09-06T15:59:35.833Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6007008,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6007008",
+        "final_mark": 80,
+        "project_id": 1301,
+        "created_at": "2024-09-04T09:39:22.622Z",
+        "updated_at": "2024-09-06T15:59:35.500Z",
+        "status": "finished",
+        "terminating_at": null,
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3896617
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": null,
+        "repo_uuid": "intra-uuid-1102947d-0e3b-4c91-9935-b1516a2955e6-6007008-matsauva",
+        "locked_at": "2024-09-04T09:39:22.668Z",
+        "closed_at": "2024-09-06T15:59:35.273Z",
+        "project_session_id": 9362,
+        "project_gitlab_path": null
+      }
+    ]
+  },
+  {
+    "id": 3900637,
+    "occurrence": 0,
+    "final_mark": 50,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6012506,
+    "project": {
+      "id": 1258,
+      "name": "C Piscine C 01",
+      "slug": "c-piscine-c-01",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      64
+    ],
+    "marked_at": "2024-09-05T13:32:04.669Z",
+    "marked": true,
+    "retriable_at": "2024-09-05T13:52:04.828Z",
+    "created_at": "2024-09-05T08:45:11.809Z",
+    "updated_at": "2024-09-06T11:53:09.847Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6012506,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6012506",
+        "final_mark": 50,
+        "project_id": 1258,
+        "created_at": "2024-09-05T08:45:11.838Z",
+        "updated_at": "2024-09-05T13:32:04.385Z",
+        "status": "finished",
+        "terminating_at": "2024-09-06T11:53:06.526Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3900637
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-ce0e5929-799e-46ab-898c-3361968e1991-6012506-matsauva",
+        "repo_uuid": "intra-uuid-ce0e5929-799e-46ab-898c-3361968e1991-6012506-matsauva",
+        "locked_at": "2024-09-05T08:45:11.897Z",
+        "closed_at": "2024-09-05T11:53:06.526Z",
+        "project_session_id": 9334,
+        "project_gitlab_path": "pedago_world/c-piscine/c-01"
+      }
+    ]
+  },
+  {
+    "id": 3898686,
+    "occurrence": 1,
+    "final_mark": 60,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6011122,
+    "project": {
+      "id": 1257,
+      "name": "C Piscine C 00",
+      "slug": "c-piscine-c-00",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      64
+    ],
+    "marked_at": "2024-09-05T08:43:59.352Z",
+    "marked": true,
+    "retriable_at": "2024-09-05T09:23:59.496Z",
+    "created_at": "2024-09-04T15:09:43.951Z",
+    "updated_at": "2024-09-06T06:18:28.171Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 6009657,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/6009657",
+        "final_mark": 22,
+        "project_id": 1257,
+        "created_at": "2024-09-04T15:09:43.972Z",
+        "updated_at": "2024-09-04T18:31:29.605Z",
+        "status": "finished",
+        "terminating_at": "2024-09-05T16:38:26.610Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3898686
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-ae3b92a3-4a53-427f-926b-1bb03c18ea94-6009657-matsauva",
+        "repo_uuid": "intra-uuid-ae3b92a3-4a53-427f-926b-1bb03c18ea94-6009657-matsauva",
+        "locked_at": "2024-09-04T15:09:44.004Z",
+        "closed_at": "2024-09-04T16:38:26.610Z",
+        "project_session_id": 9332,
+        "project_gitlab_path": "pedago_world/c-piscine/c-00"
+      },
+      {
+        "id": 6011122,
+        "name": "matsauva's group-1",
+        "url": "https://api.intra.42.fr/v2/teams/6011122",
+        "final_mark": 60,
+        "project_id": 1257,
+        "created_at": "2024-09-04T19:57:37.747Z",
+        "updated_at": "2024-09-05T08:43:59.073Z",
+        "status": "finished",
+        "terminating_at": "2024-09-06T06:17:17.610Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 1,
+            "validated": true,
+            "projects_user_id": 3898686
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-d3c401a5-55bd-4606-8d40-05e0555953f5-6011122-matsauva",
+        "repo_uuid": "intra-uuid-d3c401a5-55bd-4606-8d40-05e0555953f5-6011122-matsauva",
+        "locked_at": "2024-09-04T19:57:37.787Z",
+        "closed_at": "2024-09-05T06:17:17.610Z",
+        "project_session_id": 9332,
+        "project_gitlab_path": "pedago_world/c-piscine/c-00"
+      }
+    ]
+  },
+  {
+    "id": 3888456,
+    "occurrence": 3,
+    "final_mark": 85,
+    "status": "finished",
+    "validated?": true,
+    "current_team_id": 6007424,
+    "project": {
+      "id": 1255,
+      "name": "C Piscine Shell 00",
+      "slug": "c-piscine-shell-00",
+      "parent_id": null
+    },
+    "cursus_ids": [
+      64
+    ],
+    "marked_at": "2024-09-04T14:08:04.091Z",
+    "marked": true,
+    "retriable_at": "2024-09-04T16:08:04.234Z",
+    "created_at": "2024-09-02T07:23:22.346Z",
+    "updated_at": "2024-09-05T10:55:47.136Z",
+    "user": {
+      "id": 201207,
+      "email": "matsauva@student.42belgium.be",
+      "login": "matsauva",
+      "first_name": "Mathieu",
+      "last_name": "Sauvage",
+      "usual_full_name": "Mathieu Sauvage",
+      "usual_first_name": null,
+      "url": "https://api.intra.42.fr/v2/users/matsauva",
+      "phone": "hidden",
+      "displayname": "Mathieu Sauvage",
+      "kind": "student",
+      "image": {
+        "link": "https://cdn.intra.42.fr/users/3d258158219af4597e55e75a22ead720/matsauva.jpg",
+        "versions": {
+          "large": "https://cdn.intra.42.fr/users/95910c66cea5e4199a3671527d3f2eef/large_matsauva.jpg",
+          "medium": "https://cdn.intra.42.fr/users/53d9c9557b27f246074bdfbe472ae902/medium_matsauva.jpg",
+          "small": "https://cdn.intra.42.fr/users/1a662f678b06bad861225ba7fa74336b/small_matsauva.jpg",
+          "micro": "https://cdn.intra.42.fr/users/60f0c659e3f9fde72b5dcdd01b7d2fc0/micro_matsauva.jpg"
+        }
+      },
+      "staff?": false,
+      "correction_point": 10,
+      "pool_month": "september",
+      "pool_year": "2024",
+      "location": null,
+      "wallet": 150,
+      "anonymize_date": "2028-12-09T00:00:00.000+01:00",
+      "data_erasure_date": "2028-12-09T00:00:00.000+01:00",
+      "created_at": "2024-08-30T12:30:21.113Z",
+      "updated_at": "2025-12-08T15:51:14.595Z",
+      "alumnized_at": null,
+      "alumni?": false,
+      "active?": true
+    },
+    "teams": [
+      {
+        "id": 5995621,
+        "name": "matsauva's group",
+        "url": "https://api.intra.42.fr/v2/teams/5995621",
+        "final_mark": 0,
+        "project_id": 1255,
+        "created_at": "2024-09-02T07:23:22.363Z",
+        "updated_at": "2024-09-04T07:46:31.600Z",
+        "status": "finished",
+        "terminating_at": "2024-09-04T07:46:18.317Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 0,
+            "validated": true,
+            "projects_user_id": 3888456
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-306d77e2-18f0-4a46-8c0a-3c5a46b00eab-5995621-matsauva",
+        "repo_uuid": "intra-uuid-306d77e2-18f0-4a46-8c0a-3c5a46b00eab-5995621-matsauva",
+        "locked_at": "2024-09-02T07:23:22.395Z",
+        "closed_at": "2024-09-03T07:46:18.317Z",
+        "project_session_id": 9328,
+        "project_gitlab_path": "pedago_world/c-piscine/shell-00"
+      },
+      {
+        "id": 6001621,
+        "name": "matsauva's group-1",
+        "url": "https://api.intra.42.fr/v2/teams/6001621",
+        "final_mark": 10,
+        "project_id": 1255,
+        "created_at": "2024-09-03T10:33:58.559Z",
+        "updated_at": "2024-09-04T15:58:23.004Z",
+        "status": "finished",
+        "terminating_at": "2024-09-04T15:58:18.451Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 1,
+            "validated": true,
+            "projects_user_id": 3888456
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-33502d0e-fc67-4806-8f28-fad57ddd4d0b-6001621-matsauva",
+        "repo_uuid": "intra-uuid-33502d0e-fc67-4806-8f28-fad57ddd4d0b-6001621-matsauva",
+        "locked_at": "2024-09-03T10:33:58.595Z",
+        "closed_at": "2024-09-03T15:58:18.451Z",
+        "project_session_id": 9328,
+        "project_gitlab_path": "pedago_world/c-piscine/shell-00"
+      },
+      {
+        "id": 6004949,
+        "name": "matsauva's group-2",
+        "url": "https://api.intra.42.fr/v2/teams/6004949",
+        "final_mark": 40,
+        "project_id": 1255,
+        "created_at": "2024-09-03T20:26:12.252Z",
+        "updated_at": "2024-09-04T08:59:32.239Z",
+        "status": "finished",
+        "terminating_at": "2024-09-04T20:54:27.153Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 2,
+            "validated": true,
+            "projects_user_id": 3888456
+          }
+        ],
+        "locked?": true,
+        "validated?": false,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-32a12261-63c0-48e5-b60a-f0b4da919fbd-6004949-matsauva",
+        "repo_uuid": "intra-uuid-32a12261-63c0-48e5-b60a-f0b4da919fbd-6004949-matsauva",
+        "locked_at": "2024-09-03T20:26:12.295Z",
+        "closed_at": "2024-09-03T20:54:27.153Z",
+        "project_session_id": 9328,
+        "project_gitlab_path": "pedago_world/c-piscine/shell-00"
+      },
+      {
+        "id": 6007424,
+        "name": "matsauva's group-3",
+        "url": "https://api.intra.42.fr/v2/teams/6007424",
+        "final_mark": 85,
+        "project_id": 1255,
+        "created_at": "2024-09-04T10:30:03.178Z",
+        "updated_at": "2024-09-04T14:08:03.854Z",
+        "status": "finished",
+        "terminating_at": "2024-09-05T10:55:32.246Z",
+        "users": [
+          {
+            "id": 201207,
+            "login": "matsauva",
+            "url": "https://api.intra.42.fr/v2/users/matsauva",
+            "leader": true,
+            "occurrence": 3,
+            "validated": true,
+            "projects_user_id": 3888456
+          }
+        ],
+        "locked?": true,
+        "validated?": true,
+        "closed?": true,
+        "repo_url": "git@vogsphere-v2.s19.be:vogsphere/intra-uuid-94c38b65-9b60-44a4-9ea5-52d3a143d9dd-6007424-matsauva",
+        "repo_uuid": "intra-uuid-94c38b65-9b60-44a4-9ea5-52d3a143d9dd-6007424-matsauva",
+        "locked_at": "2024-09-04T10:30:03.225Z",
+        "closed_at": "2024-09-04T10:55:32.246Z",
+        "project_session_id": 9328,
+        "project_gitlab_path": "pedago_world/c-piscine/shell-00"
+      }
+    ]
+  }
+]

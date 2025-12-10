@@ -1,0 +1,1170 @@
+[
+  {
+    "id": 1547,
+    "name": "Top Dog",
+    "description": "Get first place in an external Hackathon",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1547/Fire_alarm__400_x_400_px_.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1547/users",
+    "achievements": [],
+    "campus": [
+      "Berlin"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2450,
+      "name": "%login, The Top Dog"
+    }
+  },
+  {
+    "id": 1548,
+    "name": "Magic Load Balancer",
+    "description": "Étudiant engagé assurant l'harmonie sur le campus grâce à son dévouement dans les tâches quotidiennes et le soutien aux autres.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1548/achivement_load_balencer.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1548/users",
+    "achievements": [],
+    "campus": [
+      "Perpignan"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2462,
+      "name": "The magic load balancer"
+    }
+  },
+  {
+    "id": 1549,
+    "name": "¡Al Rico Helado!",
+    "description": "Por acudir a una de los eventos en 42 Madrid con Helado",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1549/Helado.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1549/users",
+    "achievements": [],
+    "campus": [
+      "Madrid"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1550,
+    "name": "CTF challenge creator",
+    "description": "Created a challenge for the CTF at 42 Berlin",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1550/spring_ctf-dev.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1550/users",
+    "achievements": [],
+    "campus": [
+      "Berlin"
+    ],
+    "parent": null,
+    "title": {
+      "id": 284,
+      "name": "✨%login✨"
+    }
+  },
+  {
+    "id": 1551,
+    "name": "Pwned!",
+    "description": "Participated in a CTF and got a flag",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1551/spring_ctf-pwn.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1551/users",
+    "achievements": [],
+    "campus": [
+      "Berlin"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2475,
+      "name": "🚩 %login 🚩"
+    }
+  },
+  {
+    "id": 1552,
+    "name": "Exam Examinator",
+    "description": "Helped test new exam subjects.",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1552/exam-examinator.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1552/users",
+    "achievements": [],
+    "campus": [
+      "Amsterdam"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1553,
+    "name": "Defrosted!",
+    "description": "Hai vinto un icebreaker!",
+    "tier": "easy",
+    "kind": "social",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1553/users",
+    "achievements": [],
+    "campus": [
+      "Florence"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1554,
+    "name": "Vim Master – blind edition",
+    "description": "Hai vinto l'icebreaker \"vim --blind\"",
+    "tier": "easy",
+    "kind": "social",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1554/users",
+    "achievements": [],
+    "campus": [
+      "Florence"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1555,
+    "name": "CodinGame Contributor",
+    "description": "Haber participado en el Summer Challenge de Coding Game llegue a nivel 'Wood' level 3.",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1555/CONTRIBUTOR.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1555/users",
+    "achievements": [],
+    "campus": [
+      "Madrid",
+      "Malaga",
+      "Urduliz",
+      "Barcelona"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1556,
+    "name": "CodinGame Top España 🔥",
+    "description": "Que tu campus quede el primero de todos los 42 de España y conseguir un mínimo 'Wood' Level 2.",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1556/TOP-NATIONAL.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1556/users",
+    "achievements": [],
+    "campus": [
+      "Madrid",
+      "Malaga",
+      "Urduliz",
+      "Barcelona"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1557,
+    "name": "CodinGame Master",
+    "description": "Quedar primero en la clasificación de tu campus",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1557/MASTER.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1557/users",
+    "achievements": [],
+    "campus": [
+      "Madrid",
+      "Malaga",
+      "Urduliz",
+      "Barcelona"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2507,
+      "name": "🏅 CodinGame Master Summer 25 💦 %login"
+    }
+  },
+  {
+    "id": 1558,
+    "name": "GoldenEye ? No, GoldenMic !",
+    "description": "Remporter une fois Drop the Mic !",
+    "tier": "hard",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1558/podium.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1558/users",
+    "achievements": [
+      "GoldenEye ? No, GoldenMic !"
+    ],
+    "campus": [
+      "Antananarivo"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2508,
+      "name": "Mickey &quot;%login&quot; Mouse"
+    }
+  },
+  {
+    "id": 1559,
+    "name": "GoldenEye ? No, GoldenMic !",
+    "description": "Remporter Drop the Mic deux fois !",
+    "tier": "challenge",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1559/podium.svg",
+    "nbr_of_success": 2,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1559/users",
+    "achievements": [
+      "GoldenEye ? No, GoldenMic !"
+    ],
+    "campus": [
+      "Antananarivo"
+    ],
+    "parent": {
+      "id": 1558,
+      "name": "GoldenEye ? No, GoldenMic !",
+      "description": "Remporter une fois Drop the Mic !",
+      "tier": "hard",
+      "kind": "scolarity",
+      "visible": true,
+      "image": "/uploads/achievement/image/1558/podium.svg",
+      "nbr_of_success": 1,
+      "users_url": "https://api.intra.42.fr/v2/achievements/1558/users"
+    },
+    "title": {
+      "id": 2509,
+      "name": "Michael &quot;%login&quot; Scott"
+    }
+  },
+  {
+    "id": 1560,
+    "name": "GoldenEye ? No, GoldenMic !",
+    "description": "Remporter Drop the Mic trois fois !",
+    "tier": "challenge",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1560/podium.svg",
+    "nbr_of_success": 3,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1560/users",
+    "achievements": [],
+    "campus": [
+      "Antananarivo"
+    ],
+    "parent": {
+      "id": 1559,
+      "name": "GoldenEye ? No, GoldenMic !",
+      "description": "Remporter Drop the Mic deux fois !",
+      "tier": "challenge",
+      "kind": "scolarity",
+      "visible": true,
+      "image": "/uploads/achievement/image/1559/podium.svg",
+      "nbr_of_success": 2,
+      "users_url": "https://api.intra.42.fr/v2/achievements/1559/users"
+    },
+    "title": {
+      "id": 2510,
+      "name": "Michael &quot;%login&quot; Jackson"
+    }
+  },
+  {
+    "id": 1566,
+    "name": "I belong to the Student Association of 42 Porto",
+    "description": "Member of 42 Porto’s Student Association: building community and student life together.",
+    "tier": "challenge",
+    "kind": "scolarity",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1566/users",
+    "achievements": [],
+    "campus": [
+      "Porto"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1567,
+    "name": "I belong to the Student Association of 42 Lisboa",
+    "description": "Member of 42 Lisboa’s Student Association: building community and student life together.",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1567/users",
+    "achievements": [],
+    "campus": [
+      "Lisboa"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1568,
+    "name": "The Helping Hand - 2025",
+    "description": "This achievement will be awarded based on VOXTRON votes from campus students for the most helpful student they recognize for 2025.",
+    "tier": "hard",
+    "kind": "social",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1568/users",
+    "achievements": [],
+    "campus": [
+      "Amman"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2527,
+      "name": "%login, The Helping Hand of 2025"
+    }
+  },
+  {
+    "id": 1569,
+    "name": "The Spirit of 42Amman - 2025",
+    "description": "This achievement will be awarded based on VOXTRON votes from campus students for who embodies the core values of 42 community.",
+    "tier": "hard",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1569/yellow.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1569/users",
+    "achievements": [],
+    "campus": [
+      "Amman"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2529,
+      "name": "%login, The Spirit of 42Amman - 2025"
+    }
+  },
+  {
+    "id": 1570,
+    "name": "The Code Magician - 2025",
+    "description": "This achievement will be awarded based on Voxtron votes from campus students for the creative coding style.",
+    "tier": "hard",
+    "kind": "social",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1570/users",
+    "achievements": [],
+    "campus": [
+      "Amman"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2528,
+      "name": "%login, The Code Magician of 2025"
+    }
+  },
+  {
+    "id": 1572,
+    "name": "Welcome  to 42Amman!",
+    "description": "This achievement will be awarded based on Visiting 42Amman campus.",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1572/Amman64.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1572/users",
+    "achievements": [],
+    "campus": [
+      "Paris",
+      "Cluj",
+      "Johannesburg",
+      "Chisinau",
+      "Fremont",
+      "Kyiv",
+      "Lyon",
+      "Bucharest",
+      "Montrouge",
+      "Belgium",
+      "Helsinki",
+      "Amsterdam",
+      "Cape-Town",
+      "Khouribga",
+      "Moscow",
+      "iTouchUP",
+      "CoderDojoSV",
+      "São-Paulo",
+      "Benguerir",
+      "Madrid",
+      "Kazan",
+      "Novosibirsk",
+      "Quebec",
+      "Tokyo",
+      "Hack High School - Fremont ",
+      "Rio de Janeiro",
+      "Seoul",
+      "Rome",
+      "Angouleme",
+      "Yerevan",
+      "Bangkok",
+      "Kuala Lumpur",
+      "Amman",
+      "Adelaide",
+      "Malaga",
+      "Lisboa",
+      "Heilbronn",
+      "Urduliz",
+      "Nice",
+      "42Network",
+      "Abu Dhabi",
+      "Wolfsburg",
+      "Alicante",
+      "Barcelona",
+      "Lausanne",
+      "Mulhouse",
+      "Istanbul",
+      "Kocaeli",
+      "Berlin",
+      "Florence",
+      "Vienna",
+      "42 Central",
+      "Tétouan",
+      "Prague",
+      "London",
+      "Porto",
+      "Luxembourg",
+      "Perpignan",
+      "Belo Horizonte",
+      "Le Havre",
+      "Antwerp",
+      "Singapore",
+      "Antananarivo",
+      "Forty2",
+      "Warsaw",
+      "Luanda",
+      "Gyeongsan",
+      "Nablus",
+      "Beirut",
+      "Milano",
+      "IskandarPuteri",
+      "Penang",
+      "Rabat",
+      "Al-Aïn"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1573,
+    "name": "King of Comedy - 2025",
+    "description": "This achievement will be awarded based on Voxtron votes from campus students for the most funny student.",
+    "tier": "hard",
+    "kind": "social",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1573/users",
+    "achievements": [],
+    "campus": [
+      "Amman"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2530,
+      "name": "%login, King of Comedy - 2025"
+    }
+  },
+  {
+    "id": 1574,
+    "name": "Welcome to 42Irbid!",
+    "description": "This achievement will be awarded based on Visiting 42Irbid campus.",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1574/Irbid64.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1574/users",
+    "achievements": [],
+    "campus": [
+      "Paris",
+      "Cluj",
+      "Johannesburg",
+      "Chisinau",
+      "Fremont",
+      "Kyiv",
+      "Lyon",
+      "Bucharest",
+      "Belgium",
+      "Helsinki",
+      "Amsterdam",
+      "Cape-Town",
+      "Khouribga",
+      "Moscow",
+      "iTouchUP",
+      "CoderDojoSV",
+      "São-Paulo",
+      "Benguerir",
+      "Madrid",
+      "Kazan",
+      "Novosibirsk",
+      "Quebec",
+      "Tokyo",
+      "Hack High School - Fremont ",
+      "Rio de Janeiro",
+      "Seoul",
+      "Rome",
+      "Yerevan",
+      "Bangkok",
+      "Kuala Lumpur",
+      "Amman",
+      "Adelaide",
+      "Malaga",
+      "Lisboa",
+      "Heilbronn",
+      "Urduliz",
+      "Nice",
+      "42Network",
+      "Abu Dhabi",
+      "Wolfsburg",
+      "Alicante",
+      "Barcelona",
+      "Lausanne",
+      "Mulhouse",
+      "Istanbul",
+      "Kocaeli",
+      "Berlin",
+      "Florence",
+      "Vienna",
+      "42 Central",
+      "Tétouan",
+      "Prague",
+      "London",
+      "Porto",
+      "Luxembourg",
+      "Perpignan",
+      "Belo Horizonte",
+      "Le Havre",
+      "Antwerp",
+      "Antananarivo",
+      "Forty2",
+      "Warsaw",
+      "Luanda",
+      "Gyeongsan",
+      "Nablus",
+      "Beirut",
+      "Milano",
+      "IskandarPuteri",
+      "Rabat",
+      "Al-Aïn"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1576,
+    "name": "Great Tutor",
+    "description": "Être soutien lors de l'une des piscines de sélection",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1576/GT_2.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1576/users",
+    "achievements": [],
+    "campus": [
+      "Angouleme"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2559,
+      "name": "Great Tutor, %login"
+    }
+  },
+  {
+    "id": 1577,
+    "name": "I am the watcher on the walls",
+    "description": "Supervised 1 exam as a tutor.",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1577/users",
+    "achievements": [],
+    "campus": [],
+    "parent": {
+      "id": 103,
+      "name": "I am the watcher on the walls",
+      "description": "Supervised 1 exam as a tutor.",
+      "tier": "none",
+      "kind": "scolarity",
+      "visible": true,
+      "image": "/uploads/achievement/image/103/SCO0016.svg",
+      "nbr_of_success": 31,
+      "users_url": "https://api.intra.42.fr/v2/achievements/103/users"
+    },
+    "title": null
+  },
+  {
+    "id": 1580,
+    "name": "Genial Organizer",
+    "description": "Crea un club in 42 Firenze",
+    "tier": "medium",
+    "kind": "social",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1580/users",
+    "achievements": [],
+    "campus": [
+      "Florence"
+    ],
+    "parent": {
+      "id": 185,
+      "name": "Genial Organizer",
+      "description": "Créer une association à 19",
+      "tier": "hard",
+      "kind": "scolarity",
+      "visible": true,
+      "image": "/uploads/achievement/image/185/SCO015.svg",
+      "nbr_of_success": null,
+      "users_url": "https://api.intra.42.fr/v2/achievements/185/users"
+    },
+    "title": null
+  },
+  {
+    "id": 1581,
+    "name": "Code Craft",
+    "description": "A special achievement for the students who helped the MakerSpace and added their touches for producing useful website for Them.",
+    "tier": "medium",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1581/Untitled.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1581/users",
+    "achievements": [],
+    "campus": [
+      "Amman"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2587,
+      "name": "%login, The Maker Saver"
+    }
+  },
+  {
+    "id": 1585,
+    "name": "Michael Phelps Bronze Medal",
+    "description": "Participated in the Piscine Reloaded & Validated Checkpoint 00 & 01",
+    "tier": "none",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1585/phelps_bronze_frompng.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1585/users",
+    "achievements": [],
+    "campus": [
+      "Kuala Lumpur"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1586,
+    "name": "Michael Phelps Silver Medal",
+    "description": "Participated in the Piscine Reloaded & Validated Checkpoint 00, 01 & 02",
+    "tier": "easy",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1586/phelps_silver_frompng.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1586/users",
+    "achievements": [],
+    "campus": [
+      "Kuala Lumpur"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1587,
+    "name": "Michael Phelps Gold Medal",
+    "description": "Participated in the Piscine Reloaded & Validated Checkpoint 00, 01, 02, & 03",
+    "tier": "medium",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1587/phelps_gold_frompng.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1587/users",
+    "achievements": [],
+    "campus": [
+      "Kuala Lumpur"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1588,
+    "name": "vschneid is the best <3",
+    "description": "do i even  need to explain this",
+    "tier": "challenge",
+    "kind": "social",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1588/users",
+    "achievements": [],
+    "campus": [
+      "Vienna"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1589,
+    "name": "My Best Buddy! ",
+    "description": "Signed up four times to be a Buddy and help out new students. ",
+    "tier": "hard",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1589/Frame_7_1_.svg",
+    "nbr_of_success": 4,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1589/users",
+    "achievements": [],
+    "campus": [
+      "Vienna"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2607,
+      "name": "Super Nanny %login"
+    }
+  },
+  {
+    "id": 1590,
+    "name": "Robert Bowman",
+    "description": "\"They call me Bob, but you can call me Robert\"  -- awarded to the most helpful peer in the Piscine Reloaded",
+    "tier": "hard",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1590/BobBowmanActual.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1590/users",
+    "achievements": [],
+    "campus": [
+      "Kuala Lumpur"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2633,
+      "name": "%login, The Bobbiest Bowman "
+    }
+  },
+  {
+    "id": 1591,
+    "name": "Bob Bowman",
+    "description": "Conducted a sharing session for all Checkpoints, 00, 01, 02, 03 of the Piscine Reloaded",
+    "tier": "easy",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1591/BobBowman.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1591/users",
+    "achievements": [],
+    "campus": [
+      "Kuala Lumpur"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1592,
+    "name": "I came, I swam, I reloaded",
+    "description": "Participated in the Piscine Reloaded",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1592/users",
+    "achievements": [
+      "Certified Swimmer"
+    ],
+    "campus": [
+      "Belgium"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1593,
+    "name": "Certified Swimmer",
+    "description": "Participated in the Piscine Reloaded & validated it!",
+    "tier": "medium",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1593/users",
+    "achievements": [],
+    "campus": [
+      "Belgium"
+    ],
+    "parent": {
+      "id": 1592,
+      "name": "I came, I swam, I reloaded",
+      "description": "Participated in the Piscine Reloaded",
+      "tier": "none",
+      "kind": "pedagogy",
+      "visible": true,
+      "image": null,
+      "nbr_of_success": null,
+      "users_url": "https://api.intra.42.fr/v2/achievements/1592/users"
+    },
+    "title": null
+  },
+  {
+    "id": 1595,
+    "name": "We are still here!",
+    "description": "Validate the C Piscine Reloaded with a score of 100",
+    "tier": "easy",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1595/Refresh.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1595/users",
+    "achievements": [],
+    "campus": [
+      "Lyon"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1596,
+    "name": "MissionLegacy",
+    "description": "Introduced energy and momentum",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1596/42IP_Ambassador.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1596/users",
+    "achievements": [],
+    "campus": [
+      "IskandarPuteri"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2652,
+      "name": "%login, 42IP Mission Initiator"
+    }
+  },
+  {
+    "id": 1598,
+    "name": "MissionLegacy",
+    "description": "Consistently helped define the atmosphere",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1598/42IP_Ambassador.svg",
+    "nbr_of_success": 3,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1598/users",
+    "achievements": [],
+    "campus": [
+      "IskandarPuteri"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2653,
+      "name": "%login, 42IP Mission Agent"
+    }
+  },
+  {
+    "id": 1599,
+    "name": "MissionLegacy",
+    "description": "Leads the energy and sets a positive tone",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1599/42IP_Ambassador.svg",
+    "nbr_of_success": 5,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1599/users",
+    "achievements": [],
+    "campus": [
+      "IskandarPuteri"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2654,
+      "name": "%login, 42IP Mission Captain"
+    }
+  },
+  {
+    "id": 1600,
+    "name": "MissionLegacy",
+    "description": "The undisputed expert in atmosphere and flow",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1600/42IP_Ambassador.svg",
+    "nbr_of_success": 10,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1600/users",
+    "achievements": [],
+    "campus": [
+      "IskandarPuteri"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2655,
+      "name": "%login, 42IP Mission Commander"
+    }
+  },
+  {
+    "id": 1601,
+    "name": "Shadow Crew",
+    "description": "Helped, guided, vanished at the Shadowing Day; ninja style.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1601/Shadow_Crew.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1601/users",
+    "achievements": [],
+    "campus": [
+      "Amsterdam"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1603,
+    "name": "Dark Attack",
+    "description": "He participado y ganado un concurso de ilustraciones en Halloween. Tiembla, Picasso. ",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1603/DARK-ATTACK.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1603/users",
+    "achievements": [],
+    "campus": [
+      "Malaga"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1604,
+    "name": "Mastered Kirby Skills",
+    "description": "He participado en un concurso de disfraces y he ganado. ",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1604/KIRBY_SKILLS.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1604/users",
+    "achievements": [],
+    "campus": [
+      "Malaga"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1605,
+    "name": "Sleuth sleuthing",
+    "description": "He participado en un Cluedo IRL en el campus y he resuelto el misterio. ",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1605/sleuth.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1605/users",
+    "achievements": [],
+    "campus": [
+      "Malaga"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1609,
+    "name": "Walkaholic",
+    "description": "Participated twice in the Stepthon Challenge.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1609/Frame_9_1_.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1609/users",
+    "achievements": [],
+    "campus": [
+      "Vienna"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2670,
+      "name": "Escalating Walkaholic %login 🚶"
+    }
+  },
+  {
+    "id": 1612,
+    "name": "The Unbunyodable",
+    "description": "Give Bocal Bunyod a problem so incredibly difficult that it must be labeled as Unbunyodable.",
+    "tier": "challenge",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1612/image-50.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1612/users",
+    "achievements": [],
+    "campus": [
+      "Kuala Lumpur"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1615,
+    "name": "Local Miner",
+    "description": "Visit 1337 khouribga ",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1615/khouribga.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1615/users",
+    "achievements": [],
+    "campus": [
+      "Tétouan"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1616,
+    "name": "Dragonduck Novice",
+    "description": "Signed up for 42MY Campus Event: Everybody Codes 2025 and completed 20/60 tasks\r\n",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1616/Dragonduck_Novice.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1616/users",
+    "achievements": [],
+    "campus": [
+      "Kuala Lumpur",
+      "IskandarPuteri",
+      "Penang"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1617,
+    "name": "Dragonduck Adept",
+    "description": "Signed up for 42MY Campus Event: Everybody Codes 2025 and completed 40/60 tasks",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1617/Adept_Test.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1617/users",
+    "achievements": [],
+    "campus": [
+      "Kuala Lumpur",
+      "IskandarPuteri",
+      "Penang"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1618,
+    "name": "Dragonduck Apprentice",
+    "description": "Signed up for 42MY Campus Event: Everybody Codes 2025 and completed at least task 1 of every quest.",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1618/Dragonduck_Apprentice.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1618/users",
+    "achievements": [],
+    "campus": [
+      "Kuala Lumpur",
+      "IskandarPuteri",
+      "Penang"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1619,
+    "name": "Dragonduck Master",
+    "description": "Signed up for and completed the full 42MY Campus Event: Everybody Codes 2025 and contributed to the Everybody Codes #TeamWater Campaign",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1619/Dragonduck_Master.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1619/users",
+    "achievements": [],
+    "campus": [
+      "Kuala Lumpur",
+      "IskandarPuteri",
+      "Penang"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2698,
+      "name": "Mizuchi, %login"
+    }
+  },
+  {
+    "id": 1620,
+    "name": "Dragonduck Boleh!",
+    "description": "Signed up for 42MY Campus Event: Everybody Codes 2025 and successfully contributed points for Malaysia in the global leaderboards.",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1620/Dragonduck_Boleh.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1620/users",
+    "achievements": [],
+    "campus": [
+      "Kuala Lumpur",
+      "IskandarPuteri",
+      "Penang"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2699,
+      "name": "Dragonduck Envoy, %login"
+    }
+  }
+]

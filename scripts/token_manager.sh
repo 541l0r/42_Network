@@ -3,36 +3,22 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
-CONFIG_FILE="${CONFIG_FILE:-$ROOT_DIR/.oauth_config}"
+REPO_ROOT="$(cd "$ROOT_DIR/.." && pwd)"  # /srv/42_Network
+CONFIG_FILE="${CONFIG_FILE:-$REPO_ROOT/.env}"
 STATE_FILE="${STATE_FILE:-$ROOT_DIR/.oauth_state}"
 API_ROOT="https://api.intra.42.fr"
 
-require_file() {
-  local file=$1
-  if [[ ! -f "$file" ]]; then
-    echo "Missing $file. Create it with CLIENT_ID, CLIENT_SECRET, REDIRECT_URI, and SCOPE variables." >&2
-    exit 1
-  fi
-}
-
 load_config() {
   local cfg="$CONFIG_FILE"
-  if [[ "${cfg:0:1}" != "/" ]]; then
-    if [[ -f "$cfg" ]]; then
-      cfg="$cfg"
-    elif [[ -f "$ROOT_DIR/$cfg" ]]; then
-      cfg="$ROOT_DIR/$cfg"
-    elif [[ -f "$ROOT_DIR/env/.oauth_config" ]]; then
-      cfg="$ROOT_DIR/env/.oauth_config"
-    fi
-  else
-    # absolute path provided but missing; fall back to env/.oauth_config if available
-    if [[ ! -f "$cfg" && -f "$ROOT_DIR/env/.oauth_config" ]]; then
-      cfg="$ROOT_DIR/env/.oauth_config"
-    fi
+  # resolve config: use provided CONFIG_FILE, otherwise default to .env at project root (/srv/42_Network)
+  if [[ ! -f "$cfg" && -f "$REPO_ROOT/.env" ]]; then
+    cfg="$REPO_ROOT/.env"
   fi
   CONFIG_FILE="$cfg"
-  require_file "$cfg"
+  if [[ ! -f "$cfg" ]]; then
+    echo "Missing $cfg. Provide CLIENT_ID, CLIENT_SECRET, REDIRECT_URI, and SCOPE (ACCESS/REFRESH optional)." >&2
+    exit 1
+  fi
   # shellcheck disable=SC1090
   source "$CONFIG_FILE"
   : "${CLIENT_ID:?Set CLIENT_ID in $CONFIG_FILE}"
@@ -126,6 +112,19 @@ call_api() {
   curl -sS -H "Authorization: Bearer $ACCESS_TOKEN" "$API_ROOT$endpoint"
 }
 
+call_export() {
+  ensure_valid_access_token
+  local endpoint=${1:? "Usage: $0 call-export /v2/endpoint [outfile.json]"}
+  local outfile=${2:-}
+  local safe_name=${endpoint//\//_}
+  safe_name=${safe_name##_}
+  [[ -n "$safe_name" ]] || safe_name="response"
+  [[ -n "$outfile" ]] || outfile="$ROOT_DIR/exports/${safe_name}.json"
+  mkdir -p "$(dirname "$outfile")"
+  curl -sS -H "Authorization: Bearer $ACCESS_TOKEN" "$API_ROOT$endpoint" | jq . >"$outfile"
+  echo "Saved to $outfile"
+}
+
 token_info() {
   load_config
   load_state
@@ -151,6 +150,7 @@ Commands:
   exchange <code>       Exchange an authorization code for tokens and save them.
   refresh               Refresh the access token using the saved refresh token.
   call <endpoint>       Call an API endpoint using the saved access token (e.g., /v2/me).
+  call-export <ep> [f]  Call an API endpoint and save pretty JSON to file (default: exports/<ep>.json).
   token-info            Inspect the current access token metadata.
 
 Environment files:
@@ -164,6 +164,7 @@ case "$cmd" in
   exchange) shift; exchange_code "$@" ;;
   refresh) refresh_token ;;
   call) shift; call_api "$@" ;;
+  call-export) shift; call_export "$@" ;;
   token-info) token_info ;;
   *) usage ;;
 esac

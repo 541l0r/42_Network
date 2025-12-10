@@ -1,0 +1,1887 @@
+[
+  {
+    "id": 1276,
+    "name": "Mentor de Oro",
+    "description": "Participar 3 veces en la Operación Manguito siendo mentor.",
+    "tier": "medium",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": 3,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1276/users",
+    "achievements": [],
+    "campus": [
+      "Urduliz"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2151,
+      "name": "%login , Mentor de Oro"
+    }
+  },
+  {
+    "id": 1277,
+    "name": "Astro Guide",
+    "description": "Ayudar en 10 open days del campus.",
+    "tier": "easy",
+    "kind": "social",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": 39,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1277/users",
+    "achievements": [],
+    "campus": [
+      "Urduliz"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1278,
+    "name": "Astro Guide",
+    "description": "Ayudar en 26 open days del campus.",
+    "tier": "medium",
+    "kind": "social",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": 26,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1278/users",
+    "achievements": [],
+    "campus": [
+      "Urduliz"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1279,
+    "name": "Astro Guide",
+    "description": "Ayudar en 42 open days del campus.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": 42,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1279/users",
+    "achievements": [],
+    "campus": [
+      "Urduliz"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2152,
+      "name": "Astro Guide %login 💫"
+    }
+  },
+  {
+    "id": 1280,
+    "name": " Feeling fab",
+    "description": "Because modeling for Codam is serious business... kind of.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1280/Badges_Feeling_Fabulous__40_x_40_px_.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1280/users",
+    "achievements": [],
+    "campus": [
+      "Amsterdam"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1285,
+    "name": "Open Day Hero",
+    "description": "Maximum effort! Earned by helping during Codam Open Days.\r\n",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1285/Open_Day_Hero_Badge.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1285/users",
+    "achievements": [],
+    "campus": [
+      "Amsterdam"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1286,
+    "name": "table soccer doubles champion 24",
+    "description": "Win the table soccer doubles championship 2024 at 42 Heilbronn",
+    "tier": "medium",
+    "kind": "social",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1286/users",
+    "achievements": [],
+    "campus": [
+      "Heilbronn"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2182,
+      "name": "%login, double trouble ⚽️"
+    }
+  },
+  {
+    "id": 1287,
+    "name": "table soccer singles champion 24",
+    "description": "Win the table soccer singles championship 2024 at 42 Heilbronn\r\n",
+    "tier": "medium",
+    "kind": "social",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1287/users",
+    "achievements": [],
+    "campus": [
+      "Heilbronn"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2181,
+      "name": "%login, table soccer singles champion 24"
+    }
+  },
+  {
+    "id": 1288,
+    "name": "table tennis champion 24",
+    "description": "Win the table tennis championship 2024 at 42 Heilbronn\r\n",
+    "tier": "medium",
+    "kind": "social",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1288/users",
+    "achievements": [],
+    "campus": [
+      "Heilbronn"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2198,
+      "name": "%login, table tennis champion 🏓"
+    }
+  },
+  {
+    "id": 1289,
+    "name": "Walkaholic",
+    "description": "Participated in the Stepthon Challenge.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1289/Frame_9_1_.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1289/users",
+    "achievements": [],
+    "campus": [
+      "Vienna"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2189,
+      "name": "Walkaholic %login 🚶‍♂️"
+    }
+  },
+  {
+    "id": 1290,
+    "name": "Walker of the Year",
+    "description": "Won 1st Place in the Stepthon Challenge. ",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1290/Frame_10.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1290/users",
+    "achievements": [],
+    "campus": [
+      "Vienna"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2188,
+      "name": "%login, Lord of the Strides 👣"
+    }
+  },
+  {
+    "id": 1291,
+    "name": "FabLab Angel",
+    "description": "Active participant to the Orange Lab of BeCentral",
+    "tier": "medium",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1291/users",
+    "achievements": [],
+    "campus": [
+      "Belgium"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1292,
+    "name": "Supervisor Tutor",
+    "description": "You are or you have been an awesome Supervisor Tutor ",
+    "tier": "hard",
+    "kind": "social",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1292/users",
+    "achievements": [],
+    "campus": [
+      "Belgium"
+    ],
+    "parent": null,
+    "title": {
+      "id": 138,
+      "name": "Tutorigin %login"
+    }
+  },
+  {
+    "id": 1295,
+    "name": "Final boss",
+    "description": "Win both the single and double table soccer tournaments at 42 Heilbronn",
+    "tier": "hard",
+    "kind": "social",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1295/users",
+    "achievements": [],
+    "campus": [
+      "Heilbronn"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2199,
+      "name": "%login, final boss ⚽️"
+    }
+  },
+  {
+    "id": 1296,
+    "name": "Super star!",
+    "description": "Haber participado en el concurso de talentos de 42 Urduliz.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1296/logro_talentos-removebg-preview.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1296/users",
+    "achievements": [
+      "Super star!"
+    ],
+    "campus": [
+      "Urduliz"
+    ],
+    "parent": {
+      "id": 1296,
+      "name": "Super star!",
+      "description": "Haber participado en el concurso de talentos de 42 Urduliz.",
+      "tier": "none",
+      "kind": "social",
+      "visible": true,
+      "image": "/uploads/achievement/image/1296/logro_talentos-removebg-preview.svg",
+      "nbr_of_success": 1,
+      "users_url": "https://api.intra.42.fr/v2/achievements/1296/users"
+    },
+    "title": null
+  },
+  {
+    "id": 1298,
+    "name": "I have just transcended!",
+    "description": "Finished all common core projects and exams.",
+    "tier": "hard",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1298/common_core.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1298/users",
+    "achievements": [],
+    "campus": [
+      "Berlin"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1299,
+    "name": "Everything is fine...",
+    "description": "Triggered the fire alarm in 42 Berlin and did community service for it.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1299/fire.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1299/users",
+    "achievements": [],
+    "campus": [
+      "Berlin"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2223,
+      "name": "%login, The Firestarter"
+    }
+  },
+  {
+    "id": 1300,
+    "name": "Yo salvé la Navidad",
+    "description": "Conseguir 50* en un evento de Advent of Code.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1300/adventofcode50.svg",
+    "nbr_of_success": 50,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1300/users",
+    "achievements": [],
+    "campus": [
+      "Madrid",
+      "Malaga",
+      "Urduliz",
+      "Barcelona"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2224,
+      "name": "X-mas hero %login"
+    }
+  },
+  {
+    "id": 1302,
+    "name": "Yo salvé la Navidad",
+    "description": "Conseguir 25* en un evento de Advent of Code.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1302/adventofcode25.svg",
+    "nbr_of_success": 25,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1302/users",
+    "achievements": [],
+    "campus": [
+      "Madrid",
+      "Malaga",
+      "Urduliz",
+      "Barcelona"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1304,
+    "name": "Yo salvé la Navidad",
+    "description": "Conseguir 10* en un evento de Advent of Code.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1304/adventofcode10__1_.svg",
+    "nbr_of_success": 10,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1304/users",
+    "achievements": [],
+    "campus": [
+      "Madrid",
+      "Malaga",
+      "Urduliz",
+      "Barcelona"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1324,
+    "name": "Parent Test",
+    "description": "Parent Test",
+    "tier": "easy",
+    "kind": "project",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1324/users",
+    "achievements": [],
+    "campus": [],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1325,
+    "name": "Parent Test",
+    "description": "Parent Test",
+    "tier": "easy",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1325/Advanced_Slayer__3_.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1325/users",
+    "achievements": [],
+    "campus": [],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1328,
+    "name": "I don't know!",
+    "description": "Be a tutor in a Piscine.",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1328/I_Don_t_Know__3_.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1328/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1329,
+    "name": "Gotta Catch 'Em All!",
+    "description": "Complete a Mentorship with 1 godchild.",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1329/Gotta_catch__em_all.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1329/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1330,
+    "name": "Gotta Catch 'Em All!",
+    "description": "Complete a Mentorship with 3 godchildren.",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1330/Gotta_catch__em_all__2_.svg",
+    "nbr_of_success": 3,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1330/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1331,
+    "name": "Gotta Catch 'Em All!",
+    "description": "Complete a Mentorship with 5 godchildren.",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1331/Gotta_catch__em_all__3_.svg",
+    "nbr_of_success": 5,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1331/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1332,
+    "name": "Seal of Approval",
+    "description": "Finish first in your Coalition 1 time.",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1332/All_for_the_Team.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1332/users",
+    "achievements": [
+      "Seal of Approval"
+    ],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1333,
+    "name": "Seal of Approval",
+    "description": "Finish first in your Coalition 2 times.",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1333/All_for_the_Team__2_.svg",
+    "nbr_of_success": 2,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1333/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1334,
+    "name": "Seal of Approval",
+    "description": "Finish first in your Coalition 3 times.",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1334/All_for_the_Team__3_.svg",
+    "nbr_of_success": 3,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1334/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": {
+      "id": 1332,
+      "name": "Seal of Approval",
+      "description": "Finish first in your Coalition 1 time.",
+      "tier": "none",
+      "kind": "pedagogy",
+      "visible": true,
+      "image": "/uploads/achievement/image/1332/All_for_the_Team.svg",
+      "nbr_of_success": 1,
+      "users_url": "https://api.intra.42.fr/v2/achievements/1332/users"
+    },
+    "title": null
+  },
+  {
+    "id": 1335,
+    "name": "Glorious Future",
+    "description": "Finish with the most coalition points between all students 1 time.",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1335/Glorious_Future.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1335/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1336,
+    "name": "Glorious Future",
+    "description": "Finish with the most coalition points between all students 2 times.",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1336/Glorious_Future__2_.svg",
+    "nbr_of_success": 2,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1336/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1337,
+    "name": "Glorious Future",
+    "description": "Finish with the most coalition points between all students 3 times.",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1337/Glorious_Future__3_.svg",
+    "nbr_of_success": 3,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1337/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1338,
+    "name": "Exemplary Citizen",
+    "description": "Go 30 days without receiving any TIG.",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1338/Exemplary_Citizen_1.svg",
+    "nbr_of_success": 30,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1338/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1339,
+    "name": "Exemplary Citizen",
+    "description": "Go 90 days without receiving any TIG.",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1339/Exemplary_Citizen_2.svg",
+    "nbr_of_success": 90,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1339/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1340,
+    "name": "Exemplary Citizen",
+    "description": "Go 180 days without receiving any TIG.",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1340/Exemplary_Citizen_3.svg",
+    "nbr_of_success": 180,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1340/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1341,
+    "name": "Exemplary Citizen",
+    "description": "Go 270 days without receiving any TIG.",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1341/Exemplary_Citizen_4.svg",
+    "nbr_of_success": 270,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1341/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1342,
+    "name": "Exemplary Citizen",
+    "description": "Go 365 days without receiving any TIG.",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1342/Exemplary_Citizen_5.svg",
+    "nbr_of_success": 365,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1342/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1344,
+    "name": "FTL: Faster Than Light",
+    "description": "Win a Blind Coding Challenge.",
+    "tier": "medium",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1344/Faster_than_Light.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1344/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1345,
+    "name": "Networking Ninja",
+    "description": "Por tener un perfil completo en redes sociales profesionales y con al menos 5 publicaciones y 300 conexiones.",
+    "tier": "easy",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1345/Networking_ninja.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1345/users",
+    "achievements": [],
+    "campus": [
+      "Madrid",
+      "Barcelona"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1346,
+    "name": "Legendary Table Tennis Player",
+    "description": "Win a Table Tennis Tournament in 42 in Türkiye.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1346/Legendary_Table_Tennis_Player.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1346/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1347,
+    "name": "Legendary Table Football Player",
+    "description": "Win a Table Football Tournament in 42 in Türkiye.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1347/Legendary_Table_Football_Player.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1347/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1348,
+    "name": "Legendary Board Game Player",
+    "description": "Win a Board Game Tournament n 42 in Türkiye.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1348/Legendary_Board_Game_Player.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1348/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1349,
+    "name": "Competition Winner",
+    "description": "Represent 42 in Türkiye in a competition and be ranked.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1349/Competition_Winner.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1349/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1350,
+    "name": "Social Butterfly",
+    "description": "Evaluate 10 individual peers' projects.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1350/Social_Butterfly.svg",
+    "nbr_of_success": 10,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1350/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1351,
+    "name": "Social Butterfly",
+    "description": "Evaluate 25 individual peers' projects.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1351/Social_Butterfly__2_.svg",
+    "nbr_of_success": 25,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1351/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1352,
+    "name": "Social Butterfly",
+    "description": "Evaluate 50 individual peers' projects.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1352/Social_Butterfly__3_.svg",
+    "nbr_of_success": 50,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1352/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1353,
+    "name": "Social Butterfly",
+    "description": "Evaluate 100 individual peers' projects.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1353/Social_Butterfly__4_.svg",
+    "nbr_of_success": 100,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1353/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1354,
+    "name": "Morning Rooster",
+    "description": "Log in from 6 AM to 12 PM for 30 days.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1354/Morning_Rooster__4_.svg",
+    "nbr_of_success": 30,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1354/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1355,
+    "name": "Morning Rooster",
+    "description": "Log in from 6 AM to 12 PM for 60 days.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1355/Morning_Rooster__5_.svg",
+    "nbr_of_success": 60,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1355/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1356,
+    "name": "Morning Rooster",
+    "description": "Log in from 6 AM to 12 PM for 90 days.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1356/Morning_Rooster__6_.svg",
+    "nbr_of_success": 90,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1356/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1357,
+    "name": "Midday Parrot",
+    "description": "Log in from 12 PM to 6 PM for 30 days.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1357/Midday_Parrot.svg",
+    "nbr_of_success": 30,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1357/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1358,
+    "name": "Midday Parrot",
+    "description": "Log in from 12 PM to 6 PM for 60 days.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1358/Midday_Parrot__2_.svg",
+    "nbr_of_success": 60,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1358/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1359,
+    "name": "Midday Parrot",
+    "description": "Log in from 12 PM to 6 PM for 90 days.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1359/Midday_Parrot__3_.svg",
+    "nbr_of_success": 90,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1359/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1360,
+    "name": "Dusk Bat",
+    "description": "Log in from 6 PM to 12 AM for 30 days.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1360/Dusk_Bat.svg",
+    "nbr_of_success": 30,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1360/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1361,
+    "name": "Dusk Bat",
+    "description": "Log in from 6 PM to 12 AM for 60 days.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1361/Dusk_Bat__2_.svg",
+    "nbr_of_success": 60,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1361/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1362,
+    "name": "Dusk Bat",
+    "description": "Log in from 6 PM to 12 AM for 90 days.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1362/Dusk_Bat__3_.svg",
+    "nbr_of_success": 90,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1362/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1363,
+    "name": "Night Owl",
+    "description": "Log in from 12 AM to 6 AM for 30 days.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1363/Night_Owl__4_.svg",
+    "nbr_of_success": 30,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1363/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli",
+      "Singapore"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1364,
+    "name": "Night Owl",
+    "description": "Log in from 12 AM to 6 AM for 60 days.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1364/Night_Owl__5_.svg",
+    "nbr_of_success": 60,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1364/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli",
+      "Singapore"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1365,
+    "name": "Night Owl",
+    "description": "Log in from 12 AM to 6 AM for 90 days.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1365/Night_Owl__6_.svg",
+    "nbr_of_success": 90,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1365/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli",
+      "Singapore"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1366,
+    "name": "Student Representative",
+    "description": "Serve as a Student Representative at a 42 in Türkiye campus.",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1366/Representative.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1366/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2265,
+      "name": "Former Student Representative %login"
+    }
+  },
+  {
+    "id": 1367,
+    "name": "Ambassador",
+    "description": "Represent 42 in Türkiye at an external event.",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1367/Ambassador.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1367/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2142,
+      "name": "%login, Ambassador of 42 Türkiye"
+    }
+  },
+  {
+    "id": 1368,
+    "name": "I Survived the Beta",
+    "description": "Join a Beta and provide feedback.",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1368/I_Survived_the_Beta.svg",
+    "nbr_of_success": 0,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1368/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1374,
+    "name": "The City of Cats",
+    "description": "Visit Campus 42 İstanbul.",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1374/City_of_Cats__1_.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1374/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1375,
+    "name": "Visit Kocaeli",
+    "description": "Visit Campus 42 Kocaeli.",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1375/Visit_Kocaeli.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1375/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1376,
+    "name": "The Boss",
+    "description": "Begin a Startup Internship.",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1376/Leader.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1376/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1377,
+    "name": "The Boss",
+    "description": "Complete a Startup Internship.",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1377/Leader__2_.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1377/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1378,
+    "name": "Is this an onion?",
+    "description": "Complete Milestone 0 and get 5₳.",
+    "tier": "easy",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1378/Is_this_an_onion.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1378/users",
+    "achievements": [
+      "Is this an onion?"
+    ],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1379,
+    "name": "Is this an onion?",
+    "description": "Complete Milestone 1 and get 5₳.",
+    "tier": "easy",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1379/Is_this_an_onion__2_.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1379/users",
+    "achievements": [
+      "Is this an onion?"
+    ],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": {
+      "id": 1378,
+      "name": "Is this an onion?",
+      "description": "Complete Milestone 0 and get 5₳.",
+      "tier": "easy",
+      "kind": "project",
+      "visible": true,
+      "image": "/uploads/achievement/image/1378/Is_this_an_onion.svg",
+      "nbr_of_success": 1,
+      "users_url": "https://api.intra.42.fr/v2/achievements/1378/users"
+    },
+    "title": null
+  },
+  {
+    "id": 1380,
+    "name": "Is this an onion?",
+    "description": "Complete Milestone 2 and get 5₳.",
+    "tier": "easy",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1380/Is_this_an_onion__3_.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1380/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": {
+      "id": 1379,
+      "name": "Is this an onion?",
+      "description": "Complete Milestone 1 and get 5₳.",
+      "tier": "easy",
+      "kind": "project",
+      "visible": true,
+      "image": "/uploads/achievement/image/1379/Is_this_an_onion__2_.svg",
+      "nbr_of_success": 1,
+      "users_url": "https://api.intra.42.fr/v2/achievements/1379/users"
+    },
+    "title": null
+  },
+  {
+    "id": 1381,
+    "name": "Reaching for the Stars",
+    "description": "Rank top 10 in the Advent of Code Event @42Heilbronn",
+    "tier": "hard",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1381/users",
+    "achievements": [],
+    "campus": [
+      "Heilbronn"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2258,
+      "name": "mighty elf %login ✨"
+    }
+  },
+  {
+    "id": 1382,
+    "name": "Is this an onion?",
+    "description": "Complete Milestone 3 and get 5₳..",
+    "tier": "easy",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1382/Is_this_an_onion__4_.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1382/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1383,
+    "name": "Is this an onion?",
+    "description": "Complete Milestone 4 and get 5₳.",
+    "tier": "easy",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1383/Is_this_an_onion__5_.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1383/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1384,
+    "name": "Is this an onion?",
+    "description": "Complete Milestone 5 and get 5₳.",
+    "tier": "easy",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1384/Is_this_an_onion__6_.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1384/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1385,
+    "name": "Is this an onion?",
+    "description": "Complete Milestone 6 and get 5₳.",
+    "tier": "easy",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1385/Is_this_an_onion__7_.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1385/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1386,
+    "name": "Advanced Slayer",
+    "description": "Complete 1 Advanced project.",
+    "tier": "none",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1386/Advanced_Slayer.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1386/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1387,
+    "name": "Advanced Slayer",
+    "description": "Complete 3 Advanced projects.",
+    "tier": "easy",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1387/Advanced_Slayer__2_.svg",
+    "nbr_of_success": 3,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1387/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1388,
+    "name": "Advanced Slayer",
+    "description": "Complete 5 Advanced projects.",
+    "tier": "medium",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1388/Advanced_Slayer__3_.svg",
+    "nbr_of_success": 5,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1388/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1389,
+    "name": "Advanced Slayer",
+    "description": "Complete 10 Advanced projects.",
+    "tier": "hard",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1389/Advanced_Slayer__4_.svg",
+    "nbr_of_success": 10,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1389/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1390,
+    "name": "Advanced Slayer",
+    "description": "Complete 20 Advanced projects.",
+    "tier": "challenge",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1390/Advanced_Slayer__5_.svg",
+    "nbr_of_success": 20,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1390/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1391,
+    "name": "All for One",
+    "description": "Complete 1 group project.",
+    "tier": "none",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1391/All_for_One.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1391/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1392,
+    "name": "All for One",
+    "description": "Complete 4 group projects.",
+    "tier": "none",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1392/All_for_One__2_.svg",
+    "nbr_of_success": 4,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1392/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1393,
+    "name": "All for One",
+    "description": "Complete 7 group projects and get 10₳.",
+    "tier": "medium",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1393/All_for_One_3.svg",
+    "nbr_of_success": 7,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1393/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1394,
+    "name": "All for One",
+    "description": "Complete 10 group projects and get 10₳.",
+    "tier": "none",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1394/All_for_One__4_.svg",
+    "nbr_of_success": 10,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1394/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1395,
+    "name": "All for One",
+    "description": "Complete 13 group projects and get 10₳.",
+    "tier": "none",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1395/All_for_One__5_.svg",
+    "nbr_of_success": 13,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1395/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1396,
+    "name": "Outstander",
+    "description": "Get an Outstanding flag from all your correctors in 1 project and earn 5₳.",
+    "tier": "easy",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1396/Outstander.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1396/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1397,
+    "name": "Outstander",
+    "description": "Get an Outstanding flag from all your correctors in 5 projects and earn 5₳.",
+    "tier": "easy",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1397/Outstander__2_.svg",
+    "nbr_of_success": 5,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1397/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1398,
+    "name": "Outstander",
+    "description": "Get an Outstanding flag from all your correctors in 10 projects and earn 5₳.",
+    "tier": "easy",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1398/Outstander__3_.svg",
+    "nbr_of_success": 10,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1398/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1400,
+    "name": "Outstander",
+    "description": "Get an Outstanding flag from all your correctors in 15 projects and earn 5₳.",
+    "tier": "easy",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1400/Outstander__4_.svg",
+    "nbr_of_success": 15,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1400/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1403,
+    "name": "The Learning Alchemist",
+    "description": "Partecipazione: \"Laboratorio Pedagogico\"",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1403/users",
+    "achievements": [],
+    "campus": [
+      "Florence"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2267,
+      "name": "The Learning Alchemist 🧠🔮 %login"
+    }
+  },
+  {
+    "id": 1404,
+    "name": "No me ganas ni al parchís",
+    "description": "No importa quién tengas delante, eres indomable en juegos de mesa o cartas y has quedado number 1 en un torneo.",
+    "tier": "easy",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1404/Logo_logro_torneo-OK.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1404/users",
+    "achievements": [],
+    "campus": [
+      "Malaga"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1405,
+    "name": "CORE Champion",
+    "description": "Win a CORE game season",
+    "tier": "hard",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1405/users",
+    "achievements": [],
+    "campus": [
+      "Heilbronn"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2271,
+      "name": "%login, CORE champion 🏆"
+    }
+  },
+  {
+    "id": 1406,
+    "name": "I'm Doing My Part!",
+    "description": "Contributed at least once on the ftplace canva",
+    "tier": "easy",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1406/4.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1406/users",
+    "achievements": [],
+    "campus": [
+      "Lausanne"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1407,
+    "name": "Michelangelo",
+    "description": "One of your pixel ended in the winning ftplace piece of art! Congratulations!",
+    "tier": "easy",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1407/3.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1407/users",
+    "achievements": [],
+    "campus": [
+      "Lausanne"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2275,
+      "name": "Painter %login"
+    }
+  },
+  {
+    "id": 1408,
+    "name": "Art is a Time Machine",
+    "description": "One of your pixel ended on the final ftplace canva! Congratulations!",
+    "tier": "easy",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1408/5.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1408/users",
+    "achievements": [],
+    "campus": [
+      "Lausanne"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1409,
+    "name": "Happy 42nd Day!",
+    "description": "Log in on the 42nd day of the year.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1409/happy42nd.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1409/users",
+    "achievements": [],
+    "campus": [
+      "Istanbul",
+      "Kocaeli"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1413,
+    "name": "Gotta Catch 'Em All",
+    "description": "Vincitore del primo torneo di Pokemon Pocket TCG!",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1413/Pokeball_SVG.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1413/users",
+    "achievements": [],
+    "campus": [
+      "Florence"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2290,
+      "name": "Ash Ketchum %login"
+    }
+  },
+  {
+    "id": 1414,
+    "name": "While the C.A.T.'s away, the mice will play",
+    "description": "Become a C.A.T. and help out during a piscine",
+    "tier": "medium",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1414/cat_achievement.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1414/users",
+    "achievements": [],
+    "campus": [
+      "Amsterdam"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2291,
+      "name": "%login ₍^. .^₎⟆"
+    }
+  },
+  {
+    "id": 1415,
+    "name": "Le Havre : le béton a du bon !",
+    "description": "Visit the 42 Le Havre campus",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1415/AchievementLH.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1415/users",
+    "achievements": [],
+    "campus": [
+      "Le Havre"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2296,
+      "name": "𓆈 %login"
+    }
+  },
+  {
+    "id": 1416,
+    "name": "Master of Intra Mugshots",
+    "description": "Capture faces and make history by volunteering as a photographer for Intra profile pictures.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1416/master_of_intra_mugshots.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1416/users",
+    "achievements": [],
+    "campus": [
+      "Helsinki"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2299,
+      "name": "Master of Intra Mugshots, %login"
+    }
+  },
+  {
+    "id": 1417,
+    "name": " ‘Like’ Magnet",
+    "description": "Popped up on Codam’s socials and racked up those likes in no time!",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1417/Badges_Feeling_Fabulous__40_x_40_px___1_.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1417/users",
+    "achievements": [],
+    "campus": [
+      "Amsterdam"
+    ],
+    "parent": null,
+    "title": null
+  }
+]

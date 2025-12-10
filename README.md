@@ -191,6 +191,16 @@ The helper writes `.oauth_state` (ignored by git) containing the latest access/r
 - Connect the Godot build and deserialize the payload in GDScript.
 - Build charts or procedural visuals based on the data you receive.
 - Add automated fetching intervals (e.g., poll every minute) or websocket bridges if your use case benefits from live updates.
+
+## Data ingestion & cron
+
+- Reference tables stored in Postgres: achievements, campuses, cursus, projects (with *_users, users, locations ready but currently empty unless you import user-scoped data).
+- Fetch helpers live in `scripts/helpers/`; upsert entrypoints are `scripts/update_{achievements,campuses,cursus,projects}.sh`. Run all at once with `scripts/update_tables.sh` (quiet summary with row deltas, export size, last fetch stamp).
+- Fetch scopes: campuses only active/public with `users_count > 1`; projects use `range[updated_at]` deltas; achievements always full (API lacks reliable updated_at); cursus is tiny and refetched once per day.
+- Cron wrappers in `scripts/cron/` (documented in `scripts/cron/README.md`):
+  - `run_daily_update.sh` – daily at 03:00 UTC, logs to `logs/update_tables_daily.log`.
+  - `run_token_refresh.sh` – hourly at minute 05, logs to `logs/42_token_refresh.log`.
+- Exports live under `exports/` with stamp files (`.last_fetch_epoch`, `.last_updated_at`, `.last_fetch_stats`) for delta tracking. Running `make` + `scripts/update_tables.sh` from a clean DB will recreate the schema and refill reference tables.
 # 42_Network
 
 ## Docker stack (nginx + API proxy + MariaDB)

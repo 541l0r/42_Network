@@ -1,2 +1,5 @@
 .oauth_config
 .oauth_state
+# Local data volumes
+/data/postgres/
+data/postgres/

@@ -1,0 +1,1977 @@
+[
+  {
+    "id": 1017,
+    "name": "Hallo-Queen",
+    "description": "Won the Halloween Costume Contest.",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1017/Frame_5.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1017/users",
+    "achievements": [],
+    "campus": [
+      "Vienna"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1018,
+    "name": "42Bangkok - Drop the mic",
+    "description": "Present a project of your choice to the community.",
+    "tier": "medium",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1018/MicDrop-achievement.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1018/users",
+    "achievements": [],
+    "campus": [
+      "Bangkok"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1686,
+      "name": "drop the mic %login 🎤"
+    }
+  },
+  {
+    "id": 1019,
+    "name": "Spooky Art Award 2023",
+    "description": "Winner of the Spooky Art Contest 2023",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1019/ContestArt.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1019/users",
+    "achievements": [],
+    "campus": [
+      "Wolfsburg"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1725,
+      "name": "🎃🖌️ Spooky Artist %login 🖌️🎃"
+    }
+  },
+  {
+    "id": 1020,
+    "name": "Super Paranoid Android",
+    "description": "You have to be a Marvin in your campus",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1020/MarvinAchievement.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1020/users",
+    "achievements": [],
+    "campus": [
+      "Florence"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1704,
+      "name": "Marvin %user"
+    }
+  },
+  {
+    "id": 1021,
+    "name": "Entrepreneur",
+    "description": "Winner of the IdeasStreetMarket",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1021/EnterpreneurAchievement.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1021/users",
+    "achievements": [],
+    "campus": [
+      "Florence"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1022,
+    "name": "Rompighiaccio",
+    "description": "Winner of the Icebreaker",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1022/Icebreaker.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1022/users",
+    "achievements": [],
+    "campus": [
+      "Wolfsburg"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1784,
+      "name": "❄️ 👑 King of the Ice %login 👑❄️"
+    }
+  },
+  {
+    "id": 1024,
+    "name": "Lisbo(ar)",
+    "description": "Visit the 42 Lisboa Campus ",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1024/users",
+    "achievements": [],
+    "campus": [
+      "Paris",
+      "Belgium",
+      "Madrid",
+      "Lisboa",
+      "Urduliz",
+      "Barcelona",
+      "Berlin"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1025,
+    "name": "Invictus",
+    "description": "Visited 42 Porto Campus",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1025/BADGE_VISIT42PORTO__1_.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1025/users",
+    "achievements": [],
+    "campus": [
+      "Paris",
+      "Porto"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1026,
+    "name": "⚽️ Ballon d'Or ",
+    "description": "Vainqueur d'un tournoi babyfoot ",
+    "tier": "hard",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1026/football.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1026/users",
+    "achievements": [],
+    "campus": [
+      "Antananarivo"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1743,
+      "name": "%login ⚽️ Ballon d'Or"
+    }
+  },
+  {
+    "id": 1027,
+    "name": "Recruiter",
+    "description": "Recruit new candidates to register on apply",
+    "tier": "easy",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1027/Recruiter.svg",
+    "nbr_of_success": 4,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1027/users",
+    "achievements": [],
+    "campus": [
+      "Lisboa",
+      "Porto"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1028,
+    "name": "Recruiter",
+    "description": "Recruit new candidates to participate on check-in",
+    "tier": "medium",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1028/Recruiter.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1028/users",
+    "achievements": [],
+    "campus": [
+      "Lisboa",
+      "Porto"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1029,
+    "name": "Recruiter",
+    "description": "Recruit new candidates to participate in Piscine",
+    "tier": "hard",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1029/Recruiter.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1029/users",
+    "achievements": [],
+    "campus": [
+      "Lisboa",
+      "Porto"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1030,
+    "name": "Recruiter",
+    "description": "Recruit new candidates to enroll in Kick-Off",
+    "tier": "challenge",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1030/Recruiter.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1030/users",
+    "achievements": [],
+    "campus": [
+      "Lisboa",
+      "Porto"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1031,
+    "name": "Code Supreme Warrior ",
+    "description": "You are the winner of the code war II",
+    "tier": "medium",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1031/achievement_warriorII.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1031/users",
+    "achievements": [],
+    "campus": [
+      "Florence"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1032,
+    "name": "Code Duelist",
+    "description": "You are the winner of the code duel of your piscine",
+    "tier": "none",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1032/achievement_duelist.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1032/users",
+    "achievements": [],
+    "campus": [
+      "Florence"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1033,
+    "name": "Code Warrior",
+    "description": "You are the winner of code war I",
+    "tier": "easy",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1033/achievement_warriorI.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1033/users",
+    "achievements": [],
+    "campus": [
+      "Florence"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1035,
+    "name": "(presque) ⚽️ Ballon d'Or ",
+    "description": "Finaliste d'un tournoi de baby-foot",
+    "tier": "medium",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1035/football.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1035/users",
+    "achievements": [],
+    "campus": [
+      "Antananarivo"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1748,
+      "name": "%login (presque) ⚽️ Ballon d'Or"
+    }
+  },
+  {
+    "id": 1036,
+    "name": "Sushino?!",
+    "description": "Visited 42 campus in Milan.",
+    "tier": "easy",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1036/visit_milan.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1036/users",
+    "achievements": [],
+    "campus": [
+      "Paris",
+      "Milano"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1750,
+      "name": "%login business man"
+    }
+  },
+  {
+    "id": 1037,
+    "name": "3rd Table Tennis Tournament",
+    "description": "Winner of the 3rd Table Tennis Tournament",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1037/table_tennis__1_.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1037/users",
+    "achievements": [],
+    "campus": [
+      "Wolfsburg"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1385,
+      "name": "🏓 Ping-Pong Master %login"
+    }
+  },
+  {
+    "id": 1038,
+    "name": "Chewsday innit?",
+    "description": "Visit 42 London",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1038/visit_london.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1038/users",
+    "achievements": [],
+    "campus": [
+      "Paris",
+      "Lyon",
+      "Belgium",
+      "Helsinki",
+      "Amsterdam",
+      "Madrid",
+      "Quebec",
+      "Rome",
+      "Malaga",
+      "Urduliz",
+      "Barcelona",
+      "Vienna",
+      "Luxembourg",
+      "Perpignan"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1760,
+      "name": "'Ello gov'na %login"
+    }
+  },
+  {
+    "id": 1039,
+    "name": "Visit Tokyo",
+    "description": "日本へようこそ！",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1039/tinywow_Screenshot_2023-12-11_at_18.25.07_42754154.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1039/users",
+    "achievements": [],
+    "campus": [
+      "Quebec",
+      "Tokyo",
+      "Rome",
+      "Vienna",
+      "London"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1040,
+    "name": "Do you know KIMCHI?",
+    "description": "Visited 42 campus in Seoul.",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1040/BADGE_SCOLARITY_seoul.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1040/users",
+    "achievements": [],
+    "campus": [
+      "Paris",
+      "Cluj",
+      "Johannesburg",
+      "Chisinau",
+      "Fremont",
+      "Kyiv",
+      "Lyon",
+      "Bucharest",
+      "Montrouge",
+      "Belgium",
+      "Helsinki",
+      "Amsterdam",
+      "Cape-Town",
+      "Khouribga",
+      "Moscow",
+      "iTouchUP",
+      "CoderDojoSV",
+      "São-Paulo",
+      "Benguerir",
+      "Madrid",
+      "Kazan",
+      "Novosibirsk",
+      "Quebec",
+      "Tokyo",
+      "Hack High School - Fremont ",
+      "Rio de Janeiro",
+      "Seoul",
+      "Rome",
+      "Angouleme",
+      "Yerevan",
+      "Bangkok",
+      "Kuala Lumpur",
+      "Amman",
+      "Adelaide",
+      "Malaga",
+      "Lisboa",
+      "Heilbronn",
+      "Urduliz",
+      "Nice",
+      "42Network",
+      "Abu Dhabi",
+      "Wolfsburg",
+      "Alicante",
+      "Barcelona",
+      "Lausanne",
+      "Mulhouse",
+      "Istanbul",
+      "Kocaeli",
+      "Berlin",
+      "Florence",
+      "Vienna",
+      "42 Central",
+      "Tétouan",
+      "Prague",
+      "London",
+      "Porto",
+      "Luxembourg",
+      "Perpignan",
+      "Belo Horizonte",
+      "Le Havre",
+      "Antwerp",
+      "Singapore",
+      "Forty2",
+      "Warsaw",
+      "Luanda",
+      "Nablus",
+      "Beirut",
+      "Milano",
+      "IskandarPuteri",
+      "Penang"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1041,
+    "name": "25 Days of Christmas",
+    "description": "Finished in the Top 3 of the Advent of Code Challenge. ",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1041/Frame_1.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1041/users",
+    "achievements": [],
+    "campus": [
+      "Vienna"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1772,
+      "name": "%login is on Santa's Nice List"
+    }
+  },
+  {
+    "id": 1042,
+    "name": "AOC gold medal 🥇",
+    "description": "You have participated in AOC challenge and have finished 1st of the 42Prague leaderboard.",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1042/gold_aoc.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1042/users",
+    "achievements": [],
+    "campus": [
+      "Prague"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1043,
+    "name": "AOC silver medal 🥈",
+    "description": "You have participated in AOC challenge and have finished 2nd of the 42Prague leaderboard.",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1043/silver_aoc.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1043/users",
+    "achievements": [],
+    "campus": [
+      "Prague"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1044,
+    "name": "AOC bronze medal 🥉",
+    "description": "You have participated in AOC challenge and have finished 3rd of the 42Prague leaderboard.",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1044/bronze_aoc.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1044/users",
+    "achievements": [],
+    "campus": [
+      "Prague"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1046,
+    "name": "Good Samaritan",
+    "description": "Going out of your way to assist Bocal in times of need",
+    "tier": "medium",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1046/good_samaritan.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1046/users",
+    "achievements": [],
+    "campus": [
+      "Helsinki"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1047,
+    "name": "Je voudrais un bretzel",
+    "description": "Visited 42 campus in Mulhouse.",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1047/BADGE_SCOLARITY_mulhouse.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1047/users",
+    "achievements": [],
+    "campus": [
+      "Paris",
+      "Cluj",
+      "Johannesburg",
+      "Chisinau",
+      "Fremont",
+      "Kyiv",
+      "Lyon",
+      "Bucharest",
+      "Montrouge",
+      "Belgium",
+      "Helsinki",
+      "Amsterdam",
+      "Cape-Town",
+      "Khouribga",
+      "Moscow",
+      "iTouchUP",
+      "CoderDojoSV",
+      "São-Paulo",
+      "Benguerir",
+      "Madrid",
+      "Kazan",
+      "Novosibirsk",
+      "Quebec",
+      "Tokyo",
+      "Hack High School - Fremont ",
+      "Rio de Janeiro",
+      "Seoul",
+      "Rome",
+      "Angouleme",
+      "Yerevan",
+      "Bangkok",
+      "Kuala Lumpur",
+      "Amman",
+      "Malaga",
+      "Lisboa",
+      "Heilbronn",
+      "Urduliz",
+      "Nice",
+      "42Network",
+      "Abu Dhabi",
+      "Wolfsburg",
+      "Alicante",
+      "Barcelona",
+      "Lausanne",
+      "Mulhouse",
+      "Istanbul",
+      "Kocaeli",
+      "Berlin",
+      "Florence",
+      "Vienna",
+      "Prague",
+      "Porto",
+      "Luxembourg",
+      "Perpignan",
+      "Le Havre",
+      "Singapore"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1050,
+    "name": "Beta Test",
+    "description": "Tested the beta version of a \"project / service\"",
+    "tier": "easy",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1050/beta_final.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1050/users",
+    "achievements": [
+      "Beta Test"
+    ],
+    "campus": [
+      "Paris"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1051,
+    "name": "Beta Test",
+    "description": "Tested the beta version of a \"project / service\"",
+    "tier": "medium",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1051/beta_final.svg",
+    "nbr_of_success": 3,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1051/users",
+    "achievements": [
+      "Beta Test"
+    ],
+    "campus": [
+      "Paris"
+    ],
+    "parent": {
+      "id": 1050,
+      "name": "Beta Test",
+      "description": "Tested the beta version of a \"project / service\"",
+      "tier": "easy",
+      "kind": "pedagogy",
+      "visible": true,
+      "image": "/uploads/achievement/image/1050/beta_final.svg",
+      "nbr_of_success": 1,
+      "users_url": "https://api.intra.42.fr/v2/achievements/1050/users"
+    },
+    "title": null
+  },
+  {
+    "id": 1052,
+    "name": "Beta Test",
+    "description": "Tested the beta version of a \"project / service\"",
+    "tier": "hard",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1052/beta_final.svg",
+    "nbr_of_success": 6,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1052/users",
+    "achievements": [],
+    "campus": [
+      "Paris"
+    ],
+    "parent": {
+      "id": 1051,
+      "name": "Beta Test",
+      "description": "Tested the beta version of a \"project / service\"",
+      "tier": "medium",
+      "kind": "pedagogy",
+      "visible": true,
+      "image": "/uploads/achievement/image/1051/beta_final.svg",
+      "nbr_of_success": 3,
+      "users_url": "https://api.intra.42.fr/v2/achievements/1051/users"
+    },
+    "title": {
+      "id": 2017,
+      "name": "🧪 Beta Tester %login"
+    }
+  },
+  {
+    "id": 1054,
+    "name": "Commander of Unfrozen Knowledge",
+    "description": "Finished the main curriculum without using a single freeze",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1054/png-transparent-anakin-skywalker-computer-icons-lightsaber-others-anakin-skywalker-vader-symbol.svg",
+    "nbr_of_success": 42,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1054/users",
+    "achievements": [],
+    "campus": [
+      "Yerevan"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1782,
+      "name": "%login, Darth Thawvader"
+    }
+  },
+  {
+    "id": 1059,
+    "name": "Requiescat in pace",
+    "description": "Visit 42 Florence",
+    "tier": "easy",
+    "kind": "social",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1059/users",
+    "achievements": [],
+    "campus": [
+      "Paris",
+      "Florence"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1060,
+    "name": "Tongasoa Cadet !",
+    "description": "Tu as réussi ta piscine C. Tongasoa à 42 Antananarivo !",
+    "tier": "none",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1060/PRO001.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1060/users",
+    "achievements": [],
+    "campus": [
+      "Antananarivo"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1061,
+    "name": "Torilla tavataan!",
+    "description": "Visit Hive Helsinki campus",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1061/torilla_tavataan.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1061/users",
+    "achievements": [],
+    "campus": [
+      "Helsinki"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1064,
+    "name": "Startist",
+    "description": "Improved the 42 Warsaw social space with stunning art",
+    "tier": "medium",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1064/Startist_42warsaw_achvmnt-23.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1064/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1898,
+      "name": "Startist %login "
+    }
+  },
+  {
+    "id": 1065,
+    "name": "Space Pioneer",
+    "description": "Improved the 42 Warsaw social space with futuristic inventions",
+    "tier": "medium",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1065/Space_pioneer_42warsaw_achvmnt-31.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1065/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1899,
+      "name": "Space Pioneer %login "
+    }
+  },
+  {
+    "id": 1066,
+    "name": "Astral Contibutor III",
+    "description": "3rd highest contributor of a coalition",
+    "tier": "medium",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1066/astral_contributor_III_new_42warsaw_achvmnt-41-47.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1066/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1932,
+      "name": "Astral Contributor %login"
+    }
+  },
+  {
+    "id": 1067,
+    "name": "Astral Contibutor II",
+    "description": "2nd highest contributor of a coalition",
+    "tier": "medium",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1067/astral_contributor_II_new_42warsaw_achvmnt-41-41.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1067/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1932,
+      "name": "Astral Contributor %login"
+    }
+  },
+  {
+    "id": 1068,
+    "name": "Astral Leader",
+    "description": "Top contributor of a coalition",
+    "tier": "hard",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1068/astral_leader_new_42warsaw_achvmnt-41-45.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1068/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1931,
+      "name": "Astral Leader %login"
+    }
+  },
+  {
+    "id": 1069,
+    "name": "Celestial Craftsman",
+    "description": "Finished the 42 Warsaw cutting plotter training",
+    "tier": "easy",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1069/Celestial_craftsman_42warsaw_achvmnt-30.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1069/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2080,
+      "name": "Celestial Craftsman %login"
+    }
+  },
+  {
+    "id": 1071,
+    "name": "Galactic Builder",
+    "description": "Finished the 42 Warsaw 3D printing training",
+    "tier": "easy",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1071/Galactic_builder_42warsaw_achvmnt-14.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1071/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1904,
+      "name": "Galactic Builder %login"
+    }
+  },
+  {
+    "id": 1072,
+    "name": "Meteor Maker",
+    "description": "Finished 1 42 Warsaw STEAM workshop",
+    "tier": "easy",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1072/_new_42warsaw_achvmnt-41-15.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1072/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1073,
+    "name": "Orbit Architect",
+    "description": "Finished 4 different 42 Warsaw STEAM workshops",
+    "tier": "medium",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1073/Orbit_architect_42warsaw_achvmnt-22.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1073/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1074,
+    "name": "Quiz glory",
+    "description": "Win a 42 Warsaw quiz",
+    "tier": "easy",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1074/quiz_glory_I_new_42warsaw_achvmnt-41-38.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1074/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1075,
+    "name": "Quiz glory",
+    "description": "Win 3 42 Warsaw quizes",
+    "tier": "medium",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1075/quiz_glory_II_new_42warsaw_achvmnt-41-42.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1075/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1076,
+    "name": "Quiz glory",
+    "description": "Win 6 42 Warsaw quizes",
+    "tier": "hard",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1076/quiz_glory_III_new_42warsaw_achvmnt-41-46.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1076/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1077,
+    "name": "Club leader",
+    "description": "Become a club leader",
+    "tier": "medium",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1077/tribe_leader_new_42warsaw_achvmnt-41-03-07.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1077/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1079,
+    "name": "Galactic Explorer",
+    "description": "Find an easter egg first",
+    "tier": "medium",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1079/Galactic_explorer_new_42warsaw_achvmnt-41-01-17.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1079/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1080,
+    "name": "Helping hand",
+    "description": "Helped out with a 42Warsaw event",
+    "tier": "easy",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1080/Helping_hand_I_42warsaw_achvmnt-08.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1080/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1081,
+    "name": "Helping hand",
+    "description": "Helped out with 42Warsaw events 2 times",
+    "tier": "medium",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1081/Helping_hand_II_42warsaw_achvmnt-16.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1081/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1082,
+    "name": "Helping hand",
+    "description": "Helped out with 42Warsaw events 3 times",
+    "tier": "hard",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1082/Helping_hand_III_42warsaw_achvmnt-24.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1082/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1083,
+    "name": "I. Am. Everywhere.",
+    "description": "Take part in 1 hackathon or programming events wearing 42Warsaw merch",
+    "tier": "hard",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1083/I_AM_EVERYWHERE_42warsaw_achvmnt-40.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1083/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1084,
+    "name": "Orbiting the Edge of Innovation",
+    "description": "Active 42 Warsaw representation in 1 external event",
+    "tier": "hard",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1084/Orbiting_the_edge_of_innovation_I_42warsaw_achvmnt-39.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1084/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1085,
+    "name": "Orbiting the Edge of Innovation",
+    "description": "Active 42 Warsaw representation in 4 external events",
+    "tier": "challenge",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1085/Orbiting_the_edge_of_innovation_II_42warsaw_achvmnt-43.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1085/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1086,
+    "name": "Facebook Warrior",
+    "description": "1 post, or 5 stories mentioning #42warsaw and @42warsaw on Facebook",
+    "tier": "easy",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1086/Facebook_Warrior_42warsaw_achvmnt-20.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1086/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1087,
+    "name": "Facebook Warrior",
+    "description": "5 posts, or 25 stories mentioning #42warsaw and @42warsaw on Facebook\r\n",
+    "tier": "medium",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1087/Facebook_Hero_42warsaw_achvmnt-19.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1087/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1088,
+    "name": "Facebook Warrior",
+    "description": "10 posts, or 50 stories mentioning #42warsaw and @42warsaw on Facebook\r\n",
+    "tier": "hard",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1088/Facebook_God_42warsaw_achvmnt-18.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1088/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1089,
+    "name": "Facebook Warrior",
+    "description": "25 posts, or 125 stories mentioning #42warsaw and @42warsaw on Facebook",
+    "tier": "challenge",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1089/Facebook_God_42warsaw_achvmnt-18.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1089/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1090,
+    "name": "I AM RICH",
+    "description": "You have bought I AM RICH achievement in the Intra store. Why? We really don't know...",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1090/I_AM_RICH_42warsaw_achvmnt-37.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1090/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1091,
+    "name": "I work for the people of Galaf",
+    "description": "Get elected to the Student Council",
+    "tier": "medium",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1091/I_work_for_the_pople_of_galaf_42warsaw_achvmnt-05.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1091/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1092,
+    "name": "Instagram Hero",
+    "description": "1 post, or 5 stories mentioning #42warsaw, and @42_Warsaw on Instagram",
+    "tier": "easy",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1092/Instagram_Warrior_42warsaw_achvmnt-12.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1092/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1093,
+    "name": "Instagram Hero",
+    "description": "5 posts, or 25 stories mentioning #42warsaw and @42_warsaw  on Instagram",
+    "tier": "medium",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1093/Instagram_Hero_42warsaw_achvmnt-11.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1093/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1094,
+    "name": "Instagram Hero",
+    "description": "10 posts, or 50 stories mentioning #42warsaw and @42_warsaw  on Instagram",
+    "tier": "hard",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1094/Instagram_God_42warsaw_achvmnt-10.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1094/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1095,
+    "name": "Instagram Hero",
+    "description": "25 posts, or 125 stories mentioning #42warsaw and @42_warsaw on Instagram",
+    "tier": "challenge",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1095/Instagram_Bot_42warsaw_achvmnt-09.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1095/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1096,
+    "name": "Instagram Reeler",
+    "description": "Post a Instagram reel mentioning #42warsaw, and @42_Warsaw",
+    "tier": "medium",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1096/InstaReeler_new_42warsaw_achvmnt-41-27.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1096/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1097,
+    "name": "Instagram Reeler",
+    "description": "Post 5 Instagram reels mentioning #42warsaw, and @42_Warsaw",
+    "tier": "hard",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1097/InstaReeler_Pro_new_42warsaw_achvmnt-41-26.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1097/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1098,
+    "name": "Instagram Reeler",
+    "description": "Post 20 Instagram reels mentioning #42warsaw, and @42_Warsaw",
+    "tier": "challenge",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1098/InstaReeler_Pro_plus_new_42warsaw_achvmnt-41-25.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1098/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1099,
+    "name": "LinkedIn God",
+    "description": "1 post mentioning #42warsaw and 42 Warsaw profile on LinkedIn",
+    "tier": "easy",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1099/LinkedinWarrior_42warsaw_achvmnt-04.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1099/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1100,
+    "name": "LinkedIn God",
+    "description": "5 posts mentioning #42warsaw and 42 Warsaw profile on LinkedIn",
+    "tier": "medium",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1100/LinkedinHero_42warsaw_achvmnt-03.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1100/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1101,
+    "name": "LinkedIn God",
+    "description": "10 posts mentioning #42warsaw and 42 Warsaw profile on Linkedin",
+    "tier": "hard",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1101/LinkedinGod_42warsaw_achvmnt-02.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1101/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1102,
+    "name": "LinkedIn God",
+    "description": "25 mentions of #42warsaw and 42 Warsaw profile on Linkedin",
+    "tier": "challenge",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1102/LinkedinBot_42warsaw_achvmnt-01.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1102/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1103,
+    "name": "Plant Lover",
+    "description": "Takes care of the plants",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1103/Plant_lover_new_42warsaw_achvmnt-41-21.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1103/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1893,
+      "name": "Plant lover %login "
+    }
+  },
+  {
+    "id": 1104,
+    "name": "Space-Time Celebrator",
+    "description": "Threw a birthday party at 42 Warsaw and brought some candy",
+    "tier": "easy",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1104/Space_time_celebrator_42warsaw_achvmnt-36.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1104/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1106,
+    "name": "Testimonial superstar",
+    "description": "Become a star by taking part in 42 Warsaw testimonial recording",
+    "tier": "medium",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1106/testimonial_superstar_new_42warsaw_achvmnt-41-01-18.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1106/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1107,
+    "name": "TikToker",
+    "description": "Post a TikTok mentioning #42warsaw",
+    "tier": "medium",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1107/TikToker_42warsaw_achvmnt-35.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1107/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1108,
+    "name": "TikToker",
+    "description": "Post 5 TikToks mentioning #42warsaw",
+    "tier": "hard",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1108/TikToker_pro_42warsaw_achvmnt-34.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1108/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1109,
+    "name": "TikToker",
+    "description": "Post 20 TikToks mentioning #42warsaw",
+    "tier": "challenge",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1109/TikToker_pro_plus_42warsaw_achvmnt-33.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1109/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1110,
+    "name": "Tkowalsk",
+    "description": "You bought Tkowalsk head in the Intra shop",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1110/Tkowalsk_42warsaw_achvmnt-29.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1110/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1111,
+    "name": "Wisdom spreader",
+    "description": "Donated a book on programming, business, or self growth to 42 Warsaw",
+    "tier": "hard",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1111/Wisdom_spreader_42warsaw_achvmnt-28.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1111/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1112,
+    "name": "Welcome to Gyeongsan",
+    "description": "다시 만나서 반가워요! 은하수를 여행하는 동안 펼쳐질 당신의 모든 계절을 응원합니다. Welcome to Gyeongsan!",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1112/welcome_to_42gyeongsan.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1112/users",
+    "achievements": [],
+    "campus": [
+      "Gyeongsan"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1116,
+    "name": "Achievements Wizard",
+    "description": "You created many achievements icons for us, you're our wizard 🧙!",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1116/achievements_wizard.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1116/users",
+    "achievements": [],
+    "campus": [
+      "Prague",
+      "Singapore"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1813,
+      "name": "Achievements Wizard 🧙, %login"
+    }
+  },
+  {
+    "id": 1117,
+    "name": "I am the watcher on the walls",
+    "description": "Supervised 21 exams as a tutor.",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1117/SCO0016.svg",
+    "nbr_of_success": 21,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1117/users",
+    "achievements": [],
+    "campus": [
+      "Paris",
+      "Lyon",
+      "Singapore"
+    ],
+    "parent": {
+      "id": 106,
+      "name": "I am the watcher on the walls",
+      "description": "Supervised 12 exams as a tutor.",
+      "tier": "none",
+      "kind": "scolarity",
+      "visible": true,
+      "image": "/uploads/achievement/image/106/SCO0016.svg",
+      "nbr_of_success": 21,
+      "users_url": "https://api.intra.42.fr/v2/achievements/106/users"
+    },
+    "title": {
+      "id": 1209,
+      "name": "%login, Lord Commander of the Night's Watch  🐺"
+    }
+  },
+  {
+    "id": 1118,
+    "name": "I got first line.",
+    "description": "Validated get_next_line with the maximum score.",
+    "tier": "none",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1118/get_next_line_.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1118/users",
+    "achievements": [],
+    "campus": [
+      "Gyeongsan"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1119,
+    "name": "Hello, Print, World!",
+    "description": "Validated ft_printf with the maximum score.",
+    "tier": "none",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1119/ft_printf.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1119/users",
+    "achievements": [],
+    "campus": [
+      "Gyeongsan"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1120,
+    "name": "I am super-user.",
+    "description": "Validated Born2beroot with the maximum score.",
+    "tier": "none",
+    "kind": "project",
+    "visible": true,
+    "image": "/uploads/achievement/image/1120/born2beroot.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1120/users",
+    "achievements": [],
+    "campus": [
+      "Gyeongsan"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1122,
+    "name": "Go&Get-It",
+    "description": "Winner of the Icebreaker (GO&GET-IT)",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1122/Go_Get-It.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1122/users",
+    "achievements": [],
+    "campus": [
+      "Wolfsburg"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1829,
+      "name": "🔎🕵️‍♂️ 𝔻𝕖𝕥𝕖𝕔𝕥𝕚𝕧𝕖 %login 🕵️‍♂️🔍"
+    }
+  },
+  {
+    "id": 1124,
+    "name": "19 Is Watching You Pioneer",
+    "description": "Participant of the first edition of the '19 is watching you' event",
+    "tier": "medium",
+    "kind": "social",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1124/users",
+    "achievements": [],
+    "campus": [
+      "Belgium"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1125,
+    "name": "Finder",
+    "description": "Participant of the game event",
+    "tier": "medium",
+    "kind": "social",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1125/users",
+    "achievements": [],
+    "campus": [
+      "Belgium"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1126,
+    "name": "The finder of the finders",
+    "description": "Winner of the first '19 is watching you' event",
+    "tier": "hard",
+    "kind": "social",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1126/users",
+    "achievements": [],
+    "campus": [
+      "Belgium"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1841,
+      "name": "%login, [IWY] Master of the 1st edition"
+    }
+  },
+  {
+    "id": 1127,
+    "name": "Codingame - Clash of Code",
+    "description": "Winner of the Clash of Code (Codingame)",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1127/Codingame_Achievement.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1127/users",
+    "achievements": [],
+    "campus": [
+      "Wolfsburg"
+    ],
+    "parent": null,
+    "title": {
+      "id": 932,
+      "name": "CodinGame Challenger %login"
+    }
+  },
+  {
+    "id": 1133,
+    "name": "Event Inventor",
+    "description": "Organized an event at 42 Warsaw campus",
+    "tier": "medium",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1133/event_inventor-52.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1133/users",
+    "achievements": [],
+    "campus": [
+      "Warsaw"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1134,
+    "name": "GeoGuessr Champion",
+    "description": "Win the GeoGuessr tournament",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1134/Geoguessataaaa__.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1134/users",
+    "achievements": [],
+    "campus": [
+      "Rome"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1854,
+      "name": "🌎🌍🌏 Ultimate Master Explorer %login 📌"
+    }
+  },
+  {
+    "id": 1136,
+    "name": "Big Boss",
+    "description": "Your coding skills are like a superpower, conquering every challenge that comes your way. Keep on coding, Big Boss!",
+    "tier": "none",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1136/BADGE_SCOLARITY_bigboss.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1136/users",
+    "achievements": [],
+    "campus": [
+      "Porto"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1137,
+    "name": "Team Player",
+    "description": "Your coding prowess is matched only by your dedication to helping others. Keep on coding, Team Player!",
+    "tier": "none",
+    "kind": "pedagogy",
+    "visible": true,
+    "image": "/uploads/achievement/image/1137/BADGE_TEAMPLAYER.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1137/users",
+    "achievements": [],
+    "campus": [
+      "Porto"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1138,
+    "name": "42Porto Explorer",
+    "description": "For fearless adventurers who decoded the binary clues and conquered the challenges of the new campus",
+    "tier": "none",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1138/BADGE_TREASUREHUNT.svg",
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1138/users",
+    "achievements": [],
+    "campus": [
+      "Porto"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1139,
+    "name": "Community Mom",
+    "description": "Made a small caring act for the 42 Vienna Community. ",
+    "tier": "easy",
+    "kind": "social",
+    "visible": true,
+    "image": "/uploads/achievement/image/1139/Frame_2.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1139/users",
+    "achievements": [],
+    "campus": [
+      "Vienna"
+    ],
+    "parent": null,
+    "title": {
+      "id": 2588,
+      "name": "%login, Mother of Monkeys 🐒"
+    }
+  },
+  {
+    "id": 1140,
+    "name": "No finish line 2024",
+    "description": "Runner during No finish Line 2024",
+    "tier": "easy",
+    "kind": "social",
+    "visible": true,
+    "image": null,
+    "nbr_of_success": null,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1140/users",
+    "achievements": [],
+    "campus": [
+      "Nice"
+    ],
+    "parent": null,
+    "title": {
+      "id": 1875,
+      "name": "Charity runner %login 🏃"
+    }
+  },
+  {
+    "id": 1141,
+    "name": "Tournament Master",
+    "description": "Win the first place of a Grand Tournament.",
+    "tier": "medium",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1141/tournament_master.svg",
+    "nbr_of_success": 1,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1141/users",
+    "achievements": [],
+    "campus": [
+      "London"
+    ],
+    "parent": null,
+    "title": null
+  },
+  {
+    "id": 1142,
+    "name": "Tournament Master",
+    "description": "Win the first place of a Grand Tournament two times.",
+    "tier": "hard",
+    "kind": "scolarity",
+    "visible": true,
+    "image": "/uploads/achievement/image/1142/tournament_master.svg",
+    "nbr_of_success": 2,
+    "users_url": "https://api.intra.42.fr/v2/achievements/1142/users",
+    "achievements": [],
+    "campus": [
+      "London"
+    ],
+    "parent": null,
+    "title": null
+  }
+]
