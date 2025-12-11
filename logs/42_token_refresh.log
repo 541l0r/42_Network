@@ -1,0 +1,228 @@
+===== 2025-12-10T02:05:01Z =====
+{
+  "access_token": "accf1a8c0489e874314c8dd362280361a696e6226e49c37008c7c56e26fe8287",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "d025489a0281308dc1d995dc33d6f3556b5e6c21d5e76e37f635cac7acb3cde7",
+  "scope": "public",
+  "created_at": 1765332301,
+  "secret_valid_until": 1766134831
+}
+State saved to /srv/42_Network/repo/.oauth_state
+
+===== 2025-12-10T03:05:01Z =====
+{
+  "access_token": "2ce7ac0b4cc59352d8f203805af1a97e50d395be0cceeabb84ccbe5293ed5767",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "f8532b902b7433eb1dc5e514f62f218cf5045edb7b82cd43fcd389a9bd16d068",
+  "scope": "public",
+  "created_at": 1765335901,
+  "secret_valid_until": 1766134831
+}
+State saved to /srv/42_Network/repo/.oauth_state
+
+===== 2025-12-10T04:05:01Z =====
+{
+  "access_token": "73271e77b9fc2d2c6304a6efcfd1633a98ca137f9b31622e5f2c07c8bbe22d1d",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "ea6c239aacfdb36ab09f975980f02febd30d1e3a80b4c8f6b18f0a9332a02a7b",
+  "scope": "public",
+  "created_at": 1765339504,
+  "secret_valid_until": 1766134831
+}
+State saved to /srv/42_Network/repo/.oauth_state
+
+===== 2025-12-10T05:05:01Z =====
+{
+  "access_token": "c391e94f625abad0756277a944fad611eb542303bde3eebf5111ca3bfe3a098a",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "56d50eeba4d67cc491c2d5fc4359d3e54eab10eae34e53984deb3e5cd3a4a665",
+  "scope": "public",
+  "created_at": 1765343101,
+  "secret_valid_until": 1766134831
+}
+State saved to /srv/42_Network/repo/.oauth_state
+
+===== 2025-12-10T06:05:01Z =====
+{
+  "access_token": "c8007181d98b116b73139ff1a1693fb0a5dba0ce5a6d50b7bae48df85fb3cac7",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "b47da41fe1c313bcf60a5b8887954db3e3c8b14d1a0293065eba150e55af444d",
+  "scope": "public",
+  "created_at": 1765346702,
+  "secret_valid_until": 1766134831
+}
+State saved to /srv/42_Network/repo/.oauth_state
+
+===== 2025-12-10T07:05:01Z =====
+{
+  "access_token": "cea7319883b792601dc065e40f11c66b40999206187ec55020e54ccd8316fa75",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "c987c08cca6fa6ba039304375a71eb9e0876d5a9b9ff731cbe3b2dd1c1c72af3",
+  "scope": "public",
+  "created_at": 1765350301,
+  "secret_valid_until": 1766134831
+}
+State saved to /srv/42_Network/repo/.oauth_state
+
+===== 2025-12-10T08:05:01Z =====
+{
+  "access_token": "a7f96cd666378dcff7c870defe2c66d9a138d6659ad4559a85bc96a78445feba",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "353cc03e2b3272f02f8d3df5382c0b39cd8cedf7c5032cd4a74a2da9356455d4",
+  "scope": "public",
+  "created_at": 1765353901,
+  "secret_valid_until": 1766134831
+}
+State saved to /srv/42_Network/repo/.oauth_state
+
+===== 2025-12-10T09:05:01Z =====
+{
+  "access_token": "df7be96704af2cdb7dd8b80100970b545cc42b232d8d845b8db3be4f436bb386",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "8185d8259b08b9ec2baf3bd3dabe0a64a5c9cc685567b743e51810bebef799e9",
+  "scope": "public",
+  "created_at": 1765357501,
+  "secret_valid_until": 1766134831
+}
+State saved to /srv/42_Network/repo/.oauth_state
+
+===== 2025-12-10T10:05:01Z =====
+{
+  "access_token": "f47d245bd8bc8d15527054bce0ca87707963b817a4b03f3a7f2027f0e3539f43",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "22aaf8c9bf02ada94df7798df4158237121d08b048d0ab84980fbe4338be607b",
+  "scope": "public",
+  "created_at": 1765361105,
+  "secret_valid_until": 1766134831
+}
+State saved to /srv/42_Network/repo/.oauth_state
+
+===== 2025-12-10T11:05:01Z =====
+{
+  "access_token": "dab29b9d32a0d65775f50aebe3f6aeb43216722b60128e166cf53207e254ba56",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "ddd6047594c5a36082d0f817d30e3456bb790fa6cb250c467f624cf0e6f92f19",
+  "scope": "public",
+  "created_at": 1765364701,
+  "secret_valid_until": 1766134831
+}
+State saved to /srv/42_Network/repo/.oauth_state
+
+===== 2025-12-10T12:05:01Z =====
+{
+  "access_token": "bfe03739aeb54ae031f1ef673c8df058fc84a1da3f3dc089f50bf9081a816f41",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "fb85646c2fc344b0fabf426fff109bfab440bee5368b9555e54fc1f6121bb2ce",
+  "scope": "public",
+  "created_at": 1765368302,
+  "secret_valid_until": 1766134831
+}
+State saved to /srv/42_Network/repo/.oauth_state
+
+===== 2025-12-10T13:05:01Z =====
+{
+  "access_token": "f222b2d8b0f2a8751f8fab399d404376b45a56a2a65b378a43d5683bb784b865",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "4b734979feb3c784f5d240f4cdaf2382273bc0b570d16c0be59ff7256b451552",
+  "scope": "public",
+  "created_at": 1765371901,
+  "secret_valid_until": 1766134831
+}
+State saved to /srv/42_Network/repo/.oauth_state
+
+===== 2025-12-10T14:05:01Z =====
+{
+  "access_token": "b8ad7e58370179507e3460b417d0bfc7a22bf0088864fa695e24a514553d2cfc",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "485b7226de224af3c767e8b78d90ffef238f6b4c8b1e6b01e0ec31771ffec028",
+  "scope": "public",
+  "created_at": 1765375501,
+  "secret_valid_until": 1766134831
+}
+State saved to /srv/42_Network/repo/.oauth_state
+
+===== 2025-12-10T15:05:01Z =====
+{
+  "access_token": "7451ceeb50ed3ad8f2b958d868007b5c7023280e5fffee7e84a8a28c65d08d3a",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "667cc8ddaa5af6be2eedb46073cfbb869d187980d8448a88e6950887e992413e",
+  "scope": "public",
+  "created_at": 1765379101,
+  "secret_valid_until": 1766134831
+}
+State saved to /srv/42_Network/repo/.oauth_state
+
+===== 2025-12-10T16:05:01Z =====
+{
+  "access_token": "9e9519c129924ce73af376be44c24ed4be35e87b2c96eb7e5dda1ebd3fe771f6",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "cf5783554d54223a529bb0c456367275e6b84546a094ed862676a6014b2cb462",
+  "scope": "public",
+  "created_at": 1765382701,
+  "secret_valid_until": 1766134831
+}
+State saved to /srv/42_Network/repo/.oauth_state
+
+===== 2025-12-10T17:05:01Z =====
+{
+  "access_token": "0d45862da83e4713daa99250a2b95d2b33c89b52e4be3ae665e3e00b5204a3cd",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "f343f33658322b6f5455a61fb5e10aef4f9e1a585b268ff237023aecf71e88c0",
+  "scope": "public",
+  "created_at": 1765386301,
+  "secret_valid_until": 1766134831
+}
+State saved to /srv/42_Network/repo/.oauth_state
+
+===== 2025-12-10T18:05:01Z =====
+{
+  "access_token": "204371fc6e4fc9c8b2457786a254dafbb2d37207cd5089c617472c4c00bcd248",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "23ea49b5af0f1ae6664972c495483961df914bbad66efe610325641e5fbe8dd7",
+  "scope": "public",
+  "created_at": 1765389901,
+  "secret_valid_until": 1766134831
+}
+State saved to /srv/42_Network/repo/.oauth_state
+
+===== 2025-12-10T19:05:01Z =====
+{
+  "access_token": "eea96378db67f6bba9e7c42be38235b59a7c6fb1de23b2adea719e300824b0ee",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "95fe59cec247e2187ed58feff4606352896d1861b2300faf8368ee416c762223",
+  "scope": "public",
+  "created_at": 1765393501,
+  "secret_valid_until": 1766134831
+}
+State saved to /srv/42_Network/repo/.oauth_state
+
+===== 2025-12-10T20:05:01Z =====
+{
+  "access_token": "fd1e879a83a94640b548981d9a422532dee265e4ab04f3772d7da00bf0efeaf3",
+  "token_type": "bearer",
+  "expires_in": 7200,
+  "refresh_token": "f952d8cea90e1bd50de73671be163ca2e3c41d08f86007e0022c461048324b15",
+  "scope": "public",
+  "created_at": 1765397102,
+  "secret_valid_until": 1766134831
+}
+State saved to /srv/42_Network/repo/.oauth_state
+
