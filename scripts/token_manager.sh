@@ -121,7 +121,7 @@ call_export() {
   [[ -n "$safe_name" ]] || safe_name="response"
   [[ -n "$outfile" ]] || outfile="$ROOT_DIR/exports/${safe_name}.json"
   mkdir -p "$(dirname "$outfile")"
-  curl -sS -H "Authorization: Bearer $ACCESS_TOKEN" "$API_ROOT$endpoint" | jq . >"$outfile"
+  curl -g -sS -H "Authorization: Bearer $ACCESS_TOKEN" "$API_ROOT$endpoint" | jq . >"$outfile"
   echo "Saved to $outfile"
 }
 

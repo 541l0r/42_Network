@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Wrapper for cron: runs update_tables.sh once, appends output to daily log.
+# Wrapper for cron/manual runs: runs update_stable_tables.sh once, appends output to daily log.
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
@@ -12,6 +12,6 @@ mkdir -p "$LOG_DIR"
 
 {
   echo "===== $(date -u +"%Y-%m-%dT%H:%M:%SZ") ====="
-  (cd "$ROOT_DIR" && ./update_tables.sh "$@")
+  (cd "$ROOT_DIR" && UPDATE_LOG_HEADER=0 ./update_stable_tables.sh "$@")
   echo
 } >> "$LOG_FILE" 2>&1

@@ -3,3 +3,4 @@
 # Local data volumes
 /data/postgres/
 data/postgres/
+exports/

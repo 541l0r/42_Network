@@ -67,6 +67,8 @@ fclean:
 		docker run --rm -v $(PWD)/data/postgres:/var/lib/postgresql/data postgres:16 sh -c "rm -rf /var/lib/postgresql/data/*" || true; \
 		echo "data/postgres volume contents removed"; \
 	fi
+	@echo "Removing exports and temp files for a clean re-run..."
+	@rm -rf ./exports/0?_*/ ./exports/README.md ./exports/.last* ./tmp || true
 
 re: clean up
 
