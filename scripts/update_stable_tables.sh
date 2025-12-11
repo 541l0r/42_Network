@@ -93,7 +93,7 @@ projects_kb=$(kb "$ROOT_DIR/exports/05_projects/raw_all.json")
 total_kb=$(( cursus_kb + campus_kb + campus_ach_kb + projects_kb ))
 
 epoch_to_iso() {
-  [[ -f "$1" ]] && ts=$(cat "$1") && date -u -d @"$ts" +"%Y-%m-%d %H:%M:%S" 2>/dev/null || echo "n/a"
+  [[ -f "$1" ]] && ts=$(cat "$1") && date -u -d @"$ts" +"%Y-%m-%d %H:%M:%SZ" 2>/dev/null || echo "n/a"
 }
 
 status_from_epoch() {
