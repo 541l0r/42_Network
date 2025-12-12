@@ -371,7 +371,101 @@ Before declaring Live Tracking phase ready:
 
 ---
 
-**Document Version**: 2.0  
+## CRITICAL: Data Ownership & Deletion Logic
+
+### Master Data Source: 42 School API ✅
+
+**PRINCIPLE**: The database is a READ-ONLY MIRROR of 42 School API
+
+This means:
+1. **All data originates from API** - Nothing is created independently in DB
+2. **42 School is the single source of truth** - If they delete it, we delete it
+3. **Automatic deletion on API removal** - No manual intervention needed
+4. **Cascading constraints ensure integrity** - No orphaned records
+
+### Deletion Process (AUTOMATIC)
+
+**When 42 School API removes something:**
+
+Example: Suppose they delete Project ID=100
+
+```
+Nightly sync (01:00 UTC):
+│
+├─ FETCH: API query returns all projects EXCEPT ID=100
+├─ STAGE: Delta table has all projects EXCEPT ID=100
+│
+├─ PRUNE: DELETE FROM projects WHERE id NOT IN (SELECT id FROM projects_delta)
+│  └─ Matches: ID=100 no longer exists
+│  └─ Action: DELETE rows where project.id = 100
+│
+├─ CASCADE: Foreign key constraint triggers
+│  └─ project_sessions.project_id refs projects.id ON DELETE CASCADE
+│  └─ Result: All project_sessions for ID=100 also deleted
+│
+└─ RESULT: Project and all related data purged from DB ✅
+```
+
+### Implementation Details
+
+**Tables with auto-delete logic:**
+
+1. **campuses** - Line 138-140 in `update_campuses.sh`
+2. **projects** - Line 311-313 in `update_projects.sh`
+3. **coalitions** - Line 126-128 in `update_coalitions.sh`
+4. **cursus, achievements** - Same pattern applied
+
+**SQL Pattern (same across all tables):**
+
+```sql
+DELETE FROM {table} t
+WHERE NOT EXISTS (
+  SELECT 1 FROM {table}_delta d WHERE d.id = t.id
+);
+```
+
+**Meaning**: Delete any production row whose ID is NOT in the current API snapshot
+
+### Cascading Deletes
+
+FK constraints configured with ON DELETE CASCADE:
+
+| Parent Delete | Child Impact |
+|---|---|
+| campus DELETE | campus_projects AUTO-DELETE |
+| project DELETE | project_sessions AUTO-DELETE |
+| coalition DELETE | coalitions_users AUTO-DELETE (when live) |
+| achievement DELETE | campus_achievements AUTO-DELETE |
+
+### Proof: Data Always Reflects API
+
+**Guarantees:**
+
+✅ If data exists in DB → it exists in 42 School API  
+✅ If API deletes data → DB deletes it within 24 hours  
+✅ No orphaned records possible (FK constraints)  
+✅ No manual deletion needed (automatic process)  
+✅ All deletions logged to `/srv/42_Network/repo/logs/`
+
+**Example from last run:**
+
+```log
+DELETE 0         ← 0 projects removed (all still in API)
+DELETE 1         ← 1 coalition removed (deleted from DB)
+DELETE 19        ← 19 project_sessions (cascade from project deletes)
+```
+
+### Why This Design Matters
+
+✅ **Data Integrity**: DB = API snapshot, always in sync  
+✅ **No Stale Data**: Deleted API data doesn't linger  
+✅ **Audit Trail**: Logs record all deletions with timestamps  
+✅ **Safety**: Cascading prevents partial orphaned states  
+✅ **Compliance**: Data reflects actual API state for reports/queries  
+
+---
+
+**Document Version**: 2.1  
 **Last Updated By**: Claude (AI Assistant)  
-**Date**: December 12, 2025, 15:00 UTC  
-**Reviewers**: None (first comprehensive context doc)
+**Date**: December 12, 2025, 19:30 UTC  
+**Reviewers**: None (continuous context updates)

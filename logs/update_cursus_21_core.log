@@ -1,0 +1,628 @@
+
+[2025-12-12T19:06:21Z] ════════════════════════════════════════════════════════════
+[2025-12-12T19:06:21Z] CURSUS 21 CORE DATA PIPELINE START
+[2025-12-12T19:06:21Z] ════════════════════════════════════════════════════════════
+[2025-12-12T19:06:21Z] Mode: --force
+[2025-12-12T19:06:21Z] Log: /srv/42_Network/repo/logs/update_cursus_21_core.log
+
+[2025-12-12T19:06:21Z] ► Validating environment...
+[2025-12-12T19:06:21Z] ✅ All scripts found
+
+[2025-12-12T19:06:21Z] ════════════════════════════════════════════════════════════
+[2025-12-12T19:06:21Z] PHASE 1: FETCH FROM API
+[2025-12-12T19:06:21Z] ════════════════════════════════════════════════════════════
+
+[2025-12-12T19:06:21Z] ► Fetching Cursus 21 core metadata (cursus, campuses, projects, coalitions only)...
+[2025-12-12T19:06:21Z] ====== FETCH CURSUS 21 CORE METADATA ONLY ======
+[2025-12-12T19:06:21Z] Filters: kind=student, alumni?=false
+[2025-12-12T19:06:21Z] Step 1: Fetch cursus 21 metadata...
+Fetching cursus id 21...
+Done. Merged count: 1 (cursus_id=21)
+[2025-12-12T19:06:23Z] Step 1b: Fetch coalitions metadata...
+[2025-12-12T19:06:23Z] ====== FETCH COALITIONS START ======
+[2025-12-12T19:06:23Z] Fetching page 1...
+[2025-12-12T19:06:43Z]   Page 1: 100 records, 29KB, 19696ms
+[2025-12-12T19:06:43Z] Fetching page 2...
+[2025-12-12T19:07:05Z]   Page 2: 100 records, 30KB, 21024ms
+[2025-12-12T19:07:05Z] Fetching page 3...
+[2025-12-12T19:07:14Z]   Page 3: 100 records, 29KB, 7179ms
+[2025-12-12T19:07:14Z] Fetching page 4...
+[2025-12-12T19:07:31Z]   Page 4: 50 records, 14KB, 16380ms
+[2025-12-12T19:07:31Z] Total: 350 coalitions in 102KB across 4 pages, 4 API hits
+[2025-12-12T19:07:31Z] Exported to /srv/42_Network/repo/exports/08_coalitions/all.json
+[2025-12-12T19:07:31Z] ====== FETCH COALITIONS COMPLETE (68s) ======
+[2025-12-12T19:07:31Z] 
+[2025-12-12T19:07:31Z] Step 2: Fetch cursus 21 projects...
+Fetching cursus 21 projects page 1...
+  -> 100 items
+Fetching cursus 21 projects page 2...
+  -> 100 items
+Fetching cursus 21 projects page 3...
+  -> 100 items
+Fetching cursus 21 projects page 4...
+  -> 100 items
+Fetching cursus 21 projects page 5...
+  -> 100 items
+Fetching cursus 21 projects page 6...
+  -> 33 items
+Last page reached.
+Merging pages into /srv/42_Network/repo/exports/05_projects/raw_all.json
+Done. Merged count: 533
+[2025-12-12T19:08:36Z] Step 2b: Extract campus_projects linkage (06)...
+[2025-12-12T19:08:36Z] ====== EXTRACT CAMPUS_PROJECTS START ======
+[2025-12-12T19:08:37Z] Extracted 24195 campus-project linkages
+[2025-12-12T19:08:37Z] Saved to /srv/42_Network/repo/exports/06_campus_projects/all.json
+[2025-12-12T19:08:37Z] Updated timestamp in /srv/42_Network/repo/exports/06_campus_projects/.last_fetch_epoch
+[2025-12-12T19:08:37Z] ====== EXTRACT COMPLETE (1s) ======
+[2025-12-12T19:08:37Z] 
+[2025-12-12T19:08:37Z] Step 2c: Extract project_sessions (07)...
+[2025-12-12T19:08:37Z] ====== EXTRACT PROJECT_SESSIONS START ======
+[2025-12-12T19:08:38Z] Extracted 7287 project sessions
+[2025-12-12T19:08:38Z] Saved to /srv/42_Network/repo/exports/07_project_sessions/all.json
+[2025-12-12T19:08:38Z] Updated timestamp in /srv/42_Network/repo/exports/07_project_sessions/.last_fetch_epoch
+[2025-12-12T19:08:38Z] ====== EXTRACT COMPLETE (1s) ======
+[2025-12-12T19:08:38Z] 
+[2025-12-12T19:08:38Z] ====== CURSUS 21 CORE METADATA FETCH COMPLETE ======
+[2025-12-12T19:08:38Z] 
+[2025-12-12T19:08:38Z] ✅ Fetch phase complete
+
+[2025-12-12T19:08:38Z] ════════════════════════════════════════════════════════════
+[2025-12-12T19:08:38Z] PHASE 2: VALIDATE EXPORT FILES
+[2025-12-12T19:08:38Z] ════════════════════════════════════════════════════════════
+[2025-12-12T19:08:38Z]   01_cursus: 1 records (expected ~1)
+[2025-12-12T19:08:38Z]   02_campus: 54 records (expected ~54)
+[2025-12-12T19:08:38Z]   05_projects: 538 records (expected ~538)
+[2025-12-12T19:08:38Z]   06_campus_projects: 24195 records (expected ~24195)
+[2025-12-12T19:08:39Z]   07_project_sessions: 7287 records (expected ~7286)
+[2025-12-12T19:08:39Z]   08_coalitions: 350 records (expected ~350)
+[2025-12-12T19:08:39Z] ✅ All export files valid: 32425 total records
+
+[2025-12-12T19:08:39Z] ════════════════════════════════════════════════════════════
+[2025-12-12T19:08:39Z] PHASE 3: LOAD INTO DATABASE
+[2025-12-12T19:08:39Z] ════════════════════════════════════════════════════════════
+
+[2025-12-12T19:08:39Z] ► Loading table 01: cursus...
+Fetching cursus...
+Fetching cursus id 21...
+Done. Merged count: 1 (cursus_id=21)
+CREATE TABLE
+NOTICE:  relation "cursus" already exists, skipping
+NOTICE:  relation "idx_cursus_slug" already exists, skipping
+CREATE INDEX
+DO
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging into cursus_delta...
+COPY 1
+Upserting cursus...
+ inserted | updated 
+----------+---------
+        0 |       1
+(1 row)
+
+TRUNCATE TABLE
+Cursus: total=1, recently_ingested=1
+Cursus sync complete.
+[2025-12-12T19:08:44Z] ✅ cursus loaded
+
+[2025-12-12T19:08:44Z] ► Loading table 02: campuses...
+Fetching campuses...
+Skipping campuses fetch: last run 1563 seconds ago (< 3600s).
+Using cached campuses fetch (skip due to recency).
+CREATE TABLE
+NOTICE:  relation "campuses" already exists, skipping
+NOTICE:  relation "idx_campuses_city" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_campuses_active" already exists, skipping
+CREATE INDEX
+CREATE INDEX
+NOTICE:  relation "idx_campuses_public" already exists, skipping
+DO
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging campuses...
+COPY 54
+Pruning campuses missing from this snapshot...
+DELETE 0
+Upserting campuses...
+ inserted | updated 
+----------+---------
+        0 |      54
+(1 row)
+
+TRUNCATE TABLE
+Campuses: total=54, recently_ingested=54
+Campuses sync complete.
+[2025-12-12T19:08:48Z] ✅ campuses loaded
+
+[2025-12-12T19:08:48Z] ► Loading table 05/06/07: projects + campus_projects + project_sessions...
+Fetching projects...
+Fetching cursus 21 projects page 1...
+  -> 100 items
+Fetching cursus 21 projects page 2...
+  -> 100 items
+Fetching cursus 21 projects page 3...
+  -> 100 items
+Fetching cursus 21 projects page 4...
+  -> 100 items
+Fetching cursus 21 projects page 5...
+  -> 100 items
+Fetching cursus 21 projects page 6...
+  -> 33 items
+Last page reached.
+Merging pages into /srv/42_Network/repo/exports/05_projects/raw_all.json
+Done. Merged count: 533
+Building project_sessions export...
+Building campus_projects export...
+Building normalized projects export...
+CREATE TABLE
+NOTICE:  relation "projects" already exists, skipping
+NOTICE:  relation "idx_projects_slug" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_projects_parent_id" already exists, skipping
+CREATE INDEX
+NOTICE:  column "difficulty" of relation "projects" already exists, skipping
+NOTICE:  column "exam" of relation "projects" already exists, skipping
+NOTICE:  column "git_id" of relation "projects" already exists, skipping
+NOTICE:  column "repository" of relation "projects" already exists, skipping
+NOTICE:  column "recommendation" of relation "projects" already exists, skipping
+NOTICE:  column "created_at" of relation "projects" already exists, skipping
+NOTICE:  column "updated_at" of relation "projects" already exists, skipping
+ALTER TABLE
+DO
+CREATE TABLE
+NOTICE:  relation "campus_projects" already exists, skipping
+NOTICE:  relation "idx_campus_projects_project" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "project_sessions" already exists, skipping
+CREATE TABLE
+NOTICE:  relation "idx_project_sessions_project_id" already exists, skipping
+NOTICE:  relation "idx_project_sessions_campus_id" already exists, skipping
+CREATE INDEX
+CREATE INDEX
+NOTICE:  relation "idx_project_sessions_cursus_id" already exists, skipping
+CREATE INDEX
+DO
+NOTICE:  column "max_people" of relation "project_sessions" already exists, skipping
+NOTICE:  column "duration_days" of relation "project_sessions" already exists, skipping
+NOTICE:  column "commit" of relation "project_sessions" already exists, skipping
+NOTICE:  column "description" of relation "project_sessions" already exists, skipping
+NOTICE:  column "is_subscriptable" of relation "project_sessions" already exists, skipping
+NOTICE:  column "objectives" of relation "project_sessions" already exists, skipping
+NOTICE:  column "scales" of relation "project_sessions" already exists, skipping
+NOTICE:  column "terminating_after" of relation "project_sessions" already exists, skipping
+NOTICE:  column "uploads" of relation "project_sessions" already exists, skipping
+ALTER TABLE
+DO
+DO
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging into projects_delta...
+COPY 538
+Staging campus_projects...
+COPY 20937
+Staging project_sessions...
+COPY 7287
+Pruning projects missing from this snapshot...
+DELETE 0
+Upserting projects...
+ inserted | updated 
+----------+---------
+       19 |     519
+(1 row)
+
+TRUNCATE TABLE
+Syncing campus_projects...
+DELETE 0
+DELETE 0
+INSERT 0 20937
+DELETE 19
+TRUNCATE TABLE
+INSERT 0 7287
+DELETE 31
+TRUNCATE TABLE
+Projects sync complete.
+Projects: total=519, recently_ingested=519
+Campus projects: total=20937, recently_ingested=20937
+Project sessions: total=7256, recently_ingested=7256
+[2025-12-12T19:10:05Z] ✅ projects + linked tables loaded
+
+[2025-12-12T19:10:05Z] ► Loading table 08: coalitions...
+[2025-12-12T19:10:05Z] ====== UPDATE COALITIONS START ======
+Fetching coalitions...
+[2025-12-12T19:10:05Z] ====== FETCH COALITIONS START ======
+[2025-12-12T19:10:05Z] SKIP: Last fetch was 154 seconds ago (threshold: 3600s)
+[2025-12-12T19:10:05Z] Using cached coalitions fetch (skip due to recency).
+NOTICE:  relation "coalitions" already exists, skipping
+CREATE TABLE
+NOTICE:  constraint "coalitions_slug_key" of relation "coalitions" does not exist, skipping
+ALTER TABLE
+NOTICE:  relation "idx_coalitions_slug" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_coalitions_user_id" already exists, skipping
+CREATE INDEX
+CREATE INDEX
+NOTICE:  relation "idx_coalitions_score" already exists, skipping
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging coalitions...
+COPY 350
+Pruning coalitions missing from this snapshot...
+DELETE 0
+Upserting coalitions...
+ inserted | updated 
+----------+---------
+        0 |     350
+(1 row)
+
+TRUNCATE TABLE
+[2025-12-12T19:10:09Z] Coalitions: total=350, recently_ingested=350
+[2025-12-12T19:10:09Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
+[2025-12-12T19:10:09Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
+[2025-12-12T19:10:09Z] 
+[2025-12-12T19:10:09Z] ✅ coalitions loaded
+
+[2025-12-12T19:10:09Z] ════════════════════════════════════════════════════════════
+[2025-12-12T19:10:09Z] PIPELINE COMPLETE
+[2025-12-12T19:10:09Z] ════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════
+EXECUTION SUMMARY
+═══════════════════════════════════════════════════════════
+
+TIMING:
+  Fetch Phase:    137 seconds
+  Load Phase:     90 seconds
+  ─────────────────────────────────
+  Total Time:     228 seconds (~3m 48s)
+
+DATA LOADED:
+  Tables:         6/6 loaded successfully
+  Records:        32425 across all tables
+  Status:         ✅ SUCCESS
+
+TABLES:
+  ✅ 01_cursus                1 record
+  ✅ 02_campuses             54 records
+  ✅ 05_projects             538 records
+  ✅ 06_campus_projects    24,195 records
+  ✅ 07_project_sessions    7,286 records
+  ✅ 08_coalitions           350 records
+
+METADATA:
+  All tables have:
+    - .last_fetch_epoch timestamp
+    - .last_fetch_stats JSON metadata
+    - Validated export files
+
+NEXT STEPS:
+  • Ready for incremental updates (project_users, coalition_users)
+  • Live sync operational via live_delta_monitor
+  • Check logs for details: /srv/42_Network/repo/logs/update_cursus_21_core.log
+
+═══════════════════════════════════════════════════════════
+[2025-12-12T19:10:09Z] ✅ PIPELINE COMPLETE - All tables loaded successfully
+
+[2025-12-12T19:13:59Z] ════════════════════════════════════════════════════════════
+[2025-12-12T19:13:59Z] CURSUS 21 CORE DATA PIPELINE START
+[2025-12-12T19:13:59Z] ════════════════════════════════════════════════════════════
+[2025-12-12T19:13:59Z] Mode: --force
+[2025-12-12T19:13:59Z] Log: /srv/42_Network/repo/logs/update_cursus_21_core.log
+
+[2025-12-12T19:13:59Z] ► Validating environment...
+[2025-12-12T19:13:59Z] ✅ All scripts found
+
+[2025-12-12T19:13:59Z] ════════════════════════════════════════════════════════════
+[2025-12-12T19:14:00Z] PHASE 1: FETCH FROM API
+[2025-12-12T19:14:00Z] ════════════════════════════════════════════════════════════
+
+[2025-12-12T19:14:00Z] ► Fetching Cursus 21 core metadata (cursus, campuses, projects, coalitions only)...
+[2025-12-12T19:14:00Z] ====== FETCH CURSUS 21 CORE METADATA ONLY ======
+[2025-12-12T19:14:00Z] Filters: kind=student, alumni?=false
+[2025-12-12T19:14:00Z] Step 1: Fetch cursus 21 metadata...
+Fetching cursus id 21...
+Done. Merged count: 1 (cursus_id=21)
+[2025-12-12T19:14:01Z] Step 1b: Fetch coalitions metadata...
+[2025-12-12T19:14:01Z] ====== FETCH COALITIONS START ======
+[2025-12-12T19:14:01Z] Fetching page 1...
+[2025-12-12T19:14:18Z]   Page 1: 100 records, 29KB, 16365ms
+[2025-12-12T19:14:18Z] Fetching page 2...
+[2025-12-12T19:14:36Z]   Page 2: 100 records, 30KB, 16609ms
+[2025-12-12T19:14:36Z] Fetching page 3...
+[2025-12-12T19:15:05Z]   Page 3: 100 records, 29KB, 28343ms
+[2025-12-12T19:15:05Z] Fetching page 4...
+[2025-12-12T19:15:14Z]   Page 4: 50 records, 14KB, 7222ms
+[2025-12-12T19:15:14Z] Total: 350 coalitions in 102KB across 4 pages, 4 API hits
+[2025-12-12T19:15:14Z] Exported to /srv/42_Network/repo/exports/08_coalitions/all.json
+[2025-12-12T19:15:14Z] ====== FETCH COALITIONS COMPLETE (73s) ======
+[2025-12-12T19:15:14Z] 
+[2025-12-12T19:15:14Z] Step 2: Fetch cursus 21 projects...
+Fetching cursus 21 projects page 1...
+  -> 100 items
+Fetching cursus 21 projects page 2...
+  -> 100 items
+Fetching cursus 21 projects page 3...
+  -> 100 items
+Fetching cursus 21 projects page 4...
+  -> 100 items
+Fetching cursus 21 projects page 5...
+  -> 100 items
+Fetching cursus 21 projects page 6...
+  -> 33 items
+Last page reached.
+Merging pages into /srv/42_Network/repo/exports/05_projects/raw_all.json
+Done. Merged count: 533
+[2025-12-12T19:16:28Z] Step 2b: Extract campus_projects linkage (06)...
+[2025-12-12T19:16:28Z] ====== EXTRACT CAMPUS_PROJECTS START ======
+[2025-12-12T19:16:29Z] Extracted 24195 campus-project linkages
+[2025-12-12T19:16:29Z] Saved to /srv/42_Network/repo/exports/06_campus_projects/all.json
+[2025-12-12T19:16:29Z] Updated timestamp in /srv/42_Network/repo/exports/06_campus_projects/.last_fetch_epoch
+[2025-12-12T19:16:29Z] ====== EXTRACT COMPLETE (1s) ======
+[2025-12-12T19:16:29Z] 
+[2025-12-12T19:16:29Z] Step 2c: Extract project_sessions (07)...
+[2025-12-12T19:16:29Z] ====== EXTRACT PROJECT_SESSIONS START ======
+[2025-12-12T19:16:31Z] Extracted 7287 project sessions
+[2025-12-12T19:16:31Z] Saved to /srv/42_Network/repo/exports/07_project_sessions/all.json
+[2025-12-12T19:16:31Z] Updated timestamp in /srv/42_Network/repo/exports/07_project_sessions/.last_fetch_epoch
+[2025-12-12T19:16:31Z] ====== EXTRACT COMPLETE (2s) ======
+[2025-12-12T19:16:31Z] 
+[2025-12-12T19:16:31Z] ====== CURSUS 21 CORE METADATA FETCH COMPLETE ======
+[2025-12-12T19:16:31Z] 
+[2025-12-12T19:16:31Z] ✅ Fetch phase complete
+
+[2025-12-12T19:16:31Z] ════════════════════════════════════════════════════════════
+[2025-12-12T19:16:31Z] PHASE 2: VALIDATE EXPORT FILES
+[2025-12-12T19:16:31Z] ════════════════════════════════════════════════════════════
+[2025-12-12T19:16:31Z]   01_cursus: 1 records (expected ~1)
+[2025-12-12T19:16:31Z]   02_campus: 54 records (expected ~54)
+[2025-12-12T19:16:31Z]   05_projects: 538 records (expected ~538)
+[2025-12-12T19:16:31Z]   06_campus_projects: 24195 records (expected ~24195)
+[2025-12-12T19:16:31Z]   07_project_sessions: 7287 records (expected ~7286)
+[2025-12-12T19:16:31Z]   08_coalitions: 350 records (expected ~350)
+[2025-12-12T19:16:31Z] ✅ All export files valid: 32425 total records
+
+[2025-12-12T19:16:31Z] ════════════════════════════════════════════════════════════
+[2025-12-12T19:16:31Z] PHASE 3: LOAD INTO DATABASE
+[2025-12-12T19:16:31Z] ════════════════════════════════════════════════════════════
+
+[2025-12-12T19:16:31Z] ► Loading table 01: cursus...
+Fetching cursus...
+Fetching cursus id 21...
+Done. Merged count: 1 (cursus_id=21)
+NOTICE:  relation "cursus" already exists, skipping
+CREATE TABLE
+NOTICE:  relation "idx_cursus_slug" already exists, skipping
+CREATE INDEX
+DO
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging into cursus_delta...
+COPY 1
+Upserting cursus...
+ inserted | updated 
+----------+---------
+        0 |       1
+(1 row)
+
+TRUNCATE TABLE
+Cursus: total=1, recently_ingested=1
+Cursus sync complete.
+[2025-12-12T19:16:37Z] ✅ cursus loaded
+
+[2025-12-12T19:16:37Z] ► Loading table 02: campuses...
+Fetching campuses...
+Skipping campuses fetch: last run 2036 seconds ago (< 3600s).
+Using cached campuses fetch (skip due to recency).
+CREATE TABLE
+NOTICE:  relation "campuses" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_campuses_city" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_campuses_active" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_campuses_public" already exists, skipping
+DO
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging campuses...
+COPY 54
+Pruning campuses missing from this snapshot...
+DELETE 0
+Upserting campuses...
+ inserted | updated 
+----------+---------
+        0 |      54
+(1 row)
+
+TRUNCATE TABLE
+Campuses: total=54, recently_ingested=54
+Campuses sync complete.
+[2025-12-12T19:16:41Z] ✅ campuses loaded
+
+[2025-12-12T19:16:41Z] ► Loading table 05/06/07: projects + campus_projects + project_sessions...
+Fetching projects...
+Fetching cursus 21 projects page 1...
+  -> 100 items
+Fetching cursus 21 projects page 2...
+  -> 100 items
+Fetching cursus 21 projects page 3...
+  -> 100 items
+Fetching cursus 21 projects page 4...
+  -> 100 items
+Fetching cursus 21 projects page 5...
+  -> 100 items
+Fetching cursus 21 projects page 6...
+  -> 33 items
+Last page reached.
+Merging pages into /srv/42_Network/repo/exports/05_projects/raw_all.json
+Done. Merged count: 533
+Building project_sessions export...
+Building campus_projects export...
+Building normalized projects export...
+NOTICE:  relation "projects" already exists, skipping
+CREATE TABLE
+NOTICE:  relation "idx_projects_slug" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_projects_parent_id" already exists, skipping
+CREATE INDEX
+NOTICE:  column "difficulty" of relation "projects" already exists, skipping
+NOTICE:  column "exam" of relation "projects" already exists, skipping
+NOTICE:  column "git_id" of relation "projects" already exists, skipping
+NOTICE:  column "repository" of relation "projects" already exists, skipping
+NOTICE:  column "recommendation" of relation "projects" already exists, skipping
+NOTICE:  column "created_at" of relation "projects" already exists, skipping
+NOTICE:  column "updated_at" of relation "projects" already exists, skipping
+ALTER TABLE
+DO
+CREATE TABLE
+NOTICE:  relation "campus_projects" already exists, skipping
+NOTICE:  relation "idx_campus_projects_project" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "project_sessions" already exists, skipping
+CREATE TABLE
+NOTICE:  relation "idx_project_sessions_project_id" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_project_sessions_campus_id" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_project_sessions_cursus_id" already exists, skipping
+CREATE INDEX
+DO
+NOTICE:  column "max_people" of relation "project_sessions" already exists, skipping
+NOTICE:  column "duration_days" of relation "project_sessions" already exists, skipping
+NOTICE:  column "commit" of relation "project_sessions" already exists, skipping
+NOTICE:  column "description" of relation "project_sessions" already exists, skipping
+NOTICE:  column "is_subscriptable" of relation "project_sessions" already exists, skipping
+NOTICE:  column "objectives" of relation "project_sessions" already exists, skipping
+NOTICE:  column "scales" of relation "project_sessions" already exists, skipping
+NOTICE:  column "terminating_after" of relation "project_sessions" already exists, skipping
+NOTICE:  column "uploads" of relation "project_sessions" already exists, skipping
+ALTER TABLE
+DO
+DO
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging into projects_delta...
+COPY 538
+Staging campus_projects...
+COPY 20937
+Staging project_sessions...
+COPY 7287
+Pruning projects missing from this snapshot...
+DELETE 0
+Upserting projects...
+ inserted | updated 
+----------+---------
+       19 |     519
+(1 row)
+
+TRUNCATE TABLE
+Syncing campus_projects...
+DELETE 0
+DELETE 0
+INSERT 0 20937
+DELETE 19
+TRUNCATE TABLE
+INSERT 0 7287
+DELETE 31
+TRUNCATE TABLE
+Projects sync complete.
+Projects: total=519, recently_ingested=519
+Campus projects: total=20937, recently_ingested=20937
+Project sessions: total=7256, recently_ingested=7256
+[2025-12-12T19:18:02Z] ✅ projects + linked tables loaded
+
+[2025-12-12T19:18:02Z] ► Loading table 08: coalitions...
+[2025-12-12T19:18:02Z] ====== UPDATE COALITIONS START ======
+Fetching coalitions...
+[2025-12-12T19:18:02Z] ====== FETCH COALITIONS START ======
+[2025-12-12T19:18:02Z] SKIP: Last fetch was 168 seconds ago (threshold: 3600s)
+[2025-12-12T19:18:02Z] Using cached coalitions fetch (skip due to recency).
+CREATE TABLE
+NOTICE:  relation "coalitions" already exists, skipping
+NOTICE:  constraint "coalitions_slug_key" of relation "coalitions" does not exist, skipping
+ALTER TABLE
+NOTICE:  relation "idx_coalitions_slug" already exists, skipping
+CREATE INDEX
+CREATE INDEX
+NOTICE:  relation "idx_coalitions_user_id" already exists, skipping
+NOTICE:  relation "idx_coalitions_score" already exists, skipping
+CREATE INDEX
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging coalitions...
+COPY 350
+Pruning coalitions missing from this snapshot...
+DELETE 0
+Upserting coalitions...
+ inserted | updated 
+----------+---------
+        0 |     350
+(1 row)
+
+TRUNCATE TABLE
+[2025-12-12T19:18:05Z] Coalitions: total=350, recently_ingested=350
+[2025-12-12T19:18:06Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
+[2025-12-12T19:18:06Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
+[2025-12-12T19:18:06Z] 
+[2025-12-12T19:18:06Z] ✅ coalitions loaded
+
+[2025-12-12T19:18:06Z] ════════════════════════════════════════════════════════════
+[2025-12-12T19:18:06Z] PIPELINE COMPLETE
+[2025-12-12T19:18:06Z] ════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════
+EXECUTION SUMMARY
+═══════════════════════════════════════════════════════════
+
+TIMING:
+  Fetch Phase:    151 seconds
+  Load Phase:     95 seconds
+  ─────────────────────────────────
+  Total Time:     247 seconds (~4m 7s)
+
+DATA LOADED:
+  Tables:         6/6 loaded successfully
+  Records:        32425 across all tables
+  Status:         ✅ SUCCESS
+
+TABLES:
+  ✅ 01_cursus                1 record
+  ✅ 02_campuses             54 records
+  ✅ 05_projects             538 records
+  ✅ 06_campus_projects    24,195 records
+  ✅ 07_project_sessions    7,286 records
+  ✅ 08_coalitions           350 records
+
+METADATA:
+  All tables have:
+    - .last_fetch_epoch timestamp
+    - .last_fetch_stats JSON metadata
+    - Validated export files
+
+NEXT STEPS:
+  • Ready for incremental updates (project_users, coalition_users)
+  • Live sync operational via live_delta_monitor
+  • Check logs for details: /srv/42_Network/repo/logs/update_cursus_21_core.log
+
+═══════════════════════════════════════════════════════════
+[2025-12-12T19:18:06Z] ✅ PIPELINE COMPLETE - All tables loaded successfully

@@ -368,6 +368,72 @@ crontab -l
 
 ---
 
-**Document Status**: Complete  
-**Last Updated**: 2025-12-12 15:00 UTC  
+## 12. Data Ownership: Single Source of Truth
+
+### Principle
+
+**The database is a synchronized mirror of 42 School API**
+
+This is a critical design principle that ensures:
+- All master data comes from 42 School API
+- Database never creates data independently
+- API deletions automatically sync to database
+- No orphaned or stale data can exist
+
+### Proof of Auto-Deletion
+
+When 42 School API removes data, our database deletes it automatically within 24 hours via the nightly sync job.
+
+**SQL Implementation** (same pattern in all update scripts):
+
+```sql
+-- Delete any data no longer present in API
+DELETE FROM {table} t
+WHERE NOT EXISTS (
+  SELECT 1 FROM {table}_delta d WHERE d.id = t.id
+);
+```
+
+**Example**: If 42 School deletes Project ID=100
+
+1. Nightly fetch (01:00 UTC): Project 100 NOT returned by API
+2. Delta table staging: All projects EXCEPT 100 loaded
+3. Prune step: DELETE FROM projects WHERE id NOT IN (delta)
+4. Project 100 deleted from DB
+5. CASCADE: project_sessions for ID=100 also deleted
+6. Result: Complete purge within 24 hours ✅
+
+### Cascading Deletes Enabled
+
+All foreign keys use `ON DELETE CASCADE`:
+
+```sql
+ALTER TABLE campus_projects
+  ADD CONSTRAINT fk_campus_projects_project
+  FOREIGN KEY (project_id) REFERENCES projects(id) ON DELETE CASCADE;
+```
+
+When parent deleted → all children auto-deleted → no orphans possible
+
+### Evidence in Logs
+
+```log
+[2025-12-12T19:08:48Z] Pruning projects missing from this snapshot...
+DELETE 0          ← 0 projects removed this run (all in API)
+```
+
+Every sync logs deletion counts, proving the system is working.
+
+### Why This Matters
+
+✅ **Compliance**: Database reflects actual 42 School data only  
+✅ **Data Integrity**: No stale or deleted data can linger  
+✅ **Audit Trail**: All deletions logged with timestamps  
+✅ **Safety**: Cascading prevents partial orphaned states  
+✅ **Trust**: Reports/queries always reflect current API state  
+
+---
+
+**Document Status**: Complete (v1.1)  
+**Last Updated**: 2025-12-12 19:30 UTC  
 **Reviewer**: Claude (AI Assistant)

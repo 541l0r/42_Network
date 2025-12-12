@@ -75,3 +75,15 @@
 [2025-12-12T13:29:33Z] ====== UPDATE COALITIONS COMPLETE (5s) ======
 [2025-12-12T13:29:33Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
 [2025-12-12T13:29:33Z] 
+[2025-12-12T19:10:05Z] ====== UPDATE COALITIONS START ======
+[2025-12-12T19:10:05Z] Using cached coalitions fetch (skip due to recency).
+[2025-12-12T19:10:09Z] Coalitions: total=350, recently_ingested=350
+[2025-12-12T19:10:09Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
+[2025-12-12T19:10:09Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
+[2025-12-12T19:10:09Z] 
+[2025-12-12T19:18:02Z] ====== UPDATE COALITIONS START ======
+[2025-12-12T19:18:02Z] Using cached coalitions fetch (skip due to recency).
+[2025-12-12T19:18:05Z] Coalitions: total=350, recently_ingested=350
+[2025-12-12T19:18:06Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
+[2025-12-12T19:18:06Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
+[2025-12-12T19:18:06Z] 

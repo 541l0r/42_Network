@@ -8,7 +8,7 @@ ROOT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
 EXPORT_DIR="$ROOT_DIR/exports/02_campus"
 STAMP_FILE="$EXPORT_DIR/.last_fetch_epoch"
 METRIC_FILE="$EXPORT_DIR/.last_fetch_stats"
-SLEEP_BETWEEN_CALLS=${SLEEP_BETWEEN_CALLS:-0.6}
+SLEEP_BETWEEN_CALLS=${SLEEP_BETWEEN_CALLS:-1}
 MIN_FETCH_AGE_SECONDS=${MIN_FETCH_AGE_SECONDS:-3600}
 
 # Usage: fetch_campuses.sh [seconds] | --force

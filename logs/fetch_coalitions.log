@@ -88,3 +88,46 @@
 [2025-12-12T13:28:28Z] SKIP: Last fetch was 1772 seconds ago (threshold: 3600s)
 [2025-12-12T13:29:28Z] ====== FETCH COALITIONS START ======
 [2025-12-12T13:29:28Z] SKIP: Last fetch was 1832 seconds ago (threshold: 3600s)
+[2025-12-12T18:45:03Z] ====== FETCH COALITIONS START ======
+[2025-12-12T18:45:03Z] Fetching page 1...
+[2025-12-12T18:45:15Z]   Page 1: 100 records, 29KB, 10833ms
+[2025-12-12T18:45:15Z] Fetching page 2...
+[2025-12-12T18:45:29Z]   Page 2: 100 records, 30KB, 13131ms
+[2025-12-12T18:45:29Z] Fetching page 3...
+[2025-12-12T18:45:42Z]   Page 3: 100 records, 29KB, 12103ms
+[2025-12-12T18:45:42Z] Fetching page 4...
+[2025-12-12T18:45:50Z]   Page 4: 50 records, 14KB, 6344ms
+[2025-12-12T18:45:50Z] Total: 350 coalitions in 102KB across 4 pages, 4 API hits
+[2025-12-12T18:45:50Z] Exported to /srv/42_Network/repo/exports/08_coalitions/all.json
+[2025-12-12T18:45:50Z] ====== FETCH COALITIONS COMPLETE (47s) ======
+[2025-12-12T18:45:50Z] 
+[2025-12-12T19:06:23Z] ====== FETCH COALITIONS START ======
+[2025-12-12T19:06:23Z] Fetching page 1...
+[2025-12-12T19:06:43Z]   Page 1: 100 records, 29KB, 19696ms
+[2025-12-12T19:06:43Z] Fetching page 2...
+[2025-12-12T19:07:05Z]   Page 2: 100 records, 30KB, 21024ms
+[2025-12-12T19:07:05Z] Fetching page 3...
+[2025-12-12T19:07:14Z]   Page 3: 100 records, 29KB, 7179ms
+[2025-12-12T19:07:14Z] Fetching page 4...
+[2025-12-12T19:07:31Z]   Page 4: 50 records, 14KB, 16380ms
+[2025-12-12T19:07:31Z] Total: 350 coalitions in 102KB across 4 pages, 4 API hits
+[2025-12-12T19:07:31Z] Exported to /srv/42_Network/repo/exports/08_coalitions/all.json
+[2025-12-12T19:07:31Z] ====== FETCH COALITIONS COMPLETE (68s) ======
+[2025-12-12T19:07:31Z] 
+[2025-12-12T19:10:05Z] ====== FETCH COALITIONS START ======
+[2025-12-12T19:10:05Z] SKIP: Last fetch was 154 seconds ago (threshold: 3600s)
+[2025-12-12T19:14:01Z] ====== FETCH COALITIONS START ======
+[2025-12-12T19:14:01Z] Fetching page 1...
+[2025-12-12T19:14:18Z]   Page 1: 100 records, 29KB, 16365ms
+[2025-12-12T19:14:18Z] Fetching page 2...
+[2025-12-12T19:14:36Z]   Page 2: 100 records, 30KB, 16609ms
+[2025-12-12T19:14:36Z] Fetching page 3...
+[2025-12-12T19:15:05Z]   Page 3: 100 records, 29KB, 28343ms
+[2025-12-12T19:15:05Z] Fetching page 4...
+[2025-12-12T19:15:14Z]   Page 4: 50 records, 14KB, 7222ms
+[2025-12-12T19:15:14Z] Total: 350 coalitions in 102KB across 4 pages, 4 API hits
+[2025-12-12T19:15:14Z] Exported to /srv/42_Network/repo/exports/08_coalitions/all.json
+[2025-12-12T19:15:14Z] ====== FETCH COALITIONS COMPLETE (73s) ======
+[2025-12-12T19:15:14Z] 
+[2025-12-12T19:18:02Z] ====== FETCH COALITIONS START ======
+[2025-12-12T19:18:02Z] SKIP: Last fetch was 168 seconds ago (threshold: 3600s)
