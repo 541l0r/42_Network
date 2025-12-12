@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 set -euo pipefail
 
 # Fetch all projects and upsert into Postgres.
@@ -32,6 +32,9 @@ DB_PASSWORD=${DB_PASSWORD:-api42}
 export PGOPTIONS="${PGOPTIONS:--c client_min_messages=warning}"
 PSQL_CONN="postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}"
 export PGPASSWORD="$DB_PASSWORD"
+
+# Ensure token is fresh before starting API calls
+"$ROOT_DIR/scripts/token_manager.sh" ensure-fresh >&2
 
 if [[ ! -x "$HELPER" ]]; then
   echo "Helper script not found or not executable: $HELPER" >&2
@@ -76,7 +79,11 @@ session_count=$(jq 'length' "$SESSION_ALL_FILE")
 session_ts=$(date +%s)
 
 echo "Building campus_projects export..."
-jq '[ .[] as $p | $p.campus[]? | {campus_id: (.id // null), project_id: $p.id} ]' "$RAW_JSON" > "$CAMPUS_ALL_FILE"
+# Only include links to active+public campuses (filter against campuses file)
+jq --slurpfile campuses "$ROOT_DIR/exports/02_campus/all.json" '
+  ([$campuses[] | .[] | select(.active == true and .public == true) | .id] | unique) as $active_ids |
+  [ .[] as $p | $p.campus[]? | select(.id | IN($active_ids[])) | {campus_id: (.id // null), project_id: $p.id} ]
+' "$RAW_JSON" > "$CAMPUS_ALL_FILE"
 campus_link_count=$(jq 'length' "$CAMPUS_ALL_FILE")
 
 echo "Building normalized projects export..."
@@ -258,10 +265,10 @@ jq -r '.[] | [
   | run_psql -c "\copy projects_delta (id,name,slug,parent_id,difficulty,exam,git_id,repository,recommendation,created_at,updated_at) FROM STDIN WITH (FORMAT csv, NULL '')"
 
 echo "Staging campus_projects..."
-jq -r '.[] | .campus[]? as $c | [
-  ($c.id // null),
-  .id
-] | @csv' "$RAW_JSON" \
+jq -r '.[] | [
+  .campus_id,
+  .project_id
+] | @csv' "$CAMPUS_ALL_FILE" \
   | run_psql -c "\copy campus_projects_delta (campus_id,project_id) FROM STDIN WITH (FORMAT csv, NULL '')"
 
 echo "Staging project_sessions..."
@@ -292,6 +299,12 @@ jq -r '.[] as $p | $p.project_sessions[]? | [
   (.updated_at // null)
 ] | @csv' "$RAW_JSON" \
   | run_psql -c "\copy project_sessions_delta (id,project_id,campus_id,cursus_id,begin_at,end_at,difficulty,estimate_time,exam,marked,max_project_submissions,max_people,duration_days,commit,description,is_subscriptable,objectives,scales,terminating_after,uploads,solo,team_behaviour,created_at,updated_at) FROM STDIN WITH (FORMAT csv, NULL '')"
+
+delta_count=$(run_psql -t -c "SELECT COUNT(*) FROM projects_delta")
+if [ "$delta_count" = "0" ]; then
+  echo "Skip upsert: No changes in projects_delta (using cached data)"
+  exit 0
+fi
 
 echo "Pruning projects missing from this snapshot..."
 run_psql <<'SQL'
@@ -327,6 +340,11 @@ SQL
 
 echo "Syncing campus_projects..."
 run_psql <<'SQL'
+-- Delete campus_projects links for campuses NOT in the active campus list
+DELETE FROM campus_projects cp
+WHERE cp.campus_id NOT IN (SELECT DISTINCT id FROM campuses);
+
+-- Delete old links for projects that have been updated
 DELETE FROM campus_projects cp
 WHERE EXISTS (
   SELECT 1 FROM projects_delta pd
@@ -341,6 +359,12 @@ INSERT INTO campus_projects (campus_id, project_id, ingested_at)
 SELECT campus_id, project_id, ingested_at FROM campus_projects_delta
 ON CONFLICT (campus_id, project_id) DO UPDATE SET
   ingested_at = EXCLUDED.ingested_at;
+
+-- Remove projects that have no active campus links
+DELETE FROM projects p
+WHERE NOT EXISTS (
+  SELECT 1 FROM campus_projects cp WHERE cp.project_id = p.id
+);
 
 TRUNCATE campus_projects_delta;
 
@@ -371,6 +395,13 @@ ON CONFLICT (id) DO UPDATE SET
   created_at=EXCLUDED.created_at,
   updated_at=EXCLUDED.updated_at,
   ingested_at=EXCLUDED.ingested_at;
+
+-- Delete project_sessions for projects without active campus links
+DELETE FROM project_sessions ps
+WHERE NOT EXISTS (
+  SELECT 1 FROM projects p WHERE p.id = ps.project_id
+);
+
 TRUNCATE project_sessions_delta;
 SQL
 
@@ -385,3 +416,6 @@ sess_recent=$(run_psql -Atc "SELECT count(*) FROM project_sessions WHERE ingeste
 echo "Projects: total=$proj_total, recently_ingested=$proj_recent"
 echo "Campus projects: total=$campus_proj_total, recently_ingested=$campus_proj_recent"
 echo "Project sessions: total=$sess_total, recently_ingested=$sess_recent"
+
+# Cleanup: remove page files, keep only all.json and raw_all.json
+rm -f "$EXPORT_DIR"/page_*.json "$EXPORT_DIR"/raw_page_*.json

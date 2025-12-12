@@ -1,0 +1,923 @@
+[2025-12-12T11:31:35Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 1 START ======
+[2025-12-12T11:31:35Z] Fetching achievements for campus 1, page 1...
+[2025-12-12T11:31:36Z]   Page 1: 100 achievements, 127KB, 935ms
+[2025-12-12T11:31:36Z] Fetching achievements for campus 1, page 2...
+[2025-12-12T11:31:42Z]   Page 2: 37 achievements, 43KB, 5409ms
+[2025-12-12T11:31:42Z] Total: 137 achievements in 170KB across 2 pages, 2 API hits
+[2025-12-12T11:31:42Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_1/all.json
+[2025-12-12T11:31:42Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (7s, 2 hits) ======
+[2025-12-12T11:31:42Z] 
+[2025-12-12T11:32:47Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 76 START ======
+[2025-12-12T11:32:47Z] Fetching achievements for campus 76, page 1...
+[2025-12-12T11:32:48Z]   Page 1: 2 achievements, 3KB, 217ms
+[2025-12-12T11:32:48Z] Total: 2 achievements in 3KB across 1 pages, 1 API hits
+[2025-12-12T11:32:48Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_76/all.json
+[2025-12-12T11:32:48Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:32:48Z] 
+[2025-12-12T11:32:48Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 75 START ======
+[2025-12-12T11:32:48Z] Fetching achievements for campus 75, page 1...
+[2025-12-12T11:32:49Z]   Page 1: 49 achievements, 67KB, 653ms
+[2025-12-12T11:32:49Z] Total: 49 achievements in 67KB across 1 pages, 1 API hits
+[2025-12-12T11:32:49Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_75/all.json
+[2025-12-12T11:32:49Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:32:49Z] 
+[2025-12-12T11:32:49Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 73 START ======
+[2025-12-12T11:32:50Z] Fetching achievements for campus 73, page 1...
+[2025-12-12T11:32:51Z]   Page 1: 100 achievements, 131KB, 979ms
+[2025-12-12T11:32:51Z] Fetching achievements for campus 73, page 2...
+[2025-12-12T11:32:52Z]   Page 2: 1 achievements, 0KB, 210ms
+[2025-12-12T11:32:52Z] Total: 101 achievements in 131KB across 2 pages, 2 API hits
+[2025-12-12T11:32:52Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_73/all.json
+[2025-12-12T11:32:52Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:32:52Z] 
+[2025-12-12T11:32:52Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 72 START ======
+[2025-12-12T11:32:52Z] Fetching achievements for campus 72, page 1...
+[2025-12-12T11:32:53Z]   Page 1: 21 achievements, 33KB, 352ms
+[2025-12-12T11:32:53Z] Total: 21 achievements in 33KB across 1 pages, 1 API hits
+[2025-12-12T11:32:53Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_72/all.json
+[2025-12-12T11:32:53Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:32:53Z] 
+[2025-12-12T11:32:53Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 71 START ======
+[2025-12-12T11:32:53Z] Fetching achievements for campus 71, page 1...
+[2025-12-12T11:32:55Z]   Page 1: 61 achievements, 95KB, 733ms
+[2025-12-12T11:32:55Z] Total: 61 achievements in 95KB across 1 pages, 1 API hits
+[2025-12-12T11:32:55Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_71/all.json
+[2025-12-12T11:32:55Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 1 hits) ======
+[2025-12-12T11:32:55Z] 
+[2025-12-12T11:32:55Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 70 START ======
+[2025-12-12T11:32:55Z] Fetching achievements for campus 70, page 1...
+[2025-12-12T11:32:56Z]   Page 1: 15 achievements, 28KB, 352ms
+[2025-12-12T11:32:56Z] Total: 15 achievements in 28KB across 1 pages, 1 API hits
+[2025-12-12T11:32:56Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_70/all.json
+[2025-12-12T11:32:56Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:32:56Z] 
+[2025-12-12T11:32:56Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 69 START ======
+[2025-12-12T11:32:56Z] Fetching achievements for campus 69, page 1...
+[2025-12-12T11:32:57Z]   Page 1: 33 achievements, 47KB, 589ms
+[2025-12-12T11:32:57Z] Total: 33 achievements in 47KB across 1 pages, 1 API hits
+[2025-12-12T11:32:57Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_69/all.json
+[2025-12-12T11:32:57Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:32:57Z] 
+[2025-12-12T11:32:57Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 68 START ======
+[2025-12-12T11:32:57Z] Fetching achievements for campus 68, page 1...
+[2025-12-12T11:32:58Z]   Page 1: 15 achievements, 28KB, 448ms
+[2025-12-12T11:32:58Z] Total: 15 achievements in 28KB across 1 pages, 1 API hits
+[2025-12-12T11:32:58Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_68/all.json
+[2025-12-12T11:32:58Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:32:58Z] 
+[2025-12-12T11:32:58Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 67 START ======
+[2025-12-12T11:32:58Z] Fetching achievements for campus 67, page 1...
+[2025-12-12T11:33:00Z]   Page 1: 100 achievements, 103KB, 816ms
+[2025-12-12T11:33:00Z] Fetching achievements for campus 67, page 2...
+[2025-12-12T11:33:01Z]   Page 2: 21 achievements, 28KB, 403ms
+[2025-12-12T11:33:01Z] Total: 121 achievements in 131KB across 2 pages, 2 API hits
+[2025-12-12T11:33:01Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_67/all.json
+[2025-12-12T11:33:01Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:33:01Z] 
+[2025-12-12T11:33:01Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 65 START ======
+[2025-12-12T11:33:01Z] Fetching achievements for campus 65, page 1...
+[2025-12-12T11:33:02Z]   Page 1: 79 achievements, 62KB, 796ms
+[2025-12-12T11:33:02Z] Total: 79 achievements in 62KB across 1 pages, 1 API hits
+[2025-12-12T11:33:02Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_65/all.json
+[2025-12-12T11:33:02Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:33:02Z] 
+[2025-12-12T11:33:02Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 64 START ======
+[2025-12-12T11:33:02Z] Fetching achievements for campus 64, page 1...
+[2025-12-12T11:33:04Z]   Page 1: 100 achievements, 121KB, 768ms
+[2025-12-12T11:33:04Z] Fetching achievements for campus 64, page 2...
+[2025-12-12T11:33:05Z]   Page 2: 17 achievements, 24KB, 287ms
+[2025-12-12T11:33:05Z] Total: 117 achievements in 145KB across 2 pages, 2 API hits
+[2025-12-12T11:33:05Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_64/all.json
+[2025-12-12T11:33:05Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:33:05Z] 
+[2025-12-12T11:33:05Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 62 START ======
+[2025-12-12T11:33:05Z] Fetching achievements for campus 62, page 1...
+[2025-12-12T11:33:06Z]   Page 1: 69 achievements, 104KB, 660ms
+[2025-12-12T11:33:06Z] Total: 69 achievements in 104KB across 1 pages, 1 API hits
+[2025-12-12T11:33:06Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_62/all.json
+[2025-12-12T11:33:06Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:33:06Z] 
+[2025-12-12T11:33:06Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 61 START ======
+[2025-12-12T11:33:06Z] Fetching achievements for campus 61, page 1...
+[2025-12-12T11:33:07Z]   Page 1: 19 achievements, 33KB, 358ms
+[2025-12-12T11:33:07Z] Total: 19 achievements in 33KB across 1 pages, 1 API hits
+[2025-12-12T11:33:07Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_61/all.json
+[2025-12-12T11:33:07Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:33:07Z] 
+[2025-12-12T11:33:07Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 60 START ======
+[2025-12-12T11:33:07Z] Fetching achievements for campus 60, page 1...
+[2025-12-12T11:33:09Z]   Page 1: 75 achievements, 115KB, 688ms
+[2025-12-12T11:33:09Z] Total: 75 achievements in 115KB across 1 pages, 1 API hits
+[2025-12-12T11:33:09Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_60/all.json
+[2025-12-12T11:33:09Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 1 hits) ======
+[2025-12-12T11:33:09Z] 
+[2025-12-12T11:33:09Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 59 START ======
+[2025-12-12T11:33:09Z] Fetching achievements for campus 59, page 1...
+[2025-12-12T11:33:10Z]   Page 1: 58 achievements, 89KB, 570ms
+[2025-12-12T11:33:10Z] Total: 58 achievements in 89KB across 1 pages, 1 API hits
+[2025-12-12T11:33:10Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_59/all.json
+[2025-12-12T11:33:10Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:33:10Z] 
+[2025-12-12T11:33:10Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 58 START ======
+[2025-12-12T11:33:10Z] Fetching achievements for campus 58, page 1...
+[2025-12-12T11:33:12Z]   Page 1: 100 achievements, 118KB, 847ms
+[2025-12-12T11:33:12Z] Fetching achievements for campus 58, page 2...
+[2025-12-12T11:33:13Z]   Page 2: 34 achievements, 38KB, 382ms
+[2025-12-12T11:33:13Z] Total: 134 achievements in 156KB across 2 pages, 2 API hits
+[2025-12-12T11:33:13Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_58/all.json
+[2025-12-12T11:33:13Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:33:13Z] 
+[2025-12-12T11:33:13Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 57 START ======
+[2025-12-12T11:33:13Z] Fetching achievements for campus 57, page 1...
+[2025-12-12T11:33:14Z]   Page 1: 79 achievements, 112KB, 766ms
+[2025-12-12T11:33:14Z] Total: 79 achievements in 112KB across 1 pages, 1 API hits
+[2025-12-12T11:33:14Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_57/all.json
+[2025-12-12T11:33:14Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:33:14Z] 
+[2025-12-12T11:33:14Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 56 START ======
+[2025-12-12T11:33:14Z] Fetching achievements for campus 56, page 1...
+[2025-12-12T11:33:16Z]   Page 1: 100 achievements, 125KB, 774ms
+[2025-12-12T11:33:16Z] Fetching achievements for campus 56, page 2...
+[2025-12-12T11:33:17Z]   Page 2: 24 achievements, 31KB, 382ms
+[2025-12-12T11:33:17Z] Total: 124 achievements in 156KB across 2 pages, 2 API hits
+[2025-12-12T11:33:17Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_56/all.json
+[2025-12-12T11:33:17Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:33:17Z] 
+[2025-12-12T11:33:17Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 55 START ======
+[2025-12-12T11:33:17Z] Fetching achievements for campus 55, page 1...
+[2025-12-12T11:33:18Z]   Page 1: 56 achievements, 71KB, 512ms
+[2025-12-12T11:33:18Z] Total: 56 achievements in 71KB across 1 pages, 1 API hits
+[2025-12-12T11:33:18Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_55/all.json
+[2025-12-12T11:33:18Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:33:18Z] 
+[2025-12-12T11:33:18Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 53 START ======
+[2025-12-12T11:33:18Z] Fetching achievements for campus 53, page 1...
+[2025-12-12T11:33:20Z]   Page 1: 100 achievements, 125KB, 901ms
+[2025-12-12T11:33:20Z] Fetching achievements for campus 53, page 2...
+[2025-12-12T11:33:21Z]   Page 2: 33 achievements, 34KB, 382ms
+[2025-12-12T11:33:21Z] Total: 133 achievements in 159KB across 2 pages, 2 API hits
+[2025-12-12T11:33:21Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_53/all.json
+[2025-12-12T11:33:21Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:33:21Z] 
+[2025-12-12T11:33:21Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 52 START ======
+[2025-12-12T11:33:21Z] Fetching achievements for campus 52, page 1...
+[2025-12-12T11:33:22Z]   Page 1: 100 achievements, 135KB, 761ms
+[2025-12-12T11:33:22Z] Fetching achievements for campus 52, page 2...
+[2025-12-12T11:33:23Z]   Page 2: 15 achievements, 20KB, 299ms
+[2025-12-12T11:33:23Z] Total: 115 achievements in 155KB across 2 pages, 2 API hits
+[2025-12-12T11:33:23Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_52/all.json
+[2025-12-12T11:33:23Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:33:23Z] 
+[2025-12-12T11:33:23Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 51 START ======
+[2025-12-12T11:33:23Z] Fetching achievements for campus 51, page 1...
+[2025-12-12T11:33:25Z]   Page 1: 100 achievements, 130KB, 907ms
+[2025-12-12T11:33:25Z] Fetching achievements for campus 51, page 2...
+[2025-12-12T11:33:26Z]   Page 2: 22 achievements, 29KB, 317ms
+[2025-12-12T11:33:26Z] Total: 122 achievements in 159KB across 2 pages, 2 API hits
+[2025-12-12T11:33:26Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_51/all.json
+[2025-12-12T11:33:26Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:33:26Z] 
+[2025-12-12T11:33:26Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 50 START ======
+[2025-12-12T11:33:26Z] Fetching achievements for campus 50, page 1...
+[2025-12-12T11:33:27Z]   Page 1: 100 achievements, 107KB, 858ms
+[2025-12-12T11:33:27Z] Fetching achievements for campus 50, page 2...
+[2025-12-12T11:33:29Z]   Page 2: 37 achievements, 31KB, 430ms
+[2025-12-12T11:33:29Z] Total: 137 achievements in 138KB across 2 pages, 2 API hits
+[2025-12-12T11:33:29Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_50/all.json
+[2025-12-12T11:33:29Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:33:29Z] 
+[2025-12-12T11:33:29Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 49 START ======
+[2025-12-12T11:33:29Z] Fetching achievements for campus 49, page 1...
+[2025-12-12T11:33:30Z]   Page 1: 100 achievements, 100KB, 812ms
+[2025-12-12T11:33:30Z] Fetching achievements for campus 49, page 2...
+[2025-12-12T11:33:31Z]   Page 2: 32 achievements, 28KB, 454ms
+[2025-12-12T11:33:31Z] Total: 132 achievements in 128KB across 2 pages, 2 API hits
+[2025-12-12T11:33:31Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_49/all.json
+[2025-12-12T11:33:31Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:33:31Z] 
+[2025-12-12T11:33:31Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 48 START ======
+[2025-12-12T11:33:31Z] Fetching achievements for campus 48, page 1...
+[2025-12-12T11:33:33Z]   Page 1: 100 achievements, 149KB, 758ms
+[2025-12-12T11:33:33Z] Fetching achievements for campus 48, page 2...
+[2025-12-12T11:33:34Z]   Page 2: 0 achievements, 0KB, 195ms
+[2025-12-12T11:33:34Z] Total: 100 achievements in 149KB across 2 pages, 2 API hits
+[2025-12-12T11:33:34Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_48/all.json
+[2025-12-12T11:33:34Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:33:34Z] 
+[2025-12-12T11:33:34Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 47 START ======
+[2025-12-12T11:33:34Z] Fetching achievements for campus 47, page 1...
+[2025-12-12T11:33:35Z]   Page 1: 100 achievements, 147KB, 769ms
+[2025-12-12T11:33:35Z] Fetching achievements for campus 47, page 2...
+[2025-12-12T11:33:36Z]   Page 2: 0 achievements, 0KB, 193ms
+[2025-12-12T11:33:36Z] Total: 100 achievements in 147KB across 2 pages, 2 API hits
+[2025-12-12T11:33:36Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_47/all.json
+[2025-12-12T11:33:36Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:33:36Z] 
+[2025-12-12T11:33:36Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 46 START ======
+[2025-12-12T11:33:36Z] Fetching achievements for campus 46, page 1...
+[2025-12-12T11:33:38Z]   Page 1: 100 achievements, 130KB, 1577ms
+[2025-12-12T11:33:38Z] Fetching achievements for campus 46, page 2...
+[2025-12-12T11:33:39Z]   Page 2: 9 achievements, 13KB, 239ms
+[2025-12-12T11:33:39Z] Total: 109 achievements in 143KB across 2 pages, 2 API hits
+[2025-12-12T11:33:39Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_46/all.json
+[2025-12-12T11:33:39Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:33:39Z] 
+[2025-12-12T11:33:39Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 44 START ======
+[2025-12-12T11:33:39Z] Fetching achievements for campus 44, page 1...
+[2025-12-12T11:33:41Z]   Page 1: 100 achievements, 122KB, 1151ms
+[2025-12-12T11:33:41Z] Fetching achievements for campus 44, page 2...
+[2025-12-12T11:33:43Z]   Page 2: 49 achievements, 49KB, 827ms
+[2025-12-12T11:33:43Z] Total: 149 achievements in 171KB across 2 pages, 2 API hits
+[2025-12-12T11:33:43Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_44/all.json
+[2025-12-12T11:33:43Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (4s, 2 hits) ======
+[2025-12-12T11:33:43Z] 
+[2025-12-12T11:33:43Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 43 START ======
+[2025-12-12T11:33:43Z] Fetching achievements for campus 43, page 1...
+[2025-12-12T11:33:44Z]   Page 1: 98 achievements, 147KB, 830ms
+[2025-12-12T11:33:44Z] Total: 98 achievements in 147KB across 1 pages, 1 API hits
+[2025-12-12T11:33:44Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_43/all.json
+[2025-12-12T11:33:44Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:33:44Z] 
+[2025-12-12T11:33:44Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 41 START ======
+[2025-12-12T11:33:44Z] Fetching achievements for campus 41, page 1...
+[2025-12-12T11:33:46Z]   Page 1: 100 achievements, 131KB, 906ms
+[2025-12-12T11:33:46Z] Fetching achievements for campus 41, page 2...
+[2025-12-12T11:33:47Z]   Page 2: 10 achievements, 19KB, 246ms
+[2025-12-12T11:33:47Z] Total: 110 achievements in 150KB across 2 pages, 2 API hits
+[2025-12-12T11:33:47Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_41/all.json
+[2025-12-12T11:33:47Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:33:47Z] 
+[2025-12-12T11:33:47Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 40 START ======
+[2025-12-12T11:33:47Z] Fetching achievements for campus 40, page 1...
+[2025-12-12T11:33:48Z]   Page 1: 74 achievements, 92KB, 658ms
+[2025-12-12T11:33:48Z] Total: 74 achievements in 92KB across 1 pages, 1 API hits
+[2025-12-12T11:33:48Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_40/all.json
+[2025-12-12T11:33:48Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:33:48Z] 
+[2025-12-12T11:33:48Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 39 START ======
+[2025-12-12T11:33:48Z] Fetching achievements for campus 39, page 1...
+[2025-12-12T11:33:50Z]   Page 1: 100 achievements, 126KB, 941ms
+[2025-12-12T11:33:50Z] Fetching achievements for campus 39, page 2...
+[2025-12-12T11:33:51Z]   Page 2: 43 achievements, 46KB, 516ms
+[2025-12-12T11:33:51Z] Total: 143 achievements in 172KB across 2 pages, 2 API hits
+[2025-12-12T11:33:51Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_39/all.json
+[2025-12-12T11:33:51Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:33:51Z] 
+[2025-12-12T11:33:51Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 38 START ======
+[2025-12-12T11:33:51Z] Fetching achievements for campus 38, page 1...
+[2025-12-12T11:33:52Z]   Page 1: 100 achievements, 120KB, 711ms
+[2025-12-12T11:33:52Z] Fetching achievements for campus 38, page 2...
+[2025-12-12T11:33:53Z]   Page 2: 49 achievements, 50KB, 462ms
+[2025-12-12T11:33:53Z] Total: 149 achievements in 170KB across 2 pages, 2 API hits
+[2025-12-12T11:33:54Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_38/all.json
+[2025-12-12T11:33:54Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:33:54Z] 
+[2025-12-12T11:33:54Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 37 START ======
+[2025-12-12T11:33:54Z] Fetching achievements for campus 37, page 1...
+[2025-12-12T11:33:55Z]   Page 1: 100 achievements, 112KB, 837ms
+[2025-12-12T11:33:55Z] Fetching achievements for campus 37, page 2...
+[2025-12-12T11:33:56Z]   Page 2: 40 achievements, 39KB, 419ms
+[2025-12-12T11:33:56Z] Total: 140 achievements in 151KB across 2 pages, 2 API hits
+[2025-12-12T11:33:56Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_37/all.json
+[2025-12-12T11:33:56Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:33:56Z] 
+[2025-12-12T11:33:56Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 36 START ======
+[2025-12-12T11:33:56Z] Fetching achievements for campus 36, page 1...
+[2025-12-12T11:33:58Z]   Page 1: 93 achievements, 114KB, 685ms
+[2025-12-12T11:33:58Z] Total: 93 achievements in 114KB across 1 pages, 1 API hits
+[2025-12-12T11:33:58Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_36/all.json
+[2025-12-12T11:33:58Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 1 hits) ======
+[2025-12-12T11:33:58Z] 
+[2025-12-12T11:33:58Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 35 START ======
+[2025-12-12T11:33:58Z] Fetching achievements for campus 35, page 1...
+[2025-12-12T11:33:59Z]   Page 1: 100 achievements, 147KB, 833ms
+[2025-12-12T11:33:59Z] Fetching achievements for campus 35, page 2...
+[2025-12-12T11:34:00Z]   Page 2: 2 achievements, 2KB, 230ms
+[2025-12-12T11:34:00Z] Total: 102 achievements in 149KB across 2 pages, 2 API hits
+[2025-12-12T11:34:00Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_35/all.json
+[2025-12-12T11:34:00Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:34:00Z] 
+[2025-12-12T11:34:00Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 34 START ======
+[2025-12-12T11:34:00Z] Fetching achievements for campus 34, page 1...
+[2025-12-12T11:34:02Z]   Page 1: 100 achievements, 123KB, 871ms
+[2025-12-12T11:34:02Z] Fetching achievements for campus 34, page 2...
+[2025-12-12T11:34:03Z]   Page 2: 53 achievements, 50KB, 470ms
+[2025-12-12T11:34:03Z] Total: 153 achievements in 173KB across 2 pages, 2 API hits
+[2025-12-12T11:34:03Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_34/all.json
+[2025-12-12T11:34:03Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:34:03Z] 
+[2025-12-12T11:34:03Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 33 START ======
+[2025-12-12T11:34:03Z] Fetching achievements for campus 33, page 1...
+[2025-12-12T11:34:04Z]   Page 1: 100 achievements, 146KB, 769ms
+[2025-12-12T11:34:04Z] Fetching achievements for campus 33, page 2...
+[2025-12-12T11:34:05Z]   Page 2: 2 achievements, 3KB, 200ms
+[2025-12-12T11:34:05Z] Total: 102 achievements in 149KB across 2 pages, 2 API hits
+[2025-12-12T11:34:05Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_33/all.json
+[2025-12-12T11:34:05Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:34:05Z] 
+[2025-12-12T11:34:05Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 32 START ======
+[2025-12-12T11:34:05Z] Fetching achievements for campus 32, page 1...
+[2025-12-12T11:34:07Z]   Page 1: 100 achievements, 149KB, 1000ms
+[2025-12-12T11:34:07Z] Fetching achievements for campus 32, page 2...
+[2025-12-12T11:34:08Z]   Page 2: 0 achievements, 0KB, 192ms
+[2025-12-12T11:34:08Z] Total: 100 achievements in 149KB across 2 pages, 2 API hits
+[2025-12-12T11:34:08Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_32/all.json
+[2025-12-12T11:34:08Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:34:08Z] 
+[2025-12-12T11:34:08Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 31 START ======
+[2025-12-12T11:34:08Z] Fetching achievements for campus 31, page 1...
+[2025-12-12T11:34:09Z]   Page 1: 88 achievements, 130KB, 1033ms
+[2025-12-12T11:34:09Z] Total: 88 achievements in 130KB across 1 pages, 1 API hits
+[2025-12-12T11:34:10Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_31/all.json
+[2025-12-12T11:34:10Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 1 hits) ======
+[2025-12-12T11:34:10Z] 
+[2025-12-12T11:34:10Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 30 START ======
+[2025-12-12T11:34:10Z] Fetching achievements for campus 30, page 1...
+[2025-12-12T11:34:11Z]   Page 1: 100 achievements, 126KB, 1064ms
+[2025-12-12T11:34:11Z] Fetching achievements for campus 30, page 2...
+[2025-12-12T11:34:12Z]   Page 2: 37 achievements, 41KB, 555ms
+[2025-12-12T11:34:12Z] Total: 137 achievements in 167KB across 2 pages, 2 API hits
+[2025-12-12T11:34:12Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_30/all.json
+[2025-12-12T11:34:13Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:34:13Z] 
+[2025-12-12T11:34:13Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 29 START ======
+[2025-12-12T11:34:13Z] Fetching achievements for campus 29, page 1...
+[2025-12-12T11:34:14Z]   Page 1: 100 achievements, 130KB, 1072ms
+[2025-12-12T11:34:14Z] Fetching achievements for campus 29, page 2...
+[2025-12-12T11:34:16Z]   Page 2: 59 achievements, 53KB, 586ms
+[2025-12-12T11:34:16Z] Total: 159 achievements in 183KB across 2 pages, 2 API hits
+[2025-12-12T11:34:16Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_29/all.json
+[2025-12-12T11:34:16Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:34:16Z] 
+[2025-12-12T11:34:16Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 28 START ======
+[2025-12-12T11:34:16Z] Fetching achievements for campus 28, page 1...
+[2025-12-12T11:34:17Z]   Page 1: 100 achievements, 123KB, 781ms
+[2025-12-12T11:34:17Z] Fetching achievements for campus 28, page 2...
+[2025-12-12T11:34:18Z]   Page 2: 20 achievements, 33KB, 287ms
+[2025-12-12T11:34:18Z] Total: 120 achievements in 156KB across 2 pages, 2 API hits
+[2025-12-12T11:34:18Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_28/all.json
+[2025-12-12T11:34:18Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:34:18Z] 
+[2025-12-12T11:34:18Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 26 START ======
+[2025-12-12T11:34:18Z] Fetching achievements for campus 26, page 1...
+[2025-12-12T11:34:20Z]   Page 1: 100 achievements, 126KB, 846ms
+[2025-12-12T11:34:20Z] Fetching achievements for campus 26, page 2...
+[2025-12-12T11:34:21Z]   Page 2: 44 achievements, 49KB, 457ms
+[2025-12-12T11:34:21Z] Total: 144 achievements in 175KB across 2 pages, 2 API hits
+[2025-12-12T11:34:21Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_26/all.json
+[2025-12-12T11:34:21Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:34:21Z] 
+[2025-12-12T11:34:21Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 25 START ======
+[2025-12-12T11:34:21Z] Fetching achievements for campus 25, page 1...
+[2025-12-12T11:34:22Z]   Page 1: 93 achievements, 137KB, 801ms
+[2025-12-12T11:34:22Z] Total: 93 achievements in 137KB across 1 pages, 1 API hits
+[2025-12-12T11:34:22Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_25/all.json
+[2025-12-12T11:34:22Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:34:22Z] 
+[2025-12-12T11:34:22Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 22 START ======
+[2025-12-12T11:34:22Z] Fetching achievements for campus 22, page 1...
+[2025-12-12T11:34:24Z]   Page 1: 100 achievements, 127KB, 856ms
+[2025-12-12T11:34:24Z] Fetching achievements for campus 22, page 2...
+[2025-12-12T11:34:25Z]   Page 2: 9 achievements, 11KB, 360ms
+[2025-12-12T11:34:25Z] Total: 109 achievements in 138KB across 2 pages, 2 API hits
+[2025-12-12T11:34:25Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_22/all.json
+[2025-12-12T11:34:25Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:34:25Z] 
+[2025-12-12T11:34:25Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 21 START ======
+[2025-12-12T11:34:25Z] Fetching achievements for campus 21, page 1...
+[2025-12-12T11:34:26Z]   Page 1: 100 achievements, 129KB, 848ms
+[2025-12-12T11:34:26Z] Fetching achievements for campus 21, page 2...
+[2025-12-12T11:34:27Z]   Page 2: 17 achievements, 30KB, 273ms
+[2025-12-12T11:34:27Z] Total: 117 achievements in 159KB across 2 pages, 2 API hits
+[2025-12-12T11:34:27Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_21/all.json
+[2025-12-12T11:34:27Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:34:27Z] 
+[2025-12-12T11:34:27Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 20 START ======
+[2025-12-12T11:34:27Z] Fetching achievements for campus 20, page 1...
+[2025-12-12T11:34:29Z]   Page 1: 100 achievements, 123KB, 1046ms
+[2025-12-12T11:34:29Z] Fetching achievements for campus 20, page 2...
+[2025-12-12T11:34:30Z]   Page 2: 39 achievements, 44KB, 454ms
+[2025-12-12T11:34:30Z] Total: 139 achievements in 167KB across 2 pages, 2 API hits
+[2025-12-12T11:34:30Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_20/all.json
+[2025-12-12T11:34:30Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:34:30Z] 
+[2025-12-12T11:34:30Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 16 START ======
+[2025-12-12T11:34:30Z] Fetching achievements for campus 16, page 1...
+[2025-12-12T11:34:32Z]   Page 1: 100 achievements, 126KB, 792ms
+[2025-12-12T11:34:32Z] Fetching achievements for campus 16, page 2...
+[2025-12-12T11:34:33Z]   Page 2: 20 achievements, 33KB, 325ms
+[2025-12-12T11:34:33Z] Total: 120 achievements in 159KB across 2 pages, 2 API hits
+[2025-12-12T11:34:33Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_16/all.json
+[2025-12-12T11:34:33Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:34:33Z] 
+[2025-12-12T11:34:33Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 14 START ======
+[2025-12-12T11:34:33Z] Fetching achievements for campus 14, page 1...
+[2025-12-12T11:34:34Z]   Page 1: 100 achievements, 120KB, 887ms
+[2025-12-12T11:34:34Z] Fetching achievements for campus 14, page 2...
+[2025-12-12T11:34:35Z]   Page 2: 25 achievements, 34KB, 407ms
+[2025-12-12T11:34:36Z] Total: 125 achievements in 154KB across 2 pages, 2 API hits
+[2025-12-12T11:34:36Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_14/all.json
+[2025-12-12T11:34:36Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:34:36Z] 
+[2025-12-12T11:34:36Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 13 START ======
+[2025-12-12T11:34:36Z] Fetching achievements for campus 13, page 1...
+[2025-12-12T11:34:37Z]   Page 1: 100 achievements, 119KB, 774ms
+[2025-12-12T11:34:37Z] Fetching achievements for campus 13, page 2...
+[2025-12-12T11:34:38Z]   Page 2: 34 achievements, 40KB, 447ms
+[2025-12-12T11:34:38Z] Total: 134 achievements in 159KB across 2 pages, 2 API hits
+[2025-12-12T11:34:38Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_13/all.json
+[2025-12-12T11:34:38Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:34:38Z] 
+[2025-12-12T11:34:38Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 12 START ======
+[2025-12-12T11:34:38Z] Fetching achievements for campus 12, page 1...
+[2025-12-12T11:34:40Z]   Page 1: 100 achievements, 121KB, 874ms
+[2025-12-12T11:34:40Z] Fetching achievements for campus 12, page 2...
+[2025-12-12T11:34:41Z]   Page 2: 64 achievements, 53KB, 736ms
+[2025-12-12T11:34:41Z] Total: 164 achievements in 174KB across 2 pages, 2 API hits
+[2025-12-12T11:34:41Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_12/all.json
+[2025-12-12T11:34:41Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:34:41Z] 
+[2025-12-12T11:34:41Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 9 START ======
+[2025-12-12T11:34:41Z] Fetching achievements for campus 9, page 1...
+[2025-12-12T11:34:43Z]   Page 1: 100 achievements, 123KB, 780ms
+[2025-12-12T11:34:43Z] Fetching achievements for campus 9, page 2...
+[2025-12-12T11:34:44Z]   Page 2: 20 achievements, 26KB, 419ms
+[2025-12-12T11:34:44Z] Total: 120 achievements in 149KB across 2 pages, 2 API hits
+[2025-12-12T11:34:44Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_9/all.json
+[2025-12-12T11:34:44Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:34:44Z] 
+[2025-12-12T11:34:44Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 1 START ======
+[2025-12-12T11:34:44Z] Fetching achievements for campus 1, page 1...
+[2025-12-12T11:34:45Z]   Page 1: 100 achievements, 127KB, 765ms
+[2025-12-12T11:34:45Z] Fetching achievements for campus 1, page 2...
+[2025-12-12T11:34:46Z]   Page 2: 37 achievements, 43KB, 518ms
+[2025-12-12T11:34:47Z] Total: 137 achievements in 170KB across 2 pages, 2 API hits
+[2025-12-12T11:34:47Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_1/all.json
+[2025-12-12T11:34:47Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:34:47Z] 
+[2025-12-12T11:38:41Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 1 START ======
+[2025-12-12T11:38:41Z] Fetching achievements for campus 1, page 1...
+[2025-12-12T11:38:43Z]   Page 1: 100 achievements, 127KB, 1039ms
+[2025-12-12T11:38:43Z] Fetching achievements for campus 1, page 2...
+[2025-12-12T11:38:44Z]   Page 2: 37 achievements, 43KB, 484ms
+[2025-12-12T11:38:44Z] Total: 137 achievements in 170KB across 2 pages, 2 API hits
+[2025-12-12T11:38:44Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_1/all.json (with campus_id=1 embedded)
+[2025-12-12T11:38:44Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:38:44Z] 
+[2025-12-12T11:39:06Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 1 START ======
+[2025-12-12T11:39:06Z] Fetching achievements for campus 1, page 1...
+[2025-12-12T11:39:07Z]   Page 1: 100 achievements, 127KB, 804ms
+[2025-12-12T11:39:07Z] Fetching achievements for campus 1, page 2...
+[2025-12-12T11:39:09Z]   Page 2: 37 achievements, 43KB, 480ms
+[2025-12-12T11:39:09Z] Total: 137 achievements in 170KB across 2 pages, 2 API hits
+[2025-12-12T11:39:09Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_1/all.json (with campus_id=1 embedded)
+[2025-12-12T11:39:09Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:39:09Z] 
+[2025-12-12T11:51:12Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 76 START ======
+[2025-12-12T11:51:12Z] Fetching achievements for campus 76, page 1...
+[2025-12-12T11:51:13Z]   Page 1: 2 achievements, 3KB, 392ms
+[2025-12-12T11:51:13Z] Total: 2 achievements in 3KB across 1 pages, 1 API hits
+[2025-12-12T11:51:13Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_76/all.json (with campus_id=76 embedded)
+[2025-12-12T11:51:13Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:51:13Z] 
+[2025-12-12T11:51:13Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 75 START ======
+[2025-12-12T11:51:13Z] Fetching achievements for campus 75, page 1...
+[2025-12-12T11:51:14Z]   Page 1: 49 achievements, 67KB, 478ms
+[2025-12-12T11:51:14Z] Total: 49 achievements in 67KB across 1 pages, 1 API hits
+[2025-12-12T11:51:14Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_75/all.json (with campus_id=75 embedded)
+[2025-12-12T11:51:14Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:51:14Z] 
+[2025-12-12T11:51:14Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 73 START ======
+[2025-12-12T11:51:14Z] Fetching achievements for campus 73, page 1...
+[2025-12-12T11:51:16Z]   Page 1: 100 achievements, 131KB, 787ms
+[2025-12-12T11:51:16Z] Fetching achievements for campus 73, page 2...
+[2025-12-12T11:51:17Z]   Page 2: 1 achievements, 0KB, 233ms
+[2025-12-12T11:51:17Z] Total: 101 achievements in 131KB across 2 pages, 2 API hits
+[2025-12-12T11:51:17Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_73/all.json (with campus_id=73 embedded)
+[2025-12-12T11:51:17Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:51:17Z] 
+[2025-12-12T11:51:17Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 72 START ======
+[2025-12-12T11:51:17Z] Fetching achievements for campus 72, page 1...
+[2025-12-12T11:51:18Z]   Page 1: 21 achievements, 33KB, 334ms
+[2025-12-12T11:51:18Z] Total: 21 achievements in 33KB across 1 pages, 1 API hits
+[2025-12-12T11:51:18Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_72/all.json (with campus_id=72 embedded)
+[2025-12-12T11:51:18Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:51:18Z] 
+[2025-12-12T11:51:18Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 71 START ======
+[2025-12-12T11:51:18Z] Fetching achievements for campus 71, page 1...
+[2025-12-12T11:51:19Z]   Page 1: 61 achievements, 95KB, 619ms
+[2025-12-12T11:51:19Z] Total: 61 achievements in 95KB across 1 pages, 1 API hits
+[2025-12-12T11:51:19Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_71/all.json (with campus_id=71 embedded)
+[2025-12-12T11:51:19Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:51:19Z] 
+[2025-12-12T11:51:19Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 70 START ======
+[2025-12-12T11:51:19Z] Fetching achievements for campus 70, page 1...
+[2025-12-12T11:51:20Z]   Page 1: 15 achievements, 28KB, 359ms
+[2025-12-12T11:51:20Z] Total: 15 achievements in 28KB across 1 pages, 1 API hits
+[2025-12-12T11:51:20Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_70/all.json (with campus_id=70 embedded)
+[2025-12-12T11:51:20Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:51:20Z] 
+[2025-12-12T11:51:20Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 69 START ======
+[2025-12-12T11:51:20Z] Fetching achievements for campus 69, page 1...
+[2025-12-12T11:51:22Z]   Page 1: 33 achievements, 47KB, 457ms
+[2025-12-12T11:51:22Z] Total: 33 achievements in 47KB across 1 pages, 1 API hits
+[2025-12-12T11:51:22Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_69/all.json (with campus_id=69 embedded)
+[2025-12-12T11:51:22Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 1 hits) ======
+[2025-12-12T11:51:22Z] 
+[2025-12-12T11:51:22Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 68 START ======
+[2025-12-12T11:51:22Z] Fetching achievements for campus 68, page 1...
+[2025-12-12T11:51:23Z]   Page 1: 15 achievements, 28KB, 366ms
+[2025-12-12T11:51:23Z] Total: 15 achievements in 28KB across 1 pages, 1 API hits
+[2025-12-12T11:51:23Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_68/all.json (with campus_id=68 embedded)
+[2025-12-12T11:51:23Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:51:23Z] 
+[2025-12-12T11:51:23Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 67 START ======
+[2025-12-12T11:51:23Z] Fetching achievements for campus 67, page 1...
+[2025-12-12T11:51:24Z]   Page 1: 100 achievements, 103KB, 894ms
+[2025-12-12T11:51:24Z] Fetching achievements for campus 67, page 2...
+[2025-12-12T11:51:25Z]   Page 2: 21 achievements, 28KB, 348ms
+[2025-12-12T11:51:25Z] Total: 121 achievements in 131KB across 2 pages, 2 API hits
+[2025-12-12T11:51:25Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_67/all.json (with campus_id=67 embedded)
+[2025-12-12T11:51:25Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:51:25Z] 
+[2025-12-12T11:51:25Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 65 START ======
+[2025-12-12T11:51:25Z] Fetching achievements for campus 65, page 1...
+[2025-12-12T11:51:27Z]   Page 1: 79 achievements, 62KB, 816ms
+[2025-12-12T11:51:27Z] Total: 79 achievements in 62KB across 1 pages, 1 API hits
+[2025-12-12T11:51:27Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_65/all.json (with campus_id=65 embedded)
+[2025-12-12T11:51:27Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 1 hits) ======
+[2025-12-12T11:51:27Z] 
+[2025-12-12T11:51:27Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 64 START ======
+[2025-12-12T11:51:27Z] Fetching achievements for campus 64, page 1...
+[2025-12-12T11:51:28Z]   Page 1: 100 achievements, 121KB, 863ms
+[2025-12-12T11:51:29Z] Fetching achievements for campus 64, page 2...
+[2025-12-12T11:51:29Z]   Page 2: 17 achievements, 24KB, 290ms
+[2025-12-12T11:51:29Z] Total: 117 achievements in 145KB across 2 pages, 2 API hits
+[2025-12-12T11:51:29Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_64/all.json (with campus_id=64 embedded)
+[2025-12-12T11:51:30Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:51:30Z] 
+[2025-12-12T11:51:30Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 62 START ======
+[2025-12-12T11:51:30Z] Fetching achievements for campus 62, page 1...
+[2025-12-12T11:51:31Z]   Page 1: 69 achievements, 104KB, 700ms
+[2025-12-12T11:51:31Z] Total: 69 achievements in 104KB across 1 pages, 1 API hits
+[2025-12-12T11:51:31Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_62/all.json (with campus_id=62 embedded)
+[2025-12-12T11:51:31Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:51:31Z] 
+[2025-12-12T11:51:31Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 61 START ======
+[2025-12-12T11:51:31Z] Fetching achievements for campus 61, page 1...
+[2025-12-12T11:51:32Z]   Page 1: 19 achievements, 33KB, 337ms
+[2025-12-12T11:51:32Z] Total: 19 achievements in 33KB across 1 pages, 1 API hits
+[2025-12-12T11:51:32Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_61/all.json (with campus_id=61 embedded)
+[2025-12-12T11:51:32Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:51:32Z] 
+[2025-12-12T11:51:32Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 60 START ======
+[2025-12-12T11:51:32Z] Fetching achievements for campus 60, page 1...
+[2025-12-12T11:51:33Z]   Page 1: 75 achievements, 115KB, 665ms
+[2025-12-12T11:51:33Z] Total: 75 achievements in 115KB across 1 pages, 1 API hits
+[2025-12-12T11:51:34Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_60/all.json (with campus_id=60 embedded)
+[2025-12-12T11:51:34Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 1 hits) ======
+[2025-12-12T11:51:34Z] 
+[2025-12-12T11:51:34Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 59 START ======
+[2025-12-12T11:51:34Z] Fetching achievements for campus 59, page 1...
+[2025-12-12T11:51:35Z]   Page 1: 58 achievements, 89KB, 549ms
+[2025-12-12T11:51:35Z] Total: 58 achievements in 89KB across 1 pages, 1 API hits
+[2025-12-12T11:51:35Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_59/all.json (with campus_id=59 embedded)
+[2025-12-12T11:51:35Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:51:35Z] 
+[2025-12-12T11:51:35Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 58 START ======
+[2025-12-12T11:51:35Z] Fetching achievements for campus 58, page 1...
+[2025-12-12T11:51:36Z]   Page 1: 100 achievements, 118KB, 830ms
+[2025-12-12T11:51:36Z] Fetching achievements for campus 58, page 2...
+[2025-12-12T11:51:37Z]   Page 2: 34 achievements, 38KB, 384ms
+[2025-12-12T11:51:37Z] Total: 134 achievements in 156KB across 2 pages, 2 API hits
+[2025-12-12T11:51:37Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_58/all.json (with campus_id=58 embedded)
+[2025-12-12T11:51:37Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:51:37Z] 
+[2025-12-12T11:51:37Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 57 START ======
+[2025-12-12T11:51:38Z] Fetching achievements for campus 57, page 1...
+[2025-12-12T11:51:39Z]   Page 1: 79 achievements, 112KB, 989ms
+[2025-12-12T11:51:39Z] Total: 79 achievements in 112KB across 1 pages, 1 API hits
+[2025-12-12T11:51:39Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_57/all.json (with campus_id=57 embedded)
+[2025-12-12T11:51:39Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:51:39Z] 
+[2025-12-12T11:51:39Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 56 START ======
+[2025-12-12T11:51:39Z] Fetching achievements for campus 56, page 1...
+[2025-12-12T11:51:41Z]   Page 1: 100 achievements, 125KB, 959ms
+[2025-12-12T11:51:41Z] Fetching achievements for campus 56, page 2...
+[2025-12-12T11:51:42Z]   Page 2: 24 achievements, 31KB, 412ms
+[2025-12-12T11:51:42Z] Total: 124 achievements in 156KB across 2 pages, 2 API hits
+[2025-12-12T11:51:42Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_56/all.json (with campus_id=56 embedded)
+[2025-12-12T11:51:42Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:51:42Z] 
+[2025-12-12T11:51:42Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 55 START ======
+[2025-12-12T11:51:42Z] Fetching achievements for campus 55, page 1...
+[2025-12-12T11:51:43Z]   Page 1: 56 achievements, 71KB, 666ms
+[2025-12-12T11:51:43Z] Total: 56 achievements in 71KB across 1 pages, 1 API hits
+[2025-12-12T11:51:43Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_55/all.json (with campus_id=55 embedded)
+[2025-12-12T11:51:43Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:51:43Z] 
+[2025-12-12T11:51:43Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 53 START ======
+[2025-12-12T11:51:43Z] Fetching achievements for campus 53, page 1...
+[2025-12-12T11:51:45Z]   Page 1: 100 achievements, 125KB, 853ms
+[2025-12-12T11:51:45Z] Fetching achievements for campus 53, page 2...
+[2025-12-12T11:51:46Z]   Page 2: 33 achievements, 34KB, 443ms
+[2025-12-12T11:51:46Z] Total: 133 achievements in 159KB across 2 pages, 2 API hits
+[2025-12-12T11:51:46Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_53/all.json (with campus_id=53 embedded)
+[2025-12-12T11:51:46Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:51:46Z] 
+[2025-12-12T11:51:46Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 52 START ======
+[2025-12-12T11:51:46Z] Fetching achievements for campus 52, page 1...
+[2025-12-12T11:51:48Z]   Page 1: 100 achievements, 135KB, 967ms
+[2025-12-12T11:51:48Z] Fetching achievements for campus 52, page 2...
+[2025-12-12T11:51:49Z]   Page 2: 15 achievements, 20KB, 382ms
+[2025-12-12T11:51:49Z] Total: 115 achievements in 155KB across 2 pages, 2 API hits
+[2025-12-12T11:51:49Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_52/all.json (with campus_id=52 embedded)
+[2025-12-12T11:51:49Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:51:49Z] 
+[2025-12-12T11:51:49Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 51 START ======
+[2025-12-12T11:51:49Z] Fetching achievements for campus 51, page 1...
+[2025-12-12T11:51:51Z]   Page 1: 100 achievements, 130KB, 988ms
+[2025-12-12T11:51:51Z] Fetching achievements for campus 51, page 2...
+[2025-12-12T11:51:52Z]   Page 2: 22 achievements, 29KB, 348ms
+[2025-12-12T11:51:52Z] Total: 122 achievements in 159KB across 2 pages, 2 API hits
+[2025-12-12T11:51:52Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_51/all.json (with campus_id=51 embedded)
+[2025-12-12T11:51:52Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:51:52Z] 
+[2025-12-12T11:51:52Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 50 START ======
+[2025-12-12T11:51:52Z] Fetching achievements for campus 50, page 1...
+[2025-12-12T11:51:53Z]   Page 1: 100 achievements, 107KB, 782ms
+[2025-12-12T11:51:53Z] Fetching achievements for campus 50, page 2...
+[2025-12-12T11:51:54Z]   Page 2: 37 achievements, 31KB, 476ms
+[2025-12-12T11:51:54Z] Total: 137 achievements in 138KB across 2 pages, 2 API hits
+[2025-12-12T11:51:54Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_50/all.json (with campus_id=50 embedded)
+[2025-12-12T11:51:54Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:51:54Z] 
+[2025-12-12T11:51:54Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 49 START ======
+[2025-12-12T11:51:54Z] Fetching achievements for campus 49, page 1...
+[2025-12-12T11:51:56Z]   Page 1: 100 achievements, 100KB, 816ms
+[2025-12-12T11:51:56Z] Fetching achievements for campus 49, page 2...
+[2025-12-12T11:51:57Z]   Page 2: 32 achievements, 28KB, 385ms
+[2025-12-12T11:51:57Z] Total: 132 achievements in 128KB across 2 pages, 2 API hits
+[2025-12-12T11:51:57Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_49/all.json (with campus_id=49 embedded)
+[2025-12-12T11:51:57Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:51:57Z] 
+[2025-12-12T11:51:57Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 48 START ======
+[2025-12-12T11:51:57Z] Fetching achievements for campus 48, page 1...
+[2025-12-12T11:51:59Z]   Page 1: 100 achievements, 149KB, 920ms
+[2025-12-12T11:51:59Z] Fetching achievements for campus 48, page 2...
+[2025-12-12T11:51:59Z]   Page 2: 0 achievements, 0KB, 194ms
+[2025-12-12T11:51:59Z] Total: 100 achievements in 149KB across 2 pages, 2 API hits
+[2025-12-12T11:51:59Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_48/all.json (with campus_id=48 embedded)
+[2025-12-12T11:51:59Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:51:59Z] 
+[2025-12-12T11:52:00Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 47 START ======
+[2025-12-12T11:52:00Z] Fetching achievements for campus 47, page 1...
+[2025-12-12T11:52:01Z]   Page 1: 100 achievements, 147KB, 1071ms
+[2025-12-12T11:52:01Z] Fetching achievements for campus 47, page 2...
+[2025-12-12T11:52:02Z]   Page 2: 0 achievements, 0KB, 189ms
+[2025-12-12T11:52:02Z] Total: 100 achievements in 147KB across 2 pages, 2 API hits
+[2025-12-12T11:52:02Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_47/all.json (with campus_id=47 embedded)
+[2025-12-12T11:52:02Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:52:02Z] 
+[2025-12-12T11:52:02Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 46 START ======
+[2025-12-12T11:52:02Z] Fetching achievements for campus 46, page 1...
+[2025-12-12T11:52:03Z]   Page 1: 100 achievements, 130KB, 714ms
+[2025-12-12T11:52:04Z] Fetching achievements for campus 46, page 2...
+[2025-12-12T11:52:04Z]   Page 2: 9 achievements, 13KB, 242ms
+[2025-12-12T11:52:04Z] Total: 109 achievements in 143KB across 2 pages, 2 API hits
+[2025-12-12T11:52:04Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_46/all.json (with campus_id=46 embedded)
+[2025-12-12T11:52:04Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:52:04Z] 
+[2025-12-12T11:52:04Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 44 START ======
+[2025-12-12T11:52:05Z] Fetching achievements for campus 44, page 1...
+[2025-12-12T11:52:06Z]   Page 1: 100 achievements, 122KB, 837ms
+[2025-12-12T11:52:06Z] Fetching achievements for campus 44, page 2...
+[2025-12-12T11:52:07Z]   Page 2: 49 achievements, 49KB, 729ms
+[2025-12-12T11:52:07Z] Total: 149 achievements in 171KB across 2 pages, 2 API hits
+[2025-12-12T11:52:07Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_44/all.json (with campus_id=44 embedded)
+[2025-12-12T11:52:07Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:52:07Z] 
+[2025-12-12T11:52:07Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 43 START ======
+[2025-12-12T11:52:08Z] Fetching achievements for campus 43, page 1...
+[2025-12-12T11:52:09Z]   Page 1: 98 achievements, 147KB, 933ms
+[2025-12-12T11:52:09Z] Total: 98 achievements in 147KB across 1 pages, 1 API hits
+[2025-12-12T11:52:09Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_43/all.json (with campus_id=43 embedded)
+[2025-12-12T11:52:09Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 1 hits) ======
+[2025-12-12T11:52:09Z] 
+[2025-12-12T11:52:09Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 41 START ======
+[2025-12-12T11:52:09Z] Fetching achievements for campus 41, page 1...
+[2025-12-12T11:52:11Z]   Page 1: 100 achievements, 131KB, 938ms
+[2025-12-12T11:52:11Z] Fetching achievements for campus 41, page 2...
+[2025-12-12T11:52:12Z]   Page 2: 10 achievements, 19KB, 286ms
+[2025-12-12T11:52:12Z] Total: 110 achievements in 150KB across 2 pages, 2 API hits
+[2025-12-12T11:52:12Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_41/all.json (with campus_id=41 embedded)
+[2025-12-12T11:52:12Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:52:12Z] 
+[2025-12-12T11:52:12Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 40 START ======
+[2025-12-12T11:52:12Z] Fetching achievements for campus 40, page 1...
+[2025-12-12T11:52:13Z]   Page 1: 74 achievements, 92KB, 674ms
+[2025-12-12T11:52:13Z] Total: 74 achievements in 92KB across 1 pages, 1 API hits
+[2025-12-12T11:52:13Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_40/all.json (with campus_id=40 embedded)
+[2025-12-12T11:52:13Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (1s, 1 hits) ======
+[2025-12-12T11:52:13Z] 
+[2025-12-12T11:52:13Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 39 START ======
+[2025-12-12T11:52:13Z] Fetching achievements for campus 39, page 1...
+[2025-12-12T11:52:15Z]   Page 1: 100 achievements, 126KB, 898ms
+[2025-12-12T11:52:15Z] Fetching achievements for campus 39, page 2...
+[2025-12-12T11:52:16Z]   Page 2: 43 achievements, 46KB, 666ms
+[2025-12-12T11:52:16Z] Total: 143 achievements in 172KB across 2 pages, 2 API hits
+[2025-12-12T11:52:16Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_39/all.json (with campus_id=39 embedded)
+[2025-12-12T11:52:16Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:52:16Z] 
+[2025-12-12T11:52:16Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 38 START ======
+[2025-12-12T11:52:16Z] Fetching achievements for campus 38, page 1...
+[2025-12-12T11:52:18Z]   Page 1: 100 achievements, 120KB, 971ms
+[2025-12-12T11:52:18Z] Fetching achievements for campus 38, page 2...
+[2025-12-12T11:52:19Z]   Page 2: 49 achievements, 50KB, 506ms
+[2025-12-12T11:52:19Z] Total: 149 achievements in 170KB across 2 pages, 2 API hits
+[2025-12-12T11:52:19Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_38/all.json (with campus_id=38 embedded)
+[2025-12-12T11:52:19Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:52:19Z] 
+[2025-12-12T11:52:19Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 37 START ======
+[2025-12-12T11:52:19Z] Fetching achievements for campus 37, page 1...
+[2025-12-12T11:52:21Z]   Page 1: 100 achievements, 112KB, 1007ms
+[2025-12-12T11:52:21Z] Fetching achievements for campus 37, page 2...
+[2025-12-12T11:52:22Z]   Page 2: 40 achievements, 39KB, 432ms
+[2025-12-12T11:52:22Z] Total: 140 achievements in 151KB across 2 pages, 2 API hits
+[2025-12-12T11:52:22Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_37/all.json (with campus_id=37 embedded)
+[2025-12-12T11:52:22Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:52:22Z] 
+[2025-12-12T11:52:22Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 36 START ======
+[2025-12-12T11:52:22Z] Fetching achievements for campus 36, page 1...
+[2025-12-12T11:52:24Z]   Page 1: 93 achievements, 114KB, 938ms
+[2025-12-12T11:52:24Z] Total: 93 achievements in 114KB across 1 pages, 1 API hits
+[2025-12-12T11:52:24Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_36/all.json (with campus_id=36 embedded)
+[2025-12-12T11:52:24Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 1 hits) ======
+[2025-12-12T11:52:24Z] 
+[2025-12-12T11:52:24Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 35 START ======
+[2025-12-12T11:52:24Z] Fetching achievements for campus 35, page 1...
+[2025-12-12T11:52:25Z]   Page 1: 100 achievements, 147KB, 812ms
+[2025-12-12T11:52:25Z] Fetching achievements for campus 35, page 2...
+[2025-12-12T11:52:26Z]   Page 2: 2 achievements, 2KB, 232ms
+[2025-12-12T11:52:26Z] Total: 102 achievements in 149KB across 2 pages, 2 API hits
+[2025-12-12T11:52:26Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_35/all.json (with campus_id=35 embedded)
+[2025-12-12T11:52:26Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:52:26Z] 
+[2025-12-12T11:52:26Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 34 START ======
+[2025-12-12T11:52:26Z] Fetching achievements for campus 34, page 1...
+[2025-12-12T11:52:28Z]   Page 1: 100 achievements, 123KB, 833ms
+[2025-12-12T11:52:28Z] Fetching achievements for campus 34, page 2...
+[2025-12-12T11:52:29Z]   Page 2: 53 achievements, 50KB, 587ms
+[2025-12-12T11:52:29Z] Total: 153 achievements in 173KB across 2 pages, 2 API hits
+[2025-12-12T11:52:29Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_34/all.json (with campus_id=34 embedded)
+[2025-12-12T11:52:29Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:52:29Z] 
+[2025-12-12T11:52:29Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 33 START ======
+[2025-12-12T11:52:29Z] Fetching achievements for campus 33, page 1...
+[2025-12-12T11:52:31Z]   Page 1: 100 achievements, 146KB, 920ms
+[2025-12-12T11:52:31Z] Fetching achievements for campus 33, page 2...
+[2025-12-12T11:52:32Z]   Page 2: 2 achievements, 3KB, 218ms
+[2025-12-12T11:52:32Z] Total: 102 achievements in 149KB across 2 pages, 2 API hits
+[2025-12-12T11:52:32Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_33/all.json (with campus_id=33 embedded)
+[2025-12-12T11:52:32Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:52:32Z] 
+[2025-12-12T11:52:32Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 32 START ======
+[2025-12-12T11:52:32Z] Fetching achievements for campus 32, page 1...
+[2025-12-12T11:52:33Z]   Page 1: 100 achievements, 149KB, 873ms
+[2025-12-12T11:52:33Z] Fetching achievements for campus 32, page 2...
+[2025-12-12T11:52:34Z]   Page 2: 0 achievements, 0KB, 207ms
+[2025-12-12T11:52:34Z] Total: 100 achievements in 149KB across 2 pages, 2 API hits
+[2025-12-12T11:52:34Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_32/all.json (with campus_id=32 embedded)
+[2025-12-12T11:52:34Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:52:34Z] 
+[2025-12-12T11:52:34Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 31 START ======
+[2025-12-12T11:52:34Z] Fetching achievements for campus 31, page 1...
+[2025-12-12T11:52:36Z]   Page 1: 88 achievements, 130KB, 728ms
+[2025-12-12T11:52:36Z] Total: 88 achievements in 130KB across 1 pages, 1 API hits
+[2025-12-12T11:52:36Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_31/all.json (with campus_id=31 embedded)
+[2025-12-12T11:52:36Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 1 hits) ======
+[2025-12-12T11:52:36Z] 
+[2025-12-12T11:52:36Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 30 START ======
+[2025-12-12T11:52:36Z] Fetching achievements for campus 30, page 1...
+[2025-12-12T11:52:37Z]   Page 1: 100 achievements, 126KB, 854ms
+[2025-12-12T11:52:37Z] Fetching achievements for campus 30, page 2...
+[2025-12-12T11:52:38Z]   Page 2: 37 achievements, 41KB, 455ms
+[2025-12-12T11:52:38Z] Total: 137 achievements in 167KB across 2 pages, 2 API hits
+[2025-12-12T11:52:38Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_30/all.json (with campus_id=30 embedded)
+[2025-12-12T11:52:38Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:52:38Z] 
+[2025-12-12T11:52:38Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 29 START ======
+[2025-12-12T11:52:38Z] Fetching achievements for campus 29, page 1...
+[2025-12-12T11:52:40Z]   Page 1: 100 achievements, 130KB, 773ms
+[2025-12-12T11:52:40Z] Fetching achievements for campus 29, page 2...
+[2025-12-12T11:52:41Z]   Page 2: 59 achievements, 53KB, 574ms
+[2025-12-12T11:52:41Z] Total: 159 achievements in 183KB across 2 pages, 2 API hits
+[2025-12-12T11:52:41Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_29/all.json (with campus_id=29 embedded)
+[2025-12-12T11:52:41Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:52:41Z] 
+[2025-12-12T11:52:41Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 28 START ======
+[2025-12-12T11:52:41Z] Fetching achievements for campus 28, page 1...
+[2025-12-12T11:52:43Z]   Page 1: 100 achievements, 123KB, 842ms
+[2025-12-12T11:52:43Z] Fetching achievements for campus 28, page 2...
+[2025-12-12T11:52:44Z]   Page 2: 20 achievements, 33KB, 349ms
+[2025-12-12T11:52:44Z] Total: 120 achievements in 156KB across 2 pages, 2 API hits
+[2025-12-12T11:52:44Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_28/all.json (with campus_id=28 embedded)
+[2025-12-12T11:52:44Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:52:44Z] 
+[2025-12-12T11:52:44Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 26 START ======
+[2025-12-12T11:52:44Z] Fetching achievements for campus 26, page 1...
+[2025-12-12T11:52:45Z]   Page 1: 100 achievements, 126KB, 791ms
+[2025-12-12T11:52:45Z] Fetching achievements for campus 26, page 2...
+[2025-12-12T11:52:46Z]   Page 2: 44 achievements, 49KB, 478ms
+[2025-12-12T11:52:46Z] Total: 144 achievements in 175KB across 2 pages, 2 API hits
+[2025-12-12T11:52:46Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_26/all.json (with campus_id=26 embedded)
+[2025-12-12T11:52:46Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:52:46Z] 
+[2025-12-12T11:52:46Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 25 START ======
+[2025-12-12T11:52:46Z] Fetching achievements for campus 25, page 1...
+[2025-12-12T11:52:48Z]   Page 1: 93 achievements, 137KB, 745ms
+[2025-12-12T11:52:48Z] Total: 93 achievements in 137KB across 1 pages, 1 API hits
+[2025-12-12T11:52:48Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_25/all.json (with campus_id=25 embedded)
+[2025-12-12T11:52:48Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 1 hits) ======
+[2025-12-12T11:52:48Z] 
+[2025-12-12T11:52:48Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 22 START ======
+[2025-12-12T11:52:48Z] Fetching achievements for campus 22, page 1...
+[2025-12-12T11:52:49Z]   Page 1: 100 achievements, 127KB, 800ms
+[2025-12-12T11:52:49Z] Fetching achievements for campus 22, page 2...
+[2025-12-12T11:52:50Z]   Page 2: 9 achievements, 11KB, 249ms
+[2025-12-12T11:52:50Z] Total: 109 achievements in 138KB across 2 pages, 2 API hits
+[2025-12-12T11:52:50Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_22/all.json (with campus_id=22 embedded)
+[2025-12-12T11:52:50Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:52:50Z] 
+[2025-12-12T11:52:50Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 21 START ======
+[2025-12-12T11:52:50Z] Fetching achievements for campus 21, page 1...
+[2025-12-12T11:52:52Z]   Page 1: 100 achievements, 129KB, 807ms
+[2025-12-12T11:52:52Z] Fetching achievements for campus 21, page 2...
+[2025-12-12T11:52:53Z]   Page 2: 17 achievements, 30KB, 380ms
+[2025-12-12T11:52:53Z] Total: 117 achievements in 159KB across 2 pages, 2 API hits
+[2025-12-12T11:52:53Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_21/all.json (with campus_id=21 embedded)
+[2025-12-12T11:52:53Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:52:53Z] 
+[2025-12-12T11:52:53Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 20 START ======
+[2025-12-12T11:52:53Z] Fetching achievements for campus 20, page 1...
+[2025-12-12T11:52:54Z]   Page 1: 100 achievements, 123KB, 830ms
+[2025-12-12T11:52:54Z] Fetching achievements for campus 20, page 2...
+[2025-12-12T11:52:55Z]   Page 2: 39 achievements, 44KB, 412ms
+[2025-12-12T11:52:56Z] Total: 139 achievements in 167KB across 2 pages, 2 API hits
+[2025-12-12T11:52:56Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_20/all.json (with campus_id=20 embedded)
+[2025-12-12T11:52:56Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:52:56Z] 
+[2025-12-12T11:52:56Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 16 START ======
+[2025-12-12T11:52:56Z] Fetching achievements for campus 16, page 1...
+[2025-12-12T11:52:57Z]   Page 1: 100 achievements, 126KB, 749ms
+[2025-12-12T11:52:57Z] Fetching achievements for campus 16, page 2...
+[2025-12-12T11:52:58Z]   Page 2: 20 achievements, 33KB, 265ms
+[2025-12-12T11:52:58Z] Total: 120 achievements in 159KB across 2 pages, 2 API hits
+[2025-12-12T11:52:58Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_16/all.json (with campus_id=16 embedded)
+[2025-12-12T11:52:58Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:52:58Z] 
+[2025-12-12T11:52:58Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 14 START ======
+[2025-12-12T11:52:58Z] Fetching achievements for campus 14, page 1...
+[2025-12-12T11:53:00Z]   Page 1: 100 achievements, 120KB, 931ms
+[2025-12-12T11:53:00Z] Fetching achievements for campus 14, page 2...
+[2025-12-12T11:53:01Z]   Page 2: 25 achievements, 34KB, 341ms
+[2025-12-12T11:53:01Z] Total: 125 achievements in 154KB across 2 pages, 2 API hits
+[2025-12-12T11:53:01Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_14/all.json (with campus_id=14 embedded)
+[2025-12-12T11:53:01Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:53:01Z] 
+[2025-12-12T11:53:01Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 13 START ======
+[2025-12-12T11:53:01Z] Fetching achievements for campus 13, page 1...
+[2025-12-12T11:53:02Z]   Page 1: 100 achievements, 119KB, 751ms
+[2025-12-12T11:53:02Z] Fetching achievements for campus 13, page 2...
+[2025-12-12T11:53:03Z]   Page 2: 34 achievements, 40KB, 362ms
+[2025-12-12T11:53:03Z] Total: 134 achievements in 159KB across 2 pages, 2 API hits
+[2025-12-12T11:53:03Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_13/all.json (with campus_id=13 embedded)
+[2025-12-12T11:53:03Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (2s, 2 hits) ======
+[2025-12-12T11:53:03Z] 
+[2025-12-12T11:53:03Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 12 START ======
+[2025-12-12T11:53:03Z] Fetching achievements for campus 12, page 1...
+[2025-12-12T11:53:05Z]   Page 1: 100 achievements, 121KB, 890ms
+[2025-12-12T11:53:05Z] Fetching achievements for campus 12, page 2...
+[2025-12-12T11:53:06Z]   Page 2: 64 achievements, 53KB, 553ms
+[2025-12-12T11:53:06Z] Total: 164 achievements in 174KB across 2 pages, 2 API hits
+[2025-12-12T11:53:06Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_12/all.json (with campus_id=12 embedded)
+[2025-12-12T11:53:06Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (3s, 2 hits) ======
+[2025-12-12T11:53:06Z] 
+[2025-12-12T11:53:06Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 9 START ======
+[2025-12-12T11:53:06Z] Fetching achievements for campus 9, page 1...
+[2025-12-12T11:53:07Z]   Page 1: 100 achievements, 123KB, 795ms
+[2025-12-12T11:53:07Z] Fetching achievements for campus 9, page 2...
+[2025-12-12T11:53:17Z]   Page 2: 20 achievements, 26KB, 8500ms
+[2025-12-12T11:53:17Z] Total: 120 achievements in 149KB across 2 pages, 2 API hits
+[2025-12-12T11:53:17Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_9/all.json (with campus_id=9 embedded)
+[2025-12-12T11:53:17Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (11s, 2 hits) ======
+[2025-12-12T11:53:17Z] 
+[2025-12-12T11:53:17Z] ====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS 1 START ======
+[2025-12-12T11:53:17Z] Fetching achievements for campus 1, page 1...
+[2025-12-12T11:53:24Z]   Page 1: 100 achievements, 127KB, 6850ms
+[2025-12-12T11:53:24Z] Fetching achievements for campus 1, page 2...
+[2025-12-12T11:53:26Z]   Page 2: 37 achievements, 43KB, 1558ms
+[2025-12-12T11:53:26Z] Total: 137 achievements in 170KB across 2 pages, 2 API hits
+[2025-12-12T11:53:26Z] Exported to /srv/42_Network/repo/exports/04_campus_achievements/campus_1/all.json (with campus_id=1 embedded)
+[2025-12-12T11:53:26Z] ====== FETCH CAMPUS ACHIEVEMENTS COMPLETE (9s, 2 hits) ======
+[2025-12-12T11:53:27Z] 

@@ -194,6 +194,50 @@ The helper writes `.oauth_state` (ignored by git) containing the latest access/r
 
 ## Data ingestion & cron
 
+### Core tables pipeline (`scripts/update_stable_tables/update_all_cursus_21_core.sh`)
+
+Automated initialization and update script for Cursus 21 core reference data:
+
+**Tables:**
+- `01_cursus` (1 record)
+- `02_campuses` (54 records)
+- `05_projects` (538 records with extracted parent projects)
+- `06_campus_projects` (24,195 linkages)
+- `07_project_sessions` (7,287 sessions)
+- `08_coalitions` (350 records)
+
+**Execution timing:**
+
+| Scenario | API Fetch | DB Load | Total | Details |
+|----------|-----------|---------|-------|---------|
+| **From scratch** | 114s | 102s | **~3m 36s** | 11 API hits, all inserts |
+| **DB not empty, data changed** | 114s | 30-40s | **~2m 30s** | Fresh API data, upsert only |
+| **Cached (within 1h), data unchanged** | 2s | 2s | **~6s** | No API calls, delta = 0, skip load |
+| **Cached (within 1h), data changed** | 2s | 24s | **~28s** | No API calls, but upsert all tables |
+
+**How it works:**
+- Cache guard: 3600 seconds (1 hour) prevents API refetch if data is recent
+- Delta-count optimization: Skip database upsert only if exported data hasn't changed
+- Database load: Always happens unless delta tables are empty (data unchanged)
+- Manual refresh: Use `--force` flag to bypass cache and fetch fresh data immediately
+
+**Usage:**
+```bash
+# Normal run (respects 1-hour cache)
+bash scripts/update_stable_tables/update_all_cursus_21_core.sh
+
+# Force fresh API fetch (bypass cache)
+bash scripts/update_stable_tables/update_all_cursus_21_core.sh --force
+```
+
+**Logging:** All activity written to `logs/update_cursus_21_core.log` with timestamps and phase breakdown.
+
+**API rate limiting:** 11 hits over ~114 seconds = 1 hit every ~10 seconds (safe margin on 2 req/s limit).
+
+---
+
+### Legacy reference tables
+
 - Reference tables stored in Postgres: achievements, campuses, cursus, projects (with *_users, users, locations ready but currently empty unless you import user-scoped data).
 - Fetch helpers live in `scripts/helpers/`; upsert entrypoints are `scripts/update_{achievements,campuses,cursus,projects}.sh`. Run all at once with `scripts/update_tables.sh` (quiet summary with row deltas, export size, last fetch stamp).
 - Fetch scopes: campuses only active/public with `users_count > 1`; projects use `range[updated_at]` deltas; achievements always full (API lacks reliable updated_at); cursus is tiny and refetched once per day.

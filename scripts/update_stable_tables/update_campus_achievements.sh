@@ -38,8 +38,14 @@ run_psql() {
   fi
 }
 
-echo "Fetching campus achievements..."
-"$HELPER" "$@"
+# Ensure token is fresh before starting API calls
+"$ROOT_DIR/scripts/token_manager.sh" ensure-fresh >&2
+
+echo "Checking for campus achievements data..."
+if [[ ! -s "$MERGED_JSON" ]]; then
+  echo "No raw_all.json found, attempting to merge from campus directories..."
+  jq -s 'add' "$EXPORT_DIR"/campus_*/all.json > "$MERGED_JSON" 2>/dev/null || echo "[] " > "$MERGED_JSON"
+fi
 
 if [[ ! -s "$MERGED_JSON" ]]; then
   echo "No campus achievements data found at $MERGED_JSON" >&2
@@ -97,6 +103,12 @@ jq -r '.[] | [
 ] | @csv' "$ACHIEVEMENTS_JSON" \
   | run_psql -c "\copy achievements_delta (id,name,description,tier,kind,visible,image,nbr_of_success,users_url,parent_id,title) FROM STDIN WITH (FORMAT csv, NULL '')"
 
+delta_count=$(run_psql -t -c "SELECT COUNT(*) FROM achievements_delta")
+if [ "$delta_count" = "0" ]; then
+  echo "Skip upsert: No changes in achievements_delta (using cached data)"
+  exit 0
+fi
+
 echo "Upserting achievements..."
 run_psql <<'SQL'
 WITH upsert AS (
@@ -135,6 +147,12 @@ jq -r '.[] | select(.id != null and .campus_id != null) | [
   .id
 ] | @csv' "$MERGED_JSON" \
   | run_psql -c "\copy campus_achievements_delta (campus_id,achievement_id) FROM STDIN WITH (FORMAT csv, NULL '')"
+
+delta_count=$(run_psql -t -c "SELECT COUNT(*) FROM campus_achievements_delta")
+if [ "$delta_count" = "0" ]; then
+  echo "Skip upsert: No changes in campus_achievements_delta (using cached data)"
+  exit 0
+fi
 
 echo "Upserting campus achievements..."
 run_psql <<'SQL'

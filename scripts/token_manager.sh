@@ -47,6 +47,29 @@ ensure_valid_access_token() {
   fi
 }
 
+ensure_fresh_token() {
+  # For use by major scripts: ensure token is fresh (not expiring in next hour)
+  # This is called at script start to refresh proactively
+  load_state
+  if [[ -z "${ACCESS_TOKEN:-}" ]]; then
+    echo "No access token found. Run 'token_manager.sh refresh' first." >&2
+    exit 1
+  fi
+  : "${EXPIRES_AT:?No expiry found. Run exchange to regenerate state.}"
+  local now
+  now=$(date +%s)
+  local expires_in=$(( EXPIRES_AT - now ))
+  
+  # Refresh if expires in less than 1 hour, or if already expired
+  if (( expires_in < 3600 )); then
+    echo "Token expires in ${expires_in}s, refreshing proactively..." >&2
+    refresh_token quiet "$LOG_FILE"
+    load_state
+    expires_in=$(( EXPIRES_AT - now ))
+    echo "Token refreshed, new expiry in ${expires_in}s" >&2
+  fi
+}
+
 save_state() {
   cat >"$STATE_FILE" <<EOF
 ACCESS_TOKEN=$ACCESS_TOKEN
@@ -72,7 +95,16 @@ refresh_token() {
   load_state
   : "${REFRESH_TOKEN:?No refresh token saved. Run exchange first.}"
   local print_response=${1:-yes}
+  local log_file="${2:-}"
   local response
+  local timestamp
+  timestamp=$(date '+%Y-%m-%d %H:%M:%S UTC')
+  
+  # Log start if log file provided
+  if [[ -n "$log_file" ]]; then
+    echo "[$timestamp] Starting token refresh..." >> "$log_file"
+  fi
+  
   response=$(curl -sS -X POST "$API_ROOT/oauth/token" \
     -u "$CLIENT_ID:$CLIENT_SECRET" \
     -d "grant_type=refresh_token" \
@@ -85,7 +117,18 @@ refresh_token() {
   local expires_in
   expires_in=$(jq -r '.expires_in // 0' <<<"$response")
   EXPIRES_AT=$(( $(date +%s) + expires_in ))
-  [[ -n "$ACCESS_TOKEN" ]] && save_state || exit 1
+  
+  if [[ -n "$ACCESS_TOKEN" ]]; then
+    save_state
+    if [[ -n "$log_file" ]]; then
+      echo "[$timestamp] Token refresh successful. Expires at: $(date -d @$EXPIRES_AT '+%Y-%m-%d %H:%M:%S UTC')" >> "$log_file"
+    fi
+  else
+    if [[ -n "$log_file" ]]; then
+      echo "[$timestamp] Token refresh FAILED" >> "$log_file"
+    fi
+    exit 1
+  fi
 }
 
 exchange_code() {
@@ -109,7 +152,21 @@ exchange_code() {
 call_api() {
   ensure_valid_access_token
   local endpoint=${1:? "Usage: $0 call /v2/me"}
-  curl -sS -H "Authorization: Bearer $ACCESS_TOKEN" "$API_ROOT$endpoint"
+  local response_code
+  local response
+  response=$(curl -sS -w "\n%{http_code}" -H "Authorization: Bearer $ACCESS_TOKEN" "$API_ROOT$endpoint")
+  response_code=$(echo "$response" | tail -n1)
+  response=$(echo "$response" | head -n-1)
+  
+  # If we get 401 (Unauthorized), refresh token and retry once
+  if [[ "$response_code" == "401" ]]; then
+    echo "Token expired (401), refreshing and retrying..." >&2
+    refresh_token quiet "$LOG_FILE"
+    load_state
+    response=$(curl -sS -H "Authorization: Bearer $ACCESS_TOKEN" "$API_ROOT$endpoint")
+  fi
+  
+  echo "$response"
 }
 
 call_export() {
@@ -121,7 +178,28 @@ call_export() {
   [[ -n "$safe_name" ]] || safe_name="response"
   [[ -n "$outfile" ]] || outfile="$ROOT_DIR/exports/${safe_name}.json"
   mkdir -p "$(dirname "$outfile")"
-  curl -g -sS -H "Authorization: Bearer $ACCESS_TOKEN" "$API_ROOT$endpoint" | jq . >"$outfile"
+  
+  local response_code
+  local tmpfile
+  tmpfile=$(mktemp)
+  trap "rm -f $tmpfile" EXIT
+  
+  response_code=$(curl -g -sS -w "%{http_code}" -H "Authorization: Bearer $ACCESS_TOKEN" "$API_ROOT$endpoint" -o "$tmpfile")
+  
+  # If we get 401 (Unauthorized), refresh token and retry once
+  if [[ "$response_code" == "401" ]]; then
+    echo "Token expired (401), refreshing and retrying..." >&2
+    refresh_token quiet "$LOG_FILE"
+    load_state
+    response_code=$(curl -g -sS -w "%{http_code}" -H "Authorization: Bearer $ACCESS_TOKEN" "$API_ROOT$endpoint" -o "$tmpfile")
+  fi
+  
+  # Validate response
+  if ! jq . "$tmpfile" >"${outfile}" 2>/dev/null; then
+    echo "Invalid JSON response (HTTP $response_code). Response:" >&2
+    cat "$tmpfile" >&2
+    exit 1
+  fi
   echo "Saved to $outfile"
 }
 
@@ -149,6 +227,7 @@ Usage: $0 <command> [args]
 Commands:
   exchange <code>       Exchange an authorization code for tokens and save them.
   refresh               Refresh the access token using the saved refresh token.
+  ensure-fresh          Ensure token is fresh (refresh if expires in < 1 hour). For script startup.
   call <endpoint>       Call an API endpoint using the saved access token (e.g., /v2/me).
   call-export <ep> [f]  Call an API endpoint and save pretty JSON to file (default: exports/<ep>.json).
   token-info            Inspect the current access token metadata.
@@ -160,9 +239,11 @@ EOF
 }
 
 cmd=${1:-}
+LOG_FILE="${LOG_FILE:-/srv/42_Network/logs/42_token_refresh.log}"
 case "$cmd" in
   exchange) shift; exchange_code "$@" ;;
-  refresh) refresh_token ;;
+  refresh) refresh_token quiet "$LOG_FILE" ;;
+  ensure-fresh) ensure_fresh_token ;;
   call) shift; call_api "$@" ;;
   call-export) shift; call_export "$@" ;;
   token-info) token_info ;;

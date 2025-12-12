@@ -28,6 +28,9 @@ export PGOPTIONS="${PGOPTIONS:--c client_min_messages=warning}"
 PSQL_CONN="postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}"
 export PGPASSWORD="$DB_PASSWORD"
 
+# Ensure token is fresh before starting API calls
+"$ROOT_DIR/scripts/token_manager.sh" ensure-fresh >&2
+
 echo "Fetching cursus..."
 CURSUS_ID="$CURSUS_ID" "$HELPER" "${HELPER_ARGS[@]}"
 
@@ -89,6 +92,12 @@ jq -r '.[] | [
 ] | @csv' "$MERGED_JSON" \
   | run_psql -c "\copy cursus_delta (id,name,slug,kind,created_at) FROM STDIN WITH (FORMAT csv, NULL '')"
 
+delta_count=$(run_psql -t -c "SELECT COUNT(*) FROM cursus_delta")
+if [ "$delta_count" = "0" ]; then
+  echo "Skip upsert: No changes in cursus_delta (using cached data)"
+  exit 0
+fi
+
 echo "Upserting cursus..."
 run_psql <<'SQL'
 WITH upsert AS (
@@ -113,3 +122,6 @@ inserted=$(run_psql -Atc "SELECT count(*) FROM cursus WHERE ingested_at >= now()
 total=$(run_psql -Atc "SELECT count(*) FROM cursus;")
 echo "Cursus: total=$total, recently_ingested=$inserted"
 echo "Cursus sync complete."
+
+# Cleanup: remove page files, keep only all.json
+rm -f "$EXPORT_DIR"/page_*.json

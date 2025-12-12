@@ -39,6 +39,9 @@ if [[ ! -x "$HELPER" ]]; then
   exit 1
 fi
 
+# Ensure token is fresh before starting API calls
+"$ROOT_DIR/scripts/token_manager.sh" ensure-fresh >&2
+
 echo "Fetching campuses..."
 set +e
 "$HELPER"
@@ -124,6 +127,12 @@ jq -r '.[] | [
 ] | @csv' "$MERGED_JSON" \
   | run_psql -c "\copy campuses_delta (id,name,time_zone,language_id,language_name,language_identifier,users_count,vogsphere_id,country,address,zip,city,website,facebook,twitter,public,active,email_extension,default_hidden_phone) FROM STDIN WITH (FORMAT csv, NULL '')"
 
+delta_count=$(run_psql -t -c "SELECT COUNT(*) FROM campuses_delta")
+if [ "$delta_count" = "0" ]; then
+  echo "Skip upsert: No changes in campuses_delta (using cached data)"
+  exit 0
+fi
+
 echo "Pruning campuses missing from this snapshot..."
 run_psql <<'SQL'
 DELETE FROM campuses c
@@ -168,3 +177,6 @@ inserted=$(run_psql -Atc "SELECT count(*) FROM campuses WHERE ingested_at >= now
 total=$(run_psql -Atc "SELECT count(*) FROM campuses;")
 echo "Campuses: total=$total, recently_ingested=$inserted"
 echo "Campuses sync complete."
+
+# Cleanup: remove page files, keep only all.json
+rm -f "$EXPORT_DIR"/page_*.json
