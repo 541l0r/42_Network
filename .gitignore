@@ -10,6 +10,7 @@ logs/
 .tmp/
 .cache/
 .cleanup/
+.backlog/
 
 # Cleanup archives
 .cleanup/
