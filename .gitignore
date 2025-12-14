@@ -7,6 +7,9 @@
 data/postgres/
 exports/
 logs/
+.tmp/
+.cache/
+.cleanup/
 
 # Cleanup archives
 .cleanup/
