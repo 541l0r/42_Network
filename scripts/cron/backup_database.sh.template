@@ -1,0 +1,70 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Database Backup Script (PHASE 2+)
+# Purpose: Daily pg_dump of database with compression
+# Schedule: 02:30 UTC daily (after nightly sync @ 01:00, after log rotation @ 02:00)
+# Cron entry: 30 2 * * * cd /srv/42_Network/repo/scripts/cron && bash backup_database.sh >> /srv/42_Network/logs/backup_database_$(date -u +\%Y-\%m-\%d).log 2>&1
+# 
+# NOTE: This is a TEMPLATE. Enable when Phase 2 starts (Live Tracking).
+#       Do NOT run during Phase 1 (Stable Databases - no backup needed).
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+BACKUP_DIR="$ROOT_DIR/backups"
+LOG_DIR="$ROOT_DIR/logs"
+TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M:%S UTC')
+DATE=$(date -u '+%Y-%m-%d')
+
+mkdir -p "$BACKUP_DIR"
+
+echo "════════════════════════════════════════════════════════════════"
+echo "DATABASE BACKUP - $TIMESTAMP"
+echo "════════════════════════════════════════════════════════════════"
+
+# Check if database container is running
+if ! docker ps | grep -q postgres; then
+  echo "❌ ERROR: PostgreSQL container not running"
+  exit 1
+fi
+
+echo "Starting database backup..."
+
+# Dump database and compress
+DUMP_FILE="$BACKUP_DIR/dump_${DATE}.sql.gz"
+
+if docker exec $(docker ps --filter "name=postgres" -q) \
+   pg_dump -U postgres 42_network 2>/dev/null | gzip > "$DUMP_FILE.tmp"; then
+  
+  mv "$DUMP_FILE.tmp" "$DUMP_FILE"
+  DUMP_SIZE=$(du -h "$DUMP_FILE" | cut -f1)
+  echo "✓ Backup complete: $DUMP_FILE ($DUMP_SIZE)"
+else
+  rm -f "$DUMP_FILE.tmp"
+  echo "❌ Backup failed"
+  exit 1
+fi
+
+# Clean up old backups (keep 30 days)
+echo ""
+echo "Cleaning up old backups (>30 days)..."
+OLD_BACKUPS=$(find "$BACKUP_DIR" -name "dump_*.sql.gz" -mtime +30 | wc -l)
+find "$BACKUP_DIR" -name "dump_*.sql.gz" -mtime +30 -delete
+
+if [[ $OLD_BACKUPS -gt 0 ]]; then
+  echo "✓ Removed $OLD_BACKUPS old backups"
+else
+  echo "✓ No old backups to remove"
+fi
+
+# Summary
+echo ""
+echo "════════════════════════════════════════════════════════════════"
+echo "BACKUP SUMMARY"
+echo "════════════════════════════════════════════════════════════════"
+ACTIVE_COUNT=$(find "$BACKUP_DIR" -name "dump_*.sql.gz" | wc -l)
+TOTAL_SIZE=$(du -sh "$BACKUP_DIR" 2>/dev/null | cut -f1)
+echo "Active backups: $ACTIVE_COUNT files"
+echo "Total size:     $TOTAL_SIZE"
+echo "Retention:      30 days"
+echo ""
+echo "✓ Backup complete"

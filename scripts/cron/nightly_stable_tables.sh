@@ -42,9 +42,12 @@ export LOG_WRITE_DELAY_SECONDS  # Pass to child scripts
 
 mkdir -p "$LOG_DIR"
 
+# Use date-stamped log file (one per day)
+LOG_FILE="$LOG_DIR/nightly_stable_tables_$(date -u +%Y-%m-%d).log"
+
 log() {
   ts=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
-  echo "[$ts] $*" | tee -a "$LOG_DIR/nightly_stable_tables.log"
+  echo "[$ts] $*" | tee -a "$LOG_FILE"
   sleep "$LOG_WRITE_DELAY_SECONDS"  # Delay between log writes
 }
 

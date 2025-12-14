@@ -48,6 +48,8 @@ START_TIME=$(date +%s)
 
 rm -f "$EXPORT_DIR"/page_*.json
 
+log "Starting fetch: per_page=$PER_PAGE"
+
 page=1
 raw_total=0
 total_kb=0

@@ -249,12 +249,52 @@ CREATE INDEX IF NOT EXISTS idx_coalitions_users_campus_id ON coalitions_users (c
 CREATE UNIQUE INDEX IF NOT EXISTS idx_coalitions_users_unique ON coalitions_users (coalition_id, user_id);
 
 -- ════════════════════════════════════════════════════════════════
+-- DELTA TABLES (Staging for atomic upserts)
+-- ════════════════════════════════════════════════════════════════
+
+CREATE TABLE IF NOT EXISTS delta_users (
+  id                BIGINT,
+  email             TEXT,
+  login             TEXT,
+  first_name        TEXT,
+  last_name         TEXT,
+  usual_full_name   TEXT,
+  usual_first_name  TEXT,
+  url               TEXT,
+  phone             TEXT,
+  displayname       TEXT,
+  kind              TEXT,
+  image_link        TEXT,
+  image_large       TEXT,
+  image_medium      TEXT,
+  image_small       TEXT,
+  image_micro       TEXT,
+  image             JSONB,
+  staff             BOOLEAN,
+  correction_point  INTEGER,
+  pool_month        TEXT,
+  pool_year         TEXT,
+  location          TEXT,
+  wallet            INTEGER,
+  anonymize_date    TIMESTAMPTZ,
+  data_erasure_date TIMESTAMPTZ,
+  created_at        TIMESTAMPTZ,
+  updated_at        TIMESTAMPTZ,
+  alumnized_at      TIMESTAMPTZ,
+  alumni            BOOLEAN,
+  active            BOOLEAN,
+  cursus_id         BIGINT,
+  kind_id           INT
+);
+
+-- ════════════════════════════════════════════════════════════════
 -- SCHEMA SUMMARY
 -- ════════════════════════════════════════════════════════════════
 -- Metadata (reference): achievements, campuses, cursus, projects, project_sessions
 -- User data: users
 -- Live tracking: project_users (enrollments), achievements_users (earned), coalitions_users (membership)
 -- Linkers: campus_projects, campus_achievements, coalitions
+-- Staging: delta_users (atomic upsert staging)
 --
 -- Key for live sync:
 --   UPDATE users SET wallet, correction_point, location, active, updated_at

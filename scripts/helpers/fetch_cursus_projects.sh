@@ -36,6 +36,8 @@ fi
 
 rm -f "$EXPORT_DIR"/page_*.json
 
+echo "[$(date -u +'%Y-%m-%dT%H:%M:%SZ')] Starting fetch: per_page=$PER_PAGE"
+
 page=1
 total_items=0
 total_kb=0

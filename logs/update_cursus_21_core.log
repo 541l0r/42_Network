@@ -1,38 +1,41 @@
 
-[2025-12-12T19:06:21Z] ════════════════════════════════════════════════════════════
-[2025-12-12T19:06:21Z] CURSUS 21 CORE DATA PIPELINE START
-[2025-12-12T19:06:21Z] ════════════════════════════════════════════════════════════
-[2025-12-12T19:06:21Z] Mode: --force
-[2025-12-12T19:06:21Z] Log: /srv/42_Network/repo/logs/update_cursus_21_core.log
+[2025-12-14T02:27:52Z] ════════════════════════════════════════════════════════════
+[2025-12-14T02:27:52Z] CURSUS 21 CORE DATA PIPELINE START
+[2025-12-14T02:27:52Z] ════════════════════════════════════════════════════════════
+[2025-12-14T02:27:52Z] Mode: --normal (respect cache)
+[2025-12-14T02:27:52Z] Log: /srv/42_Network/repo/logs/update_cursus_21_core.log
 
-[2025-12-12T19:06:21Z] ► Validating environment...
-[2025-12-12T19:06:21Z] ✅ All scripts found
+[2025-12-14T02:27:52Z] ► Validating environment...
+[2025-12-14T02:27:52Z] ✅ All scripts found
 
-[2025-12-12T19:06:21Z] ════════════════════════════════════════════════════════════
-[2025-12-12T19:06:21Z] PHASE 1: FETCH FROM API
-[2025-12-12T19:06:21Z] ════════════════════════════════════════════════════════════
+[2025-12-14T02:27:52Z] ════════════════════════════════════════════════════════════
+[2025-12-14T02:27:52Z] PHASE 1: FETCH FROM API
+[2025-12-14T02:27:52Z] ════════════════════════════════════════════════════════════
 
-[2025-12-12T19:06:21Z] ► Fetching Cursus 21 core metadata (cursus, campuses, projects, coalitions only)...
-[2025-12-12T19:06:21Z] ====== FETCH CURSUS 21 CORE METADATA ONLY ======
-[2025-12-12T19:06:21Z] Filters: kind=student, alumni?=false
-[2025-12-12T19:06:21Z] Step 1: Fetch cursus 21 metadata...
+[2025-12-14T02:27:52Z] ► Fetching Cursus 21 core metadata (cursus, campuses, projects, coalitions only)...
+[2025-12-14T02:27:52Z] ====== FETCH CURSUS 21 CORE METADATA ONLY ======
+[2025-12-14T02:27:52Z] Filters: kind=student, alumni?=false
+[2025-12-14T02:27:52Z] Step 1: Fetch cursus 21 metadata...
 Fetching cursus id 21...
 Done. Merged count: 1 (cursus_id=21)
-[2025-12-12T19:06:23Z] Step 1b: Fetch coalitions metadata...
-[2025-12-12T19:06:23Z] ====== FETCH COALITIONS START ======
-[2025-12-12T19:06:23Z] Fetching page 1...
-[2025-12-12T19:06:43Z]   Page 1: 100 records, 29KB, 19696ms
-[2025-12-12T19:06:43Z] Fetching page 2...
-[2025-12-12T19:07:05Z]   Page 2: 100 records, 30KB, 21024ms
-[2025-12-12T19:07:05Z] Fetching page 3...
-[2025-12-12T19:07:14Z]   Page 3: 100 records, 29KB, 7179ms
-[2025-12-12T19:07:14Z] Fetching page 4...
-[2025-12-12T19:07:31Z]   Page 4: 50 records, 14KB, 16380ms
-[2025-12-12T19:07:31Z] Total: 350 coalitions in 102KB across 4 pages, 4 API hits
-[2025-12-12T19:07:31Z] Exported to /srv/42_Network/repo/exports/08_coalitions/all.json
-[2025-12-12T19:07:31Z] ====== FETCH COALITIONS COMPLETE (68s) ======
-[2025-12-12T19:07:31Z] 
-[2025-12-12T19:07:31Z] Step 2: Fetch cursus 21 projects...
+[2025-12-14T02:27:54Z] Step 1b: Fetch coalitions metadata...
+[2025-12-14T02:27:54Z] ====== FETCH COALITIONS START ======
+[2025-12-14T02:27:54Z] Starting fetch: per_page=100
+[2025-12-14T02:27:54Z] Fetching page 1...
+[2025-12-14T02:28:14Z]   Page 1: 100 records, 29KB, 18918ms
+[2025-12-14T02:28:14Z] Fetching page 2...
+[2025-12-14T02:28:22Z]   Page 2: 100 records, 30KB, 6675ms
+[2025-12-14T02:28:22Z] Fetching page 3...
+[2025-12-14T02:28:30Z]   Page 3: 100 records, 29KB, 7380ms
+[2025-12-14T02:28:30Z] Fetching page 4...
+[2025-12-14T02:29:04Z]   Page 4: 50 records, 14KB, 32811ms
+[2025-12-14T02:29:04Z] Total: 350 coalitions in 102KB across 4 pages, 4 API hits
+[2025-12-14T02:29:04Z] Exported to /srv/42_Network/repo/exports/08_coalitions/all.json
+[2025-12-14T02:29:04Z] Cleaned up page files
+[2025-12-14T02:29:04Z] ====== FETCH COALITIONS COMPLETE (70s) ======
+[2025-12-14T02:29:04Z] 
+[2025-12-14T02:29:04Z] Step 2: Fetch cursus 21 projects...
+[2025-12-14T02:29:04Z] Starting fetch: per_page=100
 Fetching cursus 21 projects page 1...
   -> 100 items
 Fetching cursus 21 projects page 2...
@@ -48,121 +51,126 @@ Fetching cursus 21 projects page 6...
 Last page reached.
 Merging pages into /srv/42_Network/repo/exports/05_projects/raw_all.json
 Done. Merged count: 533
-[2025-12-12T19:08:36Z] Step 2b: Extract campus_projects linkage (06)...
-[2025-12-12T19:08:36Z] ====== EXTRACT CAMPUS_PROJECTS START ======
-[2025-12-12T19:08:37Z] Extracted 24195 campus-project linkages
-[2025-12-12T19:08:37Z] Saved to /srv/42_Network/repo/exports/06_campus_projects/all.json
-[2025-12-12T19:08:37Z] Updated timestamp in /srv/42_Network/repo/exports/06_campus_projects/.last_fetch_epoch
-[2025-12-12T19:08:37Z] ====== EXTRACT COMPLETE (1s) ======
-[2025-12-12T19:08:37Z] 
-[2025-12-12T19:08:37Z] Step 2c: Extract project_sessions (07)...
-[2025-12-12T19:08:37Z] ====== EXTRACT PROJECT_SESSIONS START ======
-[2025-12-12T19:08:38Z] Extracted 7287 project sessions
-[2025-12-12T19:08:38Z] Saved to /srv/42_Network/repo/exports/07_project_sessions/all.json
-[2025-12-12T19:08:38Z] Updated timestamp in /srv/42_Network/repo/exports/07_project_sessions/.last_fetch_epoch
-[2025-12-12T19:08:38Z] ====== EXTRACT COMPLETE (1s) ======
-[2025-12-12T19:08:38Z] 
-[2025-12-12T19:08:38Z] ====== CURSUS 21 CORE METADATA FETCH COMPLETE ======
-[2025-12-12T19:08:38Z] 
-[2025-12-12T19:08:38Z] ✅ Fetch phase complete
+[2025-12-14T02:30:10Z] Step 2b: Extract campus_projects linkage (06)...
+[2025-12-14T02:30:10Z] ====== EXTRACT CAMPUS_PROJECTS START ======
+[2025-12-14T02:30:11Z] Extracted 24195 campus-project linkages
+[2025-12-14T02:30:11Z] Saved to /srv/42_Network/repo/exports/06_campus_projects/all.json
+[2025-12-14T02:30:11Z] Updated timestamp in /srv/42_Network/repo/exports/06_campus_projects/.last_fetch_epoch
+[2025-12-14T02:30:11Z] ====== EXTRACT COMPLETE (1s) ======
+[2025-12-14T02:30:11Z] 
+[2025-12-14T02:30:11Z] Step 2c: Extract project_sessions (07)...
+[2025-12-14T02:30:11Z] ====== EXTRACT PROJECT_SESSIONS START ======
+[2025-12-14T02:30:12Z] Extracted 7288 project sessions
+[2025-12-14T02:30:12Z] Saved to /srv/42_Network/repo/exports/07_project_sessions/all.json
+[2025-12-14T02:30:12Z] Updated timestamp in /srv/42_Network/repo/exports/07_project_sessions/.last_fetch_epoch
+[2025-12-14T02:30:12Z] ====== EXTRACT COMPLETE (1s) ======
+[2025-12-14T02:30:12Z] 
+[2025-12-14T02:30:12Z] ====== CURSUS 21 CORE METADATA FETCH COMPLETE ======
+[2025-12-14T02:30:12Z] 
+[2025-12-14T02:30:12Z] ✅ Fetch phase complete
 
-[2025-12-12T19:08:38Z] ════════════════════════════════════════════════════════════
-[2025-12-12T19:08:38Z] PHASE 2: VALIDATE EXPORT FILES
-[2025-12-12T19:08:38Z] ════════════════════════════════════════════════════════════
-[2025-12-12T19:08:38Z]   01_cursus: 1 records (expected ~1)
-[2025-12-12T19:08:38Z]   02_campus: 54 records (expected ~54)
-[2025-12-12T19:08:38Z]   05_projects: 538 records (expected ~538)
-[2025-12-12T19:08:38Z]   06_campus_projects: 24195 records (expected ~24195)
-[2025-12-12T19:08:39Z]   07_project_sessions: 7287 records (expected ~7286)
-[2025-12-12T19:08:39Z]   08_coalitions: 350 records (expected ~350)
-[2025-12-12T19:08:39Z] ✅ All export files valid: 32425 total records
+[2025-12-14T02:30:12Z] ════════════════════════════════════════════════════════════
+[2025-12-14T02:30:12Z] PHASE 2: VALIDATE EXPORT FILES
+[2025-12-14T02:30:12Z] ════════════════════════════════════════════════════════════
+[2025-12-14T02:30:12Z]   01_cursus: 1 records (expected ~1)
+[2025-12-14T02:30:12Z]   02_campus: 54 records (expected ~54)
+[2025-12-14T02:30:12Z]   05_projects: 100 records (expected ~538)
+[2025-12-14T02:30:12Z]   06_campus_projects: 24195 records (expected ~24195)
+[2025-12-14T02:30:12Z]   07_project_sessions: 7288 records (expected ~7286)
+[2025-12-14T02:30:12Z]   08_coalitions: 350 records (expected ~350)
+[2025-12-14T02:30:12Z] ✅ All export files valid: 31988 total records
 
-[2025-12-12T19:08:39Z] ════════════════════════════════════════════════════════════
-[2025-12-12T19:08:39Z] PHASE 3: LOAD INTO DATABASE
-[2025-12-12T19:08:39Z] ════════════════════════════════════════════════════════════
+[2025-12-14T02:30:12Z] ════════════════════════════════════════════════════════════
+[2025-12-14T02:30:12Z] PHASE 3: LOAD INTO DATABASE
+[2025-12-14T02:30:12Z] ════════════════════════════════════════════════════════════
 
-[2025-12-12T19:08:39Z] ► Loading table 01: cursus...
+[2025-12-14T02:30:12Z] ► Loading table 01: cursus...
 Fetching cursus...
-Fetching cursus id 21...
-Done. Merged count: 1 (cursus_id=21)
-CREATE TABLE
+Skipping cursus fetch: last run 138 seconds ago (< 3600s).
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 NOTICE:  relation "cursus" already exists, skipping
+CREATE TABLE
 NOTICE:  relation "idx_cursus_slug" already exists, skipping
 CREATE INDEX
 DO
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 DROP TABLE
 CREATE TABLE
 TRUNCATE TABLE
 Staging into cursus_delta...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 COPY 1
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 Upserting cursus...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
  inserted | updated 
 ----------+---------
         0 |       1
 (1 row)
 
 TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 Cursus: total=1, recently_ingested=1
 Cursus sync complete.
-[2025-12-12T19:08:44Z] ✅ cursus loaded
+[2025-12-14T02:30:16Z] ✅ cursus loaded
 
-[2025-12-12T19:08:44Z] ► Loading table 02: campuses...
+[2025-12-14T02:30:16Z] ► Loading table 02: campuses...
 Fetching campuses...
-Skipping campuses fetch: last run 1563 seconds ago (< 3600s).
-Using cached campuses fetch (skip due to recency).
+[2025-12-14T02:30:16Z] Starting fetch: per_page=100
+Fetching campuses page 1...
+  -> 54 items saved to /srv/42_Network/repo/exports/02_campus/page_1.json (raw: 54)
+Last page reached.
+Merging pages into /srv/42_Network/repo/exports/02_campus/all.json
+Done. Merged count: 54
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 CREATE TABLE
 NOTICE:  relation "campuses" already exists, skipping
 NOTICE:  relation "idx_campuses_city" already exists, skipping
 CREATE INDEX
+CREATE INDEX
 NOTICE:  relation "idx_campuses_active" already exists, skipping
-CREATE INDEX
-CREATE INDEX
 NOTICE:  relation "idx_campuses_public" already exists, skipping
+CREATE INDEX
 DO
 DROP TABLE
 CREATE TABLE
 TRUNCATE TABLE
 Staging campuses...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 COPY 54
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 Pruning campuses missing from this snapshot...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 DELETE 0
 Upserting campuses...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
  inserted | updated 
 ----------+---------
         0 |      54
 (1 row)
 
 TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 Campuses: total=54, recently_ingested=54
 Campuses sync complete.
-[2025-12-12T19:08:48Z] ✅ campuses loaded
+[2025-12-14T02:30:21Z] ✅ campuses loaded
 
-[2025-12-12T19:08:48Z] ► Loading table 05/06/07: projects + campus_projects + project_sessions...
+[2025-12-14T02:30:21Z] ► Loading table 05/06/07: projects + campus_projects + project_sessions...
 Fetching projects...
-Fetching cursus 21 projects page 1...
-  -> 100 items
-Fetching cursus 21 projects page 2...
-  -> 100 items
-Fetching cursus 21 projects page 3...
-  -> 100 items
-Fetching cursus 21 projects page 4...
-  -> 100 items
-Fetching cursus 21 projects page 5...
-  -> 100 items
-Fetching cursus 21 projects page 6...
-  -> 33 items
-Last page reached.
-Merging pages into /srv/42_Network/repo/exports/05_projects/raw_all.json
-Done. Merged count: 533
+Skipping projects fetch: last run 11 seconds ago (< 3600s).
+Using cached projects fetch (skip due to recency).
 Building project_sessions export...
 Building campus_projects export...
 Building normalized projects export...
-CREATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 NOTICE:  relation "projects" already exists, skipping
+CREATE TABLE
 NOTICE:  relation "idx_projects_slug" already exists, skipping
 CREATE INDEX
-NOTICE:  relation "idx_projects_parent_id" already exists, skipping
 CREATE INDEX
+NOTICE:  relation "idx_projects_parent_id" already exists, skipping
 NOTICE:  column "difficulty" of relation "projects" already exists, skipping
 NOTICE:  column "exam" of relation "projects" already exists, skipping
 NOTICE:  column "git_id" of relation "projects" already exists, skipping
@@ -172,16 +180,16 @@ NOTICE:  column "created_at" of relation "projects" already exists, skipping
 NOTICE:  column "updated_at" of relation "projects" already exists, skipping
 ALTER TABLE
 DO
-CREATE TABLE
 NOTICE:  relation "campus_projects" already exists, skipping
-NOTICE:  relation "idx_campus_projects_project" already exists, skipping
+CREATE TABLE
 CREATE INDEX
+NOTICE:  relation "idx_campus_projects_project" already exists, skipping
 NOTICE:  relation "project_sessions" already exists, skipping
 CREATE TABLE
 NOTICE:  relation "idx_project_sessions_project_id" already exists, skipping
+CREATE INDEX
+CREATE INDEX
 NOTICE:  relation "idx_project_sessions_campus_id" already exists, skipping
-CREATE INDEX
-CREATE INDEX
 NOTICE:  relation "idx_project_sessions_cursus_id" already exists, skipping
 CREATE INDEX
 DO
@@ -207,14 +215,20 @@ DROP TABLE
 CREATE TABLE
 TRUNCATE TABLE
 Staging into projects_delta...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 COPY 538
 Staging campus_projects...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 COPY 20937
 Staging project_sessions...
-COPY 7287
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 7288
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 Pruning projects missing from this snapshot...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 DELETE 0
 Upserting projects...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
  inserted | updated 
 ----------+---------
        19 |     519
@@ -222,32 +236,595 @@ Upserting projects...
 
 TRUNCATE TABLE
 Syncing campus_projects...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 DELETE 0
 DELETE 0
 INSERT 0 20937
 DELETE 19
 TRUNCATE TABLE
-INSERT 0 7287
+INSERT 0 7288
 DELETE 31
 TRUNCATE TABLE
 Projects sync complete.
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 Projects: total=519, recently_ingested=519
 Campus projects: total=20937, recently_ingested=20937
-Project sessions: total=7256, recently_ingested=7256
-[2025-12-12T19:10:05Z] ✅ projects + linked tables loaded
+Project sessions: total=7257, recently_ingested=7257
+[2025-12-14T02:30:33Z] ✅ projects + linked tables loaded
 
-[2025-12-12T19:10:05Z] ► Loading table 08: coalitions...
-[2025-12-12T19:10:05Z] ====== UPDATE COALITIONS START ======
+[2025-12-14T02:30:33Z] ► Loading table 08: coalitions...
+[2025-12-14T02:30:33Z] ====== UPDATE COALITIONS START ======
 Fetching coalitions...
-[2025-12-12T19:10:05Z] ====== FETCH COALITIONS START ======
-[2025-12-12T19:10:05Z] SKIP: Last fetch was 154 seconds ago (threshold: 3600s)
-[2025-12-12T19:10:05Z] Using cached coalitions fetch (skip due to recency).
+[2025-12-14T02:30:34Z] ====== FETCH COALITIONS START ======
+[2025-12-14T02:30:34Z] SKIP: Last fetch was 90 seconds ago (threshold: 3600s)
+[2025-12-14T02:30:34Z] Using cached coalitions fetch (skip due to recency).
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 NOTICE:  relation "coalitions" already exists, skipping
 CREATE TABLE
 NOTICE:  constraint "coalitions_slug_key" of relation "coalitions" does not exist, skipping
 ALTER TABLE
+CREATE INDEX
 NOTICE:  relation "idx_coalitions_slug" already exists, skipping
 CREATE INDEX
+NOTICE:  relation "idx_coalitions_user_id" already exists, skipping
+NOTICE:  relation "idx_coalitions_score" already exists, skipping
+CREATE INDEX
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging coalitions...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 350
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Pruning coalitions missing from this snapshot...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DELETE 0
+Upserting coalitions...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+        0 |     350
+(1 row)
+
+TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+[2025-12-14T02:30:38Z] Coalitions: total=350, recently_ingested=350
+[2025-12-14T02:30:38Z] ====== UPDATE COALITIONS COMPLETE (5s) ======
+[2025-12-14T02:30:38Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
+[2025-12-14T02:30:38Z] 
+[2025-12-14T02:30:38Z] ✅ coalitions loaded
+
+[2025-12-14T02:30:38Z] ════════════════════════════════════════════════════════════
+[2025-12-14T02:30:38Z] PIPELINE COMPLETE
+[2025-12-14T02:30:38Z] ════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════
+EXECUTION SUMMARY
+═══════════════════════════════════════════════════════════
+
+TIMING:
+  Fetch Phase:    140 seconds
+  Load Phase:     26 seconds
+  ─────────────────────────────────
+  Total Time:     166 seconds (~2m 46s)
+
+DATA LOADED:
+  Tables:         6/6 loaded successfully
+  Records:        31988 across all tables
+  Status:         ✅ SUCCESS
+
+TABLES:
+  ✅ 01_cursus                1 record
+  ✅ 02_campuses             54 records
+  ✅ 05_projects             538 records
+  ✅ 06_campus_projects    24,195 records
+  ✅ 07_project_sessions    7,286 records
+  ✅ 08_coalitions           350 records
+
+METADATA:
+  All tables have:
+    - .last_fetch_epoch timestamp
+    - .last_fetch_stats JSON metadata
+    - Validated export files
+
+NEXT STEPS:
+  • Ready for incremental updates (project_users, coalition_users)
+  • Live sync operational via live_delta_monitor
+  • Check logs for details: /srv/42_Network/repo/logs/update_cursus_21_core.log
+
+═══════════════════════════════════════════════════════════
+[2025-12-14T02:30:38Z] ✅ PIPELINE COMPLETE - All tables loaded successfully
+
+[2025-12-14T03:08:58Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:08:58Z] CURSUS 21 CORE DATA PIPELINE START
+[2025-12-14T03:08:58Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:08:58Z] Mode: --force
+[2025-12-14T03:08:58Z] Log: /srv/42_Network/repo/logs/update_cursus_21_core.log
+
+[2025-12-14T03:08:58Z] ► Validating environment...
+[2025-12-14T03:08:58Z] ✅ All scripts found
+
+[2025-12-14T03:08:58Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:08:58Z] PHASE 1: FETCH FROM API
+[2025-12-14T03:08:58Z] ════════════════════════════════════════════════════════════
+
+[2025-12-14T03:08:58Z] ► Fetching Cursus 21 core metadata (cursus, campuses, projects, coalitions only)...
+[2025-12-14T03:08:58Z] ====== FETCH CURSUS 21 CORE METADATA ONLY ======
+[2025-12-14T03:08:58Z] Filters: kind=student, alumni?=false
+[2025-12-14T03:08:58Z] Step 1: Fetch cursus 21 metadata...
+Fetching cursus id 21...
+Done. Merged count: 1 (cursus_id=21)
+[2025-12-14T03:08:59Z] Step 1b: Fetch coalitions metadata...
+[2025-12-14T03:08:59Z] ====== FETCH COALITIONS START ======
+[2025-12-14T03:08:59Z] Starting fetch: per_page=100
+[2025-12-14T03:08:59Z] Fetching page 1...
+[2025-12-14T03:09:26Z]   Page 1: 100 records, 29KB, 25120ms
+[2025-12-14T03:09:26Z] Fetching page 2...
+[2025-12-14T03:09:57Z]   Page 2: 100 records, 30KB, 29937ms
+[2025-12-14T03:09:57Z] Fetching page 3...
+[2025-12-14T03:10:09Z]   Page 3: 100 records, 29KB, 10915ms
+[2025-12-14T03:10:09Z] Fetching page 4...
+[2025-12-14T03:10:32Z]   Page 4: 50 records, 14KB, 22156ms
+[2025-12-14T03:10:32Z] Total: 350 coalitions in 102KB across 4 pages, 4 API hits
+[2025-12-14T03:10:32Z] Exported to /srv/42_Network/repo/exports/08_coalitions/all.json
+[2025-12-14T03:10:32Z] Cleaned up page files
+[2025-12-14T03:10:32Z] ====== FETCH COALITIONS COMPLETE (93s) ======
+[2025-12-14T03:10:32Z] 
+[2025-12-14T03:10:32Z] Step 2: Fetch cursus 21 projects...
+[2025-12-14T03:10:32Z] Starting fetch: per_page=100
+Fetching cursus 21 projects page 1...
+
+[2025-12-14T03:14:27Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:14:27Z] CURSUS 21 CORE DATA PIPELINE START
+[2025-12-14T03:14:27Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:14:27Z] Mode: --force
+[2025-12-14T03:14:27Z] Log: /srv/42_Network/repo/logs/update_cursus_21_core.log
+
+[2025-12-14T03:14:27Z] ► Validating environment...
+[2025-12-14T03:14:27Z] ✅ All scripts found
+
+[2025-12-14T03:14:27Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:14:27Z] PHASE 1: FETCH FROM API
+[2025-12-14T03:14:27Z] ════════════════════════════════════════════════════════════
+
+[2025-12-14T03:14:27Z] ► Fetching Cursus 21 core metadata (cursus, campuses, projects, coalitions only)...
+[2025-12-14T03:14:27Z] ====== FETCH CURSUS 21 CORE METADATA ONLY ======
+[2025-12-14T03:14:27Z] Filters: kind=student, alumni?=false
+[2025-12-14T03:14:27Z] Step 1: Fetch cursus 21 metadata...
+Fetching cursus id 21...
+Done. Merged count: 1 (cursus_id=21)
+[2025-12-14T03:14:28Z] Step 1b: Fetch coalitions metadata...
+[2025-12-14T03:14:28Z] ====== FETCH COALITIONS START ======
+[2025-12-14T03:14:28Z] Starting fetch: per_page=100
+[2025-12-14T03:14:28Z] Fetching page 1...
+[2025-12-14T03:14:47Z]   Page 1: 100 records, 29KB, 17746ms
+[2025-12-14T03:14:47Z] Fetching page 2...
+[2025-12-14T03:15:24Z]   Page 2: 100 records, 30KB, 36649ms
+[2025-12-14T03:15:25Z] Fetching page 3...
+
+[2025-12-14T03:19:42Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:19:42Z] CURSUS 21 CORE DATA PIPELINE START
+[2025-12-14T03:19:42Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:19:42Z] Mode: --force
+[2025-12-14T03:19:42Z] Log: /srv/42_Network/repo/logs/update_cursus_21_core.log
+
+[2025-12-14T03:19:42Z] ► Validating environment...
+[2025-12-14T03:19:42Z] ✅ All scripts found
+
+[2025-12-14T03:19:42Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:19:42Z] PHASE 1: FETCH FROM API
+[2025-12-14T03:19:42Z] ════════════════════════════════════════════════════════════
+
+[2025-12-14T03:19:42Z] ► Fetching Cursus 21 core metadata (cursus, campuses, projects, coalitions only)...
+[2025-12-14T03:19:42Z] ====== FETCH CURSUS 21 CORE METADATA ONLY ======
+[2025-12-14T03:19:42Z] Filters: kind=student, alumni?=false
+[2025-12-14T03:19:42Z] Step 1: Fetch cursus 21 metadata...
+Fetching cursus id 21...
+Done. Merged count: 1 (cursus_id=21)
+[2025-12-14T03:19:44Z] Step 1b: Fetch coalitions metadata...
+[2025-12-14T03:19:44Z] ====== FETCH COALITIONS START ======
+[2025-12-14T03:19:44Z] Starting fetch: per_page=100
+[2025-12-14T03:19:44Z] Fetching page 1...
+[2025-12-14T03:20:06Z]   Page 1: 100 records, 29KB, 21342ms
+[2025-12-14T03:20:06Z] Fetching page 2...
+[2025-12-14T03:20:13Z]   Page 2: 100 records, 30KB, 6039ms
+[2025-12-14T03:20:13Z] Fetching page 3...
+[2025-12-14T03:20:35Z]   Page 3: 100 records, 29KB, 20892ms
+[2025-12-14T03:20:35Z] Fetching page 4...
+[2025-12-14T03:20:49Z]   Page 4: 50 records, 14KB, 12714ms
+[2025-12-14T03:20:49Z] Total: 350 coalitions in 102KB across 4 pages, 4 API hits
+[2025-12-14T03:20:49Z] Exported to /srv/42_Network/repo/exports/08_coalitions/all.json
+[2025-12-14T03:20:49Z] Cleaned up page files
+[2025-12-14T03:20:49Z] ====== FETCH COALITIONS COMPLETE (65s) ======
+[2025-12-14T03:20:49Z] 
+[2025-12-14T03:20:49Z] Step 2: Fetch cursus 21 projects...
+[2025-12-14T03:20:49Z] Starting fetch: per_page=100
+Fetching cursus 21 projects page 1...
+  -> 100 items
+Fetching cursus 21 projects page 2...
+  -> 100 items
+Fetching cursus 21 projects page 3...
+  -> 100 items
+Fetching cursus 21 projects page 4...
+  -> 100 items
+Fetching cursus 21 projects page 5...
+  -> 100 items
+Fetching cursus 21 projects page 6...
+  -> 33 items
+Last page reached.
+Merging pages into /srv/42_Network/repo/exports/05_projects/raw_all.json
+Done. Merged count: 533
+[2025-12-14T03:22:00Z] Step 2b: Extract campus_projects linkage (06)...
+[2025-12-14T03:22:00Z] ====== EXTRACT CAMPUS_PROJECTS START ======
+[2025-12-14T03:22:01Z] Extracted 24195 campus-project linkages
+[2025-12-14T03:22:01Z] Saved to /srv/42_Network/repo/exports/06_campus_projects/all.json
+[2025-12-14T03:22:01Z] Updated timestamp in /srv/42_Network/repo/exports/06_campus_projects/.last_fetch_epoch
+[2025-12-14T03:22:01Z] ====== EXTRACT COMPLETE (1s) ======
+[2025-12-14T03:22:01Z] 
+[2025-12-14T03:22:01Z] Step 2c: Extract project_sessions (07)...
+[2025-12-14T03:22:01Z] ====== EXTRACT PROJECT_SESSIONS START ======
+[2025-12-14T03:22:02Z] Extracted 7288 project sessions
+[2025-12-14T03:22:02Z] Saved to /srv/42_Network/repo/exports/07_project_sessions/all.json
+[2025-12-14T03:22:02Z] Updated timestamp in /srv/42_Network/repo/exports/07_project_sessions/.last_fetch_epoch
+[2025-12-14T03:22:02Z] ====== EXTRACT COMPLETE (1s) ======
+[2025-12-14T03:22:02Z] 
+[2025-12-14T03:22:02Z] ====== CURSUS 21 CORE METADATA FETCH COMPLETE ======
+[2025-12-14T03:22:02Z] 
+[2025-12-14T03:22:02Z] ✅ Fetch phase complete
+
+[2025-12-14T03:22:02Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:22:02Z] PHASE 2: VALIDATE EXPORT FILES
+[2025-12-14T03:22:02Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:22:02Z]   01_cursus: 1 records (expected ~1)
+[2025-12-14T03:22:02Z]   02_campus: 54 records (expected ~54)
+[2025-12-14T03:22:02Z]   05_projects: 538 records (expected ~538)
+[2025-12-14T03:22:02Z]   06_campus_projects: 24195 records (expected ~24195)
+[2025-12-14T03:22:02Z]   07_project_sessions: 7288 records (expected ~7286)
+[2025-12-14T03:22:02Z]   08_coalitions: 350 records (expected ~350)
+[2025-12-14T03:22:02Z] ✅ All export files valid: 32426 total records
+
+[2025-12-14T03:22:02Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:22:02Z] PHASE 3: LOAD INTO DATABASE
+[2025-12-14T03:22:02Z] ════════════════════════════════════════════════════════════
+
+[2025-12-14T03:22:02Z] ► Loading table 01: cursus...
+Fetching cursus...
+Fetching cursus id 21...
+Done. Merged count: 1 (cursus_id=21)
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+NOTICE:  relation "cursus" already exists, skipping
+CREATE TABLE
+NOTICE:  relation "idx_cursus_slug" already exists, skipping
+CREATE INDEX
+DO
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging into cursus_delta...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 1
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Upserting cursus...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+        0 |       1
+(1 row)
+
+TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Cursus: total=1, recently_ingested=1
+Cursus sync complete.
+[2025-12-14T03:22:07Z] ✅ cursus loaded
+
+[2025-12-14T03:22:07Z] ► Loading table 02: campuses...
+Fetching campuses...
+Skipping campuses fetch: last run 3110 seconds ago (< 3600s).
+Using cached campuses fetch (skip due to recency).
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+NOTICE:  relation "campuses" already exists, skipping
+CREATE TABLE
+NOTICE:  relation "idx_campuses_city" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_campuses_active" already exists, skipping
+CREATE INDEX
+CREATE INDEX
+NOTICE:  relation "idx_campuses_public" already exists, skipping
+DO
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging campuses...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 54
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Pruning campuses missing from this snapshot...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DELETE 0
+Upserting campuses...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+        0 |      54
+(1 row)
+
+TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Campuses: total=54, recently_ingested=54
+Campuses sync complete.
+[2025-12-14T03:22:10Z] ✅ campuses loaded
+
+[2025-12-14T03:22:10Z] ► Loading table 05/06/07: projects + campus_projects + project_sessions...
+Fetching projects...
+[2025-12-14T03:22:10Z] Starting fetch: per_page=100
+Fetching cursus 21 projects page 1...
+  -> 100 items
+Fetching cursus 21 projects page 2...
+  -> 100 items
+Fetching cursus 21 projects page 3...
+
+[2025-12-14T03:24:15Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:24:15Z] CURSUS 21 CORE DATA PIPELINE START
+[2025-12-14T03:24:15Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:24:15Z] Mode: --force
+[2025-12-14T03:24:15Z] Log: /srv/42_Network/repo/logs/update_cursus_21_core.log
+
+[2025-12-14T03:24:15Z] ► Validating environment...
+[2025-12-14T03:24:15Z] ✅ All scripts found
+
+[2025-12-14T03:24:15Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:24:15Z] PHASE 1: FETCH FROM API
+[2025-12-14T03:24:15Z] ════════════════════════════════════════════════════════════
+
+[2025-12-14T03:24:15Z] ► Fetching Cursus 21 core metadata (cursus, campuses, projects, coalitions only)...
+[2025-12-14T03:24:15Z] ====== FETCH CURSUS 21 CORE METADATA ONLY ======
+[2025-12-14T03:24:15Z] Filters: kind=student, alumni?=false
+[2025-12-14T03:24:15Z] Step 1: Fetch cursus 21 metadata...
+Fetching cursus id 21...
+Done. Merged count: 1 (cursus_id=21)
+[2025-12-14T03:24:16Z] Step 1b: Fetch coalitions metadata...
+[2025-12-14T03:24:16Z] ====== FETCH COALITIONS START ======
+[2025-12-14T03:24:16Z] Starting fetch: per_page=100
+[2025-12-14T03:24:16Z] Fetching page 1...
+
+[2025-12-14T03:25:50Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:25:50Z] CURSUS 21 CORE DATA PIPELINE START
+[2025-12-14T03:25:50Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:25:50Z] Mode: --force
+[2025-12-14T03:25:50Z] Log: /srv/42_Network/repo/logs/update_cursus_21_core.log
+[2025-12-14T03:25:50Z] Skip fetch phase: 1
+
+[2025-12-14T03:25:50Z] ► Validating environment...
+[2025-12-14T03:25:50Z] ✅ All scripts found
+
+[2025-12-14T03:25:50Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:25:50Z] PHASE 1: FETCH FROM API
+[2025-12-14T03:25:50Z] ════════════════════════════════════════════════════════════
+
+[2025-12-14T03:25:50Z] ► Skipping fetch phase (SKIP_FETCH=1) - using existing exports/
+[2025-12-14T03:25:50Z] ✅ Fetch phase skipped
+
+[2025-12-14T03:25:50Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:25:50Z] PHASE 2: VALIDATE EXPORT FILES
+[2025-12-14T03:25:50Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:25:50Z]   01_cursus: 1 records (expected ~1)
+[2025-12-14T03:25:50Z]   02_campus: 54 records (expected ~54)
+[2025-12-14T03:25:50Z]   05_projects: 538 records (expected ~538)
+[2025-12-14T03:25:50Z]   06_campus_projects: 24195 records (expected ~24195)
+[2025-12-14T03:25:50Z]   07_project_sessions: 7288 records (expected ~7286)
+[2025-12-14T03:25:50Z]   08_coalitions: 350 records (expected ~350)
+[2025-12-14T03:25:50Z] ✅ All export files valid: 32426 total records
+
+[2025-12-14T03:25:50Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:25:50Z] PHASE 3: LOAD INTO DATABASE
+[2025-12-14T03:25:50Z] ════════════════════════════════════════════════════════════
+
+[2025-12-14T03:25:50Z] ► Loading table 01: cursus...
+Fetching cursus...
+Fetching cursus id 21...
+Done. Merged count: 1 (cursus_id=21)
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+CREATE TABLE
+NOTICE:  relation "cursus" already exists, skipping
+NOTICE:  relation "idx_cursus_slug" already exists, skipping
+CREATE INDEX
+DO
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging into cursus_delta...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 1
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Upserting cursus...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+        0 |       1
+(1 row)
+
+TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Cursus: total=1, recently_ingested=1
+Cursus sync complete.
+[2025-12-14T03:25:56Z] ✅ cursus loaded
+
+[2025-12-14T03:25:56Z] ► Loading table 02: campuses...
+Fetching campuses...
+Skipping campuses fetch: last run 3339 seconds ago (< 3600s).
+Using cached campuses fetch (skip due to recency).
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+NOTICE:  relation "campuses" already exists, skipping
+CREATE TABLE
+NOTICE:  relation "idx_campuses_city" already exists, skipping
+CREATE INDEX
+CREATE INDEX
+NOTICE:  relation "idx_campuses_active" already exists, skipping
+NOTICE:  relation "idx_campuses_public" already exists, skipping
+CREATE INDEX
+DO
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging campuses...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 54
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Pruning campuses missing from this snapshot...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DELETE 0
+Upserting campuses...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+        0 |      54
+(1 row)
+
+TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Campuses: total=54, recently_ingested=54
+Campuses sync complete.
+[2025-12-14T03:26:00Z] ✅ campuses loaded
+
+[2025-12-14T03:26:00Z] ► Loading table 05/06/07: projects + campus_projects + project_sessions...
+Fetching projects...
+[2025-12-14T03:26:00Z] Starting fetch: per_page=100
+Fetching cursus 21 projects page 1...
+  -> 100 items
+Fetching cursus 21 projects page 2...
+  -> 100 items
+Fetching cursus 21 projects page 3...
+  -> 100 items
+Fetching cursus 21 projects page 4...
+  -> 100 items
+Fetching cursus 21 projects page 5...
+  -> 100 items
+Fetching cursus 21 projects page 6...
+  -> 33 items
+Last page reached.
+Merging pages into /srv/42_Network/repo/exports/05_projects/raw_all.json
+Done. Merged count: 533
+Building project_sessions export...
+Building campus_projects export...
+Building normalized projects export...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+NOTICE:  relation "projects" already exists, skipping
+CREATE TABLE
+CREATE INDEX
+NOTICE:  relation "idx_projects_slug" already exists, skipping
+NOTICE:  relation "idx_projects_parent_id" already exists, skipping
+CREATE INDEX
+NOTICE:  column "difficulty" of relation "projects" already exists, skipping
+NOTICE:  column "exam" of relation "projects" already exists, skipping
+NOTICE:  column "git_id" of relation "projects" already exists, skipping
+NOTICE:  column "repository" of relation "projects" already exists, skipping
+NOTICE:  column "recommendation" of relation "projects" already exists, skipping
+NOTICE:  column "created_at" of relation "projects" already exists, skipping
+NOTICE:  column "updated_at" of relation "projects" already exists, skipping
+ALTER TABLE
+DO
+CREATE TABLE
+NOTICE:  relation "campus_projects" already exists, skipping
+NOTICE:  relation "idx_campus_projects_project" already exists, skipping
+CREATE INDEX
+CREATE TABLE
+NOTICE:  relation "project_sessions" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_project_sessions_project_id" already exists, skipping
+NOTICE:  relation "idx_project_sessions_campus_id" already exists, skipping
+CREATE INDEX
+CREATE INDEX
+NOTICE:  relation "idx_project_sessions_cursus_id" already exists, skipping
+DO
+NOTICE:  column "max_people" of relation "project_sessions" already exists, skipping
+NOTICE:  column "duration_days" of relation "project_sessions" already exists, skipping
+NOTICE:  column "commit" of relation "project_sessions" already exists, skipping
+NOTICE:  column "description" of relation "project_sessions" already exists, skipping
+NOTICE:  column "is_subscriptable" of relation "project_sessions" already exists, skipping
+NOTICE:  column "objectives" of relation "project_sessions" already exists, skipping
+NOTICE:  column "scales" of relation "project_sessions" already exists, skipping
+NOTICE:  column "terminating_after" of relation "project_sessions" already exists, skipping
+NOTICE:  column "uploads" of relation "project_sessions" already exists, skipping
+ALTER TABLE
+DO
+DO
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging into projects_delta...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 538
+Staging campus_projects...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 20937
+Staging project_sessions...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 7288
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Pruning projects missing from this snapshot...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DELETE 0
+Upserting projects...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+       19 |     519
+(1 row)
+
+TRUNCATE TABLE
+Syncing campus_projects...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DELETE 0
+DELETE 0
+INSERT 0 20937
+DELETE 19
+TRUNCATE TABLE
+INSERT 0 7288
+DELETE 31
+TRUNCATE TABLE
+Projects sync complete.
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Projects: total=519, recently_ingested=519
+Campus projects: total=20937, recently_ingested=20937
+Project sessions: total=7257, recently_ingested=7257
+[2025-12-14T03:27:18Z] ✅ projects + linked tables loaded
+
+[2025-12-14T03:27:18Z] ► Loading table 08: coalitions...
+[2025-12-14T03:27:18Z] ====== UPDATE COALITIONS START ======
+Fetching coalitions...
+[2025-12-14T03:27:18Z] ====== FETCH COALITIONS START ======
+[2025-12-14T03:27:18Z] SKIP: Last fetch was 389 seconds ago (threshold: 3600s)
+[2025-12-14T03:27:18Z] Using cached coalitions fetch (skip due to recency).
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+NOTICE:  relation "coalitions" already exists, skipping
+CREATE TABLE
+NOTICE:  constraint "coalitions_slug_key" of relation "coalitions" does not exist, skipping
+ALTER TABLE
+CREATE INDEX
+NOTICE:  relation "idx_coalitions_slug" already exists, skipping
 NOTICE:  relation "idx_coalitions_user_id" already exists, skipping
 CREATE INDEX
 CREATE INDEX
@@ -256,39 +833,826 @@ DROP TABLE
 CREATE TABLE
 TRUNCATE TABLE
 Staging coalitions...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 COPY 350
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 Pruning coalitions missing from this snapshot...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 DELETE 0
 Upserting coalitions...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
  inserted | updated 
 ----------+---------
         0 |     350
 (1 row)
 
 TRUNCATE TABLE
-[2025-12-12T19:10:09Z] Coalitions: total=350, recently_ingested=350
-[2025-12-12T19:10:09Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
-[2025-12-12T19:10:09Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
-[2025-12-12T19:10:09Z] 
-[2025-12-12T19:10:09Z] ✅ coalitions loaded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+[2025-12-14T03:27:22Z] Coalitions: total=350, recently_ingested=350
+[2025-12-14T03:27:22Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
+[2025-12-14T03:27:22Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
+[2025-12-14T03:27:22Z] 
+[2025-12-14T03:27:22Z] ✅ coalitions loaded
 
-[2025-12-12T19:10:09Z] ════════════════════════════════════════════════════════════
-[2025-12-12T19:10:09Z] PIPELINE COMPLETE
-[2025-12-12T19:10:09Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:27:22Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:27:22Z] PIPELINE COMPLETE
+[2025-12-14T03:27:22Z] ════════════════════════════════════════════════════════════
 
 ═══════════════════════════════════════════════════════════
 EXECUTION SUMMARY
 ═══════════════════════════════════════════════════════════
 
 TIMING:
-  Fetch Phase:    137 seconds
+  Fetch Phase:    0 seconds
+  Load Phase:     92 seconds
+  ─────────────────────────────────
+  Total Time:     92 seconds (~1m 32s)
+
+DATA LOADED:
+  Tables:         6/6 loaded successfully
+  Records:        32426 across all tables
+  Status:         ✅ SUCCESS
+
+TABLES:
+  ✅ 01_cursus                1 record
+  ✅ 02_campuses             54 records
+  ✅ 05_projects             538 records
+  ✅ 06_campus_projects    24,195 records
+  ✅ 07_project_sessions    7,286 records
+  ✅ 08_coalitions           350 records
+
+METADATA:
+  All tables have:
+    - .last_fetch_epoch timestamp
+    - .last_fetch_stats JSON metadata
+    - Validated export files
+
+NEXT STEPS:
+  • Ready for incremental updates (project_users, coalition_users)
+  • Live sync operational via live_delta_monitor
+  • Check logs for details: /srv/42_Network/repo/logs/update_cursus_21_core.log
+
+═══════════════════════════════════════════════════════════
+[2025-12-14T03:27:22Z] ✅ PIPELINE COMPLETE - All tables loaded successfully
+
+[2025-12-14T03:33:00Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:33:00Z] CURSUS 21 CORE DATA PIPELINE START
+[2025-12-14T03:33:00Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:33:00Z] Mode: --force
+[2025-12-14T03:33:00Z] Log: /srv/42_Network/repo/logs/update_cursus_21_core.log
+[2025-12-14T03:33:00Z] Skip fetch phase: 1
+
+[2025-12-14T03:33:00Z] ► Validating environment...
+[2025-12-14T03:33:00Z] ✅ All scripts found
+
+[2025-12-14T03:33:00Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:33:00Z] PHASE 1: FETCH FROM API
+[2025-12-14T03:33:00Z] ════════════════════════════════════════════════════════════
+
+[2025-12-14T03:33:00Z] ► Skipping fetch phase (SKIP_FETCH=1) - using existing exports/
+[2025-12-14T03:33:00Z] ✅ Fetch phase skipped
+
+[2025-12-14T03:33:00Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:33:00Z] PHASE 2: VALIDATE EXPORT FILES
+[2025-12-14T03:33:00Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:33:00Z]   01_cursus: 1 records (expected ~1)
+[2025-12-14T03:33:00Z]   02_campus: 54 records (expected ~54)
+[2025-12-14T03:33:00Z]   05_projects: 538 records (expected ~538)
+[2025-12-14T03:33:00Z]   06_campus_projects: 20937 records (expected ~24195)
+[2025-12-14T03:33:01Z]   07_project_sessions: 7288 records (expected ~7286)
+[2025-12-14T03:33:01Z]   08_coalitions: 350 records (expected ~350)
+[2025-12-14T03:33:01Z] ✅ All export files valid: 29168 total records
+
+[2025-12-14T03:33:01Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:33:01Z] PHASE 3: LOAD INTO DATABASE
+[2025-12-14T03:33:01Z] ════════════════════════════════════════════════════════════
+
+[2025-12-14T03:33:01Z] ► Loading table 01: cursus...
+Fetching cursus...
+Fetching cursus id 21...
+Done. Merged count: 1 (cursus_id=21)
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+NOTICE:  relation "cursus" already exists, skipping
+CREATE TABLE
+CREATE INDEX
+NOTICE:  relation "idx_cursus_slug" already exists, skipping
+DO
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging into cursus_delta...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 1
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Upserting cursus...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+        0 |       1
+(1 row)
+
+TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Cursus: total=1, recently_ingested=1
+Cursus sync complete.
+[2025-12-14T03:33:06Z] ✅ cursus loaded
+
+[2025-12-14T03:33:06Z] ► Loading table 02: campuses...
+Fetching campuses...
+[2025-12-14T03:33:06Z] Starting fetch: per_page=100
+Fetching campuses page 1...
+  -> 54 items saved to /srv/42_Network/repo/exports/02_campus/page_1.json (raw: 54)
+Last page reached.
+Merging pages into /srv/42_Network/repo/exports/02_campus/all.json
+Done. Merged count: 54
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+NOTICE:  relation "campuses" already exists, skipping
+CREATE TABLE
+NOTICE:  relation "idx_campuses_city" already exists, skipping
+CREATE INDEX
+CREATE INDEX
+NOTICE:  relation "idx_campuses_active" already exists, skipping
+NOTICE:  relation "idx_campuses_public" already exists, skipping
+CREATE INDEX
+DO
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging campuses...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 54
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Pruning campuses missing from this snapshot...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DELETE 0
+Upserting campuses...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+        0 |      54
+(1 row)
+
+TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Campuses: total=54, recently_ingested=54
+Campuses sync complete.
+[2025-12-14T03:33:11Z] ✅ campuses loaded
+
+[2025-12-14T03:33:11Z] ► Loading table 05/06/07: projects + campus_projects + project_sessions...
+Fetching projects...
+[2025-12-14T03:33:11Z] Starting fetch: per_page=100
+Fetching cursus 21 projects page 1...
+  -> 100 items
+Fetching cursus 21 projects page 2...
+
+[2025-12-14T03:35:51Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:35:51Z] CURSUS 21 CORE DATA PIPELINE START
+[2025-12-14T03:35:51Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:35:51Z] Mode: --force
+[2025-12-14T03:35:51Z] Log: /srv/42_Network/repo/logs/update_cursus_21_core.log
+[2025-12-14T03:35:51Z] Skip fetch phase: 1
+
+[2025-12-14T03:35:51Z] ► Validating environment...
+[2025-12-14T03:35:51Z] ✅ All scripts found
+
+[2025-12-14T03:35:51Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:35:51Z] PHASE 1: FETCH FROM API
+[2025-12-14T03:35:51Z] ════════════════════════════════════════════════════════════
+
+[2025-12-14T03:35:51Z] ► Skipping fetch phase (SKIP_FETCH=1) - using existing exports/
+[2025-12-14T03:35:51Z] ✅ Fetch phase skipped
+
+[2025-12-14T03:35:51Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:35:51Z] PHASE 2: VALIDATE EXPORT FILES
+[2025-12-14T03:35:51Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:35:51Z]   01_cursus: 1 records (expected ~1)
+[2025-12-14T03:35:51Z]   02_campus: 54 records (expected ~54)
+[2025-12-14T03:35:51Z]   05_projects: 538 records (expected ~538)
+[2025-12-14T03:35:51Z]   06_campus_projects: 20937 records (expected ~24195)
+[2025-12-14T03:35:51Z]   07_project_sessions: 7288 records (expected ~7286)
+[2025-12-14T03:35:51Z]   08_coalitions: 350 records (expected ~350)
+[2025-12-14T03:35:51Z] ✅ All export files valid: 29168 total records
+
+[2025-12-14T03:35:51Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:35:51Z] PHASE 3: LOAD INTO DATABASE
+[2025-12-14T03:35:51Z] ════════════════════════════════════════════════════════════
+
+[2025-12-14T03:35:51Z] ► Loading table 01: cursus...
+Fetching cursus...
+Fetching cursus id 21...
+Done. Merged count: 1 (cursus_id=21)
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+NOTICE:  relation "cursus" already exists, skipping
+CREATE TABLE
+NOTICE:  relation "idx_cursus_slug" already exists, skipping
+CREATE INDEX
+DO
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging into cursus_delta...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 1
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Upserting cursus...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+        0 |       1
+(1 row)
+
+TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Cursus: total=1, recently_ingested=1
+Cursus sync complete.
+[2025-12-14T03:35:57Z] ✅ cursus loaded
+
+[2025-12-14T03:35:57Z] ► Loading table 02: campuses...
+Fetching campuses...
+Skipping campuses fetch: last run 170 seconds ago (< 3600s).
+Using cached campuses fetch (skip due to recency).
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+NOTICE:  relation "campuses" already exists, skipping
+CREATE TABLE
+CREATE INDEX
+NOTICE:  relation "idx_campuses_city" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_campuses_active" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_campuses_public" already exists, skipping
+DO
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging campuses...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 54
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Pruning campuses missing from this snapshot...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DELETE 0
+Upserting campuses...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+        0 |      54
+(1 row)
+
+TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Campuses: total=54, recently_ingested=54
+Campuses sync complete.
+[2025-12-14T03:36:01Z] ✅ campuses loaded
+
+[2025-12-14T03:36:01Z] ► Loading table 05/06/07: projects + campus_projects + project_sessions...
+Fetching projects...
+[2025-12-14T03:36:01Z] Starting fetch: per_page=100
+Fetching cursus 21 projects page 1...
+  -> 100 items
+Fetching cursus 21 projects page 2...
+  -> 100 items
+Fetching cursus 21 projects page 3...
+  -> 100 items
+Fetching cursus 21 projects page 4...
+  -> 100 items
+Fetching cursus 21 projects page 5...
+  -> 100 items
+Fetching cursus 21 projects page 6...
+  -> 33 items
+Last page reached.
+Merging pages into /srv/42_Network/repo/exports/05_projects/raw_all.json
+Done. Merged count: 533
+Building project_sessions export...
+Building campus_projects export...
+Building normalized projects export...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+CREATE TABLE
+NOTICE:  relation "projects" already exists, skipping
+NOTICE:  relation "idx_projects_slug" already exists, skipping
+CREATE INDEX
+CREATE INDEX
+NOTICE:  relation "idx_projects_parent_id" already exists, skipping
+NOTICE:  column "difficulty" of relation "projects" already exists, skipping
+NOTICE:  column "exam" of relation "projects" already exists, skipping
+NOTICE:  column "git_id" of relation "projects" already exists, skipping
+NOTICE:  column "repository" of relation "projects" already exists, skipping
+NOTICE:  column "recommendation" of relation "projects" already exists, skipping
+NOTICE:  column "created_at" of relation "projects" already exists, skipping
+NOTICE:  column "updated_at" of relation "projects" already exists, skipping
+ALTER TABLE
+DO
+NOTICE:  relation "campus_projects" already exists, skipping
+CREATE TABLE
+NOTICE:  relation "idx_campus_projects_project" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "project_sessions" already exists, skipping
+CREATE TABLE
+CREATE INDEX
+NOTICE:  relation "idx_project_sessions_project_id" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_project_sessions_campus_id" already exists, skipping
+NOTICE:  relation "idx_project_sessions_cursus_id" already exists, skipping
+CREATE INDEX
+DO
+NOTICE:  column "max_people" of relation "project_sessions" already exists, skipping
+NOTICE:  column "duration_days" of relation "project_sessions" already exists, skipping
+NOTICE:  column "commit" of relation "project_sessions" already exists, skipping
+NOTICE:  column "description" of relation "project_sessions" already exists, skipping
+NOTICE:  column "is_subscriptable" of relation "project_sessions" already exists, skipping
+NOTICE:  column "objectives" of relation "project_sessions" already exists, skipping
+NOTICE:  column "scales" of relation "project_sessions" already exists, skipping
+NOTICE:  column "terminating_after" of relation "project_sessions" already exists, skipping
+NOTICE:  column "uploads" of relation "project_sessions" already exists, skipping
+ALTER TABLE
+DO
+DO
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging into projects_delta...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 538
+Staging campus_projects...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 20937
+Staging project_sessions...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 7288
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Pruning projects missing from this snapshot...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DELETE 0
+Upserting projects...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+       19 |     519
+(1 row)
+
+TRUNCATE TABLE
+Syncing campus_projects...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DELETE 0
+DELETE 0
+INSERT 0 20937
+DELETE 19
+TRUNCATE TABLE
+INSERT 0 7288
+DELETE 31
+TRUNCATE TABLE
+Projects sync complete.
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Projects: total=519, recently_ingested=519
+Campus projects: total=20937, recently_ingested=20937
+Project sessions: total=7257, recently_ingested=7257
+[2025-12-14T03:37:28Z] ✅ projects + linked tables loaded
+
+[2025-12-14T03:37:28Z] ► Loading table 08: coalitions...
+[2025-12-14T03:37:28Z] ====== UPDATE COALITIONS START ======
+Fetching coalitions...
+[2025-12-14T03:37:28Z] ====== FETCH COALITIONS START ======
+[2025-12-14T03:37:28Z] SKIP: Last fetch was 999 seconds ago (threshold: 3600s)
+[2025-12-14T03:37:28Z] Using cached coalitions fetch (skip due to recency).
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+NOTICE:  relation "coalitions" already exists, skipping
+CREATE TABLE
+NOTICE:  constraint "coalitions_slug_key" of relation "coalitions" does not exist, skipping
+ALTER TABLE
+CREATE INDEX
+NOTICE:  relation "idx_coalitions_slug" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_coalitions_user_id" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_coalitions_score" already exists, skipping
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging coalitions...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 350
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Pruning coalitions missing from this snapshot...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DELETE 0
+Upserting coalitions...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+        0 |     350
+(1 row)
+
+TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+[2025-12-14T03:37:32Z] Coalitions: total=350, recently_ingested=350
+[2025-12-14T03:37:32Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
+[2025-12-14T03:37:32Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
+[2025-12-14T03:37:32Z] 
+[2025-12-14T03:37:32Z] ✅ coalitions loaded
+
+[2025-12-14T03:37:32Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:37:32Z] PIPELINE COMPLETE
+[2025-12-14T03:37:32Z] ════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════
+EXECUTION SUMMARY
+═══════════════════════════════════════════════════════════
+
+TIMING:
+  Fetch Phase:    0 seconds
+  Load Phase:     101 seconds
+  ─────────────────────────────────
+  Total Time:     101 seconds (~1m 41s)
+
+DATA LOADED:
+  Tables:         6/6 loaded successfully
+  Records:        29168 across all tables
+  Status:         ✅ SUCCESS
+
+TABLES:
+  ✅ 01_cursus                1 record
+  ✅ 02_campuses             54 records
+  ✅ 05_projects             538 records
+  ✅ 06_campus_projects    24,195 records
+  ✅ 07_project_sessions    7,286 records
+  ✅ 08_coalitions           350 records
+
+METADATA:
+  All tables have:
+    - .last_fetch_epoch timestamp
+    - .last_fetch_stats JSON metadata
+    - Validated export files
+
+NEXT STEPS:
+  • Ready for incremental updates (project_users, coalition_users)
+  • Live sync operational via live_delta_monitor
+  • Check logs for details: /srv/42_Network/repo/logs/update_cursus_21_core.log
+
+═══════════════════════════════════════════════════════════
+[2025-12-14T03:37:32Z] ✅ PIPELINE COMPLETE - All tables loaded successfully
+
+[2025-12-14T03:42:46Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:42:46Z] CURSUS 21 CORE DATA PIPELINE START
+[2025-12-14T03:42:46Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:42:46Z] Mode: --force
+[2025-12-14T03:42:46Z] Log: /srv/42_Network/repo/logs/update_cursus_21_core.log
+[2025-12-14T03:42:46Z] Skip fetch phase: 1
+
+[2025-12-14T03:42:46Z] ► Validating environment...
+[2025-12-14T03:42:46Z] ✅ All scripts found
+
+[2025-12-14T03:42:46Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:42:46Z] PHASE 1: FETCH FROM API
+[2025-12-14T03:42:46Z] ════════════════════════════════════════════════════════════
+
+[2025-12-14T03:42:46Z] ► Skipping fetch phase (SKIP_FETCH=1) - using existing exports/
+[2025-12-14T03:42:46Z] ✅ Fetch phase skipped
+
+[2025-12-14T03:42:46Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:42:46Z] PHASE 2: VALIDATE EXPORT FILES
+[2025-12-14T03:42:46Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:42:46Z]   01_cursus: 1 records (expected ~1)
+[2025-12-14T03:42:46Z]   02_campus: 54 records (expected ~54)
+[2025-12-14T03:42:46Z]   05_projects: 538 records (expected ~538)
+[2025-12-14T03:42:46Z]   06_campus_projects: 20937 records (expected ~24195)
+[2025-12-14T03:42:47Z]   07_project_sessions: 7288 records (expected ~7286)
+[2025-12-14T03:42:47Z]   08_coalitions: 350 records (expected ~350)
+[2025-12-14T03:42:47Z] ✅ All export files valid: 29168 total records
+
+[2025-12-14T03:42:47Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:42:47Z] PHASE 3: LOAD INTO DATABASE
+[2025-12-14T03:42:47Z] ════════════════════════════════════════════════════════════
+
+[2025-12-14T03:42:47Z] ► Loading table 01: cursus...
+Fetching cursus...
+Fetching cursus id 21...
+Done. Merged count: 1 (cursus_id=21)
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+CREATE TABLE
+NOTICE:  relation "cursus" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_cursus_slug" already exists, skipping
+DO
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging into cursus_delta...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 1
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Upserting cursus...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+        0 |       1
+(1 row)
+
+TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Cursus: total=1, recently_ingested=1
+Cursus sync complete.
+/srv/42_Network/repo/scripts/update_stable_tables/update_all_cursus_21_core.sh: line 50: $label completed (${end - start}s): bad substitution
+
+[2025-12-14T03:43:24Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:43:24Z] CURSUS 21 CORE DATA PIPELINE START
+[2025-12-14T03:43:24Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:43:24Z] Mode: --force
+[2025-12-14T03:43:24Z] Log: /srv/42_Network/repo/logs/update_cursus_21_core.log
+[2025-12-14T03:43:24Z] Skip fetch phase: 1
+
+[2025-12-14T03:43:24Z] ► Validating environment...
+[2025-12-14T03:43:24Z] ✅ All scripts found
+
+[2025-12-14T03:43:24Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:43:24Z] PHASE 1: FETCH FROM API
+[2025-12-14T03:43:24Z] ════════════════════════════════════════════════════════════
+
+[2025-12-14T03:43:24Z] ► Skipping fetch phase (SKIP_FETCH=1) - using existing exports/
+[2025-12-14T03:43:24Z] ✅ Fetch phase skipped
+
+[2025-12-14T03:43:24Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:43:24Z] PHASE 2: VALIDATE EXPORT FILES
+[2025-12-14T03:43:24Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:43:24Z]   01_cursus: 1 records (expected ~1)
+[2025-12-14T03:43:24Z]   02_campus: 54 records (expected ~54)
+[2025-12-14T03:43:24Z]   05_projects: 538 records (expected ~538)
+[2025-12-14T03:43:24Z]   06_campus_projects: 20937 records (expected ~24195)
+[2025-12-14T03:43:25Z]   07_project_sessions: 7288 records (expected ~7286)
+[2025-12-14T03:43:25Z]   08_coalitions: 350 records (expected ~350)
+[2025-12-14T03:43:25Z] ✅ All export files valid: 29168 total records
+
+[2025-12-14T03:43:25Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:43:25Z] PHASE 3: LOAD INTO DATABASE
+[2025-12-14T03:43:25Z] ════════════════════════════════════════════════════════════
+
+[2025-12-14T03:43:25Z] ► Loading table 01: cursus...
+Fetching cursus...
+Fetching cursus id 21...
+Done. Merged count: 1 (cursus_id=21)
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+NOTICE:  relation "cursus" already exists, skipping
+CREATE TABLE
+NOTICE:  relation "idx_cursus_slug" already exists, skipping
+CREATE INDEX
+DO
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging into cursus_delta...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 1
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Upserting cursus...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+        0 |       1
+(1 row)
+
+TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Cursus: total=1, recently_ingested=1
+Cursus sync complete.
+[2025-12-14T03:43:30Z] ✅ cursus loaded completed (5s)
+[2025-12-14T03:43:30Z] ✅ cursus loaded completed (5s)
+
+[2025-12-14T03:43:30Z] ► Loading table 02: campuses...
+Fetching campuses...
+Skipping campuses fetch: last run 623 seconds ago (< 3600s).
+Using cached campuses fetch (skip due to recency).
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+CREATE TABLE
+NOTICE:  relation "campuses" already exists, skipping
+NOTICE:  relation "idx_campuses_city" already exists, skipping
+CREATE INDEX
+CREATE INDEX
+NOTICE:  relation "idx_campuses_active" already exists, skipping
+NOTICE:  relation "idx_campuses_public" already exists, skipping
+CREATE INDEX
+DO
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging campuses...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 54
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Pruning campuses missing from this snapshot...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DELETE 0
+Upserting campuses...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+        0 |      54
+(1 row)
+
+TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Campuses: total=54, recently_ingested=54
+Campuses sync complete.
+[2025-12-14T03:43:34Z] ✅ campuses loaded completed (4s)
+[2025-12-14T03:43:34Z] ✅ campuses loaded completed (4s)
+
+[2025-12-14T03:43:34Z] ► Loading table 05/06/07: projects + campus_projects + project_sessions...
+Fetching projects...
+[2025-12-14T03:43:34Z] Starting fetch: per_page=100
+Fetching cursus 21 projects page 1...
+  -> 100 items
+Fetching cursus 21 projects page 2...
+  -> 100 items
+Fetching cursus 21 projects page 3...
+  -> 100 items
+Fetching cursus 21 projects page 4...
+  -> 100 items
+Fetching cursus 21 projects page 5...
+  -> 100 items
+Fetching cursus 21 projects page 6...
+  -> 33 items
+Last page reached.
+Merging pages into /srv/42_Network/repo/exports/05_projects/raw_all.json
+Done. Merged count: 533
+Building project_sessions export...
+Building campus_projects export...
+Building normalized projects export...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+CREATE TABLE
+NOTICE:  relation "projects" already exists, skipping
+NOTICE:  relation "idx_projects_slug" already exists, skipping
+CREATE INDEX
+CREATE INDEX
+NOTICE:  relation "idx_projects_parent_id" already exists, skipping
+NOTICE:  column "difficulty" of relation "projects" already exists, skipping
+NOTICE:  column "exam" of relation "projects" already exists, skipping
+NOTICE:  column "git_id" of relation "projects" already exists, skipping
+NOTICE:  column "repository" of relation "projects" already exists, skipping
+NOTICE:  column "recommendation" of relation "projects" already exists, skipping
+NOTICE:  column "created_at" of relation "projects" already exists, skipping
+NOTICE:  column "updated_at" of relation "projects" already exists, skipping
+ALTER TABLE
+DO
+CREATE TABLE
+NOTICE:  relation "campus_projects" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_campus_projects_project" already exists, skipping
+CREATE TABLE
+NOTICE:  relation "project_sessions" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_project_sessions_project_id" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_project_sessions_campus_id" already exists, skipping
+NOTICE:  relation "idx_project_sessions_cursus_id" already exists, skipping
+CREATE INDEX
+DO
+NOTICE:  column "max_people" of relation "project_sessions" already exists, skipping
+NOTICE:  column "duration_days" of relation "project_sessions" already exists, skipping
+NOTICE:  column "commit" of relation "project_sessions" already exists, skipping
+NOTICE:  column "description" of relation "project_sessions" already exists, skipping
+NOTICE:  column "is_subscriptable" of relation "project_sessions" already exists, skipping
+NOTICE:  column "objectives" of relation "project_sessions" already exists, skipping
+NOTICE:  column "scales" of relation "project_sessions" already exists, skipping
+NOTICE:  column "terminating_after" of relation "project_sessions" already exists, skipping
+NOTICE:  column "uploads" of relation "project_sessions" already exists, skipping
+ALTER TABLE
+DO
+DO
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging into projects_delta...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 538
+Staging campus_projects...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 20937
+Staging project_sessions...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 7288
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Pruning projects missing from this snapshot...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DELETE 0
+Upserting projects...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+       19 |     519
+(1 row)
+
+TRUNCATE TABLE
+Syncing campus_projects...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DELETE 0
+DELETE 0
+INSERT 0 20937
+DELETE 19
+TRUNCATE TABLE
+INSERT 0 7288
+DELETE 31
+TRUNCATE TABLE
+Projects sync complete.
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Projects: total=519, recently_ingested=519
+Campus projects: total=20937, recently_ingested=20937
+Project sessions: total=7257, recently_ingested=7257
+[2025-12-14T03:44:51Z] ✅ projects + links loaded completed (77s)
+[2025-12-14T03:44:51Z] ✅ projects + links loaded completed (77s)
+
+[2025-12-14T03:44:51Z] ► Loading table 08: coalitions...
+[2025-12-14T03:44:51Z] ====== UPDATE COALITIONS START ======
+Fetching coalitions...
+[2025-12-14T03:44:51Z] ====== FETCH COALITIONS START ======
+[2025-12-14T03:44:51Z] SKIP: Last fetch was 1442 seconds ago (threshold: 3600s)
+[2025-12-14T03:44:51Z] Using cached coalitions fetch (skip due to recency).
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+NOTICE:  relation "coalitions" already exists, skipping
+CREATE TABLE
+NOTICE:  constraint "coalitions_slug_key" of relation "coalitions" does not exist, skipping
+ALTER TABLE
+NOTICE:  relation "idx_coalitions_slug" already exists, skipping
+CREATE INDEX
+CREATE INDEX
+NOTICE:  relation "idx_coalitions_user_id" already exists, skipping
+NOTICE:  relation "idx_coalitions_score" already exists, skipping
+CREATE INDEX
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging coalitions...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 350
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Pruning coalitions missing from this snapshot...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DELETE 0
+Upserting coalitions...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+        0 |     350
+(1 row)
+
+TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+[2025-12-14T03:44:55Z] Coalitions: total=350, recently_ingested=350
+[2025-12-14T03:44:55Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
+[2025-12-14T03:44:55Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
+[2025-12-14T03:44:55Z] 
+[2025-12-14T03:44:55Z] ✅ coalitions loaded completed (4s)
+[2025-12-14T03:44:55Z] ✅ coalitions loaded completed (4s)
+
+[2025-12-14T03:44:55Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:44:55Z] PIPELINE COMPLETE
+[2025-12-14T03:44:55Z] ════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════
+EXECUTION SUMMARY
+═══════════════════════════════════════════════════════════
+
+TIMING:
+  Fetch Phase:    0 seconds
   Load Phase:     90 seconds
   ─────────────────────────────────
-  Total Time:     228 seconds (~3m 48s)
+  Total Time:     91 seconds (~1m 31s)
 
 DATA LOADED:
   Tables:         6/6 loaded successfully
-  Records:        32425 across all tables
+  Records:        29168 across all tables
   Status:         ✅ SUCCESS
 
 TABLES:
@@ -311,148 +1675,226 @@ NEXT STEPS:
   • Check logs for details: /srv/42_Network/repo/logs/update_cursus_21_core.log
 
 ═══════════════════════════════════════════════════════════
-[2025-12-12T19:10:09Z] ✅ PIPELINE COMPLETE - All tables loaded successfully
+[2025-12-14T03:44:55Z] ✅ PIPELINE COMPLETE - All tables loaded successfully
 
-[2025-12-12T19:13:59Z] ════════════════════════════════════════════════════════════
-[2025-12-12T19:13:59Z] CURSUS 21 CORE DATA PIPELINE START
-[2025-12-12T19:13:59Z] ════════════════════════════════════════════════════════════
-[2025-12-12T19:13:59Z] Mode: --force
-[2025-12-12T19:13:59Z] Log: /srv/42_Network/repo/logs/update_cursus_21_core.log
+[2025-12-14T03:46:04Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:46:04Z] CURSUS 21 CORE DATA PIPELINE START
+[2025-12-14T03:46:04Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:46:04Z] Mode: --force
+[2025-12-14T03:46:04Z] Log: /srv/42_Network/repo/logs/update_cursus_21_core.log
+[2025-12-14T03:46:04Z] Skip fetch phase: 1
 
-[2025-12-12T19:13:59Z] ► Validating environment...
-[2025-12-12T19:13:59Z] ✅ All scripts found
+[2025-12-14T03:46:04Z] ► Validating environment...
+[2025-12-14T03:46:04Z] ✅ All scripts found
 
-[2025-12-12T19:13:59Z] ════════════════════════════════════════════════════════════
-[2025-12-12T19:14:00Z] PHASE 1: FETCH FROM API
-[2025-12-12T19:14:00Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:46:04Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:46:04Z] PHASE 1: FETCH FROM API
+[2025-12-14T03:46:04Z] ════════════════════════════════════════════════════════════
 
-[2025-12-12T19:14:00Z] ► Fetching Cursus 21 core metadata (cursus, campuses, projects, coalitions only)...
-[2025-12-12T19:14:00Z] ====== FETCH CURSUS 21 CORE METADATA ONLY ======
-[2025-12-12T19:14:00Z] Filters: kind=student, alumni?=false
-[2025-12-12T19:14:00Z] Step 1: Fetch cursus 21 metadata...
-Fetching cursus id 21...
-Done. Merged count: 1 (cursus_id=21)
-[2025-12-12T19:14:01Z] Step 1b: Fetch coalitions metadata...
-[2025-12-12T19:14:01Z] ====== FETCH COALITIONS START ======
-[2025-12-12T19:14:01Z] Fetching page 1...
-[2025-12-12T19:14:18Z]   Page 1: 100 records, 29KB, 16365ms
-[2025-12-12T19:14:18Z] Fetching page 2...
-[2025-12-12T19:14:36Z]   Page 2: 100 records, 30KB, 16609ms
-[2025-12-12T19:14:36Z] Fetching page 3...
-[2025-12-12T19:15:05Z]   Page 3: 100 records, 29KB, 28343ms
-[2025-12-12T19:15:05Z] Fetching page 4...
-[2025-12-12T19:15:14Z]   Page 4: 50 records, 14KB, 7222ms
-[2025-12-12T19:15:14Z] Total: 350 coalitions in 102KB across 4 pages, 4 API hits
-[2025-12-12T19:15:14Z] Exported to /srv/42_Network/repo/exports/08_coalitions/all.json
-[2025-12-12T19:15:14Z] ====== FETCH COALITIONS COMPLETE (73s) ======
-[2025-12-12T19:15:14Z] 
-[2025-12-12T19:15:14Z] Step 2: Fetch cursus 21 projects...
-Fetching cursus 21 projects page 1...
-  -> 100 items
-Fetching cursus 21 projects page 2...
-  -> 100 items
-Fetching cursus 21 projects page 3...
-  -> 100 items
-Fetching cursus 21 projects page 4...
-  -> 100 items
-Fetching cursus 21 projects page 5...
-  -> 100 items
-Fetching cursus 21 projects page 6...
-  -> 33 items
-Last page reached.
-Merging pages into /srv/42_Network/repo/exports/05_projects/raw_all.json
-Done. Merged count: 533
-[2025-12-12T19:16:28Z] Step 2b: Extract campus_projects linkage (06)...
-[2025-12-12T19:16:28Z] ====== EXTRACT CAMPUS_PROJECTS START ======
-[2025-12-12T19:16:29Z] Extracted 24195 campus-project linkages
-[2025-12-12T19:16:29Z] Saved to /srv/42_Network/repo/exports/06_campus_projects/all.json
-[2025-12-12T19:16:29Z] Updated timestamp in /srv/42_Network/repo/exports/06_campus_projects/.last_fetch_epoch
-[2025-12-12T19:16:29Z] ====== EXTRACT COMPLETE (1s) ======
-[2025-12-12T19:16:29Z] 
-[2025-12-12T19:16:29Z] Step 2c: Extract project_sessions (07)...
-[2025-12-12T19:16:29Z] ====== EXTRACT PROJECT_SESSIONS START ======
-[2025-12-12T19:16:31Z] Extracted 7287 project sessions
-[2025-12-12T19:16:31Z] Saved to /srv/42_Network/repo/exports/07_project_sessions/all.json
-[2025-12-12T19:16:31Z] Updated timestamp in /srv/42_Network/repo/exports/07_project_sessions/.last_fetch_epoch
-[2025-12-12T19:16:31Z] ====== EXTRACT COMPLETE (2s) ======
-[2025-12-12T19:16:31Z] 
-[2025-12-12T19:16:31Z] ====== CURSUS 21 CORE METADATA FETCH COMPLETE ======
-[2025-12-12T19:16:31Z] 
-[2025-12-12T19:16:31Z] ✅ Fetch phase complete
+[2025-12-14T03:46:04Z] ► Skipping fetch phase (SKIP_FETCH=1) - using existing exports/
+[2025-12-14T03:46:04Z] ✅ Fetch phase skipped
 
-[2025-12-12T19:16:31Z] ════════════════════════════════════════════════════════════
-[2025-12-12T19:16:31Z] PHASE 2: VALIDATE EXPORT FILES
-[2025-12-12T19:16:31Z] ════════════════════════════════════════════════════════════
-[2025-12-12T19:16:31Z]   01_cursus: 1 records (expected ~1)
-[2025-12-12T19:16:31Z]   02_campus: 54 records (expected ~54)
-[2025-12-12T19:16:31Z]   05_projects: 538 records (expected ~538)
-[2025-12-12T19:16:31Z]   06_campus_projects: 24195 records (expected ~24195)
-[2025-12-12T19:16:31Z]   07_project_sessions: 7287 records (expected ~7286)
-[2025-12-12T19:16:31Z]   08_coalitions: 350 records (expected ~350)
-[2025-12-12T19:16:31Z] ✅ All export files valid: 32425 total records
+[2025-12-14T03:46:04Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:46:04Z] PHASE 2: VALIDATE EXPORT FILES
+[2025-12-14T03:46:04Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:46:04Z]   01_cursus: 1 records (expected ~1)
+[2025-12-14T03:46:04Z]   02_campus: 54 records (expected ~54)
+[2025-12-14T03:46:05Z]   05_projects: 538 records (expected ~538)
+[2025-12-14T03:46:05Z]   06_campus_projects: 20937 records (expected ~24195)
+[2025-12-14T03:46:05Z]   07_project_sessions: 7288 records (expected ~7286)
+[2025-12-14T03:46:05Z]   08_coalitions: 350 records (expected ~350)
+[2025-12-14T03:46:05Z] ✅ All export files valid: 29168 total records
 
-[2025-12-12T19:16:31Z] ════════════════════════════════════════════════════════════
-[2025-12-12T19:16:31Z] PHASE 3: LOAD INTO DATABASE
-[2025-12-12T19:16:31Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:46:05Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:46:05Z] PHASE 3: LOAD INTO DATABASE
+[2025-12-14T03:46:05Z] ════════════════════════════════════════════════════════════
 
-[2025-12-12T19:16:31Z] ► Loading table 01: cursus...
+[2025-12-14T03:46:05Z] ► Loading table 01: cursus...
 Fetching cursus...
 Fetching cursus id 21...
 Done. Merged count: 1 (cursus_id=21)
-NOTICE:  relation "cursus" already exists, skipping
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 CREATE TABLE
+NOTICE:  relation "cursus" already exists, skipping
 NOTICE:  relation "idx_cursus_slug" already exists, skipping
 CREATE INDEX
 DO
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 DROP TABLE
 CREATE TABLE
 TRUNCATE TABLE
 Staging into cursus_delta...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 COPY 1
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 Upserting cursus...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
  inserted | updated 
 ----------+---------
         0 |       1
 (1 row)
 
 TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 Cursus: total=1, recently_ingested=1
 Cursus sync complete.
-[2025-12-12T19:16:37Z] ✅ cursus loaded
+[2025-12-14T03:46:10Z] ✅ cursus loaded completed (5s)
+[2025-12-14T03:46:10Z] ✅ cursus loaded completed (5s)
 
-[2025-12-12T19:16:37Z] ► Loading table 02: campuses...
+[2025-12-14T03:46:10Z] ► Loading table 02: campuses...
 Fetching campuses...
-Skipping campuses fetch: last run 2036 seconds ago (< 3600s).
+Skipping campuses fetch: last run 783 seconds ago (< 3600s).
 Using cached campuses fetch (skip due to recency).
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 CREATE TABLE
 NOTICE:  relation "campuses" already exists, skipping
-CREATE INDEX
 NOTICE:  relation "idx_campuses_city" already exists, skipping
 CREATE INDEX
 NOTICE:  relation "idx_campuses_active" already exists, skipping
 CREATE INDEX
 NOTICE:  relation "idx_campuses_public" already exists, skipping
+CREATE INDEX
 DO
 DROP TABLE
 CREATE TABLE
 TRUNCATE TABLE
 Staging campuses...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 COPY 54
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 Pruning campuses missing from this snapshot...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 DELETE 0
 Upserting campuses...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
  inserted | updated 
 ----------+---------
         0 |      54
 (1 row)
 
 TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 Campuses: total=54, recently_ingested=54
 Campuses sync complete.
-[2025-12-12T19:16:41Z] ✅ campuses loaded
+[2025-12-14T03:46:14Z] ✅ campuses loaded completed (4s)
+[2025-12-14T03:46:14Z] ✅ campuses loaded completed (4s)
 
-[2025-12-12T19:16:41Z] ► Loading table 05/06/07: projects + campus_projects + project_sessions...
+[2025-12-14T03:46:14Z] ► Loading table 05/06/07: projects + campus_projects + project_sessions...
 Fetching projects...
+[2025-12-14T03:46:14Z] Starting fetch: per_page=100
+Fetching cursus 21 projects page 1...
+  -> 100 items
+Fetching cursus 21 projects page 2...
+
+[2025-12-14T03:51:02Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:51:02Z] CURSUS 21 CORE DATA PIPELINE START
+[2025-12-14T03:51:02Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:51:02Z] Mode: --force
+[2025-12-14T03:51:02Z] Log: /srv/42_Network/repo/logs/update_cursus_21_core.log
+[2025-12-14T03:51:02Z] Skip fetch phase: 1
+
+[2025-12-14T03:51:02Z] ► Validating environment...
+[2025-12-14T03:51:02Z] ✅ All scripts found
+
+[2025-12-14T03:51:02Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:51:02Z] PHASE 1: FETCH FROM API
+[2025-12-14T03:51:02Z] ════════════════════════════════════════════════════════════
+
+[2025-12-14T03:51:02Z] ► Skipping fetch phase (SKIP_FETCH=1) - using existing exports/
+[2025-12-14T03:51:02Z] ✅ Fetch phase skipped
+
+[2025-12-14T03:51:02Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:51:02Z] PHASE 2: VALIDATE EXPORT FILES
+[2025-12-14T03:51:02Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:51:02Z]   01_cursus: 1 records (expected ~1)
+[2025-12-14T03:51:02Z]   02_campus: 54 records (expected ~54)
+[2025-12-14T03:51:02Z]   05_projects: 538 records (expected ~538)
+[2025-12-14T03:51:02Z]   06_campus_projects: 20937 records (expected ~24195)
+[2025-12-14T03:51:02Z]   07_project_sessions: 7288 records (expected ~7286)
+[2025-12-14T03:51:02Z]   08_coalitions: 350 records (expected ~350)
+[2025-12-14T03:51:02Z] ✅ All export files valid: 29168 total records
+
+[2025-12-14T03:51:02Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:51:02Z] PHASE 3: LOAD INTO DATABASE
+[2025-12-14T03:51:02Z] ════════════════════════════════════════════════════════════
+
+[2025-12-14T03:51:02Z] ► Loading table 01: cursus...
+Fetching cursus...
+Fetching cursus id 21...
+Done. Merged count: 1 (cursus_id=21)
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+NOTICE:  relation "cursus" already exists, skipping
+CREATE TABLE
+NOTICE:  relation "idx_cursus_slug" already exists, skipping
+CREATE INDEX
+DO
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging into cursus_delta...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 1
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Upserting cursus...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+        0 |       1
+(1 row)
+
+TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Cursus: total=1, recently_ingested=1
+Cursus sync complete.
+[2025-12-14T03:51:06Z] ✅ cursus loaded completed (4s)
+[2025-12-14T03:51:06Z] ✅ cursus loaded completed (4s)
+
+[2025-12-14T03:51:06Z] ► Loading table 02: campuses...
+Fetching campuses...
+Skipping campuses fetch: last run 1080 seconds ago (< 3600s).
+Using cached campuses fetch (skip due to recency).
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+CREATE TABLE
+NOTICE:  relation "campuses" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_campuses_city" already exists, skipping
+NOTICE:  relation "idx_campuses_active" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_campuses_public" already exists, skipping
+CREATE INDEX
+DO
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging campuses...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 54
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Pruning campuses missing from this snapshot...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DELETE 0
+Upserting campuses...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+        0 |      54
+(1 row)
+
+TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Campuses: total=54, recently_ingested=54
+Campuses sync complete.
+[2025-12-14T03:51:10Z] ✅ campuses loaded completed (4s)
+[2025-12-14T03:51:10Z] ✅ campuses loaded completed (4s)
+
+[2025-12-14T03:51:10Z] ► Loading table 05/06/07: projects + campus_projects + project_sessions...
+Fetching projects...
+[2025-12-14T03:51:10Z] Starting fetch: per_page=100
 Fetching cursus 21 projects page 1...
   -> 100 items
 Fetching cursus 21 projects page 2...
@@ -471,10 +1913,313 @@ Done. Merged count: 533
 Building project_sessions export...
 Building campus_projects export...
 Building normalized projects export...
-NOTICE:  relation "projects" already exists, skipping
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 CREATE TABLE
+NOTICE:  relation "projects" already exists, skipping
 NOTICE:  relation "idx_projects_slug" already exists, skipping
 CREATE INDEX
+CREATE INDEX
+NOTICE:  relation "idx_projects_parent_id" already exists, skipping
+NOTICE:  column "difficulty" of relation "projects" already exists, skipping
+NOTICE:  column "exam" of relation "projects" already exists, skipping
+NOTICE:  column "git_id" of relation "projects" already exists, skipping
+NOTICE:  column "repository" of relation "projects" already exists, skipping
+NOTICE:  column "recommendation" of relation "projects" already exists, skipping
+NOTICE:  column "created_at" of relation "projects" already exists, skipping
+NOTICE:  column "updated_at" of relation "projects" already exists, skipping
+ALTER TABLE
+DO
+CREATE TABLE
+NOTICE:  relation "campus_projects" already exists, skipping
+NOTICE:  relation "idx_campus_projects_project" already exists, skipping
+CREATE INDEX
+CREATE TABLE
+NOTICE:  relation "project_sessions" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_project_sessions_project_id" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_project_sessions_campus_id" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_project_sessions_cursus_id" already exists, skipping
+DO
+NOTICE:  column "max_people" of relation "project_sessions" already exists, skipping
+NOTICE:  column "duration_days" of relation "project_sessions" already exists, skipping
+NOTICE:  column "commit" of relation "project_sessions" already exists, skipping
+NOTICE:  column "description" of relation "project_sessions" already exists, skipping
+NOTICE:  column "is_subscriptable" of relation "project_sessions" already exists, skipping
+NOTICE:  column "objectives" of relation "project_sessions" already exists, skipping
+NOTICE:  column "scales" of relation "project_sessions" already exists, skipping
+NOTICE:  column "terminating_after" of relation "project_sessions" already exists, skipping
+NOTICE:  column "uploads" of relation "project_sessions" already exists, skipping
+ALTER TABLE
+DO
+DO
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging into projects_delta...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 538
+Staging campus_projects...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 20937
+Staging project_sessions...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 7288
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Pruning projects missing from this snapshot...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DELETE 0
+Upserting projects...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+       19 |     519
+(1 row)
+
+TRUNCATE TABLE
+Syncing campus_projects...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DELETE 0
+DELETE 0
+INSERT 0 20937
+DELETE 19
+TRUNCATE TABLE
+INSERT 0 7288
+DELETE 31
+TRUNCATE TABLE
+Projects sync complete.
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Projects: total=519, recently_ingested=519
+Campus projects: total=20937, recently_ingested=20937
+Project sessions: total=7257, recently_ingested=7257
+[2025-12-14T03:52:27Z] ✅ projects + links loaded completed (77s)
+[2025-12-14T03:52:27Z] ✅ projects + links loaded completed (77s)
+
+[2025-12-14T03:52:27Z] ► Loading table 08: coalitions...
+[2025-12-14T03:52:27Z] ====== UPDATE COALITIONS START ======
+Fetching coalitions...
+[2025-12-14T03:52:27Z] ====== FETCH COALITIONS START ======
+[2025-12-14T03:52:27Z] SKIP: Last fetch was 1898 seconds ago (threshold: 3600s)
+[2025-12-14T03:52:27Z] Using cached coalitions fetch (skip due to recency).
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+NOTICE:  relation "coalitions" already exists, skipping
+CREATE TABLE
+NOTICE:  constraint "coalitions_slug_key" of relation "coalitions" does not exist, skipping
+ALTER TABLE
+NOTICE:  relation "idx_coalitions_slug" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_coalitions_user_id" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_coalitions_score" already exists, skipping
+CREATE INDEX
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging coalitions...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 350
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Pruning coalitions missing from this snapshot...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DELETE 0
+Upserting coalitions...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+        0 |     350
+(1 row)
+
+TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+[2025-12-14T03:52:31Z] Coalitions: total=350, recently_ingested=350
+[2025-12-14T03:52:31Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
+[2025-12-14T03:52:31Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
+[2025-12-14T03:52:31Z] 
+[2025-12-14T03:52:31Z] ✅ coalitions loaded completed (4s)
+[2025-12-14T03:52:31Z] ✅ coalitions loaded completed (4s)
+
+[2025-12-14T03:52:31Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:52:31Z] PIPELINE COMPLETE
+[2025-12-14T03:52:31Z] ════════════════════════════════════════════════════════════
+
+═══════════════════════════════════════════════════════════
+EXECUTION SUMMARY
+═══════════════════════════════════════════════════════════
+
+TIMING:
+  Fetch Phase:    0 seconds
+  Load Phase:     89 seconds
+  ─────────────────────────────────
+  Total Time:     89 seconds (~1m 29s)
+
+DATA LOADED:
+  Tables:         6/6 loaded successfully
+  Records:        29168 across all tables
+  Status:         ✅ SUCCESS
+
+TABLES:
+  ✅ 01_cursus                1 record
+  ✅ 02_campuses             54 records
+  ✅ 05_projects             538 records
+  ✅ 06_campus_projects    24,195 records
+  ✅ 07_project_sessions    7,286 records
+  ✅ 08_coalitions           350 records
+
+METADATA:
+  All tables have:
+    - .last_fetch_epoch timestamp
+    - .last_fetch_stats JSON metadata
+    - Validated export files
+
+NEXT STEPS:
+  • Ready for incremental updates (project_users, coalition_users)
+  • Live sync operational via live_delta_monitor
+  • Check logs for details: /srv/42_Network/repo/logs/update_cursus_21_core.log
+
+═══════════════════════════════════════════════════════════
+[2025-12-14T03:52:31Z] ✅ PIPELINE COMPLETE - All tables loaded successfully
+
+[2025-12-14T03:55:34Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:55:34Z] CURSUS 21 CORE DATA PIPELINE START
+[2025-12-14T03:55:34Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:55:34Z] Mode: --force
+[2025-12-14T03:55:34Z] Log: /srv/42_Network/repo/logs/update_cursus_21_core.log
+[2025-12-14T03:55:34Z] Skip fetch phase: 1
+
+[2025-12-14T03:55:34Z] ► Validating environment...
+[2025-12-14T03:55:34Z] ✅ All scripts found
+
+[2025-12-14T03:55:34Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:55:34Z] PHASE 1: FETCH FROM API
+[2025-12-14T03:55:34Z] ════════════════════════════════════════════════════════════
+
+[2025-12-14T03:55:34Z] ► Skipping fetch phase (SKIP_FETCH=1) - using existing exports/
+[2025-12-14T03:55:34Z] ✅ Fetch phase skipped
+
+[2025-12-14T03:55:34Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:55:34Z] PHASE 2: VALIDATE EXPORT FILES
+[2025-12-14T03:55:34Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:55:34Z]   01_cursus: 1 records (expected ~1)
+[2025-12-14T03:55:34Z]   02_campus: 54 records (expected ~54)
+[2025-12-14T03:55:34Z]   05_projects: 538 records (expected ~538)
+[2025-12-14T03:55:34Z]   06_campus_projects: 20937 records (expected ~24195)
+[2025-12-14T03:55:34Z]   07_project_sessions: 7288 records (expected ~7286)
+[2025-12-14T03:55:34Z]   08_coalitions: 350 records (expected ~350)
+[2025-12-14T03:55:34Z] ✅ All export files valid: 29168 total records
+
+[2025-12-14T03:55:34Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:55:34Z] PHASE 3: LOAD INTO DATABASE
+[2025-12-14T03:55:34Z] ════════════════════════════════════════════════════════════
+
+[2025-12-14T03:55:34Z] ► Loading table 01: cursus...
+Fetching cursus...
+Fetching cursus id 21...
+Done. Merged count: 1 (cursus_id=21)
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+NOTICE:  relation "cursus" already exists, skipping
+CREATE TABLE
+NOTICE:  relation "idx_cursus_slug" already exists, skipping
+CREATE INDEX
+DO
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging into cursus_delta...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 1
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Upserting cursus...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+        0 |       1
+(1 row)
+
+TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Cursus: total=1, recently_ingested=1
+Cursus sync complete.
+[2025-12-14T03:55:41Z] ✅ cursus loaded completed (7s)
+
+[2025-12-14T03:55:41Z] ► Loading table 02: campuses...
+Fetching campuses...
+Skipping campuses fetch: last run 1354 seconds ago (< 3600s).
+Using cached campuses fetch (skip due to recency).
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+NOTICE:  relation "campuses" already exists, skipping
+CREATE TABLE
+NOTICE:  relation "idx_campuses_city" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_campuses_active" already exists, skipping
+CREATE INDEX
+NOTICE:  relation "idx_campuses_public" already exists, skipping
+CREATE INDEX
+DO
+DROP TABLE
+CREATE TABLE
+TRUNCATE TABLE
+Staging campuses...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 54
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Pruning campuses missing from this snapshot...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+DELETE 0
+Upserting campuses...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+ inserted | updated 
+----------+---------
+        0 |      54
+(1 row)
+
+TRUNCATE TABLE
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+Campuses: total=54, recently_ingested=54
+Campuses sync complete.
+[2025-12-14T03:55:45Z] ✅ campuses loaded completed (4s)
+
+[2025-12-14T03:55:45Z] ► Loading table 05/06/07: projects + campus_projects + project_sessions...
+Fetching projects...
+[2025-12-14T03:55:45Z] Starting fetch: per_page=100
+Fetching cursus 21 projects page 1...
+  -> 100 items
+Fetching cursus 21 projects page 2...
+  -> 100 items
+Fetching cursus 21 projects page 3...
+  -> 100 items
+Fetching cursus 21 projects page 4...
+  -> 100 items
+Fetching cursus 21 projects page 5...
+  -> 100 items
+Fetching cursus 21 projects page 6...
+  -> 33 items
+Last page reached.
+Merging pages into /srv/42_Network/repo/exports/05_projects/raw_all.json
+Done. Merged count: 533
+Building project_sessions export...
+Building campus_projects export...
+Building normalized projects export...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+NOTICE:  relation "projects" already exists, skipping
+CREATE TABLE
+CREATE INDEX
+NOTICE:  relation "idx_projects_slug" already exists, skipping
 NOTICE:  relation "idx_projects_parent_id" already exists, skipping
 CREATE INDEX
 NOTICE:  column "difficulty" of relation "projects" already exists, skipping
@@ -490,12 +2235,12 @@ CREATE TABLE
 NOTICE:  relation "campus_projects" already exists, skipping
 NOTICE:  relation "idx_campus_projects_project" already exists, skipping
 CREATE INDEX
-NOTICE:  relation "project_sessions" already exists, skipping
 CREATE TABLE
+NOTICE:  relation "project_sessions" already exists, skipping
+CREATE INDEX
 NOTICE:  relation "idx_project_sessions_project_id" already exists, skipping
 CREATE INDEX
 NOTICE:  relation "idx_project_sessions_campus_id" already exists, skipping
-CREATE INDEX
 NOTICE:  relation "idx_project_sessions_cursus_id" already exists, skipping
 CREATE INDEX
 DO
@@ -521,14 +2266,20 @@ DROP TABLE
 CREATE TABLE
 TRUNCATE TABLE
 Staging into projects_delta...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 COPY 538
 Staging campus_projects...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 COPY 20937
 Staging project_sessions...
-COPY 7287
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+COPY 7288
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 Pruning projects missing from this snapshot...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 DELETE 0
 Upserting projects...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
  inserted | updated 
 ----------+---------
        19 |     519
@@ -536,73 +2287,87 @@ Upserting projects...
 
 TRUNCATE TABLE
 Syncing campus_projects...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 DELETE 0
 DELETE 0
 INSERT 0 20937
 DELETE 19
 TRUNCATE TABLE
-INSERT 0 7287
+INSERT 0 7288
 DELETE 31
 TRUNCATE TABLE
 Projects sync complete.
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 Projects: total=519, recently_ingested=519
 Campus projects: total=20937, recently_ingested=20937
-Project sessions: total=7256, recently_ingested=7256
-[2025-12-12T19:18:02Z] ✅ projects + linked tables loaded
+Project sessions: total=7257, recently_ingested=7257
+[2025-12-14T03:57:05Z] ✅ projects + links loaded completed (80s)
 
-[2025-12-12T19:18:02Z] ► Loading table 08: coalitions...
-[2025-12-12T19:18:02Z] ====== UPDATE COALITIONS START ======
+[2025-12-14T03:57:05Z] ► Loading table 08: coalitions...
+[2025-12-14T03:57:05Z] ====== UPDATE COALITIONS START ======
 Fetching coalitions...
-[2025-12-12T19:18:02Z] ====== FETCH COALITIONS START ======
-[2025-12-12T19:18:02Z] SKIP: Last fetch was 168 seconds ago (threshold: 3600s)
-[2025-12-12T19:18:02Z] Using cached coalitions fetch (skip due to recency).
-CREATE TABLE
+[2025-12-14T03:57:05Z] ====== FETCH COALITIONS START ======
+[2025-12-14T03:57:05Z] SKIP: Last fetch was 2176 seconds ago (threshold: 3600s)
+[2025-12-14T03:57:05Z] Using cached coalitions fetch (skip due to recency).
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 NOTICE:  relation "coalitions" already exists, skipping
+CREATE TABLE
 NOTICE:  constraint "coalitions_slug_key" of relation "coalitions" does not exist, skipping
 ALTER TABLE
+CREATE INDEX
 NOTICE:  relation "idx_coalitions_slug" already exists, skipping
-CREATE INDEX
-CREATE INDEX
 NOTICE:  relation "idx_coalitions_user_id" already exists, skipping
-NOTICE:  relation "idx_coalitions_score" already exists, skipping
 CREATE INDEX
+CREATE INDEX
+NOTICE:  relation "idx_coalitions_score" already exists, skipping
 DROP TABLE
 CREATE TABLE
 TRUNCATE TABLE
 Staging coalitions...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 COPY 350
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 Pruning coalitions missing from this snapshot...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
 DELETE 0
 Upserting coalitions...
+WARNING:  database "api42" has no actual collation version, but a version was recorded
  inserted | updated 
 ----------+---------
         0 |     350
 (1 row)
 
 TRUNCATE TABLE
-[2025-12-12T19:18:05Z] Coalitions: total=350, recently_ingested=350
-[2025-12-12T19:18:06Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
-[2025-12-12T19:18:06Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
-[2025-12-12T19:18:06Z] 
-[2025-12-12T19:18:06Z] ✅ coalitions loaded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+WARNING:  database "api42" has no actual collation version, but a version was recorded
+[2025-12-14T03:57:09Z] Coalitions: total=350, recently_ingested=350
+[2025-12-14T03:57:09Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
+[2025-12-14T03:57:09Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
+[2025-12-14T03:57:09Z] 
+[2025-12-14T03:57:09Z] ✅ coalitions loaded completed (4s)
 
-[2025-12-12T19:18:06Z] ════════════════════════════════════════════════════════════
-[2025-12-12T19:18:06Z] PIPELINE COMPLETE
-[2025-12-12T19:18:06Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:57:09Z] ════════════════════════════════════════════════════════════
+[2025-12-14T03:57:09Z] PIPELINE COMPLETE
+[2025-12-14T03:57:09Z] ════════════════════════════════════════════════════════════
 
 ═══════════════════════════════════════════════════════════
 EXECUTION SUMMARY
 ═══════════════════════════════════════════════════════════
 
 TIMING:
-  Fetch Phase:    151 seconds
+  Fetch Phase:    0 seconds
   Load Phase:     95 seconds
   ─────────────────────────────────
-  Total Time:     247 seconds (~4m 7s)
+  Total Time:     95 seconds (~1m 35s)
 
 DATA LOADED:
   Tables:         6/6 loaded successfully
-  Records:        32425 across all tables
+  Records:        29168 across all tables
   Status:         ✅ SUCCESS
 
 TABLES:
@@ -625,4 +2390,4 @@ NEXT STEPS:
   • Check logs for details: /srv/42_Network/repo/logs/update_cursus_21_core.log
 
 ═══════════════════════════════════════════════════════════
-[2025-12-12T19:18:06Z] ✅ PIPELINE COMPLETE - All tables loaded successfully
+[2025-12-14T03:57:09Z] ✅ PIPELINE COMPLETE - All tables loaded successfully

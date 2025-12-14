@@ -1,7 +1,20 @@
 .oauth_config
 .oauth_state
+.api_token
+
 # Local data volumes
 /data/postgres/
 data/postgres/
 exports/
-logs/42_token_refresh.log
+logs/
+
+# Cleanup archives
+.cleanup/
+cleanup/
+
+# Documentation archives (historical reference only)
+docs/_archive/
+
+# Secrets
+.env.local
+.env.*.local

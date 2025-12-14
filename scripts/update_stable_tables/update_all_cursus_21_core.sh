@@ -11,6 +11,7 @@ ROOT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
 LOG_DIR="$ROOT_DIR/logs"
 LOG_FILE="$LOG_DIR/update_cursus_21_core.log"
 FORCE_FLAG=${1:-}
+SKIP_FETCH="${SKIP_FETCH:-0}"
 
 mkdir -p "$LOG_DIR"
 
@@ -41,6 +42,22 @@ log_success() {
   echo "[$ts] ✅ $*" | tee -a "$LOG_FILE"
 }
 
+run_timed() {
+  local label="$1"; shift
+  local start=$(date +%s)
+  if "$@" >> "$LOG_FILE" 2>&1; then
+    local end=$(date +%s)
+    local duration=$((end - start))
+    log_success "$label completed (${duration}s)"
+    return 0
+  else
+    local end=$(date +%s)
+    local duration=$((end - start))
+    log_error "$label failed (${duration}s)"
+    return 1
+  fi
+}
+
 # Track timing
 PIPELINE_START=$(date +%s)
 FETCH_START=0
@@ -51,6 +68,7 @@ LOAD_END=0
 log_section "CURSUS 21 CORE DATA PIPELINE START"
 log "Mode: ${FORCE_FLAG:---normal (respect cache)}"
 log "Log: $LOG_FILE"
+log "Skip fetch phase: ${SKIP_FETCH}"
 
 # Step 1: Validate environment
 log_step "Validating environment..."
@@ -80,12 +98,12 @@ log_success "All scripts found"
 log_section "PHASE 1: FETCH FROM API"
 FETCH_START=$(date +%s)
 
-log_step "Fetching Cursus 21 core metadata (cursus, campuses, projects, coalitions only)..."
-if bash "$ROOT_DIR/scripts/helpers/fetch_cursus_21_core_metadata.sh" $FORCE_FLAG >> "$LOG_FILE" 2>&1; then
-  log_success "Fetch phase complete"
+if [[ "$SKIP_FETCH" == "1" ]]; then
+  log_step "Skipping fetch phase (SKIP_FETCH=1) - using existing exports/"
+  log_success "Fetch phase skipped"
 else
-  log_error "Fetch phase failed"
-  exit 1
+  log_step "Fetching Cursus 21 core metadata (cursus, campuses, projects, coalitions only)..."
+  run_timed "Fetch phase" bash "$ROOT_DIR/scripts/helpers/fetch_cursus_21_core_metadata.sh" $FORCE_FLAG || exit 1
 fi
 
 FETCH_END=$(date +%s)
@@ -135,43 +153,23 @@ load_errors=0
 
 # 4.1 Load cursus
 log_step "Loading table 01: cursus..."
-if bash "$ROOT_DIR/scripts/update_stable_tables/update_cursus.sh" $FORCE_FLAG >> "$LOG_FILE" 2>&1; then
-  log_success "cursus loaded"
-  load_count=$(( load_count + 1 ))
-else
-  log_error "cursus load failed"
-  load_errors=$(( load_errors + 1 ))
-fi
+run_timed "cursus loaded" bash "$ROOT_DIR/scripts/update_stable_tables/update_cursus.sh" $FORCE_FLAG || load_errors=$(( load_errors + 1 ))
+load_count=$(( load_count + 1 ))
 
 # 4.2 Load campuses
 log_step "Loading table 02: campuses..."
-if bash "$ROOT_DIR/scripts/update_stable_tables/update_campuses.sh" $FORCE_FLAG >> "$LOG_FILE" 2>&1; then
-  log_success "campuses loaded"
-  load_count=$(( load_count + 1 ))
-else
-  log_error "campuses load failed"
-  load_errors=$(( load_errors + 1 ))
-fi
+run_timed "campuses loaded" bash "$ROOT_DIR/scripts/update_stable_tables/update_campuses.sh" $FORCE_FLAG || load_errors=$(( load_errors + 1 ))
+load_count=$(( load_count + 1 ))
 
 # 4.3 Load projects (includes campus_projects + project_sessions)
 log_step "Loading table 05/06/07: projects + campus_projects + project_sessions..."
-if bash "$ROOT_DIR/scripts/update_stable_tables/update_projects.sh" $FORCE_FLAG >> "$LOG_FILE" 2>&1; then
-  log_success "projects + linked tables loaded"
-  load_count=$(( load_count + 3 ))
-else
-  log_error "projects load failed"
-  load_errors=$(( load_errors + 3 ))
-fi
+run_timed "projects + links loaded" bash "$ROOT_DIR/scripts/update_stable_tables/update_projects.sh" $FORCE_FLAG || load_errors=$(( load_errors + 3 ))
+load_count=$(( load_count + 3 ))
 
 # 4.4 Load coalitions
 log_step "Loading table 08: coalitions..."
-if bash "$ROOT_DIR/scripts/update_stable_tables/update_coalitions.sh" $FORCE_FLAG >> "$LOG_FILE" 2>&1; then
-  log_success "coalitions loaded"
-  load_count=$(( load_count + 1 ))
-else
-  log_error "coalitions load failed"
-  load_errors=$(( load_errors + 1 ))
-fi
+run_timed "coalitions loaded" bash "$ROOT_DIR/scripts/update_stable_tables/update_coalitions.sh" $FORCE_FLAG || load_errors=$(( load_errors + 1 ))
+load_count=$(( load_count + 1 ))
 
 LOAD_END=$(date +%s)
 LOAD_DURATION=$(( LOAD_END - LOAD_START ))

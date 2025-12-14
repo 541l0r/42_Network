@@ -1,89 +1,36 @@
-[2025-12-12T09:02:03Z] ====== UPDATE COALITIONS START ======
-[2025-12-12T09:02:03Z] Using cached coalitions fetch (skip due to recency).
-[2025-12-12T09:02:15Z] ====== UPDATE COALITIONS START ======
-[2025-12-12T09:02:15Z] Using cached coalitions fetch (skip due to recency).
-[2025-12-12T09:02:18Z] Coalitions: total=0, recently_ingested=0
-[2025-12-12T09:02:18Z] ====== UPDATE COALITIONS COMPLETE (3s) ======
-[2025-12-12T09:02:18Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
-[2025-12-12T09:02:18Z] 
-[2025-12-12T09:02:36Z] ====== UPDATE COALITIONS START ======
-[2025-12-12T09:02:36Z] Using cached coalitions fetch (skip due to recency).
-[2025-12-12T09:02:40Z] Coalitions: total=1, recently_ingested=1
-[2025-12-12T09:02:40Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
-[2025-12-12T09:02:40Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
-[2025-12-12T09:02:40Z] 
-[2025-12-12T12:28:01Z] ====== UPDATE COALITIONS START ======
-[2025-12-12T12:28:01Z] Using cached coalitions fetch (skip due to recency).
-[2025-12-12T12:28:01Z] ERROR: No coalitions data found at /srv/42_Network/repo/exports/01_coalitions/all.json
-[2025-12-12T12:28:15Z] ====== UPDATE COALITIONS START ======
-[2025-12-12T12:28:15Z] Using cached coalitions fetch (skip due to recency).
-[2025-12-12T12:28:18Z] Coalitions: total=1, recently_ingested=1
-[2025-12-12T12:28:18Z] ====== UPDATE COALITIONS COMPLETE (3s) ======
-[2025-12-12T12:28:18Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
-[2025-12-12T12:28:18Z] 
-[2025-12-12T12:44:26Z] ====== UPDATE COALITIONS START ======
-[2025-12-12T12:44:26Z] Using cached coalitions fetch (skip due to recency).
-[2025-12-12T12:44:29Z] Coalitions: total=1, recently_ingested=1
-[2025-12-12T12:44:29Z] ====== UPDATE COALITIONS COMPLETE (3s) ======
-[2025-12-12T12:44:29Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
-[2025-12-12T12:44:29Z] 
-[2025-12-12T12:45:10Z] ====== UPDATE COALITIONS START ======
-[2025-12-12T12:45:10Z] Using cached coalitions fetch (skip due to recency).
-[2025-12-12T12:45:13Z] Coalitions: total=1, recently_ingested=1
-[2025-12-12T12:45:13Z] ====== UPDATE COALITIONS COMPLETE (3s) ======
-[2025-12-12T12:45:13Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
-[2025-12-12T12:45:13Z] 
-[2025-12-12T12:52:20Z] ====== UPDATE COALITIONS START ======
-[2025-12-12T12:52:20Z] Using cached coalitions fetch (skip due to recency).
-[2025-12-12T12:52:24Z] Coalitions: total=1, recently_ingested=1
-[2025-12-12T12:52:24Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
-[2025-12-12T12:52:24Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
-[2025-12-12T12:52:24Z] 
-[2025-12-12T12:53:21Z] ====== UPDATE COALITIONS START ======
-[2025-12-12T12:53:21Z] Using cached coalitions fetch (skip due to recency).
-[2025-12-12T12:53:25Z] Coalitions: total=1, recently_ingested=1
-[2025-12-12T12:53:25Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
-[2025-12-12T12:53:25Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
-[2025-12-12T12:53:25Z] 
-[2025-12-12T13:02:03Z] ====== UPDATE COALITIONS START ======
-[2025-12-12T13:02:03Z] Using cached coalitions fetch (skip due to recency).
-[2025-12-12T13:02:07Z] Coalitions: total=1, recently_ingested=1
-[2025-12-12T13:02:07Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
-[2025-12-12T13:02:07Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
-[2025-12-12T13:02:07Z] 
-[2025-12-12T13:26:29Z] ====== UPDATE COALITIONS START ======
-[2025-12-12T13:26:29Z] Using cached coalitions fetch (skip due to recency).
-[2025-12-12T13:26:34Z] Coalitions: total=1, recently_ingested=1
-[2025-12-12T13:26:34Z] ====== UPDATE COALITIONS COMPLETE (5s) ======
-[2025-12-12T13:26:34Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
-[2025-12-12T13:26:34Z] 
-[2025-12-12T13:28:01Z] ====== UPDATE COALITIONS START ======
-[2025-12-12T13:28:01Z] Using cached coalitions fetch (skip due to recency).
-[2025-12-12T13:28:04Z] Coalitions: total=1, recently_ingested=0
-[2025-12-12T13:28:04Z] ====== UPDATE COALITIONS COMPLETE (3s) ======
-[2025-12-12T13:28:04Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
-[2025-12-12T13:28:04Z] 
-[2025-12-12T13:28:28Z] ====== UPDATE COALITIONS START ======
-[2025-12-12T13:28:28Z] Using cached coalitions fetch (skip due to recency).
-[2025-12-12T13:28:32Z] Coalitions: total=1, recently_ingested=0
-[2025-12-12T13:28:32Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
-[2025-12-12T13:28:32Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
-[2025-12-12T13:28:32Z] 
-[2025-12-12T13:29:28Z] ====== UPDATE COALITIONS START ======
-[2025-12-12T13:29:28Z] Using cached coalitions fetch (skip due to recency).
-[2025-12-12T13:29:33Z] Coalitions: total=350, recently_ingested=350
-[2025-12-12T13:29:33Z] ====== UPDATE COALITIONS COMPLETE (5s) ======
-[2025-12-12T13:29:33Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
-[2025-12-12T13:29:33Z] 
-[2025-12-12T19:10:05Z] ====== UPDATE COALITIONS START ======
-[2025-12-12T19:10:05Z] Using cached coalitions fetch (skip due to recency).
-[2025-12-12T19:10:09Z] Coalitions: total=350, recently_ingested=350
-[2025-12-12T19:10:09Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
-[2025-12-12T19:10:09Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
-[2025-12-12T19:10:09Z] 
-[2025-12-12T19:18:02Z] ====== UPDATE COALITIONS START ======
-[2025-12-12T19:18:02Z] Using cached coalitions fetch (skip due to recency).
-[2025-12-12T19:18:05Z] Coalitions: total=350, recently_ingested=350
-[2025-12-12T19:18:06Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
-[2025-12-12T19:18:06Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
-[2025-12-12T19:18:06Z] 
+[2025-12-14T02:30:33Z] ====== UPDATE COALITIONS START ======
+[2025-12-14T02:30:34Z] Using cached coalitions fetch (skip due to recency).
+[2025-12-14T02:30:38Z] Coalitions: total=350, recently_ingested=350
+[2025-12-14T02:30:38Z] ====== UPDATE COALITIONS COMPLETE (5s) ======
+[2025-12-14T02:30:38Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
+[2025-12-14T02:30:38Z] 
+[2025-12-14T03:27:18Z] ====== UPDATE COALITIONS START ======
+[2025-12-14T03:27:18Z] Using cached coalitions fetch (skip due to recency).
+[2025-12-14T03:27:22Z] Coalitions: total=350, recently_ingested=350
+[2025-12-14T03:27:22Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
+[2025-12-14T03:27:22Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
+[2025-12-14T03:27:22Z] 
+[2025-12-14T03:37:28Z] ====== UPDATE COALITIONS START ======
+[2025-12-14T03:37:28Z] Using cached coalitions fetch (skip due to recency).
+[2025-12-14T03:37:32Z] Coalitions: total=350, recently_ingested=350
+[2025-12-14T03:37:32Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
+[2025-12-14T03:37:32Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
+[2025-12-14T03:37:32Z] 
+[2025-12-14T03:44:51Z] ====== UPDATE COALITIONS START ======
+[2025-12-14T03:44:51Z] Using cached coalitions fetch (skip due to recency).
+[2025-12-14T03:44:55Z] Coalitions: total=350, recently_ingested=350
+[2025-12-14T03:44:55Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
+[2025-12-14T03:44:55Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
+[2025-12-14T03:44:55Z] 
+[2025-12-14T03:52:27Z] ====== UPDATE COALITIONS START ======
+[2025-12-14T03:52:27Z] Using cached coalitions fetch (skip due to recency).
+[2025-12-14T03:52:31Z] Coalitions: total=350, recently_ingested=350
+[2025-12-14T03:52:31Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
+[2025-12-14T03:52:31Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
+[2025-12-14T03:52:31Z] 
+[2025-12-14T03:57:05Z] ====== UPDATE COALITIONS START ======
+[2025-12-14T03:57:05Z] Using cached coalitions fetch (skip due to recency).
+[2025-12-14T03:57:09Z] Coalitions: total=350, recently_ingested=350
+[2025-12-14T03:57:09Z] ====== UPDATE COALITIONS COMPLETE (4s) ======
+[2025-12-14T03:57:09Z] Log: /srv/42_Network/repo/logs/update_coalitions.log
+[2025-12-14T03:57:09Z] 

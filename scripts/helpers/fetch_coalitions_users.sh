@@ -59,6 +59,8 @@ total_kb=0
 api_hits=0
 coalition_count=0
 
+log "Starting fetch: per_page=100"
+
 log "Reading coalition list..."
 coalition_list_tmp=$(mktemp)
 jq -r '.[].id' "$coalitions_export" > "$coalition_list_tmp"

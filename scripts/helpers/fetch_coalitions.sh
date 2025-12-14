@@ -44,6 +44,9 @@ if [[ -f "$STAMP_FILE" ]]; then
 fi
 
 rm -f "$EXPORT_DIR"/page_*.json
+
+log "Starting fetch: per_page=100"
+
 page=1
 raw_total=0
 filtered_total=0
@@ -93,6 +96,10 @@ log "Total: $raw_total coalitions in ${total_kb}KB across $page pages, $api_hits
 merged_json="$EXPORT_DIR/all.json"
 jq -s 'add' "$EXPORT_DIR"/page_*.json > "$merged_json"
 log "Exported to $merged_json"
+
+# Clean up page files after successful merge
+rm -f "$EXPORT_DIR"/page_*.json
+log "Cleaned up page files"
 
 # Record fetch timestamp
 EPOCH=$(date +%s)

@@ -48,6 +48,7 @@ if [[ -f "$STAMP_FILE" ]] && (( ! FORCE_FETCH )); then
 fi
 
 log "====== FETCH PROJECT_USERS: CAMPUS $CAMPUS_ID, CURSUS $CURSUS_ID START ======"
+log "Starting fetch: per_page=$PER_PAGE"
 START_TIME=$(date +%s)
 
 rm -f "$EXPORT_DIR"/page_*.json

@@ -32,6 +32,9 @@ if [[ -f "$STAMP_FILE" ]]; then
 fi
 
 rm -f "$EXPORT_DIR"/page_*.json
+
+echo "[$(date -u +'%Y-%m-%dT%H:%M:%SZ')] Starting fetch: per_page=100"
+
 page=1
 raw_total=0
 filtered_total=0

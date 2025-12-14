@@ -47,6 +47,7 @@ if [[ -f "$STAMP_FILE" ]] && (( ! FORCE_FETCH )); then
 fi
 
 log "====== FETCH CAMPUS ACHIEVEMENTS: CAMPUS $CAMPUS_ID START ======"
+log "Starting fetch: per_page=$PER_PAGE"
 START_TIME=$(date +%s)
 
 mkdir -p "$EXPORT_DIR/campus_${CAMPUS_ID}"
