@@ -14,6 +14,9 @@
 
 set -e
 CAMPUS_ID="${CAMPUS_ID:-1}"
+# Honor global rate-limit setting if present
+RATE_LIMIT_SECONDS="${ORCHESTRA_RATE_LIMIT_SECONDS:-1.0}"
+last_call_ts=0
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 LOG_FILE="$ROOT_DIR/logs/fetch_metadata_$(date +%s).log"
@@ -44,6 +47,21 @@ log ""
 # ============================================================================ #
 #  Token Management
 # ============================================================================ #
+
+ensure_json() {
+  local file="$1"
+  local label="$2"
+  local snippet
+  if jq empty "$file" >/dev/null 2>&1; then
+    return 0
+  fi
+  snippet=$(head -c 200 "$file" 2>/dev/null | tr '\n' ' ')
+  log "  ❌ Invalid JSON for ${label}"
+  if [ -n "$snippet" ]; then
+    log "     Body head: ${snippet}"
+  fi
+  return 1
+}
 
 load_token() {
   if [ ! -f "$ROOT_DIR/.oauth_state" ]; then
@@ -93,6 +111,21 @@ refresh_token_if_needed() {
 load_token
 refresh_token_if_needed
 
+respect_rate_limit() {
+  local now
+  now=$(date +%s.%N)
+  if (( $(echo "$last_call_ts > 0" | bc -l) )); then
+    local elapsed
+    elapsed=$(echo "$now - $last_call_ts" | bc -l)
+    local sleep_needed
+    sleep_needed=$(echo "$RATE_LIMIT_SECONDS - $elapsed" | bc -l)
+    if (( $(echo "$sleep_needed > 0" | bc -l) )); then
+      sleep "$sleep_needed"
+    fi
+  fi
+  last_call_ts=$(date +%s.%N)
+}
+
 mkdir -p "$ROOT_DIR/exports"/{01_cursus,02_campus,03_achievements,04_campus_achievements,05_projects,06_campus_projects,07_project_sessions,08_coalitions}
 
 log ""
@@ -101,31 +134,75 @@ log "Start UTC: $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
 
 # Cursus 21 (single object, not an array)
 log "📥 Fetching: /cursus/21"
-curl -s --max-time 30 \
-  -H "Authorization: Bearer $ACCESS_TOKEN" \
-  "https://api.intra.42.fr/v2/cursus/21" \
-  > "$ROOT_DIR/exports/01_cursus/all.json.tmp" 2>/dev/null
+respect_rate_limit
+attempt=1
+max_attempts=3
+while true; do
+  code=$(curl -s -w "%{http_code}" --max-time 30 \
+    -H "Authorization: Bearer $ACCESS_TOKEN" \
+    -o "$ROOT_DIR/exports/01_cursus/all.json.tmp" \
+    "https://api.intra.42.fr/v2/cursus/21")
 
-if [ -s "$ROOT_DIR/exports/01_cursus/all.json.tmp" ]; then
+  if [ "$code" = "200" ]; then
+    break
+  fi
+
+  if [ "$code" = "429" ] && [ $attempt -lt $max_attempts ]; then
+    log "  ❌ Failed to fetch cursus 21 (HTTP 429), retrying in ${RATE_LIMIT_SECONDS}s ($attempt/$max_attempts)"
+    attempt=$((attempt + 1))
+    sleep "$RATE_LIMIT_SECONDS"
+    continue
+  fi
+
+  log "  ❌ Failed to fetch cursus 21 (HTTP $code)"
+  if [ -s "$ROOT_DIR/exports/01_cursus/all.json.tmp" ]; then
+    snippet=$(head -c 200 "$ROOT_DIR/exports/01_cursus/all.json.tmp" | tr '\n' ' ')
+    log "     Body head: ${snippet}"
+  fi
+  exit 1
+done
+
+if ensure_json "$ROOT_DIR/exports/01_cursus/all.json.tmp" "cursus/21"; then
   jq '[.]' "$ROOT_DIR/exports/01_cursus/all.json.tmp" > "$ROOT_DIR/exports/01_cursus/all.json"
   rm -f "$ROOT_DIR/exports/01_cursus/all.json.tmp"
   log "  ✅ 1 record saved (cursus 21)"
 else
-  log "  ❌ Failed to fetch cursus 21"
+  exit 1
 fi
-sleep 1
 
 # Campuses: active=true, public=true, filter by users_count > 1
-  log "📥 Fetching: /campus (active, public, users_count > 1)"
-  page=1
-  
+log "📥 Fetching: /campus (active, public, users_count > 1)"
+page=1
+
+while true; do
+  respect_rate_limit
+  attempt=1
+  max_attempts=3
   while true; do
-    # log line emitted after count is known (single line)
-    curl -s --max-time 30 \
-    -H "Authorization: Bearer $ACCESS_TOKEN" \
-    "https://api.intra.42.fr/v2/campus?filter%5Bactive%5D=true&filter%5Bpublic%5D=true&per_page=100&page=${page}" \
-    > "$ROOT_DIR/exports/02_campus/page_${page}.json.tmp" 2>/dev/null
-  
+    code=$(curl -s -w "%{http_code}" --max-time 30 \
+      -H "Authorization: Bearer $ACCESS_TOKEN" \
+      -o "$ROOT_DIR/exports/02_campus/page_${page}.json.tmp" \
+      "https://api.intra.42.fr/v2/campus?filter%5Bactive%5D=true&filter%5Bpublic%5D=true&per_page=100&page=${page}")
+
+    if [ "$code" = "200" ]; then
+      break
+    fi
+
+    if [ "$code" = "429" ] && [ $attempt -lt $max_attempts ]; then
+      log "  ❌ Failed on campus page $page (HTTP 429), retrying in ${RATE_LIMIT_SECONDS}s ($attempt/$max_attempts)"
+      attempt=$((attempt + 1))
+      sleep "$RATE_LIMIT_SECONDS"
+      continue
+    fi
+
+    log "  ❌ Failed on campus page $page (HTTP $code)"
+    if [ -s "$ROOT_DIR/exports/02_campus/page_${page}.json.tmp" ]; then
+      snippet=$(head -c 200 "$ROOT_DIR/exports/02_campus/page_${page}.json.tmp" | tr '\n' ' ')
+      log "     Body head: ${snippet}"
+    fi
+    exit 1
+  done
+
   if [ -s "$ROOT_DIR/exports/02_campus/page_${page}.json.tmp" ]; then
     # Filter: users_count > 1
     jq '[.[] | select((.users_count // 0) > 1)]' "$ROOT_DIR/exports/02_campus/page_${page}.json.tmp" \
@@ -140,11 +217,10 @@ sleep 1
     fi
   else
     log "  ❌ Failed on page $page"
-    break
+    exit 1
   fi
   
   page=$((page + 1))
-  sleep 1
 done
 
 # Merge all campus pages
@@ -154,19 +230,40 @@ if [ -f "$ROOT_DIR/exports/02_campus/page_1.json" ]; then
   total=$(jq 'length' "$ROOT_DIR/exports/02_campus/all.json")
   log "  ✅ $total campuses saved (filtered for users_count > 1)"
 fi
-sleep 1
 
 # Achievements for Cursus 21 (paginated)
-  log "📥 Fetching: /cursus/21/achievements (all pages)"
-  page=1
-  achievement_pages=0
+log "📥 Fetching: /cursus/21/achievements (all pages)"
+page=1
+achievement_pages=0
 
 while true; do
-  # single line per page after count
-  curl -s --max-time 30 \
-    -H "Authorization: Bearer $ACCESS_TOKEN" \
-    "https://api.intra.42.fr/v2/cursus/21/achievements?per_page=100&page=${page}" \
-    > "$ROOT_DIR/exports/03_achievements/page_${page}.json.tmp" 2>/dev/null
+  respect_rate_limit
+  attempt=1
+  max_attempts=3
+  while true; do
+    code=$(curl -s -w "%{http_code}" --max-time 30 \
+      -H "Authorization: Bearer $ACCESS_TOKEN" \
+      -o "$ROOT_DIR/exports/03_achievements/page_${page}.json.tmp" \
+      "https://api.intra.42.fr/v2/cursus/21/achievements?per_page=100&page=${page}")
+
+    if [ "$code" = "200" ]; then
+      break
+    fi
+
+    if [ "$code" = "429" ] && [ $attempt -lt $max_attempts ]; then
+      log "  ❌ Failed on achievements page $page (HTTP 429), retrying in ${RATE_LIMIT_SECONDS}s ($attempt/$max_attempts)"
+      attempt=$((attempt + 1))
+      sleep "$RATE_LIMIT_SECONDS"
+      continue
+    fi
+
+    log "  ❌ Failed on achievements page $page (HTTP $code)"
+    if [ -s "$ROOT_DIR/exports/03_achievements/page_${page}.json.tmp" ]; then
+      snippet=$(head -c 200 "$ROOT_DIR/exports/03_achievements/page_${page}.json.tmp" | tr '\n' ' ')
+      log "     Body head: ${snippet}"
+    fi
+    exit 1
+  done
 
   if [ -s "$ROOT_DIR/exports/03_achievements/page_${page}.json.tmp" ]; then
     mv "$ROOT_DIR/exports/03_achievements/page_${page}.json.tmp" "$ROOT_DIR/exports/03_achievements/page_${page}.json"
@@ -183,7 +280,6 @@ while true; do
   fi
   
   page=$((page + 1))
-  sleep 1
 done
 
 # Merge all achievement pages
@@ -192,6 +288,10 @@ if [ -f "$ROOT_DIR/exports/03_achievements/page_1.json" ]; then
   rm -f "$ROOT_DIR/exports/03_achievements"/page_*.json
   total=$(jq 'length' "$ROOT_DIR/exports/03_achievements/all.json")
   log "  ✅ $total achievements saved ($achievement_pages pages)"
+  date +%s > "$ROOT_DIR/exports/03_achievements/.last_fetch_epoch"
+  if [[ -d "$ROOT_DIR/exports/04_campus_achievements" ]]; then
+    date +%s > "$ROOT_DIR/exports/04_campus_achievements/.last_fetch_epoch"
+  fi
 fi
 
 log ""

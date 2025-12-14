@@ -9,6 +9,8 @@ HELPER="$ROOT_DIR/scripts/helpers/fetch_campus_achievements.sh"
 EXPORT_DIR="$ROOT_DIR/exports/04_campus_achievements"
 MERGED_JSON="$EXPORT_DIR/raw_all.json"
 LINKS_JSON="$EXPORT_DIR/all.json"
+ACH_EPOCH_FILE="$ROOT_DIR/exports/03_achievements/.last_fetch_epoch"
+ACH_CAMPUS_EPOCH_FILE="$ROOT_DIR/exports/04_campus_achievements/.last_fetch_epoch"
 
 mkdir -p "$EXPORT_DIR"
 
@@ -57,6 +59,18 @@ if ! command -v jq >/dev/null 2>&1; then
   exit 1
 fi
 
+# Use the fetch timestamp if available, otherwise now()
+ingest_epoch=""
+if [[ -s "$ACH_CAMPUS_EPOCH_FILE" ]]; then
+  ingest_epoch=$(cat "$ACH_CAMPUS_EPOCH_FILE" 2>/dev/null || true)
+elif [[ -s "$ACH_EPOCH_FILE" ]]; then
+  ingest_epoch=$(cat "$ACH_EPOCH_FILE" 2>/dev/null || true)
+fi
+if [[ -z "$ingest_epoch" ]]; then
+  ingest_epoch=$(date +%s)
+fi
+ingest_ts_sql="TO_TIMESTAMP($ingest_epoch)"
+
 # Build normalized achievements on the fly (not persisted).
 ACHIEVEMENTS_JSON=$(mktemp)
 LINKS_JSON="${LINKS_JSON:-$(mktemp)}"
@@ -103,11 +117,10 @@ jq -r '.[] | [
 ] | @csv' "$ACHIEVEMENTS_JSON" \
   | run_psql -c "\copy achievements_delta (id,name,description,tier,kind,visible,image,nbr_of_success,users_url,parent_id,title) FROM STDIN WITH (FORMAT csv, NULL '')"
 
+# Stamp ingestion time
+run_psql -c "UPDATE achievements_delta SET ingested_at = ${ingest_ts_sql};"
+
 delta_count=$(run_psql -t -c "SELECT COUNT(*) FROM achievements_delta")
-if [ "$delta_count" = "0" ]; then
-  echo "Skip upsert: No changes in achievements_delta (using cached data)"
-  exit 0
-fi
 
 echo "Upserting achievements..."
 run_psql <<'SQL'
@@ -135,6 +148,9 @@ FROM upsert;
 TRUNCATE achievements_delta;
 SQL
 
+# Force-set ingested_at to fetch timestamp to ensure freshness reflects the latest sync
+run_psql -c "UPDATE achievements SET ingested_at = ${ingest_ts_sql};"
+
 run_psql <<'SQL'
 DROP TABLE IF EXISTS campus_achievements_delta;
 CREATE TABLE campus_achievements_delta (LIKE campus_achievements INCLUDING DEFAULTS);
@@ -148,11 +164,9 @@ jq -r '.[] | select(.id != null and .campus_id != null) | [
 ] | @csv' "$MERGED_JSON" \
   | run_psql -c "\copy campus_achievements_delta (campus_id,achievement_id) FROM STDIN WITH (FORMAT csv, NULL '')"
 
+run_psql -c "UPDATE campus_achievements_delta SET ingested_at = ${ingest_ts_sql};"
+
 delta_count=$(run_psql -t -c "SELECT COUNT(*) FROM campus_achievements_delta")
-if [ "$delta_count" = "0" ]; then
-  echo "Skip upsert: No changes in campus_achievements_delta (using cached data)"
-  exit 0
-fi
 
 echo "Upserting campus achievements..."
 run_psql <<'SQL'
@@ -169,6 +183,9 @@ SELECT
 FROM upsert;
 TRUNCATE campus_achievements_delta;
 SQL
+
+# Force-set ingested_at to fetch timestamp for campus achievements
+run_psql -c "UPDATE campus_achievements SET ingested_at = ${ingest_ts_sql};"
 
 ach_count=$(run_psql -Atc "SELECT count(*) FROM achievements;")
 ach_recent=$(run_psql -Atc "SELECT count(*) FROM achievements WHERE ingested_at >= now() - interval '1 minute';")

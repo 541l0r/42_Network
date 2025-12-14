@@ -22,3 +22,7 @@ docs/_archive/
 # Secrets
 .env.local
 .env.*.local
+
+# Metadata snapshots (runtime artifacts)
+metadata_snapshot_*.json
+metadata_snapshot_latest.json

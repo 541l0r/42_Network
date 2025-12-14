@@ -90,53 +90,43 @@ log SUCCESS "Database connected"
 #  LOAD TO DELTA TABLE (STAGING)
 # ============================================================================ #
 
-log INFO "Loading JSON data into delta_users (staging)..."
+log INFO "Loading JSON data into delta_users (staging) via COPY..."
 
-# Create temporary SQL file for loading
-LOAD_SQL=$(mktemp)
-cat > "$LOAD_SQL" << 'EOSQL'
--- Truncate delta_users to start fresh
+# Prepare CSV for fast COPY
+CSV_FILE=$(mktemp)
+jq -r '.[] | [
+  (.id // 0),
+  (.login // ""),
+  (.email // ""),
+  (.first_name // ""),
+  (.last_name // ""),
+  (.usual_full_name // ""),
+  (.usual_first_name // ""),
+  (.usual_last_name // ""),
+  (.kind // ""),
+  (if .alumni then "t" else "f" end),
+  (if .active then "t" else "f" end),
+  (.image.url // ""),
+  (.image.link // ""),
+  (.phone // ""),
+  (.kind_id // 0),
+  (.created_at // ""),
+  (.updated_at // "")
+] | @csv' "$INPUT_FILE" > "$CSV_FILE"
+
+# Truncate + COPY into delta_users
+PGPASSWORD="$DB_PASSWORD" psql -h "$DB_HOST" -p "$DB_PORT" -U "$DB_USER" -d "$DB_NAME" <<'EOSQL' 2>&1 | tee -a "$LOG_FILE"
 TRUNCATE TABLE delta_users CASCADE;
-
--- Load JSON data
-INSERT INTO delta_users (
-  id, login, email, first_name, last_name, usual_full_name,
-  usual_first_name, usual_last_name, kind, alumni, active,
-  image_url, image_link, phone, kind_id, created_at, updated_at
-)
-SELECT 
-  data->>'id'::INT as id,
-  data->>'login' as login,
-  data->>'email' as email,
-  data->>'first_name' as first_name,
-  data->>'last_name' as last_name,
-  data->>'usual_full_name' as usual_full_name,
-  data->>'usual_first_name' as usual_first_name,
-  data->>'usual_last_name' as usual_last_name,
-  data->>'kind' as kind,
-  (data->>'alumni')::BOOLEAN as alumni,
-  (data->>'active')::BOOLEAN as active,
-  data->'image'->>'url' as image_url,
-  data->'image'->>'link' as image_link,
-  data->>'phone' as phone,
-  (data->>'kind_id')::INT as kind_id,
-  (data->>'created_at')::TIMESTAMPTZ as created_at,
-  (data->>'updated_at')::TIMESTAMPTZ as updated_at
-FROM json_array_elements(@json_data::JSONB) as data;
-
--- Log what was loaded
-SELECT COUNT(*) as delta_rows_loaded FROM delta_users;
 EOSQL
 
-# Load data with JSON parameter
 PGPASSWORD="$DB_PASSWORD" psql -h "$DB_HOST" -p "$DB_PORT" -U "$DB_USER" -d "$DB_NAME" \
-  --set json_data="$(cat "$INPUT_FILE")" \
-  -f "$LOAD_SQL" 2>&1 | tee -a "$LOG_FILE"
+  -c "\copy delta_users (id, login, email, first_name, last_name, usual_full_name, usual_first_name, usual_last_name, kind, alumni, active, image_url, image_link, phone, kind_id, created_at, updated_at) FROM '$CSV_FILE' WITH (FORMAT csv, NULL '', HEADER FALSE)" \
+  2>&1 | tee -a "$LOG_FILE"
 
 DELTA_COUNT=$(PGPASSWORD="$DB_PASSWORD" psql -h "$DB_HOST" -p "$DB_PORT" -U "$DB_USER" -d "$DB_NAME" -t -c "SELECT COUNT(*) FROM delta_users;")
 log SUCCESS "Loaded $DELTA_COUNT rows into delta_users"
 
-rm -f "$LOAD_SQL"
+rm -f "$CSV_FILE"
 
 # ============================================================================ #
 #  VALIDATE FOREIGN KEYS

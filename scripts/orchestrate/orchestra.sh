@@ -5,13 +5,11 @@
 #  Purpose: Coordinate fetching and loading of campus-specific user data
 #  
 #  Usage:
-#    CAMPUS_ID=76 bash scripts/orchestrate/orchestra.sh
-#    CAMPUS_ID=12 bash scripts/orchestrate/orchestra.sh --dry-run
+#    CAMPUS_ID=76 bash scripts/orchestrate/orchestra.sh [--full-cycle]
+#    (all other knobs live in scripts/config/orchestra.conf)
 #
 #  Environment variables:
 #    CAMPUS_ID        - Campus to sync (default: ORCHESTRA_DEFAULT_CAMPUS_ID or 76)
-#    POLL_INTERVAL    - Milliseconds between syncs (default: 60000 = 1 min)
-#    --dry-run        - Show what would be fetched without saving
 #    --full-cycle     - Force fetch + load regardless of last run time
 #
 #  Data flow:
@@ -49,6 +47,7 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 SCRIPTS_DIR="$ROOT_DIR/scripts"
 LOGS_DIR="$ROOT_DIR/logs"
 EXPORTS_DIR="$ROOT_DIR/exports"
+BACKLOG_DIR="$ROOT_DIR/.backlog"
 ENV_FILE="$ROOT_DIR/.env"
 CONFIG_FILE="$SCRIPTS_DIR/config/orchestra.conf"
 
@@ -71,7 +70,14 @@ fi
 DEFAULT_CAMPUS_ID="${ORCHESTRA_DEFAULT_CAMPUS_ID:-76}"
 BOOTSTRAP_MODE="${ORCHESTRA_DB_BOOTSTRAP_MODE:-empty}"   # raw | empty
 RAW_PATH="${ORCHESTRA_DB_RAW_PATH:-/srv/42_Network/phase2_users_v2_all.json}"
-SKIP_METADATA_FETCH="${ORCHESTRA_SKIP_METADATA_FETCH:-0}"
+METADATA_FETCH="${ORCHESTRA_METADATA_FETCH:-1}"
+METADATA_SNAPSHOT="${ORCHESTRA_METADATA_SNAPSHOT:-0}"
+METADATA_SNAPSHOT_PATH="${ORCHESTRA_METADATA_SNAPSHOT_PATH:-$ROOT_DIR/metadata_snapshot_latest.json}"
+METADATA_FALLBACK_PATH="${ORCHESTRA_METADATA_FALLBACK_PATH:-$METADATA_SNAPSHOT_PATH}"
+START_WORKER="${ORCHESTRA_START_WORKER:-1}"
+DB_CHECK_BYPASS="${ORCHESTRA_DB_CHECK_BYPASS:-0}"
+RATE_LIMIT_SECONDS="${ORCHESTRA_RATE_LIMIT_SECONDS:-1.0}"
+API_HEALTH_CHECK="${ORCHESTRA_API_HEALTH_CHECK:-1}"
 
 # Fallbacks if values are present but empty
 if [[ -z "$BOOTSTRAP_MODE" ]]; then
@@ -80,8 +86,17 @@ fi
 if [[ -z "$RAW_PATH" ]]; then
   RAW_PATH="/srv/42_Network/phase2_users_v2_all.json"
 fi
-if [[ -z "$SKIP_METADATA_FETCH" ]]; then
-  SKIP_METADATA_FETCH="0"
+if [[ -z "$METADATA_FETCH" && -n "${ORCHESTRA_METADA_FETCH:-}" ]]; then
+  METADATA_FETCH="$ORCHESTRA_METADA_FETCH"
+fi
+if [[ -z "$METADATA_FETCH" ]]; then
+  METADATA_FETCH="1"
+fi
+if [[ -z "$START_WORKER" ]]; then
+  START_WORKER="1"
+fi
+if [[ -z "$API_HEALTH_CHECK" ]]; then
+  API_HEALTH_CHECK="1"
 fi
 
 # Validate root directory
@@ -128,15 +143,11 @@ frame() {
 #  CONFIGURATION & VALIDATION
 # ============================================================================ #
 
-# Parse arguments
-DRY_RUN=0
+# Parse arguments (no dry-run/test flags)
 FULL_CYCLE=0
-TEST_MODE=0
 while [[ $# -gt 0 ]]; do
   case "$1" in
-    --dry-run)      DRY_RUN=1 ;;
     --full-cycle)   FULL_CYCLE=1 ;;
-    --test)         TEST_MODE=1; DRY_RUN=1 ;;  # Test mode implies dry-run
     *)              log ERROR "Unknown argument: $1"; exit 1 ;;
   esac
   shift
@@ -146,59 +157,20 @@ done
 CAMPUS_ID="${CAMPUS_ID:-$DEFAULT_CAMPUS_ID}"
 CAMPUS_ID=$(echo "$CAMPUS_ID" | sed 's/"//g')  # Strip quotes
 
-# ============================================================================ #
-#  TEST MODE: Ensure environment is ready
-# ============================================================================ #
-
-if [[ $TEST_MODE -eq 1 ]]; then
-  log INFO "TEST MODE: Ensuring docker and database are ready..."
-  
-  if ! docker ps | grep -q transcendence_db; then
-    log INFO "Starting docker-compose..."
-    docker compose -f "$ROOT_DIR/docker-compose.yml" up -d
-    sleep 5
-  fi
-  
-  # Create delta_users table if it doesn't exist
-  DB_USER="${DB_USER:-api42}"
-  DB_NAME="${DB_NAME:-api42}"
-  if ! docker exec transcendence_db psql -U "$DB_USER" -d "$DB_NAME" -c "\dt delta_users" 2>/dev/null | grep -q delta_users; then
-    log INFO "Creating delta_users table..."
-    docker exec transcendence_db psql -U "$DB_USER" -d "$DB_NAME" << 'EOSQL'
-CREATE TABLE IF NOT EXISTS delta_users (
-  id SERIAL PRIMARY KEY,
-  user_id INTEGER UNIQUE NOT NULL,
-  email VARCHAR(255),
-  first_name VARCHAR(255),
-  last_name VARCHAR(255),
-  phone VARCHAR(20),
-  image_url TEXT,
-  displayname VARCHAR(255),
-  pool_month VARCHAR(50),
-  pool_year INTEGER,
-  location VARCHAR(255),
-  wallet INTEGER,
-  correction_point INTEGER,
-  level NUMERIC(5,2),
-  campus_id INTEGER NOT NULL,
-  cursus_id INTEGER NOT NULL,
-  created_at TIMESTAMP WITH TIME ZONE,
-  updated_at TIMESTAMP WITH TIME ZONE
-);
-EOSQL
-    log SUCCESS "delta_users table created"
-  fi
-fi
-
 frame "╔════════════════════════════════╗"
 frame "║ RUN INFO                       ║"
 frame "╚════════════════════════════════╝"
 frame "  Campus    : $CAMPUS_ID (default $DEFAULT_CAMPUS_ID)"
 frame "  Bootstrap : $BOOTSTRAP_MODE"
-frame "  Dry run   : $([[ $DRY_RUN -eq 1 ]] && echo 'YES' || echo 'NO')"
+frame "  Worker    : $([[ $START_WORKER -eq 1 ]] && echo 'YES' || echo 'NO')"
+frame "  Rate limit: ${RATE_LIMIT_SECONDS}s min gap"
+frame "  API check : $([[ $API_HEALTH_CHECK -eq 1 ]] && echo 'YES' || echo 'NO')"
+frame "  DB check  : $([[ $DB_CHECK_BYPASS -eq 1 ]] && echo 'BYPASS' || echo 'RUN')"
 frame "  Log       : $LOG_FILE"
 frame "  Config    : $CONFIG_FILE"
-frame "  Metadata  : skip=$ORCHESTRA_SKIP_METADATA_FETCH"
+frame "  Metadata  : fetch=$([[ $METADATA_FETCH -eq 1 ]] && echo 'YES' || echo 'NO')"
+frame "  Meta snapshot: $([[ $METADATA_SNAPSHOT -eq 1 ]] && echo 'YES' || echo 'NO')"
+frame "  Meta fallback: ${METADATA_FALLBACK_PATH}"
 
 # Validate CAMPUS_ID is numeric
 if ! [[ "$CAMPUS_ID" =~ ^[0-9]+$ ]]; then
@@ -251,19 +223,32 @@ docker_status() {
 }
 
 check_api_health() {
-  local start=$(date +%s)
-  local code
-  code=$(curl -s -o /dev/null -w "%{http_code}" \
-    -H "Authorization: Bearer $ACCESS_TOKEN" \
-    "https://api.intra.42.fr/v2/cursus/21")
-  local end=$(date +%s)
-  local duration=$((end - start))
-  if [[ "$code" == "200" ]]; then
-    log SUCCESS "API health OK (GET /v2/cursus/21 -> 200 in ${duration}s)"
-  else
+  local max_attempts=3
+  local attempt=1
+  while [[ $attempt -le $max_attempts ]]; do
+    sleep "$RATE_LIMIT_SECONDS"
+    local start=$(date +%s)
+    local code
+    code=$(curl -s -o /dev/null -w "%{http_code}" \
+      -H "Authorization: Bearer $ACCESS_TOKEN" \
+      "https://api.intra.42.fr/v2/cursus/21")
+    local end=$(date +%s)
+    local duration=$((end - start))
+
+    if [[ "$code" == "200" ]]; then
+      log SUCCESS "API health OK (GET /v2/cursus/21 -> 200 in ${duration}s)"
+      return 0
+    fi
+
+    if [[ "$code" == "429" && $attempt -lt $max_attempts ]]; then
+      log WARN "API health check 429, retrying in ${RATE_LIMIT_SECONDS}s (attempt $attempt/$max_attempts)"
+      attempt=$((attempt + 1))
+      continue
+    fi
+
     log ERROR "API health check failed (status=$code, duration=${duration}s)"
     return 1
-  fi
+  done
 }
 
 db_counts() {
@@ -272,7 +257,19 @@ db_counts() {
   frame "╔════════════════════════════════╗"
   frame "║ DB STATUS                      ║"
   frame "╚════════════════════════════════╝"
-  local tables=("users" "campuses" "projects" "coalitions" "achievements" "project_users" "campus_projects" "project_sessions")
+  local tables=(
+    "users"
+    "campuses"
+    "projects"
+    "coalitions"
+    "achievements"
+    "project_users"
+    "achievements_users"
+    "coalitions_users"
+    "campus_projects"
+    "campus_achievements"
+    "project_sessions"
+  )
   for tbl in "${tables[@]}"; do
     if docker exec transcendence_db psql -U "${DB_USER:-api42}" -d "${DB_NAME:-api42}" -t -c "SELECT COUNT(*) FROM ${tbl}" >/tmp/db_count.$$ 2>/dev/null; then
       local cnt
@@ -283,6 +280,81 @@ db_counts() {
     fi
     rm -f /tmp/db_count.$$
   done
+}
+
+run_db_check() {
+  frame ""
+  frame "╔════════════════════════════════╗"
+  frame "║ DB CHECK                       ║"
+  frame "╚════════════════════════════════╝"
+  local tmp_log
+  tmp_log=$(mktemp)
+  if bash "$SCRIPTS_DIR/check_db_integrity.sh" >"$tmp_log" 2>&1; then
+    while IFS= read -r line; do
+      log INFO "$line"
+    done < "$tmp_log"
+    log SUCCESS "DB integrity check completed"
+  else
+    while IFS= read -r line; do
+      log INFO "$line"
+    done < "$tmp_log"
+    log WARN "DB integrity check failed"
+  fi
+  cat "$tmp_log" >> "$LOG_FILE"
+  rm -f "$tmp_log"
+}
+
+prepare_backlog() {
+  mkdir -p "$BACKLOG_DIR"
+  local backlog_file="$BACKLOG_DIR/pending_users.txt"
+  : > "$backlog_file"
+  log INFO "Backlog file prepared (cleared): $backlog_file"
+}
+
+start_worker() {
+  frame ""
+  frame "╔════════════════════════════════╗"
+  frame "║ WORKER                         ║"
+  frame "╚════════════════════════════════╝"
+
+  if [[ "${START_WORKER}" != "1" ]]; then
+    log INFO "Worker start disabled (ORCHESTRA_START_WORKER=${START_WORKER})"
+    return 0
+  fi
+
+  prepare_backlog
+
+  # Ensure manager exists
+  if [[ ! -x "$SCRIPTS_DIR/backlog_worker_manager.sh" ]]; then
+    log ERROR "backlog_worker_manager.sh not found or not executable at $SCRIPTS_DIR/backlog_worker_manager.sh"
+    return 1
+  fi
+
+  # Show current status
+  local status_out
+  status_out=$(bash "$SCRIPTS_DIR/backlog_worker_manager.sh" status 2>&1 || true)
+  if [[ -n "$status_out" ]]; then
+    log INFO "$status_out"
+    if echo "$status_out" | grep -qi "not running"; then
+      :
+    elif echo "$status_out" | grep -qi "running"; then
+      return 0
+    fi
+  else
+    log WARN "Unable to read worker status"
+  fi
+
+  # Start via manager
+  if output=$(bash "$SCRIPTS_DIR/backlog_worker_manager.sh" start 2>&1); then
+    while IFS= read -r line; do
+      log INFO "$line"
+    done <<< "$output"
+  else
+    while IFS= read -r line; do
+      log WARN "$line"
+    done <<< "$output"
+    return 1
+  fi
 }
 
 refresh_token_now() {
@@ -363,16 +435,135 @@ validate_table_exists() {
 # ============================================================================ #
 
 ensure_metadata_exports() {
-  if [[ "$SKIP_METADATA_FETCH" == "1" ]]; then
-    log INFO "Metadata fetch skipped (ORCHESTRA_SKIP_METADATA_FETCH=1)"
-    return 0
-  fi
-  log INFO "Metadata fetch (independent of user bootstrap)"
-  if SKIP_TOKEN_REFRESH=1 bash "$SCRIPTS_DIR/orchestrate/fetch_metadata.sh" | tee -a "$LOG_FILE"; then
-    log SUCCESS "Metadata fetched to exports/ (see per-page logs above)"
+  local fetched=0
+  local fallback_used=0
+  local metadata_epoch=""
+
+  if [[ "$METADATA_FETCH" == "1" ]]; then
+    log INFO "Metadata fetch (independent of user bootstrap)"
+    if ( set -o pipefail; SKIP_TOKEN_REFRESH=1 bash "$SCRIPTS_DIR/orchestrate/fetch_metadata.sh" | tee -a "$LOG_FILE" ); then
+      log SUCCESS "Metadata fetched to exports/ (see per-page logs above)"
+      fetched=1
+      # Optional JSON snapshot (aggregated) with timestamped copy
+      if [[ "$METADATA_SNAPSHOT" == "1" ]]; then
+        local ts
+        ts=$(date +%Y%m%d_%H%M%S)
+        local snapshot_ts="$ROOT_DIR/metadata_snapshot_${ts}.json"
+        local latest_path="$METADATA_SNAPSHOT_PATH"
+        mkdir -p "$(dirname "$latest_path")"
+        if jq -n \
+          --arg created_at "$(date -u +'%Y-%m-%dT%H:%M:%SZ')" \
+          --slurpfile cursus "$ROOT_DIR/exports/01_cursus/all.json" \
+          --slurpfile campus "$ROOT_DIR/exports/02_campus/all.json" \
+          --slurpfile achievements "$ROOT_DIR/exports/03_achievements/all.json" \
+          --slurpfile campus_achievements "$ROOT_DIR/exports/04_campus_achievements/all.json" \
+          --slurpfile projects "$ROOT_DIR/exports/05_projects/all.json" \
+          --slurpfile campus_projects "$ROOT_DIR/exports/06_campus_projects/all.json" \
+          --slurpfile project_sessions "$ROOT_DIR/exports/07_project_sessions/all.json" \
+          --slurpfile coalitions "$ROOT_DIR/exports/08_coalitions/all.json" \
+          '{created_at:$created_at,datasets:{cursus:$cursus|flatten,campus:$campus|flatten,achievements:$achievements|flatten,campus_achievements:$campus_achievements|flatten,projects:$projects|flatten,campus_projects:$campus_projects|flatten,project_sessions:$project_sessions|flatten,coalitions:$coalitions|flatten}}' \
+          > "$snapshot_ts" 2>>"$LOG_FILE"; then
+          cp "$snapshot_ts" "$latest_path"
+          log INFO "Metadata snapshot saved to $snapshot_ts (latest -> $latest_path)"
+        else
+          log WARN "Failed to write metadata snapshot JSON"
+        fi
+      fi
+    else
+      log ERROR "Metadata fetch failed"
+    fi
   else
-    log ERROR "Metadata fetch failed"
-    return 1
+    log INFO "Metadata fetch disabled (ORCHESTRA_METADATA_FETCH=0) → will try fallback"
+  fi
+
+  # If fetch did not happen or failed, try fallback
+  if [[ "$fetched" -eq 0 ]]; then
+    local fallback_path="$METADATA_FALLBACK_PATH"
+    if [[ ! -f "$fallback_path" ]]; then
+      # Try latest timestamped snapshot as fallback
+      local latest_candidate
+      latest_candidate=$(ls -1t "$ROOT_DIR"/metadata_snapshot_*.json 2>/dev/null | head -n1 || true)
+      if [[ -n "$latest_candidate" ]]; then
+        fallback_path="$latest_candidate"
+        log WARN "Configured fallback missing; using latest snapshot: $fallback_path"
+      fi
+    fi
+
+    if [[ -n "$fallback_path" && -f "$fallback_path" ]]; then
+      log WARN "Restoring metadata from fallback JSON: $fallback_path"
+      if jq -e '.' "$fallback_path" >/dev/null 2>&1; then
+        mkdir -p "$ROOT_DIR/exports"/{01_cursus,02_campus,03_achievements,04_campus_achievements,05_projects,06_campus_projects,07_project_sessions,08_coalitions}
+        jq -r '.datasets.cursus' "$fallback_path" > "$ROOT_DIR/exports/01_cursus/all.json"
+        jq -r '.datasets.campus' "$fallback_path" > "$ROOT_DIR/exports/02_campus/all.json"
+        jq -r '.datasets.achievements' "$fallback_path" > "$ROOT_DIR/exports/03_achievements/all.json"
+        jq -r '.datasets.campus_achievements' "$fallback_path" > "$ROOT_DIR/exports/04_campus_achievements/all.json"
+        jq -r '.datasets.projects' "$fallback_path" > "$ROOT_DIR/exports/05_projects/all.json"
+        jq -r '.datasets.campus_projects' "$fallback_path" > "$ROOT_DIR/exports/06_campus_projects/all.json"
+        jq -r '.datasets.project_sessions' "$fallback_path" > "$ROOT_DIR/exports/07_project_sessions/all.json"
+        jq -r '.datasets.coalitions' "$fallback_path" > "$ROOT_DIR/exports/08_coalitions/all.json"
+        # Sync epoch markers from snapshot created_at if present
+        local snapshot_created
+        snapshot_created=$(jq -r '.created_at // empty' "$fallback_path")
+        if [[ -n "$snapshot_created" ]]; then
+          local snapshot_epoch
+          snapshot_epoch=$(date -d "$snapshot_created" +%s 2>/dev/null || true)
+          if [[ -n "$snapshot_epoch" ]]; then
+            echo "$snapshot_epoch" > "$ROOT_DIR/exports/03_achievements/.last_fetch_epoch"
+            echo "$snapshot_epoch" > "$ROOT_DIR/exports/04_campus_achievements/.last_fetch_epoch"
+            metadata_epoch="$snapshot_epoch"
+          fi
+        fi
+        log SUCCESS "Fallback metadata restored from $fallback_path"
+        fetched=1
+        fallback_used=1
+      else
+        log ERROR "Fallback restore failed (invalid JSON at $fallback_path)"
+        return 1
+      fi
+    else
+      log ERROR "No metadata available (fetch skipped/failed and fallback missing)"
+      return 1
+    fi
+  fi
+
+  # Load metadata into DB (cursus, campuses, projects, coalitions, campus achievements)
+  local loaders=(
+    "update_stable_tables/update_cursus.sh"
+    "update_stable_tables/update_campuses.sh"
+    "update_stable_tables/update_projects.sh"
+    "update_stable_tables/update_coalitions.sh"
+    "update_stable_tables/update_campus_achievements.sh"
+  )
+  for loader in "${loaders[@]}"; do
+    if [[ ! -f "$SCRIPTS_DIR/$loader" ]]; then
+      log WARN "Missing loader: $loader"
+      continue
+    fi
+    local lstart=$(date +%s)
+    if SKIP_FETCH=1 bash "$SCRIPTS_DIR/$loader" >> "$LOG_FILE" 2>&1; then
+      local lend=$(date +%s)
+      local dur=$((lend - lstart))
+      log SUCCESS "Loaded via $loader (${dur}s)"
+    else
+      local lend=$(date +%s)
+      local dur=$((lend - lstart))
+      log WARN "Loader failed: $loader (${dur}s, likely due to missing/invalid exports)"
+    fi
+  done
+
+  # If we restored from fallback, normalize ingested_at to the snapshot epoch for consistency
+  if [[ "$fallback_used" -eq 1 && -n "$metadata_epoch" ]]; then
+    local ts_sql="TO_TIMESTAMP(${metadata_epoch})"
+    docker exec transcendence_db psql -U "${DB_USER:-api42}" -d "${DB_NAME:-api42}" -v ON_ERROR_STOP=1 -c "
+      UPDATE cursus SET ingested_at = ${ts_sql};
+      UPDATE campuses SET ingested_at = ${ts_sql};
+      UPDATE projects SET ingested_at = ${ts_sql};
+      UPDATE coalitions SET ingested_at = ${ts_sql};
+      UPDATE campus_projects SET ingested_at = ${ts_sql};
+      UPDATE project_sessions SET ingested_at = ${ts_sql};
+      UPDATE achievements SET ingested_at = ${ts_sql};
+      UPDATE campus_achievements SET ingested_at = ${ts_sql};
+    " >> "$LOG_FILE" 2>&1 || log WARN "Failed to align ingested_at to snapshot epoch"
   fi
 }
 
@@ -384,10 +575,6 @@ bootstrap_database() {
     empty)
       log INFO "DB bootstrap mode=empty → loading existing exports if present"
       local default_json="$EXPORTS_DIR/08_users/all.json"
-      if [[ $DRY_RUN -eq 1 ]]; then
-        log INFO "[DRY RUN] Would load $default_json into DB (if present)"
-        return 0
-      fi
       if [[ -f "$default_json" ]]; then
         if bash "$SCRIPTS_DIR/update_stable_tables/update_users_simple.sh" >> "$LOG_FILE" 2>&1; then
           log SUCCESS "Loaded users from $default_json via update_users_simple.sh"
@@ -423,10 +610,6 @@ bootstrap_database() {
         local dest_dir="$EXPORTS_DIR/08_users"
         local dest_file="$dest_dir/all.json"
         mkdir -p "$dest_dir"
-        if [[ $DRY_RUN -eq 1 ]]; then
-          log INFO "[DRY RUN] Would import raw JSON from $RAW_PATH to $dest_file and load into DB"
-          return 0
-        fi
         if cp "$RAW_PATH" "$dest_file"; then
           log INFO "Raw JSON copied to $dest_file"
           if bash "$SCRIPTS_DIR/update_stable_tables/update_users_simple.sh" >> "$LOG_FILE" 2>&1; then
@@ -460,14 +643,7 @@ fetch_campus_users() {
   mkdir -p "$(dirname "$output_file")"
 
   log INFO "📥 Fetching users for campus $campus_id..."
-  
-  if [[ $DRY_RUN -eq 1 ]]; then
-    log INFO "[DRY RUN] Would fetch: /v2/cursus/21/cursus_users?campus_id=$campus_id"
-    mkdir -p "$(dirname "$output_file")"
-    echo '[]' > "$output_file"
-    return 0
-  fi
-  
+
   # Call helper script to fetch from API
   # This script handles pagination, retries, and filtering
   if ! CAMPUS_ID="$campus_id" bash "$SCRIPTS_DIR/orchestrate/fetch_users.sh"; then
@@ -496,11 +672,6 @@ load_users_to_db() {
   local input_file="$EXPORTS_DIR/09_users/campus_${campus_id}/all.json"
   
   log INFO "📤 Loading users to database for campus $campus_id..."
-  
-  if [[ $DRY_RUN -eq 1 ]]; then
-    log INFO "[DRY RUN] Would load users from $input_file"
-    return 0
-  fi
   
   # Call helper script to load and upsert
   if ! CAMPUS_ID="$campus_id" bash "$SCRIPTS_DIR/update_stable_tables/update_users_campus.sh"; then
@@ -547,8 +718,12 @@ main() {
     log ERROR "Token refresh failed"
     return 1
   fi
-  if ! check_api_health; then
-    return 1
+  if [[ "$API_HEALTH_CHECK" == "1" ]]; then
+    if ! check_api_health; then
+      return 1
+    fi
+  else
+    log INFO "API health check skipped (ORCHESTRA_API_HEALTH_CHECK=0)"
   fi
 
   frame ""
@@ -591,6 +766,12 @@ main() {
   # done
   
   db_counts
+  if [[ "$DB_CHECK_BYPASS" == "1" ]]; then
+    log WARN "DB integrity check skipped (ORCHESTRA_DB_CHECK_BYPASS=1)"
+  else
+    run_db_check
+  fi
+  start_worker
   
 if [[ $exit_code -eq 0 ]]; then
   frame ""

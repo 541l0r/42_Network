@@ -157,7 +157,6 @@ echo "3. DEPENDENT TABLES (1 TABLE) - Many-to-one relationships"
 echo "────────────────────────────────────────────────────────────"
 
 count=$(run_psql -Atc "SELECT COUNT(*) FROM project_sessions;")
-prev=7256
 
 # Check for duplicate IDs
 dup_ids=$(run_psql -Atc "
@@ -166,30 +165,17 @@ dup_ids=$(run_psql -Atc "
   ) t;
 ")
 
-if [ "$count" -eq "$prev" ]; then
-  if [ "$dup_ids" = "0" ] || [ "$dup_ids" = "" ]; then
-    echo "  ✅ project_sessions: $count (no changes, all IDs unique)"
-  else
-    echo "  ❌ project_sessions: $count ($dup_ids duplicate IDs found!)"
-    errors=$((errors + 1))
-  fi
+if [ "$dup_ids" = "0" ] || [ "$dup_ids" = "" ]; then
+  echo "  ✅ project_sessions: $count (all IDs unique)"
 else
-  change=$((count - prev))
-  if [ $change -gt 0 ]; then
-    if [ "$dup_ids" = "0" ] || [ "$dup_ids" = "" ]; then
-      echo "  ⚠️  project_sessions: $count (+$change added, all IDs unique)"
-    else
-      echo "  ❌ project_sessions: $count (+$change added, but $dup_ids duplicate IDs!)"
-      errors=$((errors + 1))
-    fi
-  else
-    if [ "$dup_ids" = "0" ] || [ "$dup_ids" = "" ]; then
-      echo "  ⚠️  project_sessions: $count ($change removed, all IDs unique)"
-    else
-      echo "  ❌ project_sessions: $count ($change removed, and $dup_ids duplicate IDs!)"
-      errors=$((errors + 1))
-    fi
-  fi
+  echo "  ❌ project_sessions: $count ($dup_ids duplicate IDs found!)"
+  errors=$((errors + 1))
+fi
+
+# Show delta table size to help spot discrepancies
+ps_delta=$(run_psql -Atc "SELECT COUNT(*) FROM project_sessions_delta;" 2>/dev/null || echo "")
+if [ -n "$ps_delta" ]; then
+  echo "    • project_sessions_delta rows: $ps_delta"
 fi
 
 # ============================================================
@@ -259,11 +245,133 @@ else
   errors=$((errors + 1))
 fi
 
+# project_users: project_id -> projects
+invalid=$(run_psql -Atc "
+  SELECT COUNT(*) FROM project_users pu
+  WHERE NOT EXISTS (SELECT 1 FROM projects p WHERE p.id = pu.project_id);
+")
+if [ "$invalid" = "0" ]; then
+  echo "  ✅ project_users.project_id → projects.id"
+else
+  echo "  ❌ project_users.project_id → projects.id ($invalid orphaned)"
+  errors=$((errors + 1))
+fi
+
+# project_users: user_id -> users
+invalid=$(run_psql -Atc "
+  SELECT COUNT(*) FROM project_users pu
+  WHERE NOT EXISTS (SELECT 1 FROM users u WHERE u.id = pu.user_id);
+")
+if [ "$invalid" = "0" ]; then
+  echo "  ✅ project_users.user_id → users.id"
+else
+  echo "  ❌ project_users.user_id → users.id ($invalid orphaned)"
+  errors=$((errors + 1))
+fi
+
+# achievements_users: achievement_id -> achievements
+invalid=$(run_psql -Atc "
+  SELECT COUNT(*) FROM achievements_users au
+  WHERE NOT EXISTS (SELECT 1 FROM achievements a WHERE a.id = au.achievement_id);
+")
+if [ "$invalid" = "0" ]; then
+  echo "  ✅ achievements_users.achievement_id → achievements.id"
+else
+  echo "  ❌ achievements_users.achievement_id → achievements.id ($invalid orphaned)"
+  errors=$((errors + 1))
+fi
+
+# achievements_users: user_id -> users
+invalid=$(run_psql -Atc "
+  SELECT COUNT(*) FROM achievements_users au
+  WHERE NOT EXISTS (SELECT 1 FROM users u WHERE u.id = au.user_id);
+")
+if [ "$invalid" = "0" ]; then
+  echo "  ✅ achievements_users.user_id → users.id"
+else
+  echo "  ❌ achievements_users.user_id → users.id ($invalid orphaned)"
+  errors=$((errors + 1))
+fi
+
+# coalitions_users: coalition_id -> coalitions
+invalid=$(run_psql -Atc "
+  SELECT COUNT(*) FROM coalitions_users cu
+  WHERE NOT EXISTS (SELECT 1 FROM coalitions c WHERE c.id = cu.coalition_id);
+")
+if [ "$invalid" = "0" ]; then
+  echo "  ✅ coalitions_users.coalition_id → coalitions.id"
+else
+  echo "  ❌ coalitions_users.coalition_id → coalitions.id ($invalid orphaned)"
+  errors=$((errors + 1))
+fi
+
+# coalitions_users: user_id -> users
+invalid=$(run_psql -Atc "
+  SELECT COUNT(*) FROM coalitions_users cu
+  WHERE NOT EXISTS (SELECT 1 FROM users u WHERE u.id = cu.user_id);
+")
+if [ "$invalid" = "0" ]; then
+  echo "  ✅ coalitions_users.user_id → users.id"
+else
+  echo "  ❌ coalitions_users.user_id → users.id ($invalid orphaned)"
+  errors=$((errors + 1))
+fi
+
 # ============================================================
-# 5. UNIQUENESS CHECKS
+# 5. USER TABLES (4 TABLES) - Row counts & ID uniqueness
 # ============================================================
 echo ""
-echo "5. UNIQUENESS CHECKS"
+echo "5. USER TABLES (4 TABLES) - Row counts & ID uniqueness"
+echo "────────────────────────────────────────────────────────────"
+
+declare -A user_prev
+user_prev[users]=40335
+user_prev[project_users]=0
+user_prev[achievements_users]=0
+user_prev[coalitions_users]=0
+
+for table in users project_users achievements_users coalitions_users; do
+  count=$(run_psql -Atc "SELECT COUNT(*) FROM $table;" 2>/dev/null || echo "0")
+  prev=${user_prev[$table]}
+
+  dup_ids=$(run_psql -Atc "
+    SELECT COUNT(*) FROM (
+      SELECT id FROM $table GROUP BY id HAVING COUNT(*) > 1
+    ) t;
+  " 2>/dev/null || echo "0")
+
+  if [ "$count" -eq "$prev" ]; then
+    if [ "$dup_ids" = "0" ] || [ "$dup_ids" = "" ]; then
+      echo "  ✅ $table: $count (no changes, all IDs unique)"
+    else
+      echo "  ❌ $table: $count ($dup_ids duplicate IDs found!)"
+      errors=$((errors + 1))
+    fi
+  else
+    change=$((count - prev))
+    if [ $change -gt 0 ]; then
+      if [ "$dup_ids" = "0" ] || [ "$dup_ids" = "" ]; then
+        echo "  ⚠️  $table: $count (+$change added, all IDs unique)"
+      else
+        echo "  ❌ $table: $count (+$change added, but $dup_ids duplicate IDs!)"
+        errors=$((errors + 1))
+      fi
+    else
+      if [ "$dup_ids" = "0" ] || [ "$dup_ids" = "" ]; then
+        echo "  ⚠️  $table: $count ($change removed, all IDs unique)"
+      else
+        echo "  ❌ $table: $count ($change removed, and $dup_ids duplicate IDs!)"
+        errors=$((errors + 1))
+      fi
+    fi
+  fi
+done
+
+# ============================================================
+# 6. UNIQUENESS CHECKS
+# ============================================================
+echo ""
+echo "6. UNIQUENESS CHECKS"
 echo "────────────────────────────────────────────────────────────"
 
 # Project slugs - should be unique (business rule)
@@ -303,11 +411,24 @@ else
   echo "  ⚠️  campuses.name: $dup_campus_names duplicates"
 fi
 
+# Users login - should be unique
+dup_user_login=$(run_psql -Atc "
+  SELECT COUNT(*) FROM (
+    SELECT login FROM users GROUP BY login HAVING COUNT(*) > 1
+  ) t;
+" 2>/dev/null || echo "0")
+if [ "$dup_user_login" = "0" ] || [ "$dup_user_login" = "" ]; then
+  echo "  ✅ users.login: all unique"
+else
+  echo "  ❌ users.login: $dup_user_login duplicates"
+  errors=$((errors + 1))
+fi
+
 # ============================================================
-# 6. DATA FRESHNESS
+# 7. DATA FRESHNESS
 # ============================================================
 echo ""
-echo "6. DATA FRESHNESS (< 24h = green)"
+echo "7. DATA FRESHNESS (< 24h = green)"
 echo "────────────────────────────────────────────────────────────"
 
 format_duration() {
@@ -330,13 +451,14 @@ format_duration() {
 
 # Check ingested_at timestamps
 echo ""
-for table in cursus campuses projects coalitions campus_projects project_sessions achievements campus_achievements; do
+for table in cursus campuses projects coalitions campus_projects project_sessions achievements campus_achievements users project_users achievements_users coalitions_users; do
   age_seconds=$(run_psql -Atc "
     SELECT EXTRACT(EPOCH FROM (NOW() - MAX(ingested_at)))::INT FROM $table;
-  " 2>/dev/null || echo "0")
+  " 2>/dev/null || echo "")
   
   if [ -z "$age_seconds" ]; then
-    age_seconds="0"
+    printf "  ⚠️  %-25s ingested_at missing/unknown\n" "$table:"
+    continue
   fi
   
   age_formatted=$(format_duration "$age_seconds")
@@ -350,14 +472,22 @@ for table in cursus campuses projects coalitions campus_projects project_session
 done
 
 # ============================================================
-# 7. SCHEMA VALIDATION (8 TABLES) - All required tables exist
+# 8. SCHEMA VALIDATION (12 TABLES) - All required tables exist
 # ============================================================
 echo ""
-echo "7. SCHEMA VALIDATION (8 TABLES) - Table existence check"
+echo "8. SCHEMA VALIDATION (base + delta) - Table existence check"
 echo "────────────────────────────────────────────────────────────"
 
-# Check that all required tables exist
-for table in cursus campuses projects coalitions achievements campus_projects campus_achievements project_sessions; do
+expected_required=(
+  cursus campuses projects coalitions achievements
+  campus_projects campus_achievements project_sessions
+  users project_users achievements_users coalitions_users
+  achievements_delta campus_achievements_delta campuses_delta projects_delta users_delta delta_users
+  campus_projects_delta project_sessions_delta coalitions_delta cursus_delta
+)
+
+# Check required tables
+for table in "${expected_required[@]}"; do
   if run_psql -Atc "SELECT 1 FROM information_schema.tables WHERE table_name = '$table';" 2>/dev/null | grep -q "1"; then
     echo "  ✅ $table"
   else
@@ -365,6 +495,21 @@ for table in cursus campuses projects coalitions achievements campus_projects ca
     errors=$((errors + 1))
   fi
 done
+
+# Warn about unexpected tables (excluding delta/migration helpers and *_delta)
+extra_tables=$(run_psql -Atc "
+  SELECT tablename FROM pg_tables
+  WHERE schemaname='public'
+    AND tablename NOT IN ('cursus','campuses','projects','coalitions','achievements','campus_projects','campus_achievements','project_sessions','users','project_users','achievements_users','coalitions_users','achievements_delta','campus_achievements_delta','campuses_delta','projects_delta','users_delta','delta_users','campus_projects_delta','project_sessions_delta','coalitions_delta','cursus_delta')
+    AND tablename NOT LIKE 'delta_%'
+    AND tablename NOT LIKE '%_delta'
+    AND tablename NOT LIKE 'migrations%';
+")
+if [ -n "$extra_tables" ]; then
+  echo ""
+  echo "  ⚠️  Extra tables present (not in expected set):"
+  echo "$extra_tables" | sed 's/^/    - /'
+fi
 
 # ============================================================
 # SUMMARY
