@@ -1,0 +1,4 @@
+# 42 Network Pipeline - Token Refresh
+# Refresh API token every hour at minute 5
+
+5 * * * * /srv/42_Network/repo/scripts/refresh_token.sh

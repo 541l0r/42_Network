@@ -59,8 +59,9 @@ if [[ -f "$CONFIG_FILE" ]]; then
   set +a
 fi
 
-# Load .env for orchestration options if present
-if [[ -f "$ENV_FILE" ]]; then
+# Load .env for orchestration options if present and allowed
+USE_ROOT_ENV="${ORCHESTRA_USE_ROOT_ENV:-1}"
+if [[ -f "$ENV_FILE" && "$USE_ROOT_ENV" != "0" ]]; then
   # shellcheck disable=SC1091
   set -a
   source "$ENV_FILE"
@@ -171,10 +172,15 @@ frame "  Config    : $CONFIG_FILE"
 frame "  Metadata  : fetch=$([[ $METADATA_FETCH -eq 1 ]] && echo 'YES' || echo 'NO')"
 frame "  Meta snapshot: $([[ $METADATA_SNAPSHOT -eq 1 ]] && echo 'YES' || echo 'NO')"
 frame "  Meta fallback: ${METADATA_FALLBACK_PATH}"
+frame "  Root .env : $([[ ${ORCHESTRA_USE_ROOT_ENV:-1} -eq 1 ]] && echo 'YES' || echo 'NO')"
 
-# Validate CAMPUS_ID is numeric
-if ! [[ "$CAMPUS_ID" =~ ^[0-9]+$ ]]; then
-  log ERROR "CAMPUS_ID must be numeric, got: $CAMPUS_ID"
+# Validate CAMPUS_ID (numeric or ALL)
+if [[ "$CAMPUS_ID" =~ ^[0-9]+$ ]]; then
+  :
+elif [[ "$CAMPUS_ID" == "ALL" || "$CAMPUS_ID" == "all" ]]; then
+  :
+else
+  log ERROR "CAMPUS_ID must be numeric or ALL, got: $CAMPUS_ID"
   exit 1
 fi
 
@@ -633,57 +639,6 @@ bootstrap_database() {
 }
 
 # ============================================================================ #
-#  FETCH USERS (CAMPUS-SPECIFIC)
-# ============================================================================ #
-
-fetch_campus_users() {
-  local campus_id="$1"
-  local output_file="$EXPORTS_DIR/09_users/campus_${campus_id}/all.json"
-  
-  mkdir -p "$(dirname "$output_file")"
-
-  log INFO "📥 Fetching users for campus $campus_id..."
-
-  # Call helper script to fetch from API
-  # This script handles pagination, retries, and filtering
-  if ! CAMPUS_ID="$campus_id" bash "$SCRIPTS_DIR/orchestrate/fetch_users.sh"; then
-    log ERROR "Failed to fetch users for campus $campus_id"
-    return 1
-  fi
-  
-  # Verify output was created
-  if [[ ! -f "$output_file" ]]; then
-    log ERROR "Output file not created: $output_file"
-    return 1
-  fi
-  
-  local user_count=$(jq 'length' "$output_file" 2>/dev/null || echo "0")
-  log SUCCESS "Fetched $user_count users for campus $campus_id"
-  
-  return 0
-}
-
-# ============================================================================ #
-#  LOAD USERS TO DATABASE
-# ============================================================================ #
-
-load_users_to_db() {
-  local campus_id="$1"
-  local input_file="$EXPORTS_DIR/09_users/campus_${campus_id}/all.json"
-  
-  log INFO "📤 Loading users to database for campus $campus_id..."
-  
-  # Call helper script to load and upsert
-  if ! CAMPUS_ID="$campus_id" bash "$SCRIPTS_DIR/update_stable_tables/update_users_campus.sh"; then
-    log ERROR "Failed to load users for campus $campus_id"
-    return 1
-  fi
-  
-  log SUCCESS "Users loaded for campus $campus_id"
-  return 0
-}
-
-# ============================================================================ #
 #  MAIN ORCHESTRATION FLOW
 # ============================================================================ #
 
@@ -764,7 +719,7 @@ main() {
   #     return 1
   #   fi
   # done
-  
+
   db_counts
   if [[ "$DB_CHECK_BYPASS" == "1" ]]; then
     log WARN "DB integrity check skipped (ORCHESTRA_DB_CHECK_BYPASS=1)"

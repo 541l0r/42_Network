@@ -8,9 +8,13 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 TOKEN_HELPER="$ROOT_DIR/scripts/token_manager.sh"
 BACKLOG_DIR="$ROOT_DIR/.backlog"
 EXPORTS_DIR="$ROOT_DIR/exports/08_users"
+EXPORTS_USERS_DIR="$ROOT_DIR/exports/09_users"
+EXPORTS_PROJECT_USERS="$ROOT_DIR/exports/10_projects_users"
+EXPORTS_ACHIEVEMENTS_USERS="$ROOT_DIR/exports/11_achievements_users"
+EXPORTS_COALITIONS_USERS="$ROOT_DIR/exports/12_coalitions_users"
 LOG_DIR="$ROOT_DIR/logs"
 
-mkdir -p "$BACKLOG_DIR" "$EXPORTS_DIR" "$LOG_DIR"
+mkdir -p "$BACKLOG_DIR" "$EXPORTS_DIR" "$EXPORTS_USERS_DIR" "$EXPORTS_PROJECT_USERS" "$EXPORTS_ACHIEVEMENTS_USERS" "$EXPORTS_COALITIONS_USERS" "$LOG_DIR"
 
 BACKLOG_FILE="$BACKLOG_DIR/pending_users.txt"
 LOG_FILE="$LOG_DIR/process_backlog.log"
@@ -36,49 +40,63 @@ log "Found $backlog_size users in backlog"
 # Ensure token is fresh
 bash "$TOKEN_HELPER" ensure-fresh > /dev/null 2>&1 || true
 
-# Fetch data for all users in backlog (by ID)
-# Build comma-separated ID list
-user_ids=$(tr '\n' ',' < "$BACKLOG_FILE" | sed 's/,$//')
+tmp_dir=$(mktemp -d)
+filtered_ndjson="$tmp_dir/filtered.ndjson"
 
-if [[ -z "$user_ids" ]]; then
-  log "No valid user IDs in backlog"
-  exit 0
-fi
+# Fetch each user via detail endpoint (contains embedded data)
+while read -r user_id; do
+  [[ -z "$user_id" ]] && continue
+  log "Fetching user $user_id (detail)"
+  user_json=$(bash "$TOKEN_HELPER" call "/v2/users/$user_id" 2>/dev/null || echo "")
+  if ! echo "$user_json" | jq empty >/dev/null 2>&1; then
+    log "WARN invalid JSON for user $user_id"
+    continue
+  fi
 
-log "Fetching data for users: $user_ids"
+  # Persist raw detail and embedded slices
+  campus_id=$(echo "$user_json" | jq -r '(
+    .campus[0].id //
+    (.campus_users[]? | select(.is_primary==true) | .campus_id) //
+    (.campus_users[0].campus_id) //
+    0
+  )')
 
-# Fetch user data by IDs
-# Use filter[id]=1,2,3,... (comma-separated)
-response=$(bash "$TOKEN_HELPER" call "/v2/users?filter%5Bid%5D=$user_ids&per_page=100" 2>/dev/null || echo "[]")
+  user_dir="$EXPORTS_USERS_DIR/campus_${campus_id}"
+  proj_dir="$EXPORTS_PROJECT_USERS/campus_${campus_id}"
+  ach_dir="$EXPORTS_ACHIEVEMENTS_USERS/campus_${campus_id}"
+  coal_dir="$EXPORTS_COALITIONS_USERS/campus_${campus_id}"
+  mkdir -p "$user_dir" "$proj_dir" "$ach_dir" "$coal_dir"
 
-# Filter to students and save to JSON
-filtered_json=$(echo "$response" | python3 << 'PYTHON_EOF'
-import json, sys
-try:
-    data = json.load(sys.stdin)
-    if not isinstance(data, list):
-        data = []
-    # Filter: kind=student, not alumni
-    filtered = [u for u in data if u.get('kind') == 'student' and not u.get('alumni?')]
-    print(json.dumps(filtered))
-except:
-    print("[]")
-PYTHON_EOF
-  )
+  echo "$user_json" > "$user_dir/user_${user_id}.json"
+  echo "$user_json" | jq '.projects_users // []' > "$proj_dir/user_${user_id}.json"
+  echo "$user_json" | jq '.achievements // []' > "$ach_dir/user_${user_id}.json"
+  echo "$user_json" | jq '.coalitions_users // []' > "$coal_dir/user_${user_id}.json"
 
-filtered_count=$(echo "$filtered_json" | python3 -c "import json, sys; print(len(json.load(sys.stdin)))")
-log "Fetched $filtered_count users (after filtering)"
+  # Filter to active students
+  kind=$(echo "$user_json" | jq -r '.kind // empty')
+  alumni_flag=$(echo "$user_json" | jq -r 'if (.["alumni?"] // .alumni // false) then "true" else "false" end')
+  if [[ "$kind" != "student" ]] || [[ "$alumni_flag" == "true" ]]; then
+    log "Skipping user $user_id (kind=$kind alumni=$alumni_flag)"
+    continue
+  fi
 
-if [[ "$filtered_count" -eq 0 ]]; then
+  echo "$user_json" >> "$filtered_ndjson"
+done < <(sort -u "$BACKLOG_FILE")
+
+if [[ ! -s "$filtered_ndjson" ]]; then
   log "No students found to update"
+  rm -rf "$tmp_dir"
   # Clear backlog anyway
   rm -f "$BACKLOG_FILE"
   exit 0
 fi
 
-# Save to JSON file for import
-echo "$filtered_json" > "$EXPORTS_DIR/all.json"
-log "Saved to $EXPORTS_DIR/all.json"
+jq -s '.' "$filtered_ndjson" > "$EXPORTS_DIR/all.json"
+filtered_count=$(jq 'length' "$EXPORTS_DIR/all.json")
+log "Fetched $filtered_count users (after filtering)"
+log "Saved to $EXPORTS_DIR/all.json and per-user caches"
+
+rm -rf "$tmp_dir"
 
 # Update database
 log "Starting users update in database..."

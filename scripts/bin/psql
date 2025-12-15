@@ -1,0 +1,61 @@
+#!/bin/bash
+# Wrapper: for localhost TCP connections, use Docker with socket; otherwise try local psql
+
+# Check if any argument is "localhost" or "127.0.0.1" (TCP connection to localhost)
+use_docker=false
+for arg in "$@"; do
+  if [[ "$arg" == "localhost" || "$arg" == "127.0.0.1" ]]; then
+    use_docker=true
+    break
+  fi
+done
+
+# Also check PGHOST env var
+if [[ "$PGHOST" == "localhost" || "$PGHOST" == "127.0.0.1" ]]; then
+  use_docker=true
+fi
+
+# If TCP localhost connection, use Docker with socket connection (no -h, no -p)
+if $use_docker; then
+  if command -v docker >/dev/null 2>&1; then
+    if docker ps --format '{{.Names}}' 2>/dev/null | grep -q '^transcendence_db$'; then
+      # Filter out -h and -p arguments for Docker container
+      filtered_args=()
+      skip_next=false
+      for arg in "$@"; do
+        if $skip_next; then
+          skip_next=false
+          continue
+        fi
+        if [[ "$arg" == "-h" || "$arg" == "-p" ]]; then
+          skip_next=true
+          continue
+        fi
+        filtered_args+=("$arg")
+      done
+      
+      if [[ -n "${PGPASSWORD:-}" ]]; then
+        exec docker exec -e PGPASSWORD="$PGPASSWORD" -i transcendence_db psql "${filtered_args[@]}"
+      else
+        exec docker exec -i transcendence_db psql "${filtered_args[@]}"
+      fi
+    fi
+  fi
+fi
+
+# Try local psql
+if command -v /usr/bin/psql >/dev/null 2>&1 || command -v psql >/dev/null 2>&1; then
+  exec psql "$@"
+fi
+
+# Fall back to Docker (without host/port filtering)
+if command -v docker >/dev/null 2>&1 && docker ps --format '{{.Names}}' 2>/dev/null | grep -q '^transcendence_db$'; then
+  if [[ -n "${PGPASSWORD:-}" ]]; then
+    exec docker exec -e PGPASSWORD="$PGPASSWORD" -i transcendence_db psql "$@"
+  else
+    exec docker exec -i transcendence_db psql "$@"
+  fi
+fi
+
+echo "psql not available locally and container transcendence_db not running" >&2
+exit 1

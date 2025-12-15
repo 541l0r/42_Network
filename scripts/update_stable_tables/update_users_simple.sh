@@ -79,6 +79,7 @@ CREATE TABLE IF NOT EXISTS users (
   image_small           TEXT,
   image_micro           TEXT,
   url                   TEXT,
+  campus_id             BIGINT,
   ingested_at           TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
@@ -86,6 +87,8 @@ CREATE INDEX IF NOT EXISTS idx_users_login ON users (login);
 CREATE INDEX IF NOT EXISTS idx_users_email ON users (email);
 CREATE INDEX IF NOT EXISTS idx_users_kind ON users (kind);
 CREATE INDEX IF NOT EXISTS idx_users_updated_at ON users (updated_at);
+ALTER TABLE users ADD COLUMN IF NOT EXISTS campus_id BIGINT;
+CREATE INDEX IF NOT EXISTS idx_users_campus_id ON users (campus_id);
 
 DROP TABLE IF EXISTS users_delta;
 CREATE TABLE users_delta (LIKE users INCLUDING DEFAULTS);
@@ -123,9 +126,14 @@ SQL
     (.image.versions.large // ""),
     (.image.versions.medium // ""),
     (.image.versions.small // ""),
-    (.image.versions.micro // "")
+    (.image.versions.micro // ""),
+    (
+      .campus[0].id //
+      (.campus_users[]? | select(.is_primary == true) | .campus_id) //
+      (.campus_users[0].campus_id // null)
+    )
   ] | @csv' "$merged_json" \
-    | run_psql -c "\copy users_delta (id,email,login,first_name,last_name,usual_full_name,usual_first_name,kind,displayname,staff_p,correction_point,pool_month,pool_year,location,wallet,phone,anonymize_date,data_erasure_date,created_at,updated_at,alumnized_at,alumni_p,active_p,image_link,image_large,image_medium,image_small,image_micro) FROM STDIN WITH (FORMAT csv, NULL '')"
+    | run_psql -c "\copy users_delta (id,email,login,first_name,last_name,usual_full_name,usual_first_name,kind,displayname,staff_p,correction_point,pool_month,pool_year,location,wallet,phone,anonymize_date,data_erasure_date,created_at,updated_at,alumnized_at,alumni_p,active_p,image_link,image_large,image_medium,image_small,image_micro,campus_id) FROM STDIN WITH (FORMAT csv, NULL '')"
   
   delta_count=$(run_psql -t -c "SELECT COUNT(*) FROM users_delta")
   echo "[$(date -u +'%Y-%m-%dT%H:%M:%SZ')] Staged $delta_count users"
@@ -135,8 +143,8 @@ SQL
   # Upsert into production table
   run_psql <<'SQL'
 WITH upsert AS (
-  INSERT INTO users (id,email,login,first_name,last_name,usual_full_name,usual_first_name,kind,displayname,staff_p,correction_point,pool_month,pool_year,location,wallet,phone,anonymize_date,data_erasure_date,created_at,updated_at,alumnized_at,alumni_p,active_p,image_link,image_large,image_medium,image_small,image_micro,url)
-  SELECT id,email,login,first_name,last_name,usual_full_name,usual_first_name,kind,displayname,staff_p,correction_point,pool_month,pool_year,location,wallet,phone,anonymize_date,data_erasure_date,created_at,updated_at,alumnized_at,alumni_p,active_p,image_link,image_large,image_medium,image_small,image_micro,CONCAT('https://api.intra.42.fr/v2/users/',login) FROM users_delta
+  INSERT INTO users (id,email,login,first_name,last_name,usual_full_name,usual_first_name,kind,displayname,staff_p,correction_point,pool_month,pool_year,location,wallet,phone,anonymize_date,data_erasure_date,created_at,updated_at,alumnized_at,alumni_p,active_p,image_link,image_large,image_medium,image_small,image_micro,url,campus_id)
+  SELECT id,email,login,first_name,last_name,usual_full_name,usual_first_name,kind,displayname,staff_p,correction_point,pool_month,pool_year,location,wallet,phone,anonymize_date,data_erasure_date,created_at,updated_at,alumnized_at,alumni_p,active_p,image_link,image_large,image_medium,image_small,image_micro,CONCAT('https://api.intra.42.fr/v2/users/',login),campus_id FROM users_delta
   ON CONFLICT (id) DO UPDATE SET
     email=EXCLUDED.email,
     login=EXCLUDED.login,
@@ -150,6 +158,7 @@ WITH upsert AS (
     location=EXCLUDED.location,
     wallet=EXCLUDED.wallet,
     updated_at=EXCLUDED.updated_at,
+    campus_id=EXCLUDED.campus_id,
     ingested_at=NOW()
   RETURNING xmax = 0 AS inserted
 )

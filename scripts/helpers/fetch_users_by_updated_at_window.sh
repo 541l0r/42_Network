@@ -26,13 +26,15 @@ set -euo pipefail
 #   # Fetch users from last 5 seconds, kind=student, cursus 2
 #   fetch_users_by_updated_at_window.sh 5 student 2
 
-ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
 TOKEN_HELPER="$ROOT_DIR/scripts/token_manager.sh"
 
 # Parameters with defaults
 WINDOW_SECONDS="${1:-30}"
-FILTER_KIND="${2:-student}"
-FILTER_CURSUS_ID="${3:-21}"
+FILTER_KIND="${FILTER_KIND:-${2:-student}}"
+FILTER_CURSUS_ID="${FILTER_CURSUS_ID:-${3:-21}}"
+FILTER_ALUMNI="${FILTER_ALUMNI:-false}"
 
 # Validate window is numeric
 if ! [[ "$WINDOW_SECONDS" =~ ^[0-9]+$ ]]; then
@@ -48,50 +50,28 @@ START_TIME=$((END_TIME - WINDOW_SECONDS))
 END_ISO=$(python3 -c "import datetime; print(datetime.datetime.fromtimestamp($END_TIME, datetime.UTC).isoformat().replace('+00:00', 'Z'))" 2>/dev/null)
 START_ISO=$(python3 -c "import datetime; print(datetime.datetime.fromtimestamp($START_TIME, datetime.UTC).isoformat().replace('+00:00', 'Z'))" 2>/dev/null)
 
-# Build API query with range filter on updated_at
-# Escape the [ and ] for URL encoding: %5B and %5D
-QUERY="/v2/users?range%5Bupdated_at%5D=$START_ISO,$END_ISO&per_page=100&sort=-updated_at"
+# Paginate through /v2/cursus/:cursus_id/users with updated_at range, server-side filters
+# This ensures we only get students in the specific cursus (default: 21)
+# NOTE: Alumni filter done in jq (not API) because alumni_p can be null/false/true
+accum="[]"
+page=1
+while true; do
+  endpoint="/v2/cursus/$FILTER_CURSUS_ID/users?range%5Bupdated_at%5D=$START_ISO,$END_ISO&filter%5Bkind%5D=$FILTER_KIND&per_page=100&page=$page&sort=-updated_at"
+  page_json=$("$TOKEN_HELPER" call "$endpoint" 2>/dev/null || echo "[]")
+  if ! echo "$page_json" | jq -e 'type=="array"' >/dev/null 2>&1; then
+    break
+  fi
+  page_count=$(echo "$page_json" | jq 'length' 2>/dev/null || echo "0")
+  if [[ "$page_count" == "0" ]]; then
+    break
+  fi
+  accum=$(printf '%s\n%s\n' "$accum" "$page_json" | jq -s 'add')
+  page=$((page + 1))
+  sleep 1
+done
 
-# Fetch from API (may span multiple pages)
-# Note: API returns ALL users in time window, client-side filtering will apply
-response=$(bash "$TOKEN_HELPER" call "$QUERY" 2>/dev/null || echo "[]")
+# Filter out alumni_p==true (keeps null and false)
+accum=$(echo "$accum" | jq '[.[] | select(.alumni_p != true)]')
 
-# Filter response by kind and cursus (if applicable)
-# Output as JSON array
-echo "$response" | python3 << 'PYTHON_EOF'
-import json
-import sys
-import os
-
-try:
-    data = json.load(sys.stdin)
-except json.JSONDecodeError:
-    print("[]")
-    sys.exit(0)
-
-# Ensure we have a list
-if not isinstance(data, list):
-    print("[]")
-    sys.exit(0)
-
-filter_kind = os.environ.get('FILTER_KIND', 'student')
-filter_cursus_id = int(os.environ.get('FILTER_CURSUS_ID', '21')) if os.environ.get('FILTER_CURSUS_ID', '21').isdigit() else 21
-
-# Filter users
-filtered = []
-for user in data:
-    # Filter by kind
-    if filter_kind and user.get('kind') != filter_kind:
-        continue
-    
-    # Filter by cursus if provided (check if user is in this cursus)
-    if filter_cursus_id:
-        cursus_users = user.get('cursus_users', [])
-        if not any(cu.get('cursus_id') == filter_cursus_id for cu in cursus_users):
-            continue
-    
-    filtered.append(user)
-
-# Output as JSON
-print(json.dumps(filtered, indent=2))
-PYTHON_EOF
+# Emit accumulated response
+echo "$accum"

@@ -68,8 +68,9 @@ case "${1:-}" in
   stop)    stop_worker ;;
   restart) stop_worker; start_worker ;;
   status)  status_worker ;;
+  stat|st) status_worker ;;
   *)
-    echo "Usage: $0 {start|stop|status|restart}"
+    echo "Usage: $0 {start|stop|status|stat|st|restart}"
     exit 1
     ;;
 esac

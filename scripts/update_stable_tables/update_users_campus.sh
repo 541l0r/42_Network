@@ -6,7 +6,7 @@
 #  
 #  Usage: CAMPUS_ID=76 bash scripts/update_stable_tables/update_users_campus.sh
 #
-#  Input:  exports/09_users/campus_{CAMPUS_ID}_users.json
+#  Input:  exports/09_users/campus_{CAMPUS_ID}/all.json (from fetch_users.sh)
 #  Output: users table in PostgreSQL (upserted)
 #           delta_users staging table (truncated after load)
 #
@@ -24,7 +24,7 @@ set -e
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 CAMPUS_ID="${CAMPUS_ID:-76}"
 CAMPUS_ID=$(echo "$CAMPUS_ID" | sed 's/"//g')
-INPUT_FILE="$ROOT_DIR/exports/09_users/campus_${CAMPUS_ID}_users.json"
+INPUT_FILE="$ROOT_DIR/exports/09_users/campus_${CAMPUS_ID}/all.json"
 LOGS_DIR="$ROOT_DIR/logs"
 LOG_FILE="$LOGS_DIR/update_users_campus_${CAMPUS_ID}_$(date +%s).log"
 

@@ -66,9 +66,14 @@ COALITIONS=$(curl -s -H "Authorization: Bearer $API_TOKEN" \
     "$BASE_URL/users/$USER_ID/coalitions_users?per_page=100" 2>/dev/null || echo "[]")
 
 # TODO: Insert into DB
-# TODO: Save to JSON exports
-# For now, just log that we fetched the data
-echo "[$(date -u +'%Y-%m-%dT%H:%M:%SZ')] Fetched achievements, projects, coalitions for user $USER_ID" >> "$LOG_FILE"
+# Save to JSON exports grouped by campus (best-effort: derive from achievements or default 0)
+campus_id=$(echo "$ACHIEVEMENTS" | jq -r '.[0].campus_id // 0' 2>/dev/null)
+[ -z "$campus_id" ] && campus_id=0
+mkdir -p "$EXPORTS_09/campus_${campus_id}" "$EXPORTS_10/campus_${campus_id}" "$EXPORTS_11/campus_${campus_id}" "$EXPORTS_12/campus_${campus_id}"
+echo "$ACHIEVEMENTS" > "$EXPORTS_11/campus_${campus_id}/user_${USER_ID}.json"
+echo "$PROJECTS" > "$EXPORTS_10/campus_${campus_id}/user_${USER_ID}.json"
+echo "$COALITIONS" > "$EXPORTS_12/campus_${campus_id}/user_${USER_ID}.json"
+echo "[$(date -u +'%Y-%m-%dT%H:%M:%SZ')] Fetched achievements, projects, coalitions for user $USER_ID (campus $campus_id)" >> "$LOG_FILE"
 
 # Remove processed ID from backlog
 tail -n +2 "$BACKLOG_FILE" > "$BACKLOG_FILE.tmp"

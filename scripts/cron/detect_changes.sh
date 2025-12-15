@@ -1,17 +1,12 @@
 #!/bin/bash
 
 # detect_changes.sh - Runs every minute
-# Fetches users updated in last time window, extracts IDs to backlog
-# Does NOT throw away data - saves raw JSON for worker processing
+# Fetch users updated in a recent time window and enqueue IDs to backlog.
+# Saves raw JSON snapshots to .cache/raw_detect; the worker will fetch full detail.
 
-set -e
+set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-
-# Source API token (needed for cron execution)
-if [ -f "$ROOT_DIR/.oauth_state" ]; then
-    source "$ROOT_DIR/.oauth_state"
-fi
 
 BACKLOG_DIR="$ROOT_DIR/.backlog"
 LOG_DIR="$ROOT_DIR/logs"
@@ -19,84 +14,115 @@ CACHE_DIR="$ROOT_DIR/.cache/raw_detect"
 
 mkdir -p "$BACKLOG_DIR" "$LOG_DIR" "$CACHE_DIR"
 
+LOG_FILE="$LOG_DIR/detect_changes.log"
 LOG_TIMESTAMP=$(date -u +'%Y-%m-%dT%H:%M:%SZ')
 
-# Configurable time window (default: 120 seconds)
-TIME_WINDOW="${TIME_WINDOW:-120}"
+# Configurable window (seconds) with precedence: env TIME_WINDOW > config > default 65
+CONFIG_FILE="$ROOT_DIR/scripts/config/agents.config"
+CONFIG_TIME_WINDOW=""
+if [[ -f "$CONFIG_FILE" ]]; then
+  CONFIG_TIME_WINDOW=$(grep -E '^\s*TIME_WINDOW=' "$CONFIG_FILE" | head -1 | cut -d= -f2 | awk '{print $1}')
+fi
+DEFAULT_MAX_WINDOW="${CONFIG_TIME_WINDOW:-65}"
+MAX_WINDOW="${TIME_WINDOW:-$DEFAULT_MAX_WINDOW}"
 
-# Read last detection time (or use TIME_WINDOW seconds ago)
-LAST_EPOCH_FILE="$BACKLOG_DIR/last_detect_epoch"
+NOW_EPOCH=$(date -u +%s)
+WINDOW_SECS="$MAX_WINDOW"
+PID=$$
 
-if [ -f "$LAST_EPOCH_FILE" ]; then
-    WINDOW_START=$(<"$LAST_EPOCH_FILE")
-else
-    WINDOW_START=$(($(date -u +%s) - TIME_WINDOW))
+echo "[${LOG_TIMESTAMP}] [pid=${PID}] Detecting changes in last ${WINDOW_SECS}s" | tee -a "$LOG_FILE"
+
+# Fetch users updated in window (filtered to students in cursus 21)
+RAW_JSON=$(WINDOW_SECONDS="$WINDOW_SECS" FILTER_KIND=student FILTER_CURSUS_ID=21 FILTER_ALUMNI=false \
+  bash "$ROOT_DIR/scripts/helpers/fetch_users_by_updated_at_window.sh" "$WINDOW_SECS" student 21 2>/dev/null || echo "[]")
+
+# Validate JSON
+if ! echo "$RAW_JSON" | jq empty >/dev/null 2>&1; then
+  echo "[${LOG_TIMESTAMP}] Fetch returned invalid JSON, skipping" >> "$LOG_FILE"
+  exit 0
 fi
 
-# Current time
-WINDOW_END=$(date -u +%s)
+COUNT=$(echo "$RAW_JSON" | jq 'length' 2>/dev/null || echo "0")
+echo "[${LOG_TIMESTAMP}] Found $COUNT users" >> "$LOG_FILE"
 
-# Convert to ISO format
-WINDOW_START_ISO=$(date -u -d @$WINDOW_START +'%Y-%m-%dT%H:%M:%SZ')
-WINDOW_END_ISO=$(date -u -d @$WINDOW_END +'%Y-%m-%dT%H:%M:%SZ')
+# Treat non-numeric counts as zero
+if ! [[ "$COUNT" =~ ^[0-9]+$ ]]; then
+  COUNT=0
+fi
 
-echo "[${LOG_TIMESTAMP}] Detecting changes: $WINDOW_START_ISO to $WINDOW_END_ISO" | tee -a "$LOG_DIR/detect_changes.log"
+if [ "$COUNT" -gt 0 ]; then
+  timestamp=$(date -u +'%Y%m%d_%H%M%S')
+  cache_file="$CACHE_DIR/users_${timestamp}.json"
+  tmp_json=$(mktemp)
+  echo "$RAW_JSON" | jq '.' > "$tmp_json"
+  cp "$tmp_json" "$cache_file"
 
-# Fetch users updated in time window
-FETCH_OUTPUT=$("$ROOT_DIR/scripts/helpers/fetch_cursus_21_users_simple.sh" "$WINDOW_START_ISO" "$WINDOW_END_ISO" 2>&1) || {
-    echo "[${LOG_TIMESTAMP}] Fetch failed" >> "$LOG_DIR/detect_changes.log"
-    exit 0  # Don't fail the cron
-}
+  HASH_FILE="$BACKLOG_DIR/detector_hashes.json"
+  BACKLOG_FILE="$BACKLOG_DIR/fetch_queue.txt"
 
-# Count results
-FILTERED_COUNT=$(echo "$FETCH_OUTPUT" | grep -oP 'filtered=\K[0-9]+' | head -1 || echo "0")
+  TMP_JSON="$tmp_json" HASH_FILE="$HASH_FILE" BACKLOG_FILE="$BACKLOG_FILE" python3 << 'PYTHON_FINGERPRINT'
+import json, os, hashlib
 
-echo "[${LOG_TIMESTAMP}] Found $FILTERED_COUNT users" >> "$LOG_DIR/detect_changes.log"
+root = os.environ.get("ROOT_DIR", "/srv/42_Network/repo")
+tmp_json = os.environ["TMP_JSON"]
+hash_file = os.environ["HASH_FILE"]
+backlog_file = os.environ["BACKLOG_FILE"]
 
-# If users found, extract IDs and save raw data
-if [ "$FILTERED_COUNT" -gt 0 ]; then
-    export ROOT_DIR
-    python3 << 'PYTHON_EXTRACT'
-import json
-import os
-from datetime import datetime
+def load_json(path, default):
+    try:
+        with open(path, "r") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return default
+    except json.JSONDecodeError:
+        return default
 
-try:
-    users_file = os.path.join(os.environ.get('ROOT_DIR', '/srv/42_Network/repo'), 'exports/09_users/raw_all.json')
-    with open(users_file, 'r') as f:
-        users = json.load(f)
-except FileNotFoundError:
-    print("No users file")
-    exit(1)
+users = load_json(tmp_json, [])
+hashes = load_json(hash_file, {})
 
-# Filter: kind=student AND alumni?=false
-filtered = [
-    u for u in users
-    if u.get('kind') == 'student' and u.get('alumni?') is False
-]
+def fingerprint(user):
+    # Ignore volatile fields that should not trigger reprocessing
+    ignore = {"updated_at", "alumnized_at", "created_at", "anonymize_date", "data_erasure_date"}
+    filtered = {k: v for k, v in user.items() if k not in ignore}
+    payload = json.dumps(filtered, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(payload.encode()).hexdigest()
 
-# Save raw JSON data to cache (don't throw away!)
-cache_dir = os.path.join(os.environ.get('ROOT_DIR', '/srv/42_Network/repo'), '.cache/raw_detect')
-timestamp = datetime.utcnow().strftime('%Y%m%d_%H%M%S')
-cache_file = os.path.join(cache_dir, f'users_{timestamp}.json')
-with open(cache_file, 'w') as f:
-    json.dump(filtered, f, indent=2)
+changed_ids = []
+for u in users:
+    uid = u.get("id")
+    if uid is None:
+        continue
+    fp = fingerprint(u)
+    last = hashes.get(str(uid))
+    if last != fp:
+        changed_ids.append(str(uid))
+        hashes[str(uid)] = fp
 
-# Extract and write IDs to backlog
-backlog_file = os.path.join(os.environ.get('ROOT_DIR', '/srv/42_Network/repo'), '.backlog/pending_users.txt')
-with open(backlog_file, 'a') as f:
-    for user in filtered:
-        f.write(f"{user['id']}\n")
+# Dedup with existing backlog
+existing = []
+if os.path.isfile(backlog_file):
+    with open(backlog_file, "r") as f:
+        existing = [line.strip() for line in f if line.strip()]
 
-print(f"Added {len(filtered)} IDs to backlog, cached raw data to {cache_file}")
-PYTHON_EXTRACT
+all_ids = sorted(set(existing + changed_ids), key=int)
+with open(backlog_file, "w") as f:
+    for uid in all_ids:
+        f.write(f"{uid}\n")
 
+with open(hash_file, "w") as f:
+    json.dump(hashes, f, indent=2)
+
+print(f"fingerprinted={len(users)} changed={len(changed_ids)} backlog_total={len(all_ids)}")
+PYTHON_FINGERPRINT
+
+  echo "[${LOG_TIMESTAMP}] Cached raw data to $cache_file" >> "$LOG_FILE"
+  rm -f "$tmp_json"
 fi
 
 # Update last detection time (subtract 5 seconds for overlap safety)
-NEXT_WINDOW_START=$((WINDOW_END - 5))
+LAST_EPOCH_FILE="$BACKLOG_DIR/last_detect_epoch"
+NEXT_WINDOW_START=$((NOW_EPOCH - 5))
 echo "$NEXT_WINDOW_START" > "$LAST_EPOCH_FILE"
 
-# Keep log to 500 lines
-tail -500 "$LOG_DIR/detect_changes.log" > "$LOG_DIR/detect_changes.log.tmp"
-mv "$LOG_DIR/detect_changes.log.tmp" "$LOG_DIR/detect_changes.log"
+# Keep log to last 500 lines
+tail -500 "$LOG_FILE" > "${LOG_FILE}.tmp" && mv "${LOG_FILE}.tmp" "$LOG_FILE"
