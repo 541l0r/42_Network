@@ -95,6 +95,11 @@ while true; do
       
       COUNTER=$((COUNTER + 1))
       echo "[$(date -u +'%Y-%m-%dT%H:%M:%SZ')] ✓ Upserted user $USER_ID (total: $COUNTER)" | tee -a "$LOG_FILE"
+      
+      # Trim log to prevent growth (every 50 users)
+      if [[ $((COUNTER % 50)) -eq 0 ]]; then
+        [[ $(wc -l < "$LOG_FILE" 2>/dev/null || echo "0") -gt 1000 ]] && tail -500 "$LOG_FILE" > "${LOG_FILE}.tmp" && mv "${LOG_FILE}.tmp" "$LOG_FILE"
+      fi
     fi
   else
     # No more items in queue

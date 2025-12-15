@@ -26,6 +26,14 @@ fi
 DEFAULT_MAX_WINDOW="${CONFIG_TIME_WINDOW:-65}"
 MAX_WINDOW="${TIME_WINDOW:-$DEFAULT_MAX_WINDOW}"
 
+# Configurable timestamp delta (seconds) - skip delta check if old & new JSON updated_at < this (default 15min)
+CONFIG_DELTA_SKIP=""
+if [[ -f "$CONFIG_FILE" ]]; then
+  CONFIG_DELTA_SKIP=$(grep -E '^\s*DELTA_SKIP_SECONDS=' "$CONFIG_FILE" | head -1 | cut -d= -f2 | awk '{print $1}')
+fi
+DEFAULT_DELTA_SKIP="900"  # 15 minutes
+DELTA_SKIP_SECONDS="${DELTA_SKIP_SECONDS:-${CONFIG_DELTA_SKIP:-$DEFAULT_DELTA_SKIP}}"
+
 NOW_EPOCH=$(date -u +%s)
 WINDOW_SECS="$MAX_WINDOW"
 PID=$$
@@ -60,11 +68,12 @@ if [ "$COUNT" -gt 0 ]; then
   HASH_FILE="$BACKLOG_DIR/detector_hashes.json"
   BACKLOG_FILE="$BACKLOG_DIR/fetch_queue.txt"
 
-  TMP_JSON="$tmp_json" HASH_FILE="$HASH_FILE" BACKLOG_FILE="$BACKLOG_FILE" python3 << 'PYTHON_FINGERPRINT'
+  TMP_JSON="$tmp_json" HASH_FILE="$HASH_FILE" BACKLOG_FILE="$BACKLOG_FILE" DELTA_SKIP="$DELTA_SKIP_SECONDS" python3 << 'PYTHON_FINGERPRINT'
 import json, os, hashlib
 
 root = os.environ.get("ROOT_DIR", "/srv/42_Network/repo")
 tmp_json = os.environ["TMP_JSON"]
+delta_skip = int(os.environ.get("DELTA_SKIP", "900"))  # 15 minutes default
 hash_file = os.environ["HASH_FILE"]
 backlog_file = os.environ["BACKLOG_FILE"]
 
@@ -87,16 +96,58 @@ def fingerprint(user):
     payload = json.dumps(filtered, sort_keys=True, separators=(",", ":"))
     return hashlib.sha256(payload.encode()).hexdigest()
 
+def get_updated_timestamp(user):
+    """Extract updated_at timestamp as epoch seconds"""
+    try:
+        import datetime
+        updated = user.get("updated_at")
+        if not updated:
+            return None
+        # Parse ISO format: "2025-12-15T01:40:01.169Z"
+        updated_dt = datetime.datetime.fromisoformat(updated.replace('Z', '+00:00'))
+        return updated_dt.timestamp()
+    except:
+        return None
+
+def should_skip_delta(new_user, old_user, hours=1):
+    """Skip delta check if both JSONs have updated_at < N hours apart"""
+    new_ts = get_updated_timestamp(new_user)
+    old_ts = get_updated_timestamp(old_user)
+    if new_ts is None or old_ts is None:
+        return False
+    delta = abs(new_ts - old_ts)
+    return delta < (hours * 3600)
+
 changed_ids = []
+old_timestamps = {}
+
+# Load old timestamps if they exist
+for uid_str, hash_data in hashes.items():
+    if isinstance(hash_data, dict):
+        old_timestamps[uid_str] = hash_data.get("timestamp")
+    else:
+        old_timestamps[uid_str] = None
+
 for u in users:
     uid = u.get("id")
     if uid is None:
         continue
+    
+    new_ts = get_updated_timestamp(u)
+    old_ts = old_timestamps.get(str(uid))
+    
+    # OPTIMIZATION: Skip delta check if timestamp delta < configured seconds (default 900s = 15min)
+    if new_ts and old_ts and abs(new_ts - old_ts) < delta_skip:
+        # No significant time difference, skip fingerprint comparison
+        continue
+    
     fp = fingerprint(u)
-    last = hashes.get(str(uid))
+    last_hash = hashes.get(str(uid))
+    last = last_hash.get("hash") if isinstance(last_hash, dict) else last_hash
+    
     if last != fp:
         changed_ids.append(str(uid))
-        hashes[str(uid)] = fp
+        hashes[str(uid)] = {"hash": fp, "timestamp": new_ts}
 
 # Dedup with existing backlog
 existing = []

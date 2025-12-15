@@ -89,5 +89,8 @@ while true; do
     FETCH_QUEUE_SIZE=$(wc -l < "$FETCH_QUEUE" 2>/dev/null || echo "0")
     PROCESS_QUEUE_SIZE=$(wc -l < "$PROCESS_QUEUE" 2>/dev/null || echo "0")
     echo "[$(date -u +'%Y-%m-%dT%H:%M:%SZ')] Stats: Fetched=$COUNTER | Errors=$FETCH_ERRORS | FetchQueue=$FETCH_QUEUE_SIZE | ProcessQueue=$PROCESS_QUEUE_SIZE" | tee -a "$LOG_FILE"
+    
+    # Trim log to prevent growth (every 20 iterations)
+    [[ $(wc -l < "$LOG_FILE" 2>/dev/null || echo "0") -gt 1000 ]] && tail -500 "$LOG_FILE" > "${LOG_FILE}.tmp" && mv "${LOG_FILE}.tmp" "$LOG_FILE"
   fi
 done
