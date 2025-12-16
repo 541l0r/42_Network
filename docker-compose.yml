@@ -21,13 +21,14 @@ services:
     networks:
       - transcendence
 
-  # Nginx: serve Godot WebGL + cached API JSON files
+  # Nginx: serve static files + proxy to Node.js API
   web:
     image: nginx:alpine
     container_name: transcendence_web
     restart: unless-stopped
     depends_on:
       - db
+      - api
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
       - ./godot:/usr/share/nginx/html/godot:ro
@@ -36,6 +37,32 @@ services:
       - ./exports:/usr/share/nginx/html/api:ro
     ports:
       - "${WEB_PORT:-8000}:80"
+    networks:
+      - transcendence
+
+  # Node.js API: WebSocket + real-time updates
+  api:
+    image: node:20-alpine
+    container_name: transcendence_api
+    restart: unless-stopped
+    depends_on:
+      - db
+    working_dir: /app
+    volumes:
+      - ./api:/app/api
+      - ./globe.html:/app/globe.html:ro
+      - ./logs:/app/logs
+      - ./exports:/app/exports
+      - ./.backlog:/app/.backlog
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_NAME: ${DB_NAME:-api42}
+      DB_USER: ${DB_USER:-api42}
+      DB_PASSWORD: ${DB_PASSWORD:-api42}
+    command: sh -c "cd api && npm install && cd .. && node api/server.js"
     networks:
       - transcendence
 

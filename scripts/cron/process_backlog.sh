@@ -115,5 +115,5 @@ log "═════════════════════════
 log "Process Backlog - Complete (updated $filtered_count users)"
 log "════════════════════════════════════════════"
 
-# Keep log to last 500 lines
-tail -500 "$LOG_FILE" > "$LOG_FILE.tmp" && mv "$LOG_FILE.tmp" "$LOG_FILE"
+# Keep log to last 5000 lines (increased for load testing)
+tail -5000 "$LOG_FILE" > "$LOG_FILE.tmp" && mv "$LOG_FILE.tmp" "$LOG_FILE"

@@ -96,9 +96,15 @@ while true; do
       COUNTER=$((COUNTER + 1))
       echo "[$(date -u +'%Y-%m-%dT%H:%M:%SZ')] ✓ Upserted user $USER_ID (total: $COUNTER)" | tee -a "$LOG_FILE"
       
+      # Send event to API server for real-time notifications
+      curl -s -X POST "http://localhost:8000/api/user-updated" \
+        -H "Content-Type: application/json" \
+        -d "{\"id\": $USER_ID, \"login\": \"$login\", \"campus_id\": $campus_id, \"wallet\": $wallet, \"correction_point\": $correction_point, \"location\": \"$location\", \"change_type\": \"upserted\"}" \
+        2>/dev/null || true
+      
       # Trim log to prevent growth (every 50 users)
       if [[ $((COUNTER % 50)) -eq 0 ]]; then
-        [[ $(wc -l < "$LOG_FILE" 2>/dev/null || echo "0") -gt 1000 ]] && tail -500 "$LOG_FILE" > "${LOG_FILE}.tmp" && mv "${LOG_FILE}.tmp" "$LOG_FILE"
+        [[ $(wc -l < "$LOG_FILE" 2>/dev/null || echo "0") -gt 5500 ]] && tail -5000 "$LOG_FILE" > "${LOG_FILE}.tmp" && mv "${LOG_FILE}.tmp" "$LOG_FILE"
       fi
     fi
   else

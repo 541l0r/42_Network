@@ -18,15 +18,15 @@ if [[ "$AGGRESSIVE" == "--aggressive" ]]; then
   echo "   Deleted orchestra logs older than 3 days"
 fi
 
-# Current main logs to keep active (cap at 500 lines)
+# Current main logs to keep active (cap at 5000 lines for load testing)
 for logfile in detect_changes.log fetcher.log upserter.log upserter2.log; do
   filepath="$LOG_DIR/$logfile"
   if [[ -f "$filepath" ]]; then
     lines=$(wc -l < "$filepath")
-    if [[ $lines -gt 500 ]]; then
-      # Keep last 500 lines
-      tail -500 "$filepath" > "${filepath}.tmp" && mv "${filepath}.tmp" "$filepath"
-      echo "✓ Trimmed $logfile: $lines → 500 lines"
+    if [[ $lines -gt 5000 ]]; then
+      # Keep last 5000 lines
+      tail -5000 "$filepath" > "${filepath}.tmp" && mv "${filepath}.tmp" "$filepath"
+      echo "✓ Trimmed $logfile: $lines → 5000 lines"
     fi
   fi
 done
@@ -36,4 +36,4 @@ echo ""
 echo "Before/After:"
 du -sh "$LOG_DIR"
 echo ""
-echo "✓ Logs cleaned (current active logs capped at 500 lines each)"
+echo "✓ Logs cleaned (current active logs capped at 5000 lines each for load testing)"

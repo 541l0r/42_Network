@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>42 Network - Globe Visualization</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: rgba(15, 20, 30, 0.8);
+      border-bottom: 1px solid #334155;
+      padding: 20px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+
+    header h1 {
+      background: linear-gradient(90deg, #00d4ff, #0099cc);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      color: #94a3b8;
+      font-size: 14px;
+      margin-top: 8px;
+      text-align: center;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      width: 100%;
+      gap: 20px;
+      padding: 30px 40px;
+      align-items: center;
+      justify-content: center;
+      min-height: 0;
+      overflow: visible;
+    }
+
+    .globe-wrapper {
+      flex: 0 0 55%;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 0;
+      border: none;
+      outline: none;
+    }
+
+    #globe-canvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border: none;
+      outline: none;
+    }
+
+    .content-wrapper {
+      flex: 0 0 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      text-align: center;
+      height: 100%;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 36px;
+      color: #60a5fa;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 16px;
+      color: #cbd5e1;
+      line-height: 1.8;
+      margin: 0;
+      max-width: 450px;
+    }
+
+    footer {
+      background: rgba(15, 20, 30, 0.8);
+      border-top: 1px solid #334155;
+      padding: 20px;
+      text-align: center;
+      font-size: 12px;
+      color: #64748b;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    footer p {
+      text-align: center;
+      margin: 5px 0;
+    }
+
+    footer a {
+      color: #00d4ff;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .tech-stack {
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 15px;
+      font-size: 12px;
+      text-align: left;
+    }
+
+    .tech-stack h3 {
+      color: #00d4ff;
+      font-size: 11px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .tech-stack ul {
+      list-style: none;
+    }
+
+    .tech-stack li {
+      padding: 3px 0;
+      color: #94a3b8;
+    }
+
+    .tech-stack li strong {
+      color: #60a5fa;
+    }
+
+    footer p {
+      text-align: center;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>42 NETWORK</h1>
+    <p>Data Visualization Platform</p>
+  </header>
+
+  <main>
+    <div class="globe-wrapper">
+      <canvas id="globe-canvas"></canvas>
+    </div>
+    <div class="content-wrapper">
+      <h2>Coming Soon</h2>
+      <p>Discover the 42 Network through an interactive 3D globe powered by Godot Engine. Visualize real-time student distribution, campus metrics, and network activity across the globe. Built with cutting-edge data visualization technology to bring your network to life.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+      View real-time system metrics: <a href="/admin-dashboard.html">Admin Dashboard</a>
+    </p>
+    <p style="margin-top: 10px;">42 Network Data Pipeline • December 2025</p>
+  </footer>
+
+  <script>
+    function initGlobe() {
+      const canvas = document.getElementById('globe-canvas');
+      const ctx = canvas.getContext('2d');
+      let rotation = 0;
+
+      // Campus coordinates - generate random points around the globe
+      const campuses = [];
+      for (let i = 0; i < 22; i++) {
+        const lat = (Math.random() - 0.5) * 180;
+        const lon = Math.random() * 360 - 180;
+        campuses.push({
+          name: `Campus ${i + 1}`,
+          lat: lat,
+          lon: lon
+        });
+      }
+
+      function resizeCanvas() {
+        const rect = canvas.getBoundingClientRect();
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight - 60; // Account for header
+      }
+
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+
+      // Project lat/lon to 2D canvas coordinates with rotation
+      function projectPoint(lat, lon, rot) {
+        const phi = (lat * Math.PI) / 180;
+        const theta = ((lon * Math.PI) / 180) + rot;
+        
+        const x = Math.cos(phi) * Math.sin(theta);
+        const y = Math.sin(phi);
+        const z = Math.cos(phi) * Math.cos(theta);
+        
+        return { x, y, z };
+      }
+
+      // Draw continent outlines for visual rotation
+      function drawContinents(centerX, centerY, radius) {
+        // Removed - focus on glowing points only
+      }
+
+      function drawGlobe() {
+        const w = canvas.width;
+        const h = canvas.height;
+        const centerX = w / 2;
+        const centerY = h / 2;
+        const radius = (Math.min(w, h) / 1.8) * 1.35;
+
+        // Clear background
+        ctx.fillStyle = 'rgba(15, 20, 40, 0.98)';
+        ctx.fillRect(0, 0, w, h);
+
+        // Globe sphere with textured surface
+        const gradient = ctx.createRadialGradient(
+          centerX - radius * 0.25, 
+          centerY - radius * 0.25, 
+          0, 
+          centerX, 
+          centerY, 
+          radius
+        );
+        gradient.addColorStop(0, 'rgba(120, 200, 255, 1)');
+        gradient.addColorStop(0.5, 'rgba(50, 150, 200, 0.95)');
+        gradient.addColorStop(1, 'rgba(20, 80, 140, 0.7)');
+
+        ctx.fillStyle = gradient;
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Add texture with noise/variation to surface
+        for (let i = 0; i < 40; i++) {
+          const angle = Math.random() * Math.PI * 2;
+          const dist = Math.random() * radius * 0.8;
+          const x = centerX + Math.cos(angle) * dist;
+          const y = centerY + Math.sin(angle) * dist;
+          const size = Math.random() * 3 + 1;
+          
+          ctx.fillStyle = `rgba(40, 120, 180, ${Math.random() * 0.3})`;
+          ctx.beginPath();
+          ctx.arc(x, y, size, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        // Add electric grid lines on surface
+        ctx.strokeStyle = 'rgba(0, 180, 220, 0.25)';
+        ctx.lineWidth = 0.5;
+        // Surface texture (cleaned up)
+
+        // Latitude lines only (simple grid)
+        ctx.strokeStyle = 'rgba(0, 150, 200, 0.15)';
+        ctx.lineWidth = 0.6;
+        for (let lat = -60; lat <= 60; lat += 30) {
+          const phi = (lat * Math.PI) / 180;
+          const latRadius = radius * Math.cos(phi);
+          const latY = centerY + (Math.sin(phi) * radius);
+          
+          ctx.beginPath();
+          ctx.ellipse(centerX, latY, latRadius, latRadius * 0.15, 0, 0, Math.PI * 2);
+          ctx.stroke();
+        }
+
+        // Draw campus points
+        const projectedCampuses = campuses
+          .map((campus, idx) => {
+            const proj = projectPoint(campus.lat, campus.lon, rotation);
+            if (proj.z < -0.15) return null;
+            return {
+              ...campus,
+              x: centerX + proj.x * radius,
+              y: centerY + proj.y * radius,
+              z: proj.z,
+              idx
+            };
+          })
+          .filter(c => c !== null)
+          .sort((a, b) => a.z - b.z);
+
+        // Draw campus points on top
+        projectedCampuses.forEach((campus) => {
+          const brightness = 0.6 + Math.sin(rotation * 3 + campus.idx * 0.5) * 0.4;
+          const size = 3 + brightness * 1.5;
+          
+          ctx.fillStyle = `rgba(0, 212, 255, ${brightness * 0.25})`;
+          ctx.beginPath();
+          ctx.arc(campus.x, campus.y, size * 2.5, 0, Math.PI * 2);
+          ctx.fill();
+          
+          ctx.fillStyle = `rgba(0, 212, 255, ${0.7 + brightness * 0.3})`;
+          ctx.beginPath();
+          ctx.arc(campus.x, campus.y, size, 0, Math.PI * 2);
+          ctx.fill();
+        });
+
+        // Pulsing glow around globe
+        const glowRadius = radius * 1.25;
+        const glowGradient = ctx.createRadialGradient(centerX, centerY, radius * 0.95, centerX, centerY, glowRadius);
+        glowGradient.addColorStop(0, `rgba(0, 212, 255, ${0.2 + Math.sin(rotation * 2) * 0.15})`);
+        glowGradient.addColorStop(0.6, `rgba(0, 150, 200, ${0.08 + Math.sin(rotation * 2) * 0.05})`);
+        glowGradient.addColorStop(1, 'rgba(0, 100, 150, 0)');
+        
+        ctx.fillStyle = glowGradient;
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, glowRadius, 0, Math.PI * 2);
+        ctx.fill();
+
+        rotation += 0.00375;
+        requestAnimationFrame(drawGlobe);
+      }
+
+      drawGlobe();
+    }
+
+    document.addEventListener('DOMContentLoaded', initGlobe);
+  </script>
+</body>
+</html>

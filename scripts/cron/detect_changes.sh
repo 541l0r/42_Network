@@ -36,6 +36,7 @@ if [[ -f "$CONFIG_FILE" ]]; then
 fi
 DEFAULT_DELTA_SKIP="900"  # 15 minutes
 DELTA_SKIP_SECONDS="${DELTA_SKIP_SECONDS:-${CONFIG_DELTA_SKIP:-$DEFAULT_DELTA_SKIP}}"
+INTERNAL_CAMPUS_ID="${CAMPUS_ID:-21}"
 
 NOW_EPOCH=$(date -u +%s)
 WINDOW_SECS="$MAX_WINDOW"
@@ -78,6 +79,10 @@ import json, os, hashlib, hmac
 root = os.environ.get("ROOT_DIR", "/srv/42_Network/repo")
 tmp_json = os.environ["TMP_JSON"]
 delta_skip = int(os.environ.get("DELTA_SKIP", "900"))  # 15 minutes default
+try:
+    internal_campus_id = int(os.environ.get("INTERNAL_CAMPUS_ID", "21"))
+except Exception:
+    internal_campus_id = 21
 hash_file = os.environ["HASH_FILE"]
 backlog_file = os.environ["BACKLOG_FILE"]
 
@@ -140,7 +145,7 @@ def get_campus_id(user):
     campus_list = user.get("campus", [])
     if campus_list and isinstance(campus_list, list):
         return campus_list[0].get("id")
-    
+
     return None
 
 def get_updated_timestamp(user):
@@ -171,19 +176,31 @@ for u in users:
     if uid is None:
         continue
     
+    campus_id_raw = get_campus_id(u)
+    try:
+        campus_id = int(campus_id_raw) if campus_id_raw is not None else None
+    except Exception:
+        campus_id = campus_id_raw
+
+    # If campus_id is missing, try to reuse last known campus_id from hashes
+    last_hash_entry = hashes.get(str(uid)) if isinstance(hashes, dict) else None
+    if campus_id is None and isinstance(last_hash_entry, dict):
+        campus_id = last_hash_entry.get("campus_id")
+
     new_ts = get_updated_timestamp(u)
     old_ts = old_timestamps.get(str(uid))
+
+    # Per-campus delta skip (internal campus: no skip)
+    effective_delta_skip = 0 if campus_id == internal_campus_id else delta_skip
     
     # OPTIMIZATION: Skip delta check if timestamp delta < configured seconds (default 900s = 15min)
-    if new_ts and old_ts and abs(new_ts - old_ts) < delta_skip:
+    if new_ts and old_ts and abs(new_ts - old_ts) < effective_delta_skip:
         # No significant time difference, skip fingerprint comparison
         continue
     
     # Determine which HMAC key to use based on data source
-    # Currently: ALL detector comparisons are API-to-API (external)
-    # Future: When detector compares DB snapshots, use internal
-    campus_id = get_campus_id(u)
-    fingerprint_key = "external"  # API snapshot comparison uses external field set
+    # Use internal fields for the configured internal campus (includes location), external otherwise
+    fingerprint_key = "internal" if campus_id == internal_campus_id else "external"
 
     if fingerprint_key == "internal":
         fingerprint_fields = internal_fields

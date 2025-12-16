@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>42 Network - Admin Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #e2e8f0;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #334155;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      background: linear-gradient(135deg, #60a5fa, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .status-indicator {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      padding: 8px 16px;
+      background: #1e293b;
+      border-radius: 6px;
+      border: 1px solid #334155;
+    }
+
+    .status-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #22c55e;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 24px;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .card:hover {
+      border-color: #475569;
+      box-shadow: 0 10px 30px rgba(59, 130, 246, 0.1);
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #60a5fa, #a78bfa);
+    }
+
+    .card-title {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #94a3b8;
+      margin-bottom: 16px;
+    }
+
+    .metric-value {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #f1f5f9;
+    }
+
+    .metric-label {
+      font-size: 13px;
+      color: #64748b;
+    }
+
+    .metric-detail {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid #334155;
+      font-size: 13px;
+    }
+
+    .detail-label {
+      color: #94a3b8;
+    }
+
+    .detail-value {
+      color: #cbd5e1;
+      font-weight: 600;
+    }
+
+    .queue-bar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .bar {
+      flex: 1;
+      height: 8px;
+      background: #334155;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #60a5fa, #a78bfa);
+      border-radius: 4px;
+      transition: width 0.3s ease;
+    }
+
+    .bar-percent {
+      color: #94a3b8;
+      font-size: 12px;
+      min-width: 35px;
+      text-align: right;
+    }
+
+    .wide-card {
+      grid-column: 1 / -1;
+    }
+
+    .log-container {
+      background: #0f172a;
+      border-radius: 8px;
+      padding: 16px;
+      font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+      font-size: 12px;
+      color: #60a5fa;
+      max-height: 300px;
+      overflow-y: auto;
+      line-height: 1.5;
+    }
+
+    .log-line {
+      padding: 4px 0;
+      border-bottom: 1px solid #1e293b;
+    }
+
+    .log-line:last-child {
+      border-bottom: none;
+    }
+
+    .log-timestamp {
+      color: #94a3b8;
+    }
+
+    .log-user {
+      color: #22c55e;
+    }
+
+    .log-campus {
+      color: #f59e0b;
+    }
+
+    .error {
+      color: #ef4444;
+    }
+
+    .warning {
+      color: #f59e0b;
+    }
+
+    .success {
+      color: #22c55e;
+    }
+
+    .connection-status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: #94a3b8;
+    }
+
+    .ws-indicator {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #ef4444;
+    }
+
+    .ws-indicator.connected {
+      background: #22c55e;
+    }
+
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .metric-value {
+        font-size: 28px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📊 42 Network Pipeline</h1>
+      <div class="status-indicator">
+        <div class="status-dot"></div>
+        <span>Live Monitoring</span>
+      </div>
+    </header>
+
+    <div class="grid">
+      <!-- Fetch Queue -->
+      <div class="card">
+        <div class="card-title">📥 Fetch Queue</div>
+        <div class="metric-value" id="fetch-queue">0</div>
+        <div class="metric-label">Items waiting to be fetched</div>
+        <div class="queue-bar">
+          <div class="bar">
+            <div class="bar-fill" id="fetch-queue-bar" style="width: 0%"></div>
+          </div>
+          <div class="bar-percent" id="fetch-queue-percent">0%</div>
+        </div>
+      </div>
+
+      <!-- Process Queue -->
+      <div class="card">
+        <div class="card-title">⚙️ Process Queue</div>
+        <div class="metric-value" id="process-queue">0</div>
+        <div class="metric-label">Items waiting to be upserted</div>
+        <div class="queue-bar">
+          <div class="bar">
+            <div class="bar-fill" id="process-queue-bar" style="width: 0%"></div>
+          </div>
+          <div class="bar-percent" id="process-queue-percent">0%</div>
+        </div>
+      </div>
+
+      <!-- Active Fetchers -->
+      <div class="card">
+        <div class="card-title">🚀 Fetchers</div>
+        <div class="metric-value" id="fetchers">0</div>
+        <div class="metric-label">Active instances</div>
+        <div class="metric-detail">
+          <span class="detail-label">Target:</span>
+          <span class="detail-value">3</span>
+        </div>
+      </div>
+
+      <!-- Active Upserters -->
+      <div class="card">
+        <div class="card-title">💾 Upserters</div>
+        <div class="metric-value" id="upserters">0</div>
+        <div class="metric-label">Active instances</div>
+        <div class="metric-detail">
+          <span class="detail-label">Target:</span>
+          <span class="detail-value">1</span>
+        </div>
+      </div>
+
+      <!-- Throughput -->
+      <div class="card">
+        <div class="card-title">⚡ Throughput</div>
+        <div class="metric-value" id="throughput">0</div>
+        <div class="metric-label">Items per minute (theoretical)</div>
+        <div class="metric-detail">
+          <span class="detail-label">Rate Limit:</span>
+          <span class="detail-value">4.0s</span>
+        </div>
+      </div>
+
+      <!-- System Status -->
+      <div class="card">
+        <div class="card-title">🔌 Connection</div>
+        <div class="connection-status">
+          <div class="ws-indicator" id="ws-indicator"></div>
+          <span id="ws-status">Disconnected</span>
+        </div>
+        <div class="metric-detail" style="margin-top: 16px;">
+          <span class="detail-label">Last Update:</span>
+          <span class="detail-value" id="last-update">--:--:--</span>
+        </div>
+      </div>
+
+      <!-- Real-time Log -->
+      <div class="card wide-card">
+        <div class="card-title">📝 Recent Updates</div>
+        <div class="log-container" id="log-container">
+          <div class="log-line"><span class="log-timestamp">[--:--:--]</span> Waiting for updates...</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let ws = null;
+    let logs = [];
+    const MAX_LOGS = 20;
+    const MAX_QUEUE = 500; // For percentage calculation
+
+    function connectWebSocket() {
+      // Pure HTTP polling - no WebSocket
+      console.log('[Info] Using HTTP polling for metrics');
+      updateWSStatus(true);
+    }
+
+    function updateMetrics(data) {
+      // Update queue sizes
+      const fetchQueue = data.queues.fetch_queue || 0;
+      const processQueue = data.queues.process_queue || 0;
+
+      document.getElementById('fetch-queue').textContent = fetchQueue;
+      document.getElementById('process-queue').textContent = processQueue;
+
+      // Update queue bars
+      const fetchPercent = Math.min(100, (fetchQueue / MAX_QUEUE) * 100);
+      const processPercent = Math.min(100, (processQueue / MAX_QUEUE) * 100);
+
+      document.getElementById('fetch-queue-bar').style.width = fetchPercent + '%';
+      document.getElementById('fetch-queue-percent').textContent = Math.round(fetchPercent) + '%';
+
+      document.getElementById('process-queue-bar').style.width = processPercent + '%';
+      document.getElementById('process-queue-percent').textContent = Math.round(processPercent) + '%';
+
+      // Update process counts
+      document.getElementById('fetchers').textContent = data.processes.fetchers || 0;
+      document.getElementById('upserters').textContent = data.processes.upserters || 0;
+
+      // Update throughput
+      document.getElementById('throughput').textContent = data.estimated_throughput || 0;
+    }
+
+    function addLog(message) {
+      const now = new Date();
+      const timestamp = now.toLocaleTimeString('en-US', {
+        hour12: false,
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+      });
+
+      logs.unshift(`<span class="log-timestamp">[${timestamp}]</span> ${message}`);
+      if (logs.length > MAX_LOGS) {
+        logs.pop();
+      }
+
+      updateLogDisplay();
+    }
+
+    function updateLogDisplay() {
+      const container = document.getElementById('log-container');
+      container.innerHTML = logs.map(log => `<div class="log-line">${log}</div>`).join('');
+    }
+
+    function updateLastUpdate() {
+      const now = new Date();
+      const time = now.toLocaleTimeString('en-US', {
+        hour12: false,
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit'
+      });
+      document.getElementById('last-update').textContent = time;
+    }
+
+    function updateWSStatus(connected) {
+      const indicator = document.getElementById('ws-indicator');
+      const status = document.getElementById('ws-status');
+
+      if (connected) {
+        indicator.classList.add('connected');
+        status.textContent = 'Connected';
+        status.style.color = '#22c55e';
+      } else {
+        indicator.classList.remove('connected');
+        status.textContent = 'Polling...';
+        status.style.color = '#f59e0b';
+      }
+    }
+
+    // Fetch initial metrics
+    async function fetchMetrics() {
+      try {
+        // Fetch from same origin (works for both direct IP and SSH tunnel)
+        const metricsUrl = `${window.location.protocol}//${window.location.host}/api/pipeline/metrics`;
+        console.log('[Fetch] Requesting:', metricsUrl);
+        const response = await fetch(metricsUrl);
+        
+        if (!response.ok) {
+          throw new Error(`HTTP ${response.status}`);
+        }
+        
+        const data = await response.json();
+        updateMetrics(data);
+        updateLastUpdate();
+        updateWSStatus(true);
+      } catch (error) {
+        console.error('[Fetch] Error:', error.message);
+        updateWSStatus(false);
+        // Silently fail and retry - don't spam console
+      }
+    }
+
+    // Initialize
+    connectWebSocket();
+    fetchMetrics();
+    
+    // Periodic fetch as fallback (every 10 seconds)
+    setInterval(fetchMetrics, 10000);
+  </script>
+</body>
+</html>

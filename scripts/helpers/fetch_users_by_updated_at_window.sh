@@ -52,11 +52,11 @@ START_ISO=$(python3 -c "import datetime; print(datetime.datetime.fromtimestamp($
 
 # Paginate through /v2/cursus/:cursus_id/users with updated_at range, server-side filters
 # This ensures we only get students in the specific cursus (default: 21)
-# NOTE: Alumni filter done in jq (not API) because alumni_p can be null/false/true
+# NOTE: Alumni filter now done server-side (not API) because alumni_p can be null/false/true
 accum="[]"
 page=1
 while true; do
-  endpoint="/v2/cursus/$FILTER_CURSUS_ID/users?range%5Bupdated_at%5D=$START_ISO,$END_ISO&filter%5Bkind%5D=$FILTER_KIND&per_page=100&page=$page&sort=-updated_at"
+  endpoint="/v2/cursus/$FILTER_CURSUS_ID/users?range%5Bupdated_at%5D=$START_ISO,$END_ISO&filter%5Bkind%5D=$FILTER_KIND&alumni_p=false&per_page=100&page=$page&sort=-updated_at"
   page_json=$("$TOKEN_HELPER" call "$endpoint" 2>/dev/null || echo "[]")
   if ! echo "$page_json" | jq -e 'type=="array"' >/dev/null 2>&1; then
     break
@@ -71,7 +71,6 @@ while true; do
 done
 
 # Filter out alumni_p==true (keeps null and false)
-accum=$(echo "$accum" | jq '[.[] | select(.alumni_p != true)]')
 
-# Emit accumulated response
+# Emit accumulated response (alumni already filtered server-side)
 echo "$accum"

@@ -1,6 +1,13 @@
 import express from "express";
 import axios from "axios";
 import mysql from "mysql2/promise";
+import { WebSocketServer } from "ws";
+import { createServer } from "http";
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+import { execSync } from "child_process";
+import pg from "pg";
 
 const {
   API_ROOT = "https://api.intra.42.fr",
@@ -21,8 +28,54 @@ let refreshToken = REFRESH_TOKEN;
 let cachedAccessToken = ACCESS_TOKEN;
 let accessTokenExpiresAt = 0;
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const rootDir = path.resolve(__dirname, "..");
+
 const app = express();
 app.use(express.json({ limit: "2mb" }));
+
+// Serve static files from repo root
+app.use(express.static(rootDir));
+
+// WebSocket setup for real-time updates
+const server = createServer(app);
+const wss = new WebSocketServer({ server });
+let wsClients = [];
+
+wss.on("connection", (ws) => {
+  console.log("[WS] Client connected");
+  wsClients.push(ws);
+
+  ws.on("close", () => {
+    wsClients = wsClients.filter((c) => c !== ws);
+    console.log("[WS] Client disconnected. Remaining:", wsClients.length);
+  });
+
+  ws.on("error", (err) => {
+    console.error("[WS] Error:", err);
+  });
+});
+
+// Broadcast user updates to all connected WebSocket clients
+function broadcastUserUpdate(userData) {
+  const message = JSON.stringify({
+    type: "user_update",
+    timestamp: new Date().toISOString(),
+    data: userData,
+  });
+
+  wsClients.forEach((client) => {
+    if (client.readyState === 1) {
+      client.send(message);
+    }
+  });
+}
+
+// Root route - redirect to globe
+app.get("/", (req, res) => {
+  res.redirect("/globe.html");
+});
 
 async function connectDb() {
   const conn = await mysql.createConnection({
@@ -497,6 +550,144 @@ app.post("/coalition-scores/active", handleActiveCoalitionScores);
 app.post("/api/coalition-scores/coalition", handleCoalitionIdScores);
 app.post("/coalition-scores/coalition", handleCoalitionIdScores);
 
-app.listen(PORT, () => {
+// Endpoint to receive user upsert events from pipeline
+app.post("/api/user-updated", express.json(), (req, res) => {
+  const {
+    id,
+    login,
+    campus_id,
+    wallet,
+    correction_point,
+    location,
+    change_type,
+  } = req.body;
+
+  const userData = {
+    id,
+    login,
+    campus_id,
+    wallet,
+    correction_point,
+    location,
+    change_type: change_type || "update",
+  };
+
+  console.log(`[UPDATE] User ${id} (${login}) - Campus: ${campus_id}, Wallet: ${wallet}`);
+  broadcastUserUpdate(userData);
+  res.json({ ok: true });
+});
+
+// Endpoint to get current stats
+// Broadcast pipeline metrics to all WebSocket clients
+let lastFetchCount = 0;
+let lastFetchTime = Date.now();
+
+function broadcastPipelineMetrics(metrics) {
+  const message = JSON.stringify({
+    type: "pipeline_metrics",
+    timestamp: new Date().toISOString(),
+    data: metrics,
+  });
+
+  wsClients.forEach((client) => {
+    if (client.readyState === 1) {
+      client.send(message);
+    }
+  });
+}
+
+// Helper to read queue file sizes
+function getQueueStats() {
+  const readQueueSize = (filename) => {
+    const filepath = path.join(rootDir, ".backlog", filename);
+    if (!fs.existsSync(filepath)) return 0;
+    const content = fs.readFileSync(filepath, "utf8");
+    return content.trim().split("\n").filter(line => line.length > 0).length;
+  };
+  
+  return {
+    fetch_queue: readQueueSize("fetch_queue.txt"),
+    process_queue: readQueueSize("process_queue.txt"),
+  };
+}
+
+// Helper to get active process count
+function getProcessStats() {
+  try {
+    // In Docker, ps aux won't see host processes
+    // Read from config file instead - this is the EXPECTED configuration
+    const configFile = path.join(rootDir, 'scripts', 'config', 'agents.config');
+    let fetchers = 3;
+    let upserters = 1;
+    
+    if (fs.existsSync(configFile)) {
+      const content = fs.readFileSync(configFile, 'utf8');
+      const fetcherMatch = content.match(/FETCHER_INSTANCES\s*=\s*(\d+)/);
+      if (fetcherMatch) {
+        fetchers = parseInt(fetcherMatch[1]);
+      }
+    }
+    
+    // Return the configured values (these should be running)
+    return { fetchers, upserters };
+  } catch (error) {
+    console.warn('Could not determine process count:', error.message);
+    return { fetchers: 3, upserters: 1 };
+  }
+}
+
+app.get("/api/stats", async (req, res) => {
+  try {
+    // Return mock stats for now - the data will be counted from user updates
+    res.json({
+      total_users: 39971,
+      campuses: [1, 12, 13, 14, 16, 20, 21, 22, 25, 26, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 69],
+    });
+  } catch (err) {
+    console.error("[Stats] Error:", err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Endpoint to get pipeline metrics
+app.get("/api/pipeline/metrics", (req, res) => {
+  try {
+    const queues = getQueueStats();
+    const processes = getProcessStats();
+    const now = Date.now();
+    const elapsed = (now - lastFetchTime) / 1000; // seconds
+    
+    res.json({
+      timestamp: new Date().toISOString(),
+      queues,
+      processes,
+      rate_limit_delay: 4.0,
+      estimated_throughput: queues.fetch_queue > 0 ? (60 / 4.0).toFixed(1) : 0,
+    });
+  } catch (err) {
+    console.error("[Pipeline Metrics] Error:", err);
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// Periodic metrics broadcast (every 5 seconds)
+setInterval(() => {
+  const queues = getQueueStats();
+  const processes = getProcessStats();
+  const now = Date.now();
+  const elapsed = (now - lastFetchTime) / 1000; // seconds
+  
+  broadcastPipelineMetrics({
+    queues,
+    processes,
+    rate_limit_delay: 4.0,
+    estimated_throughput: queues.fetch_queue > 0 ? (60 / 4.0).toFixed(1) : 0,
+  });
+  
+  lastFetchTime = now;
+}, 5000);
+
+server.listen(PORT, () => {
   console.log(`API proxy listening on :${PORT}`);
+  console.log(`WebSocket server ready at ws://localhost:${PORT}`);
 });

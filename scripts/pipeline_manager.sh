@@ -14,7 +14,8 @@ mkdir -p "$PID_DIR"
 DETECTOR_PID_FILE="$PID_DIR/detector.pid"
 FETCHER_PID_FILE="$PID_DIR/fetcher.pid"
 UPSERTER_PID_FILE="$PID_DIR/upserter.pid"
-UPSERTER2_PID_FILE="$PID_DIR/upserter2.pid"
+UPSERTER_SCRIPT="$ROOT_DIR/scripts/upserter2.sh"
+UPSERTER_LOG="$LOG_DIR/upserter.log"
 
 is_running() {
   local pid="$1"
@@ -49,37 +50,26 @@ start_pipeline() {
     echo "   ✓ Fetcher (PID: $FETCHER_PID)"
   fi
   
-  # Start upserter
+  # Start upserter (single)
   echo "3. Starting upserter (batch DB inserts)..."
-  nohup bash "$ROOT_DIR/scripts/upserter.sh" >>"$LOG_DIR/upserter.log" 2>&1 &
+  nohup bash "$UPSERTER_SCRIPT" >>"$UPSERTER_LOG" 2>&1 &
   UPSERTER_PID=$!
   echo "$UPSERTER_PID" > "$UPSERTER_PID_FILE"
   sleep 1
   if is_running "$UPSERTER_PID"; then
-    echo "   ✓ Upserter 1 (PID: $UPSERTER_PID)"
-  fi
-  
-  # Start upserter 2
-  echo "4. Starting upserter 2 (batch DB inserts)..."
-  nohup bash "$ROOT_DIR/scripts/upserter2.sh" >>"$LOG_DIR/upserter2.log" 2>&1 &
-  UPSERTER2_PID=$!
-  echo "$UPSERTER2_PID" > "$UPSERTER2_PID_FILE"
-  sleep 1
-  if is_running "$UPSERTER2_PID"; then
-    echo "   ✓ Upserter 2 (PID: $UPSERTER2_PID)"
+    echo "   ✓ Upserter (PID: $UPSERTER_PID)"
   fi
   
   echo ""
   echo "✅ Pipeline started!"
   echo ""
   echo "Architecture:"
-  echo "  Detector → fetch_queue → Fetcher → process_queue → [Upserter 1 + Upserter 2]"
+  echo "  Detector → fetch_queue → Fetcher → process_queue → Upserter"
   echo ""
   echo "Logs:"
   echo "  • Detector:   $LOG_DIR/detect_changes.log"
   echo "  • Fetcher:    $LOG_DIR/fetcher.log"
-  echo "  • Upserter 1: $LOG_DIR/upserter.log"
-  echo "  • Upserter 2: $LOG_DIR/upserter2.log"
+  echo "  • Upserter:   $UPSERTER_LOG"
 }
 
 stop_pipeline() {
@@ -99,18 +89,11 @@ stop_pipeline() {
     echo "✓ Stopped fetcher (PID: $FETCHER_PID)"
   fi
   
-  # Stop upserter
+  # Stop upserter (single)
   UPSERTER_PID=$(read_pid "$UPSERTER_PID_FILE" 2>/dev/null || echo "")
   if [[ -n "$UPSERTER_PID" ]] && is_running "$UPSERTER_PID"; then
     kill "$UPSERTER_PID" 2>/dev/null || true
-    echo "✓ Stopped upserter 1 (PID: $UPSERTER_PID)"
-  fi
-  
-  # Stop upserter 2
-  UPSERTER2_PID=$(read_pid "$UPSERTER2_PID_FILE" 2>/dev/null || echo "")
-  if [[ -n "$UPSERTER2_PID" ]] && is_running "$UPSERTER2_PID"; then
-    kill "$UPSERTER2_PID" 2>/dev/null || true
-    echo "✓ Stopped upserter 2 (PID: $UPSERTER2_PID)"
+    echo "✓ Stopped upserter (PID: $UPSERTER_PID)"
   fi
   
   echo "✅ Pipeline stopped"
@@ -139,17 +122,9 @@ status_pipeline() {
   # Upserter
   UPSERTER_PID=$(read_pid "$UPSERTER_PID_FILE" 2>/dev/null || echo "")
   if [[ -n "$UPSERTER_PID" ]] && is_running "$UPSERTER_PID"; then
-    echo "✓ Upserter 1 (PID: $UPSERTER_PID)"
+    echo "✓ Upserter (PID: $UPSERTER_PID)"
   else
-    echo "✗ Upserter 1 (not running)"
-  fi
-  
-  # Upserter 2
-  UPSERTER2_PID=$(read_pid "$UPSERTER2_PID_FILE" 2>/dev/null || echo "")
-  if [[ -n "$UPSERTER2_PID" ]] && is_running "$UPSERTER2_PID"; then
-    echo "✓ Upserter 2 (PID: $UPSERTER2_PID)"
-  else
-    echo "✗ Upserter 2 (not running)"
+    echo "✗ Upserter (not running)"
   fi
   
   echo ""
