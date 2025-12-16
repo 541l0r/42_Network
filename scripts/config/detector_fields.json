@@ -1,0 +1,119 @@
+{
+  "description": "Smart detector field configuration: exclude all by default, track only scalars. Campus ID sourced from .env (CAMPUS_ID)",
+  "hmac_keys": {
+    "internal": "42network_internal_detection",
+    "external": "42network_external_detection"
+  },
+  
+  "internals": {
+    "description": "Scalar fields only - trigger requeue on meaningful changes",
+    "fields_with_notes": {
+      "login": "Very important - user identity, immutable from signup",
+      "first_name": "Important - identity tracking",
+      "last_name": "Important - identity tracking",
+      "correction_point": "Evaluation points - indicates meaningful activity",
+      "wallet": "Keep tracked - need to verify impact later",
+      "location": "Only for live tracking feature - controversial, use with caution"
+    },
+    "fields": [
+      "login",
+      "first_name",
+      "last_name",
+      "correction_point",
+      "wallet",
+      "location"
+    ]
+  },
+
+  "externals": {
+    "description": "Scalar fields only - trigger requeue on meaningful changes. Wallet & location excluded (too volatile for 1h gate)",
+    "fields_with_notes": {
+      "login": "Very important - user identity, immutable from signup",
+      "first_name": "Important - identity tracking",
+      "last_name": "Important - identity tracking",
+      "correction_point": "Evaluation points - indicates meaningful activity"
+    },
+    "fields": [
+      "login",
+      "first_name",
+      "last_name",
+      "correction_point"
+    ]
+  },
+  
+  "excludes": {
+    "description": "Fields never included in fingerprint (always ignored)",
+    "timestamp_fields_and_notes": {
+      "created_at": "Immutable - user creation timestamp",
+      "updated_at": "Volatile - changes on any API request",
+      "alumnized_at": "Immutable - one-time transition event",
+      "anonymize_date": "Immutable - GDPR compliance date",
+      "data_erasure_date": "Immutable - GDPR compliance date"
+    },
+    "timestamp_fields": [
+      "created_at",
+      "updated_at",
+      "alumnized_at",
+      "anonymize_date",
+      "data_erasure_date"
+    ],
+    "API42_internal_fields_and_notes": {
+      "active?": "Not useful - internal 42 system status",
+      "staff?": "Not useful - internal 42 system status",
+      "alumni?": "Useless - already determined by alumnized_at",
+      "kind": "Already sorted by API call (student/staff/etc)"
+    },
+    "API42_internal_fields": [
+      "active?",
+      "staff?",
+      "alumni?",
+      "kind"
+    ],
+    "privacy_fields_and_notes": {
+      "email": "Privacy - basic username@42 format, not needed",
+      "phone": "Privacy - hidden in API",
+      "displayname": "Privacy - not needed for tracking",
+      "usual_first_name": "Privacy - display variant, not needed",
+      "usual_full_name": "Privacy - display variant, not needed",
+      "image": "Privacy - URL only, not meaningful data"
+    },
+    "privacy_fields": [
+      "email",
+      "phone",
+      "displayname",
+      "usual_first_name",
+      "usual_full_name",
+      "image"
+    ],
+    "immutable_stable_fields_and_notes": {
+      "id": "Immutable - unique user identifier",
+      "url": "Immutable - API endpoint URL",
+      "pool_month": "Immutable - piscine start month",
+      "pool_year": "Immutable - piscine start year"
+    },
+    "immutable_stable_fields": [
+      "id",
+      "url",
+      "pool_month",
+      "pool_year"
+    ],
+    "arrays_and_objects": [
+      "roles",
+      "titles",
+      "titles_users",
+      "groups",
+      "languages_users",
+      "partnerships",
+      "patroned",
+      "patroning",
+      "expertises_users",
+      "campus",
+      "campus_users",
+      "cursus_users",
+      "projects_users",
+      "achievements"
+    ]
+  }
+}
+
+
