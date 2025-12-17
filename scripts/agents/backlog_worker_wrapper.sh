@@ -2,7 +2,7 @@
 
 # Wrapper to load token and start worker
 
-ROOT_DIR="/srv/42_Network/repo"
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$ROOT_DIR"
 
 # Load token
@@ -12,4 +12,4 @@ source .oauth_state
 export API_TOKEN="$ACCESS_TOKEN"
 
 # Run worker
-exec bash scripts/backlog_worker.sh
+exec bash scripts/agents/backlog_worker.sh

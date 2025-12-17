@@ -2,18 +2,18 @@
 #
 # detector_manager.sh - manage the periodic change detector
 # Usage:
-#   scripts/detector_manager.sh start   # launch in background
-#   scripts/detector_manager.sh stop    # stop if running
-#   scripts/detector_manager.sh status  # show status
-#   scripts/detector_manager.sh restart # stop then start
+#   scripts/pipeline/detector_manager.sh start   # launch in background
+#   scripts/pipeline/detector_manager.sh stop    # stop if running
+#   scripts/pipeline/detector_manager.sh status  # show status
+#   scripts/pipeline/detector_manager.sh restart # stop then start
 
 set -euo pipefail
 
-ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 LOG_DIR="$ROOT_DIR/logs"
 PID_FILE="$LOG_DIR/detector.pid"
 AGENTS_CONFIG="$ROOT_DIR/scripts/config/agents.config"
-DETECT_SCRIPT="$ROOT_DIR/scripts/cron/detect_changes.sh"
+DETECT_SCRIPT="$ROOT_DIR/scripts/agents/detector.sh"
 
 mkdir -p "$LOG_DIR"
 

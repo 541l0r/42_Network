@@ -9,7 +9,7 @@
 
 set -uo pipefail
 
-ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 # Attempt to load campus filter from config or .env
 if [[ -f "$ROOT_DIR/../.env" ]]; then
   # shellcheck disable=SC1091

@@ -1,0 +1,18 @@
+FROM python:3.11-slim
+
+LABEL maintainer="42_Network Ops" \
+      description="Agent runtime for detector/fetcher/upserter/backlog worker"
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+      curl jq postgresql-client ca-certificates procps && \
+    rm -rf /var/lib/apt/lists/*
+
+WORKDIR /app
+
+# Keep scripts on PATH inside the container
+ENV PATH="/app/scripts/bin:${PATH}"
+
+CMD ["bash"]

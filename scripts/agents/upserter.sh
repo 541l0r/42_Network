@@ -6,7 +6,7 @@
 
 set -euo pipefail
 
-ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 BACKLOG_DIR="$ROOT_DIR/.backlog"
 LOG_DIR="$ROOT_DIR/logs"
 EXPORTS_USERS="$ROOT_DIR/exports/09_users"
@@ -71,10 +71,10 @@ while true; do
       user_json=$(cat "$snapshot_file" 2>/dev/null || echo "")
       [[ -z "$user_json" ]] && continue
       
-      # Extract campus_id from campus_users (first campus)
-      campus_id=$(echo "$user_json" | jq '.campus_users[0].campus_id // 0' 2>/dev/null)
-      [[ -z "$campus_id" ]] && campus_id=0
-      [[ "$campus_id" == "null" ]] && campus_id=0
+	      # Extract primary campus_id (fallback: first campus_users or campus[0].id)
+	      campus_id=$(echo "$user_json" | jq '((.campus_users[]? | select(.is_primary==true) | .campus_id) // .campus_users[0].campus_id // .campus[0].id // 0)' 2>/dev/null)
+	      [[ -z "$campus_id" ]] && campus_id=0
+	      [[ "$campus_id" == "null" ]] && campus_id=0
       
       # Extract fields
       login=$(echo "$user_json" | jq -r '.login // ""' 2>/dev/null | sed "s/'/''/g")

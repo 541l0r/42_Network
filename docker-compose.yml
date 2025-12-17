@@ -1,4 +1,31 @@
+x-agents-base: &agents-base
+  build:
+    context: .
+    dockerfile: Dockerfile.agents
+  image: transcendence/agents:latest
+  restart: unless-stopped
+  user: "1001:1001"
+  env_file:
+    - ../.env
+  environment:
+    DB_HOST: db
+    DB_PORT: 5432
+    DB_NAME: ${DB_NAME:-api42}
+    DB_USER: ${DB_USER:-api42}
+    DB_PASSWORD: ${DB_PASSWORD:-api42}
+    CAMPUS_ID: ${CAMPUS_ID:-21}
+    ROOT_DIR: /app
+  volumes:
+    - .:/app
+    - ./.backlog:/app/.backlog
+    - ./logs:/app/logs
+    - ./exports:/app/exports
+    - ./.cache:/app/.cache
+  networks:
+    - transcendence
+
 services:
+
   # PostgreSQL: data storage
   db:
     image: postgres:16-alpine
@@ -65,6 +92,72 @@ services:
     command: sh -c "cd api && npm install && cd .. && node api/server.js"
     networks:
       - transcendence
+
+  # Detector: polls API for updated users and enqueues IDs
+  detector:
+    <<: *agents-base
+    container_name: transcendence_detector
+    depends_on:
+      - db
+    environment:
+      DETECTOR_INTERVAL: 60
+    command: >
+      bash -c "
+        cd /app;
+        while true; do
+          start=$$(date +%s);
+          scripts/agents/detector.sh;
+          end=$$(date +%s);
+          interval=$${DETECTOR_INTERVAL:-60};
+          elapsed=$$((end - start));
+          sleep_for=$$((interval - (elapsed % interval)));
+          if [ $$sleep_for -gt 0 ]; then sleep $$sleep_for; fi
+        done"
+
+  # Fetcher (internal queue)
+  fetcher:
+    <<: *agents-base
+    container_name: transcendence_fetcher
+    depends_on:
+      - db
+    command: bash -c "cd /app && scripts/agents/fetcher.sh"
+
+  # External fetcher (same script, different queue)
+  fetcher-external:
+    <<: *agents-base
+    container_name: transcendence_fetcher_external
+    depends_on:
+      - db
+    environment:
+      FETCH_QUEUE_FILE: /app/.backlog/fetch_queue_external.txt
+    command: bash -c "cd /app && scripts/agents/fetcher.sh"
+
+  # Upserter: reads process_queue and writes into DB
+  upserter:
+    <<: *agents-base
+    container_name: transcendence_upserter
+    depends_on:
+      - db
+    command: bash -c "cd /app && scripts/agents/upserter.sh"
+
+  # Backlog worker: enriches backlog users (achievements/projects/coalitions)
+  backlog-worker:
+    <<: *agents-base
+    container_name: transcendence_backlog_worker
+    depends_on:
+      - db
+    command: bash -c "cd /app && scripts/agents/backlog_worker_wrapper.sh"
+
+
+  # Ops agent: token refresh, log cleanup, optional backups
+  ops:
+    <<: *agents-base
+    container_name: transcendence_ops
+    depends_on:
+      - db
+    environment:
+      OPS_INTERVAL: 3600
+    command: bash -c "cd /app && scripts/agents/ops_agent.sh"
 
 networks:
   transcendence:

@@ -23,10 +23,10 @@
 
 ```bash
 # Fetcher A (existing)
-cd /repo && bash scripts/fetcher.sh > logs/fetcher-a.log 2>&1 &
+cd /repo && bash scripts/agents/fetcher.sh > logs/fetcher-a.log 2>&1 &
 
 # Fetcher B (new, reads same fetch_queue)
-cd /repo && bash scripts/fetcher.sh > logs/fetcher-b.log 2>&1 &
+cd /repo && bash scripts/agents/fetcher.sh > logs/fetcher-b.log 2>&1 &
 ```
 
 **Pros**: No API rate increase, parallel processing
@@ -56,8 +56,8 @@ Reduces input by ~70%
 ---
 
 ## Option 4: Increase Upserter Capacity
-**Current**: 2x upserters (upserter.sh + upserter2.sh)
-**New**: 3x upserter.sh processes
+**Current**: 1× upserter (upserter.sh)
+**New**: >1 upserter.sh processes/containers
 
 **Impact**: Faster process_queue consumption → fetcher can focus on fetch_queue
 
@@ -83,14 +83,14 @@ watch -n 30 'wc -l /repo/.backlog/fetch_queue.txt'
 ### Phase 2: Increase Fetcher Rate Incrementally
 ```bash
 # Try 2.5s/call first (24 users/min)
-sed -i 's/3.0/2.5/g' /repo/scripts/fetcher.sh
+sed -i 's/3.0/2.5/g' /repo/scripts/agents/fetcher.sh
 # Restart and monitor for 429 errors
 ```
 
 ### Phase 3: Add 2nd Fetcher if needed
 ```bash
 # Parallel fetcher reading same queue
-cd /repo && bash scripts/fetcher.sh > logs/fetcher-b.log 2>&1 &
+cd /repo && bash scripts/agents/fetcher.sh > logs/fetcher-b.log 2>&1 &
 ```
 
 ### Phase 4: Campus Filter if queue stays 600+
@@ -141,9 +141,9 @@ cd /repo && bash scripts/fetcher.sh > logs/fetcher-b.log 2>&1 &
 **QUICK TEST:**
 ```bash
 # Change fetcher rate to 2.5s
-sed -i 's/RATE_LIMIT_DELAY=3.0/RATE_LIMIT_DELAY=2.5/' /repo/scripts/fetcher.sh
+sed -i 's/RATE_LIMIT_DELAY=3.0/RATE_LIMIT_DELAY=2.5/' /repo/scripts/agents/fetcher.sh
 pkill -f fetcher.sh
-cd /repo && bash scripts/fetcher.sh >> logs/fetcher.log 2>&1 &
+cd /repo && bash scripts/agents/fetcher.sh >> logs/fetcher.log 2>&1 &
 
 # Watch for 5 minutes
 for i in {1..10}; do sleep 30 && wc -l /repo/.backlog/fetch_queue.txt; done

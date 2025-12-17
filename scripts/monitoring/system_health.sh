@@ -82,13 +82,14 @@ check_pid() {
 
 check_pid "detector" "$LOG_DIR/detector.pid"
 check_pid "fetcher" "$PID_DIR/fetcher.pid"
-check_pid "upserter1" "$PID_DIR/upserter.pid"
-check_pid "upserter2" "$PID_DIR/upserter2.pid"
+check_pid "upserter" "$PID_DIR/upserter.pid"
 
 section "Process flow overview"
-fetch_q="$BACKLOG_DIR/fetch_queue.txt"
+fetch_q_int="$BACKLOG_DIR/fetch_queue_internal.txt"
+fetch_q_ext="$BACKLOG_DIR/fetch_queue_external.txt"
 process_q="$BACKLOG_DIR/process_queue.txt"
-echo "- fetch_queue:   $(wc -l < "${fetch_q}" 2>/dev/null || echo 0) entries (${fetch_q})"
+echo "- fetch_queue_internal: $(wc -l < "${fetch_q_int}" 2>/dev/null || echo 0) entries (${fetch_q_int})"
+echo "- fetch_queue_external: $(wc -l < "${fetch_q_ext}" 2>/dev/null || echo 0) entries (${fetch_q_ext})"
 echo "- process_queue: $(wc -l < "${process_q}" 2>/dev/null || echo 0) entries (${process_q})"
 
 echo ""
@@ -102,10 +103,6 @@ safe_tail "$LOG_DIR/fetcher.log" 1
 echo ""
 echo "Last upserter log:"
 safe_tail "$LOG_DIR/upserter.log" 1
-
-echo ""
-echo "Last upserter2 log:"
-safe_tail "$LOG_DIR/upserter2.log" 1
 
 section "Suggested extra KPIs"
 echo "- DB availability (psql select 1) and replication lag if any"

@@ -8,8 +8,8 @@
 
 set -euo pipefail
 
-ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-WRAPPER="$ROOT_DIR/scripts/backlog_worker_wrapper.sh"
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+WRAPPER="$ROOT_DIR/scripts/agents/backlog_worker_wrapper.sh"
 LOG_DIR="$ROOT_DIR/logs"
 PID_FILE="$LOG_DIR/backlog_worker.pid"
 LOG_FILE="$LOG_DIR/backlog_worker.log"

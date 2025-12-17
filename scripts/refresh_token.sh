@@ -1,7 +1,6 @@
-#!/bin/bash
-
+#!/usr/bin/env bash
 # refresh_token.sh - Refresh 42 API token
-# Runs every hour at minute 5 to ensure token stays valid
+# Runs every hour (via ops agent) to keep the token valid.
 
 set -euo pipefail
 
@@ -16,7 +15,6 @@ TIMESTAMP=$(date -u +'%Y-%m-%dT%H:%M:%SZ')
 
 echo "[$TIMESTAMP] Refreshing 42 API token..." >> "$LOG_FILE"
 
-# Call token_manager to refresh
 if bash "$TOKEN_HELPER" refresh >/dev/null 2>&1; then
   echo "[$TIMESTAMP] ✓ Token refreshed successfully" >> "$LOG_FILE"
 else

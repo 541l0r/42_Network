@@ -24,25 +24,40 @@ paths = glob.glob(os.path.join(exports_dir, "campus_*", "user_*.json"))
 written = 0
 errors = 0
 
-for path in paths:
-    try:
-        data = json.load(open(path))
-    except Exception as e:
-        errors += 1
-        print(f"⚠️  skip {path}: {e}")
-        continue
-    uid = data.get("id")
-    if uid is None:
-        errors += 1
-        print(f"⚠️  skip {path}: missing id")
-        continue
-    baseline_path = os.path.join(baseline_dir, f"user_{uid}.json")
-    try:
-        pathlib.Path(baseline_path).write_text(json.dumps(data, indent=2))
-        written += 1
-    except Exception as e:
-        errors += 1
-        print(f"⚠️  write failed {baseline_path}: {e}")
+	def normalize_location(value):
+	    if value in (None, ""):
+	        return None
+	    return value
+
+	def snapshot(user):
+	    return {
+	        "login": user.get("login"),
+	        "first_name": user.get("first_name"),
+	        "last_name": user.get("last_name"),
+	        "correction_point": user.get("correction_point"),
+	        "wallet": user.get("wallet"),
+	        "location": normalize_location(user.get("location")),
+	    }
+
+	for path in paths:
+	    try:
+	        data = json.load(open(path))
+	    except Exception as e:
+	        errors += 1
+	        print(f"⚠️  skip {path}: {e}")
+	        continue
+	    uid = data.get("id")
+	    if uid is None:
+	        errors += 1
+	        print(f"⚠️  skip {path}: missing id")
+	        continue
+	    baseline_path = os.path.join(baseline_dir, f"user_{uid}.json")
+	    try:
+	        pathlib.Path(baseline_path).write_text(json.dumps(snapshot(data), indent=2))
+	        written += 1
+	    except Exception as e:
+	        errors += 1
+	        print(f"⚠️  write failed {baseline_path}: {e}")
 
 print(f"Seeded baselines: {written} files (errors={errors}) from {len(paths)} exports")
 PY

@@ -52,17 +52,20 @@ echo "eventifier: ID_LIST='$ID_LIST'" >&2
 echo "eventifier: processing ${ID_COUNT} ids from queue" >&2
 
 python3 - << 'PY'
-import json, os, glob, sys, time
+import glob
+import json
+import os
+import time
 
-root = os.environ["ROOT_DIR"]
-backlog_dir = os.environ["BACKLOG_DIR"]
 exports_dir = os.environ["EXPORTS_DIR"]
 baseline_dir = os.environ["BASELINE_DIR"]
 events_queue = os.environ["EVENTS_QUEUE"]
 events_queue_lock = os.environ["EVENTS_QUEUE_LOCK"]
+
 env_ids = os.environ.get("IDS", "")
 print(f"eventifier: env IDS='{env_ids}'")
-ids = env_ids.split(",") if env_ids else []
+ids = [x for x in env_ids.split(",") if x] if env_ids else []
+
 
 def load_json(path):
     try:
@@ -73,38 +76,94 @@ def load_json(path):
     except json.JSONDecodeError:
         return None
 
+
 def find_export(uid: str):
     pattern = os.path.join(exports_dir, "campus_*", f"user_{uid}.json")
     matches = glob.glob(pattern)
     return matches[0] if matches else None
 
-def flatten(value, prefix=""):
-    out = {}
-    if isinstance(value, dict):
-        for k, v in value.items():
-            new_prefix = f"{prefix}.{k}" if prefix else str(k)
-            out.update(flatten(v, new_prefix))
-    elif isinstance(value, list):
-        for idx, v in enumerate(value):
-            new_prefix = f"{prefix}[{idx}]" if prefix else f"[{idx}]"
-            out.update(flatten(v, new_prefix))
-    else:
-        out[prefix] = value
-    return out
 
-def diff_all(old, new):
-    flat_old = flatten(old if old is not None else {})
-    flat_new = flatten(new if new is not None else {})
-    keys = sorted(set(flat_old.keys()) | set(flat_new.keys()))
-    deltas = []
-    for k in keys:
-        if flat_old.get(k) != flat_new.get(k):
-            deltas.append({"path": k, "old": flat_old.get(k), "new": flat_new.get(k)})
-    return deltas
+def to_number(value):
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def normalize_location(value):
+    if value in (None, ""):
+        return None
+    return value
+
+
+def snapshot(user):
+    return {
+        "login": user.get("login"),
+        "first_name": user.get("first_name"),
+        "last_name": user.get("last_name"),
+        "correction_point": user.get("correction_point"),
+        "wallet": user.get("wallet"),
+        "location": normalize_location(user.get("location")),
+    }
+
+
+EVENT_TYPE_ORDER = (
+    "data",
+    "connection",
+    "deconnection",
+    "evaluation",
+    "correction",
+    "wallet",
+)
+
+
+def build_changes(old_snap, new_snap):
+    changes = []
+    present_types = set()
+
+    for key in ("login", "first_name", "last_name"):
+        old = old_snap.get(key)
+        new = new_snap.get(key)
+        if old != new:
+            changes.append({"path": key, "old": old, "new": new})
+            present_types.add("data")
+
+    old_loc = normalize_location(old_snap.get("location"))
+    new_loc = normalize_location(new_snap.get("location"))
+    if old_loc != new_loc:
+        if old_loc is None and new_loc is not None:
+            changes.append({"path": "location", "old": None, "new": new_loc})
+            present_types.add("connection")
+        elif old_loc is not None and new_loc is None:
+            changes.append({"path": "location", "old": old_loc, "new": None})
+            present_types.add("deconnection")
+
+    old_cp = to_number(old_snap.get("correction_point"))
+    new_cp = to_number(new_snap.get("correction_point"))
+    if old_cp is not None and new_cp is not None and old_cp != new_cp:
+        changes.append({"path": "correction_point", "old": old_cp, "new": new_cp})
+        delta = new_cp - old_cp
+        if delta < 0:
+            present_types.add("evaluation")
+        elif delta > 0:
+            present_types.add("correction")
+
+    old_wallet = to_number(old_snap.get("wallet"))
+    new_wallet = to_number(new_snap.get("wallet"))
+    if old_wallet is not None and new_wallet is not None and old_wallet != new_wallet:
+        changes.append({"path": "wallet", "old": old_wallet, "new": new_wallet})
+        present_types.add("wallet")
+
+    ordered_types = [t for t in EVENT_TYPE_ORDER if t in present_types]
+    return changes, ordered_types
+
 
 def get_campus_id(user):
     campus_users = user.get("campus_users", [])
     if isinstance(campus_users, list) and campus_users:
+        for cu in campus_users:
+            if isinstance(cu, dict) and cu.get("is_primary"):
+                return cu.get("campus_id")
         cu0 = campus_users[0]
         if isinstance(cu0, dict):
             return cu0.get("campus_id")
@@ -115,60 +174,78 @@ def get_campus_id(user):
             return c0.get("id")
     return None
 
+
 events = []
 
 for uid in ids:
     export_path = find_export(uid)
     if not export_path:
-        events.append({
-            "user_id": int(uid),
-            "error": f"export not found for user_{uid}.json",
-            "ts": int(time.time())
-        })
+        events.append(
+            {
+                "user_id": int(uid),
+                "error": f"export not found for user_{uid}.json",
+                "ts": int(time.time()),
+            }
+        )
         continue
 
     current = load_json(export_path)
     if not isinstance(current, dict):
-        events.append({
-            "user_id": int(uid),
-            "error": f"invalid JSON at {export_path}",
-            "ts": int(time.time())
-        })
+        events.append(
+            {
+                "user_id": int(uid),
+                "error": f"invalid JSON at {export_path}",
+                "ts": int(time.time()),
+            }
+        )
         continue
 
     baseline_path = os.path.join(baseline_dir, f"user_{uid}.json")
-    baseline = load_json(baseline_path)
+    baseline_raw = load_json(baseline_path)
+    baseline_snap = snapshot(baseline_raw) if isinstance(baseline_raw, dict) else None
+    current_snap = snapshot(current)
 
-    first_snapshot = baseline is None
-    changes = [] if first_snapshot else diff_all(baseline, current)
+    first_snapshot = baseline_snap is None
+    changes = []
+    types = []
+    if not first_snapshot:
+        changes, types = build_changes(baseline_snap, current_snap)
 
-    event = {
-        "user_id": int(uid),
-        "user_login": current.get("login"),
-        "campus_id": get_campus_id(current),
-        "updated_at": current.get("updated_at"),
-        "first_snapshot": first_snapshot,
-        "changes": changes,
-        "source": "eventifier",
-        "ts": int(time.time())
-    }
-    events.append(event)
-
-    # Update baseline to current snapshot
     try:
         with open(baseline_path, "w") as f:
-            json.dump(current, f, indent=2)
+            json.dump(current_snap, f, indent=2)
     except Exception as e:
-        events.append({
-            "user_id": int(uid),
-            "error": f"failed to write baseline {baseline_path}: {e}",
-            "ts": int(time.time())
-        })
+        events.append(
+            {
+                "user_id": int(uid),
+                "error": f"failed to write baseline {baseline_path}: {e}",
+                "ts": int(time.time()),
+            }
+        )
+        continue
 
-# Append to events_queue with a lock
+    if first_snapshot or not types:
+        continue
+
+    events.append(
+        {
+            "user_id": int(uid),
+            "user_login": current.get("login"),
+            "campus_id": get_campus_id(current),
+            "updated_at": current.get("updated_at"),
+            "first_snapshot": first_snapshot,
+            "types": types,
+            "primary_type": types[0] if types else None,
+            "changes": changes,
+            "source": "eventifier",
+            "ts": int(time.time()),
+        }
+    )
+
 with open(events_queue_lock, "w") as lf:
     try:
         import fcntl
+
         fcntl.flock(lf, fcntl.LOCK_EX)
     except Exception:
         pass

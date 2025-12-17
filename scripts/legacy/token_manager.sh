@@ -3,43 +3,28 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
-REPO_ROOT="$(cd "$ROOT_DIR/.." && pwd)"
-# If mounted at /app (inside container), REPO_ROOT would become /; fall back to ROOT_DIR
-if [[ "$REPO_ROOT" == "/" ]]; then
-  REPO_ROOT="$ROOT_DIR"
-fi
-
-CONFIG_FILE="${CONFIG_FILE:-}"
+REPO_ROOT="$(cd "$ROOT_DIR/.." && pwd)"  # /srv/42_Network
+CONFIG_FILE="${CONFIG_FILE:-$REPO_ROOT/.env}"
 STATE_FILE="${STATE_FILE:-$ROOT_DIR/.oauth_state}"
-API_ROOT="${API_ROOT:-https://api.intra.42.fr}"
+API_ROOT="https://api.intra.42.fr"
 
 load_config() {
-  local cfg_candidates=()
-  [[ -n "${CONFIG_FILE:-}" ]] && cfg_candidates+=("$CONFIG_FILE")
-  cfg_candidates+=("$ROOT_DIR/.env" "$REPO_ROOT/.env")
-
-  local cfg_used=""
-  for cfg in "${cfg_candidates[@]}"; do
-    if [[ -f "$cfg" ]]; then
-      cfg_used="$cfg"
-      CONFIG_FILE="$cfg"
-      # shellcheck disable=SC1090
-      source "$cfg"
-      break
-    fi
-  done
-
-  local missing=()
-  for var in CLIENT_ID CLIENT_SECRET REDIRECT_URI SCOPE; do
-    if [[ -z "${!var:-}" ]]; then
-      missing+=("$var")
-    fi
-  done
-
-  if ((${#missing[@]})); then
-    echo "Missing config values: ${missing[*]}. Provide them via environment variables or a .env file (checked: ${cfg_candidates[*]})" >&2
+  local cfg="$CONFIG_FILE"
+  # resolve config: use provided CONFIG_FILE, otherwise default to .env at project root (/srv/42_Network)
+  if [[ ! -f "$cfg" && -f "$REPO_ROOT/.env" ]]; then
+    cfg="$REPO_ROOT/.env"
+  fi
+  CONFIG_FILE="$cfg"
+  if [[ ! -f "$cfg" ]]; then
+    echo "Missing $cfg. Provide CLIENT_ID, CLIENT_SECRET, REDIRECT_URI, and SCOPE (ACCESS/REFRESH optional)." >&2
     exit 1
   fi
+  # shellcheck disable=SC1090
+  source "$CONFIG_FILE"
+  : "${CLIENT_ID:?Set CLIENT_ID in $CONFIG_FILE}"
+  : "${CLIENT_SECRET:?Set CLIENT_SECRET in $CONFIG_FILE}"
+  : "${REDIRECT_URI:?Set REDIRECT_URI in $CONFIG_FILE}"
+  : "${SCOPE:?Set SCOPE in $CONFIG_FILE}"
   export API_ROOT CLIENT_ID CLIENT_SECRET REDIRECT_URI SCOPE
 }
 
@@ -56,13 +41,15 @@ ensure_valid_access_token() {
   local now
   now=$(date +%s)
   if (( now >= EXPIRES_AT - 30 )); then
-    echo "Access token expired or expiring soon, refreshing..." >&2
+    echo "Access token expired or expiring soon, refreshing..."
     refresh_token quiet
     load_state
   fi
 }
 
 ensure_fresh_token() {
+  # For use by major scripts: ensure token is fresh (not expiring in next hour)
+  # This is called at script start to refresh proactively
   load_state
   if [[ -z "${ACCESS_TOKEN:-}" ]]; then
     echo "No access token found. Run 'token_manager.sh refresh' first." >&2
@@ -72,6 +59,8 @@ ensure_fresh_token() {
   local now
   now=$(date +%s)
   local expires_in=$(( EXPIRES_AT - now ))
+  
+  # Refresh if expires in less than 1 hour, or if already expired
   if (( expires_in < 3600 )); then
     echo "Token expires in ${expires_in}s, refreshing proactively..." >&2
     refresh_token quiet "$LOG_FILE"
@@ -82,13 +71,12 @@ ensure_fresh_token() {
 }
 
 save_state() {
-  mkdir -p "$(dirname "$STATE_FILE")"
   cat >"$STATE_FILE" <<EOF
 ACCESS_TOKEN=$ACCESS_TOKEN
 REFRESH_TOKEN=$REFRESH_TOKEN
 EXPIRES_AT=$EXPIRES_AT
 EOF
-  echo "State saved to $STATE_FILE" >&2
+  echo "State saved to $STATE_FILE"
 }
 
 auth_url() {
@@ -111,10 +99,12 @@ refresh_token() {
   local response
   local timestamp
   timestamp=$(date '+%Y-%m-%d %H:%M:%S UTC')
+  
+  # Log start if log file provided
   if [[ -n "$log_file" ]]; then
-    mkdir -p "$(dirname "$log_file")"
     echo "[$timestamp] Starting token refresh..." >> "$log_file"
   fi
+  
   response=$(curl -sS -X POST "$API_ROOT/oauth/token" \
     -u "$CLIENT_ID:$CLIENT_SECRET" \
     -d "grant_type=refresh_token" \
@@ -127,6 +117,7 @@ refresh_token() {
   local expires_in
   expires_in=$(jq -r '.expires_in // 0' <<<"$response")
   EXPIRES_AT=$(( $(date +%s) + expires_in ))
+  
   if [[ -n "$ACCESS_TOKEN" ]]; then
     save_state
     if [[ -n "$log_file" ]]; then
@@ -166,12 +157,15 @@ call_api() {
   response=$(curl -sS -w "\n%{http_code}" -H "Authorization: Bearer $ACCESS_TOKEN" "$API_ROOT$endpoint")
   response_code=$(echo "$response" | tail -n1)
   response=$(echo "$response" | head -n-1)
+  
+  # If we get 401 (Unauthorized), refresh token and retry once
   if [[ "$response_code" == "401" ]]; then
     echo "Token expired (401), refreshing and retrying..." >&2
     refresh_token quiet "$LOG_FILE"
     load_state
     response=$(curl -sS -H "Authorization: Bearer $ACCESS_TOKEN" "$API_ROOT$endpoint")
   fi
+  
   echo "$response"
 }
 
@@ -184,16 +178,23 @@ call_export() {
   [[ -n "$safe_name" ]] || safe_name="response"
   [[ -n "$outfile" ]] || outfile="$ROOT_DIR/exports/${safe_name}.json"
   mkdir -p "$(dirname "$outfile")"
+  
   local response_code
   local tmpfile
   tmpfile=$(mktemp)
   trap "rm -f $tmpfile" EXIT
+  
   response_code=$(curl -g -sS -w "%{http_code}" -H "Authorization: Bearer $ACCESS_TOKEN" "$API_ROOT$endpoint" -o "$tmpfile")
+  
+  # If we get 401 (Unauthorized), refresh token and retry once
   if [[ "$response_code" == "401" ]]; then
-        refresh_token quiet "$LOG_FILE"
-        load_state
-        response_code=$(curl -g -sS -w "%{http_code}" -H "Authorization: Bearer $ACCESS_TOKEN" "$API_ROOT$endpoint" -o "$tmpfile")
+    echo "Token expired (401), refreshing and retrying..." >&2
+    refresh_token quiet "$LOG_FILE"
+    load_state
+    response_code=$(curl -g -sS -w "%{http_code}" -H "Authorization: Bearer $ACCESS_TOKEN" "$API_ROOT$endpoint" -o "$tmpfile")
   fi
+  
+  # Validate response
   if ! jq . "$tmpfile" >"${outfile}" 2>/dev/null; then
     echo "Invalid JSON response (HTTP $response_code). Response:" >&2
     cat "$tmpfile" >&2
@@ -232,13 +233,13 @@ Commands:
   token-info            Inspect the current access token metadata.
 
 Environment files:
-  .env (searched in $ROOT_DIR and $REPO_ROOT) or env vars must define CLIENT_ID, CLIENT_SECRET, REDIRECT_URI, SCOPE
+  $CONFIG_FILE    # must define CLIENT_ID, CLIENT_SECRET, REDIRECT_URI, SCOPE
   $STATE_FILE     # auto-generated; stores ACCESS_TOKEN, REFRESH_TOKEN, EXPIRES_AT
 EOF
 }
 
 cmd=${1:-}
-LOG_FILE="${LOG_FILE:-$ROOT_DIR/logs/42_token_refresh.log}"
+LOG_FILE="${LOG_FILE:-/srv/42_Network/logs/42_token_refresh.log}"
 case "$cmd" in
   exchange) shift; exchange_code "$@" ;;
   refresh) refresh_token quiet "$LOG_FILE" ;;

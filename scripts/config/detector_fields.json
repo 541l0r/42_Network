@@ -13,7 +13,7 @@
       "last_name": "Important - identity tracking",
       "correction_point": "Evaluation points - indicates meaningful activity",
       "wallet": "Keep tracked - need to verify impact later",
-      "location": "Only for live tracking feature - controversial, use with caution"
+      "location": "Keep tracked - need to verify impact later"
     },
     "fields": [
       "login",
@@ -26,18 +26,22 @@
   },
 
   "externals": {
-    "description": "Scalar fields only - trigger requeue on meaningful changes. Wallet & location excluded (too volatile for 1h gate)",
+    "description": "Scalar fields only - trigger requeue on meaningful changes",
     "fields_with_notes": {
       "login": "Very important - user identity, immutable from signup",
       "first_name": "Important - identity tracking",
       "last_name": "Important - identity tracking",
-      "correction_point": "Evaluation points - indicates meaningful activity"
+      "correction_point": "Evaluation points - indicates meaningful activity",
+      "wallet": "Keep tracked - need to verify impact later",
+      "location": "Keep tracked - need to verify impact later"
     },
     "fields": [
       "login",
       "first_name",
       "last_name",
-      "correction_point"
+      "correction_point",
+      "wallet",
+      "location"
     ]
   },
   

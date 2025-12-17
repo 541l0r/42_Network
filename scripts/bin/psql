@@ -44,8 +44,16 @@ if $use_docker; then
 fi
 
 # Try local psql
-if command -v /usr/bin/psql >/dev/null 2>&1 || command -v psql >/dev/null 2>&1; then
-  exec psql "$@"
+if [[ -x /usr/bin/psql ]]; then
+  exec /usr/bin/psql "$@"
+fi
+
+# Avoid infinite recursion when this wrapper is first in PATH.
+psql_path="$(command -v psql 2>/dev/null || true)"
+self_path="$(readlink -f "${BASH_SOURCE[0]}" 2>/dev/null || echo "${BASH_SOURCE[0]}")"
+psql_real="$(readlink -f "$psql_path" 2>/dev/null || echo "$psql_path")"
+if [[ -n "$psql_path" && "$psql_real" != "$self_path" ]]; then
+  exec "$psql_path" "$@"
 fi
 
 # Fall back to Docker (without host/port filtering)
